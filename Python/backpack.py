@@ -1,5 +1,5 @@
-# Time:  O(n)
-# Space: O(n)
+# Time:  O(n*m)
+# Space: O(m)
 #
 # Given n items with size A[i], an integer m denotes the size of a backpack. 
 # How full you can fill this backpack? 
