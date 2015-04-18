@@ -1,5 +1,4 @@
-# LintCode
-LeetCode
+LintCode
 ======== 
 
 Up to date (2015-04-17), there are `41` Algorithms [LintCode Online Judge](https://lintcode.com/).
