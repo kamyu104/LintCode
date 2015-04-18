@@ -1,7 +1,7 @@
 LintCode
 ======== 
 
-Up to date (2015-04-17), there are `41` Algorithms [LintCode Online Judge](https://lintcode.com/).
+Up to date (2015-04-17), there are `41` Algorithms on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
 Here is the classification of all `41` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
