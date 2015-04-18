@@ -10,8 +10,16 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 Algorithms
 ====
 
-* [Tree](https://github.com/kamyu104/LintCode#greedy)
+* [Bit Manipulation](https://github.com/kamyu104/LintCode#bit-manipulation)
+* [Tree](https://github.com/kamyu104/LintCode#tree)
 * [Greedy](https://github.com/kamyu104/LintCode#greedy)
+
+---
+
+##Bit Manipulation
+| # | Title | Solution | Time | Space | Difficulty |
+|---| ----- | -------- | ---- | ----- | ---------- |
+|1|[A + B Problem](http://lintcode.com/en/problem/a-b-problem/)| [C++](./C++/a-b-problem.cpp)| _O(1)_ | _O(1)_ | Hard |
 
 ---
 
