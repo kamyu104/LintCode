@@ -17,5 +17,5 @@ Algorithms
 ##Greedy
 | # | Title | Solution | Time | Space | Difficulty |
 |---| ----- | -------- | ---- | ----- | ---------- |
-|182|[Delete Digits](http://lintcode.com/en/problem/delete-digits/)| [C++](https://github.com/kamyu104/LintCode/blob/master/C++/delete-digits.cpp)| _O(n)_ | _O(n)_ | Medium|
+|182|[Delete Digits](http://lintcode.com/en/problem/delete-digits/)| [C++](./C++/delete-digits.cpp)| _O(n)_ | _O(n)_ | Medium|
 
