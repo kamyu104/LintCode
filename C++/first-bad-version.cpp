@@ -12,6 +12,7 @@ public:
         
         VersionControl vc;
         
+        // At the last, left is not sure for target, right is target.
         while (right - left > 1) {
             int mid = left + (right - left) / 2;
             // Is target
@@ -37,6 +38,7 @@ public:
         
         VersionControl vc;
         
+        // At the last, left is not sure for target, right is target.
         while (left < right) {
             int mid = left + (right - left) / 2;
             // Is target
@@ -62,6 +64,7 @@ public:
         
         VersionControl vc;
         
+        // At the last, left is not sure for target, right is not sure for target.
         while (left <= right) {
             int mid = left + (right - left) / 2;
             // Is target
