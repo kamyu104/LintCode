@@ -8,6 +8,31 @@ public:
      * @return: An integer which is the first bad version.
      */
     int findFirstBadVersion(int n) {
+        int left = 1 - 1, right = n;
+        
+        VersionControl vc;
+        
+        while (right - left > 1) {
+            int mid = left + (right - left) / 2;
+            // Is target
+            if (vc.isBadVersion(mid)) {
+                right = mid;
+            }
+            else {
+                left = mid;
+            }
+        }
+        return right;
+    }
+};
+
+class Solution2 {
+public:
+    /**
+     * @param n: An integers.
+     * @return: An integer which is the first bad version.
+     */
+    int findFirstBadVersion(int n) {
         int left = 1, right = n + 1;
         
         VersionControl vc;
@@ -26,7 +51,7 @@ public:
     }
 };
 
-class Solution2 {
+class Solution3 {
 public:
     /**
      * @param n: An integers.
