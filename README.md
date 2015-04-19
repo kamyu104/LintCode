@@ -14,6 +14,7 @@ Algorithms
 * [String](https://github.com/kamyu104/LintCode#string)
 * [Math](https://github.com/kamyu104/LintCode#math)
 * [Tree](https://github.com/kamyu104/LintCode#tree)
+* [Binary Search](https://github.com/kamyu104/LintCode#binary-search)
 * [Greedy](https://github.com/kamyu104/LintCode#greedy)
 
 ---
@@ -44,6 +45,13 @@ Algorithms
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |180|[Binary Represention](http://lintcode.com/en/problem/delete-digits/)| [C++](./C++/binary-representation.cpp)| _O(1)_ | _O(1)_ | Hard | CC150 | |
+
+---
+
+##Binary Search
+| # | Title | Solution | Time | Space | Difficulty | Tag | Note |
+|---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|75|[Find Peak Element](http://lintcode.com/en/problem/find-peak-element/)| [C++](./C++/find-peak-element.cpp)| _O(logn)_ | _O(1)_ | Medium | LeetCode | |
 
 ---
 
