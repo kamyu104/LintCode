@@ -62,7 +62,7 @@ public:
         
         VersionControl vc;
         
-        while (left < right) {
+        while (left <= right) {
             int mid = left + (right - left) / 2;
             // Is target
             if (vc.isBadVersion(mid)) {
