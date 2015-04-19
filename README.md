@@ -12,34 +12,42 @@ Algorithms
 
 * [Bit Manipulation](https://github.com/kamyu104/LintCode#bit-manipulation)
 * [String](https://github.com/kamyu104/LintCode#string)
+* [Math](https://github.com/kamyu104/LintCode#math)
 * [Tree](https://github.com/kamyu104/LintCode#tree)
 * [Greedy](https://github.com/kamyu104/LintCode#greedy)
 
 ---
 
 ##Bit Manipulation
-| # | Title | Solution | Time | Space | Difficulty |
-|---| ----- | -------- | ---- | ----- | ---------- |
-|1|[A + B Problem](http://lintcode.com/en/problem/a-b-problem/)| [C++](./C++/a-b-problem.cpp)| _O(1)_ | _O(1)_ | Hard |
+| # | Title | Solution | Time | Space | Difficulty | Tag | Note |
+|---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|1|[A + B Problem](http://lintcode.com/en/problem/a-b-problem/)| [C++](./C++/a-b-problem.cpp)| _O(1)_ | _O(1)_ | Hard | | |
 
 ---
 
 ##String
-| # | Title | Solution | Time | Space | Difficulty |
-|---| ----- | -------- | ---- | ----- | ---------- |
-|55|[Compare Strings](http://lintcode.com/en/problem/compare-strings/)|[C++](./C++/compare-strings.cpp)| _O(n)_ | _O(c)_ | Easy |
+| # | Title | Solution | Time | Space | Difficulty | Tag | Note |
+|---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|55|[Compare Strings](http://lintcode.com/en/problem/compare-strings/)|[C++](./C++/compare-strings.cpp)| _O(n)_ | _O(c)_ | Easy | | |
 
 ---
 
 ##Tree
-| # | Title | Solution | Time | Space | Difficulty |
-|---| ----- | -------- | ---- | ----- | ---------- |
-|85|[Insert Node in a Binary Search Tree](http://lintcode.com/en/problem/delete-digits/)| [C++](./C++/insert-node-in-a-binary-search-tree.cpp)| _O(h)_ | _O(1)_ | Easy |
+| # | Title | Solution | Time | Space | Difficulty | Tag | Note |
+|---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|85|[Insert Node in a Binary Search Tree](http://lintcode.com/en/problem/delete-digits/)| [C++](./C++/insert-node-in-a-binary-search-tree.cpp)| _O(h)_ | _O(1)_ | Easy | | |
+
+---
+
+##Math
+| # | Title | Solution | Time | Space | Difficulty | Tag | Note |
+|---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|180|[Binary Represention](http://lintcode.com/en/problem/delete-digits/)| [C++](./C++/binary-representation.cpp)| _O(1)_ | _O(1)_ | Hard | CC150 | |
 
 ---
 
 ##Greedy
-| # | Title | Solution | Time | Space | Difficulty |
-|---| ----- | -------- | ---- | ----- | ---------- |
-|182|[Delete Digits](http://lintcode.com/en/problem/delete-digits/)| [C++](./C++/delete-digits.cpp)| _O(n)_ | _O(n)_ | Medium |
+| # | Title | Solution | Time | Space | Difficulty | Tag | Note |
+|---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|182|[Delete Digits](http://lintcode.com/en/problem/delete-digits/)| [C++](./C++/delete-digits.cpp)| _O(n)_ | _O(n)_ | Medium | | |
 
