@@ -1,0 +1,52 @@
+// Time:  O(logn)
+// Space: O(1)
+
+class Solution {
+public:
+    /**
+     * @param n: An integers.
+     * @return: An integer which is the first bad version.
+     */
+    int findFirstBadVersion(int n) {
+        int left = 1, right = n + 1;
+        
+        VersionControl vc;
+        
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            // Is target
+            if (vc.isBadVersion(mid)) {
+                right = mid;
+            }
+            else {
+                left = mid + 1;
+            }
+        }
+        return left;
+    }
+};
+
+class Solution2 {
+public:
+    /**
+     * @param n: An integers.
+     * @return: An integer which is the first bad version.
+     */
+    int findFirstBadVersion(int n) {
+        int left = 1, right = n;
+        
+        VersionControl vc;
+        
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            // Is target
+            if (vc.isBadVersion(mid)) {
+                right = mid - 1;
+            }
+            else {
+                left = mid + 1;
+            }
+        }
+        return left;
+    }
+};
