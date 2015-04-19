@@ -11,6 +11,7 @@ Algorithms
 ====
 
 * [Bit Manipulation](https://github.com/kamyu104/LintCode#bit-manipulation)
+* [String](https://github.com/kamyu104/LintCode#string)
 * [Tree](https://github.com/kamyu104/LintCode#tree)
 * [Greedy](https://github.com/kamyu104/LintCode#greedy)
 
@@ -20,6 +21,13 @@ Algorithms
 | # | Title | Solution | Time | Space | Difficulty |
 |---| ----- | -------- | ---- | ----- | ---------- |
 |1|[A + B Problem](http://lintcode.com/en/problem/a-b-problem/)| [C++](./C++/a-b-problem.cpp)| _O(1)_ | _O(1)_ | Hard |
+
+---
+
+##String
+| # | Title | Solution | Time | Space | Difficulty |
+|---| ----- | -------- | ---- | ----- | ---------- |
+|55|[Compare Strings](http://lintcode.com/en/problem/compare-strings/)|[C++](./C++/compare-strings.cpp)| _O(n)_ | _O(c)_ | Easy |
 
 ---
 
