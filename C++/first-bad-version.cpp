@@ -8,7 +8,7 @@ public:
      * @return: An integer which is the first bad version.
      */
     int findFirstBadVersion(int n) {
-        int left = 1 - 1, right = n;
+        int left = 1 - 1, right = n + 1;
         
         VersionControl vc;
         
