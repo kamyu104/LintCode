@@ -25,7 +25,7 @@ Algorithms
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |1|[A + B Problem](http://lintcode.com/en/problem/a-b-problem/)| [C++](./C++/a-b-problem.cpp)| _O(1)_ | _O(1)_ | Hard | | |
-|84|[Single Number III](http://lintcode.com/en/problem/single-number-iii/)| [C++](./C++/single-number-iii.cpp)| _O(1)_ | _O(1)_ | Medium | EPI | |
+|84|[Single Number III](http://lintcode.com/en/problem/single-number-iii/)| [C++](./C++/single-number-iii.cpp)| _O(1)_ | _O(1)_ | Medium | | |
 
 ---
 
@@ -53,7 +53,7 @@ Algorithms
 ##Heap
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
-|81|[Median in Data Stream](http://lintcode.com/en/problem/median-in-data-stream/)| [C++](./C++/median-in-data-stream.cpp)| _O(nlogn)_ | _O(n)_ | Hard | | |
+|81|[Median in Data Stream](http://lintcode.com/en/problem/median-in-data-stream/)| [C++](./C++/median-in-data-stream.cpp)| _O(nlogn)_ | _O(n)_ | Hard | EPI | |
 
 ---
 
