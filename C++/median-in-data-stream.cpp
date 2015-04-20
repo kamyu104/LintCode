@@ -17,7 +17,7 @@ public:
         vector<int> ans;
         int x;
         for (auto& x : nums) {
-            if (max_heap.size() == 0 || x > max_heap.top()) {
+            if (max_heap.empty() || x > max_heap.top()) {
                 min_heap.emplace(x);
                 if (min_heap.size() > max_heap.size() + 1) {
                     max_heap.emplace(min_heap.top());
