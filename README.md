@@ -11,9 +11,11 @@ Algorithms
 ====
 
 * [Bit Manipulation](https://github.com/kamyu104/LintCode#bit-manipulation)
+* [Array](https://github.com/kamyu104/LintCode#array)
 * [String](https://github.com/kamyu104/LintCode#string)
 * [Math](https://github.com/kamyu104/LintCode#math)
 * [Tree](https://github.com/kamyu104/LintCode#tree)
+* [Heap](https://github.com/kamyu104/LintCode#heap)
 * [Binary Search](https://github.com/kamyu104/LintCode#binary-search)
 * [Greedy](https://github.com/kamyu104/LintCode#greedy)
 
@@ -24,6 +26,13 @@ Algorithms
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |1|[A + B Problem](http://lintcode.com/en/problem/a-b-problem/)| [C++](./C++/a-b-problem.cpp)| _O(1)_ | _O(1)_ | Hard | | |
 |84|[Single Number III](http://lintcode.com/en/problem/single-number-iii/)| [C++](./C++/single-number-iii.cpp)| _O(1)_ | _O(1)_ | Medium | | |
+
+---
+
+##Array
+| # | Title | Solution | Time | Space | Difficulty | Tag | Note |
+|---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|46|[Majority Number](http://lintcode.com/en/problem/majority-number/)| [C++](./C++/majority-number.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
 
 ---
 
@@ -38,6 +47,13 @@ Algorithms
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |85|[Insert Node in a Binary Search Tree](http://lintcode.com/en/problem/delete-digits/)| [C++](./C++/insert-node-in-a-binary-search-tree.cpp)| _O(h)_ | _O(1)_ | Easy | | |
+
+---
+
+##Heap
+| # | Title | Solution | Time | Space | Difficulty | Tag | Note |
+|---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|81|[Median in Data Stream](http://lintcode.com/en/problem/median-in-data-stream/)| [C++](./C++/median-in-data-stream.cpp)| _O(nlogn)_ | _O(n)_ | Hard | | |
 
 ---
 
