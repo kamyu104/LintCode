@@ -19,7 +19,7 @@ public:
         
         while (int_part > 0) {
             int c = int_part % 2;
-            int_str.push_back ('0' + c);
+            int_str.push_back('0' + c);
             int_part = int_part >> 1;
         }
         reverse(int_str.begin(), int_str.end());
