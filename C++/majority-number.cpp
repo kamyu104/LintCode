@@ -17,7 +17,7 @@ public:
                 --cnt;
                 if(cnt == 0) {
                     ans = i;
-                    cnt = 2;
+                    cnt = 1;
                 }
             }
         }
