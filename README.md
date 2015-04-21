@@ -75,5 +75,6 @@ Algorithms
 ##Greedy
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|44|[Minimum Subarray](http://lintcode.com/en/problem/minimum-subarray/)| [C++](./C++/minimum-subarray.cpp)| _O(n)_ | _O(1)_ | Easy | | |
 |182|[Delete Digits](http://lintcode.com/en/problem/delete-digits/)| [C++](./C++/delete-digits.cpp)| _O(n)_ | _O(n)_ | Medium | | |
 
