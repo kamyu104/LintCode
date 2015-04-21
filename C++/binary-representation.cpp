@@ -28,14 +28,14 @@ public:
             if (dec_str.length() > 32) {
                 return "ERROR";
             }
-            double r = dec_part * 2;
-            if (r >= 1.0) {
+            double remain = dec_part * 2;
+            if (remain >= 1.0) {
                 dec_str.push_back('1');
-                dec_part = r - 1.0;
+                dec_part = remain - 1.0;
             }
             else {
                 dec_str.push_back('0');
-                dec_part = r;
+                dec_part = remain;
             }
         }
         return dec_str.length() > 0? int_str + "." + dec_str : int_str;
