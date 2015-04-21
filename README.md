@@ -87,6 +87,7 @@ Algorithms
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |41|[Maximum Subarray](http://lintcode.com/en/problem/maximum-subarray/)| [C++](./C++/maximum-subarray.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
 |42|[Maximum Subarray II](http://lintcode.com/en/problem/maximum-subarray-ii/)| [C++](./C++/maximum-subarray-ii.cpp)| _O(n)_ | _O(n)_ | Medium | | |
+|43|[Maximum Subarray III](http://lintcode.com/en/problem/maximum-subarray-iii/)| [C++](./C++/maximum-subarray-iii.cpp)| _O(k * n^2)_ | _O(k * n^2)_ | Hard | | |
 |44|[Minimum Subarray](http://lintcode.com/en/problem/minimum-subarray/)| [C++](./C++/minimum-subarray.cpp)| _O(n)_ | _O(1)_ | Easy | | |
 |45|[Maximum Subarray Difference](http://lintcode.com/en/problem/maximum-subarray-difference/)| [C++](./C++/maximum-subarray-difference.cpp)| _O(n)_ | _O(n)_ | Medium | | |
 |182|[Delete Digits](http://lintcode.com/en/problem/delete-digits/)| [C++](./C++/delete-digits.cpp)| _O(n)_ | _O(n)_ | Medium | | |
