@@ -16,6 +16,7 @@ Algorithms
 * [Math](https://github.com/kamyu104/LintCode#math)
 * [Tree](https://github.com/kamyu104/LintCode#tree)
 * [Heap](https://github.com/kamyu104/LintCode#heap)
+* [Sort](https://github.com/kamyu104/LintCode#sort)
 * [Binary Search](https://github.com/kamyu104/LintCode#binary-search)
 * [Greedy](https://github.com/kamyu104/LintCode#greedy)
 
@@ -61,6 +62,13 @@ Algorithms
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |180|[Binary Represention](http://lintcode.com/en/problem/delete-digits/)| [C++](./C++/binary-representation.cpp)| _O(1)_ | _O(1)_ | Hard | CC150 | |
+
+---
+
+##Sort
+| # | Title | Solution | Time | Space | Difficulty | Tag | Note |
+|---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|80|[Median](http://lintcode.com/en/problem/median/)| [C++](./C++/median.cpp)| _O(n)_ | _O(1)_ | Easy | EPI | |
 
 ---
 
