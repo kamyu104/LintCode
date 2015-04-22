@@ -11,6 +11,7 @@ public:
     int maxSubArray(vector<int> nums, int k) {
         int n = nums.size();
         
+        // sums[x][y] means the max sum in range [0, x - 1] with k non-overlapping subarrays
         vector<vector<int>> sums(n + 1, vector<int>(k + 1, INT_MIN));
         
         for(int i = 0; i <= n; ++i) {
@@ -23,6 +24,9 @@ public:
                 int sum_p_i = 0;
                 for(int p = i; p > j - 1; --p) {
                     max_sum_from_p = max(0, max_sum_from_p) + nums[p - 1];
+                    // max sum in range[0, i - 1] with j subarrays equals to
+                    // max sum in max(range [0, p - 2] with j - 1 subarrys plus
+                    // max sum of the subarray which starts from p - 1 
                     sums[i][j] = max(sums[i][j], sums[p - 1][j - 1] + max_sum_from_p);
                 }
             }
@@ -45,6 +49,7 @@ public:
     int maxSubArray(vector<int> nums, int k) {
         int n = nums.size();
         
+        // sums[x][y] means the max sum in range [0, x - 1] with k non-overlapping subarrays
         vector<vector<int>> sums(n + 1, vector<int>(k + 1, INT_MIN));
         
         for(int i = 0; i <= n; ++i) {
@@ -59,6 +64,9 @@ public:
                     sum += nums[p - 1];
                     max_sum = max(max_sum, sum);
                     sum = max(0, sum);
+                    // max sum in range[0, i - 1] with j subarrays equals to
+                    // max sum in max(range [0, p - 2] with j - 1 subarrys plus
+                    // max sum in range [p - 1, i - 1] with 1 subarray 
                     sums[i][j] = max(sums[i][j], sums[p - 1][j - 1] + max_sum);
                 }
             }
