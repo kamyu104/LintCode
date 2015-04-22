@@ -22,8 +22,8 @@ public:
                 sums[i][j] = sums[i - 1][j];
                 int sum_p_i = 0;
                 for(int p = i; p > j - 1; --p) {
-                    sum_p_i = max(0, sum_p_i) + nums[p - 1];
-                    sums[i][j] = max(sums[i][j], sums[p - 1][j - 1] + sum_p_i);
+                    max_sum_from_p = max(0, max_sum_from_p) + nums[p - 1];
+                    sums[i][j] = max(sums[i][j], sums[p - 1][j - 1] + max_sum_from_p);
                 }
             }
         }
