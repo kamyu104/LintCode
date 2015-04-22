@@ -28,6 +28,7 @@ Algorithms
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |1|[A + B Problem](http://lintcode.com/en/problem/a-b-problem/)| [C++](./C++/a-b-problem.cpp)| _O(1)_ | _O(1)_ | Hard | | |
 |84|[Single Number III](http://lintcode.com/en/problem/single-number-iii/)| [C++](./C++/single-number-iii.cpp)| _O(1)_ | _O(1)_ | Medium | | |
+|142|[O(1) Check Power of 2](http://lintcode.com/en/problem/o1-check-power-of-2/)| [C++](./C++/o1-check-power-of-2.cpp)| _O(1)_ | _O(1)_ | Easy | | |
 
 ---
 
