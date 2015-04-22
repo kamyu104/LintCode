@@ -1,9 +1,9 @@
 LintCode
 ======== 
 
-Up to date (2015-04-17), there are `49` exclusive problems on [LintCode Online Judge](https://lintcode.com/).
+Up to date (2015-04-22), there are `53` exclusive problems on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `49` problems.
+Here is the classification of all `53` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -38,7 +38,7 @@ Algorithms
 |49|[Sort Letters by Case](http://lintcode.com/en/problem/sort-letters-by-case/)| [C++](./C++/sort-letters-by-case.cpp)| _O(n)_ | _O(1)_ | Medium | | |
 |50|[Product of Array Exclude Itself](http://lintcode.com/en/problem/product-of-array-exclude-itself/)| [C++](./C++/product-of-array-exclude-itself.cpp)| _O(n)_ | _O(n)_ | Easy | | |
 |51|[Previous Permutation](http://lintcode.com/en/problem/previous-permutation/)| [C++](./C++/previous-permutation.cpp)| _O(n)_ | _O(1)_ | Medium | | |
-|52|[Next Permutation](http://lintcode.com/en/problem/next-permutation/)| [C++](./C++/next-permutation.cpp)| _O(n)_ | _O(1)_ | Medium | | |
+|52|[Next Permutation](http://lintcode.com/en/problem/next-permutation/)| [C++](./C++/next-permutation.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 |185|[Matrix Zigzag Traversal](http://lintcode.com/en/problem/matrix-zigzag-traversal/)| [C++](./C++/matrix-zigzag-traversal.cpp)| _O(m * n)_ | _O(1)_ | Easy | | |
 
 ---
