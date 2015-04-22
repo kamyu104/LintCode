@@ -86,7 +86,7 @@ Algorithms
 ##Dynamic Programming
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
-|43|[Maximum Subarray III](http://lintcode.com/en/problem/maximum-subarray-iii/)| [C++](./C++/maximum-subarray-iii.cpp)| _O(k * n^2)_ | _O(k * n^2)_ | Hard | | |
+|43|[Maximum Subarray III](http://lintcode.com/en/problem/maximum-subarray-iii/)| [C++](./C++/maximum-subarray-iii.cpp)| _O(k * n^2)_ | _O(k * n)_ | Hard | | |
 ---
 
 ##Greedy
