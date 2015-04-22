@@ -1,3 +1,6 @@
+// Time:  O(n)
+// Space: O(n)
+
 /**
  * Definition of TreeNode:
  * class TreeNode {
