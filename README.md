@@ -1,9 +1,9 @@
 LintCode
 ======== 
 
-Up to date (2015-04-22), there are `174` problems on [LintCode Online Judge](https://lintcode.com/).
+Up to date (2015-04-22), there are `175` problems on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `174` problems.
+Here is the classification of all `175` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
