@@ -1,9 +1,9 @@
 LintCode
 ======== 
 
-Up to date (2015-04-22), there are `53` exclusive problems on [LintCode Online Judge](https://lintcode.com/).
+Up to date (2015-04-22), there are `174` problems on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `53` problems.
+Here is the classification of all `174` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -49,6 +49,7 @@ Algorithms
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |55|[Compare Strings](http://lintcode.com/en/problem/compare-strings/)|[C++](./C++/compare-strings.cpp)| _O(n)_ | _O(c)_ | Easy | | |
+|158|[Two Strings Are Anagrams](http://lintcode.com/en/problem/two-strings-are-anagrams/)|[C++](./C++/two-strings-are-anagrams.cpp)| _O(n)_ | _O(1)_ | Easy | | |
 
 ---
 
