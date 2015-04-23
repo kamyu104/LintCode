@@ -18,6 +18,7 @@ Algorithms
 * [Heap](https://github.com/kamyu104/LintCode#heap)
 * [Sort](https://github.com/kamyu104/LintCode#sort)
 * [Binary Search](https://github.com/kamyu104/LintCode#binary-search)
+* [Depth First Search](https://github.com/kamyu104/LintCode#depth-first-search)
 * [Dynamic Programming](https://github.com/kamyu104/LintCode#dynamic-programming)
 * [Greedy](https://github.com/kamyu104/LintCode#greedy)
 
@@ -95,10 +96,18 @@ Algorithms
 
 ---
 
+##Depth First Search
+| # | Title | Solution | Time | Space | Difficulty | Tag | Note |
+|---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|97|[Maximum Depth of Binary Tree](http://lintcode.com/en/problem/maximum-depth-of-binary-tree/)| [C++](./C++/maximum-depth-of-binary-tree.cpp)| _O(n)_ | _O(h)_ | Easy | LeetCode | |
+
+---
+
 ##Dynamic Programming
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |43|[Maximum Subarray III](http://lintcode.com/en/problem/maximum-subarray-iii/)| [C++](./C++/maximum-subarray-iii.cpp)| _O(k * n^2)_ | _O(k * n)_ | Hard | | |
+
 ---
 
 ##Greedy
