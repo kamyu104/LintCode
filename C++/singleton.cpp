@@ -1,4 +1,7 @@
-// Lazy initilization
+// Time:  O(1)
+// Space: O(1)
+
+// Thread-Safe, Lazy Initilization
 class Solution {
 public:
     /**
