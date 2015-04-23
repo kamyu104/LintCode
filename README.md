@@ -15,6 +15,7 @@ Algorithms
 * [String](https://github.com/kamyu104/LintCode#string)
 * [Math](https://github.com/kamyu104/LintCode#math)
 * [Tree](https://github.com/kamyu104/LintCode#tree)
+* [Deque](https://github.com/kamyu104/LintCode#deque)
 * [Heap](https://github.com/kamyu104/LintCode#heap)
 * [Sort](https://github.com/kamyu104/LintCode#sort)
 * [Binary Search](https://github.com/kamyu104/LintCode#binary-search)
@@ -63,6 +64,13 @@ Algorithms
 |85|[Insert Node in a Binary Search Tree](http://lintcode.com/en/problem/delete-digits/)| [C++](./C++/insert-node-in-a-binary-search-tree.cpp)| _O(h)_ | _O(1)_ | Easy | | |
 |88|[Lowest Common Ancestor](http://lintcode.com/en/problem/lowest-common-ancestor/)| [C++](./C++/lowest-common-ancestor.cpp)| _O(n)_ | _O(h)_ | Medium | EPI | |
 |127|[Max Tree](http://lintcode.com/en/problem/max-tree/)| [C++](./C++/max-tree.cpp)| _O(n)_ | _O(n)_ | Hard | | |
+
+---
+
+##Deque
+| # | Title | Solution | Time | Space | Difficulty | Tag | Note |
+|---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|362|[Sliding Window Maximum](http://lintcode.com/en/problem/sliding-window-maximum/)| [C++](./C++/sliding-window-maximum.cpp)| _O(n)_ | _O(k)_ | Hard | EPI | |
 
 ---
 
