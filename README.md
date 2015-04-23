@@ -22,6 +22,7 @@ Algorithms
 * [Depth First Search](https://github.com/kamyu104/LintCode#depth-first-search)
 * [Dynamic Programming](https://github.com/kamyu104/LintCode#dynamic-programming)
 * [Greedy](https://github.com/kamyu104/LintCode#greedy)
+* [Design Pattern](https://github.com/kamyu104/LintCode#design-pattern)
 
 ---
 
@@ -126,4 +127,11 @@ Algorithms
 |44|[Minimum Subarray](http://lintcode.com/en/problem/minimum-subarray/)| [C++](./C++/minimum-subarray.cpp)| _O(n)_ | _O(1)_ | Easy | | |
 |45|[Maximum Subarray Difference](http://lintcode.com/en/problem/maximum-subarray-difference/)| [C++](./C++/maximum-subarray-difference.cpp)| _O(n)_ | _O(n)_ | Medium | | |
 |182|[Delete Digits](http://lintcode.com/en/problem/delete-digits/)| [C++](./C++/delete-digits.cpp)| _O(n)_ | _O(n)_ | Medium | | |
+
+---
+
+##Design Pattern
+| # | Title | Solution | Time | Space | Difficulty | Tag | Note |
+|---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|204|[Singleton](http://lintcode.com/en/problem/singleton/)| [C++](./C++/singleton.cpp)| _O(1)_ | _O(1)_ | Easy | | |
 
