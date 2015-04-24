@@ -84,7 +84,7 @@ public:
     }
 };
 
-// Time:  O(c(n, k))
+// Time:  O(C(n, k))
 // Space: O(k)
 class Solution_TLE {
 public:
@@ -108,7 +108,7 @@ public:
             return;
         }
         
-        for(int i = start; i <= A.size()-k; i++)
+        for(int i = start; i <= A.size() - k; i++)
             helper(A, k - 1, i + 1, target - A[i], ans);
     }
 };
