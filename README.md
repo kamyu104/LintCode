@@ -15,6 +15,7 @@ Algorithms
 * [String](https://github.com/kamyu104/LintCode#string)
 * [Math](https://github.com/kamyu104/LintCode#math)
 * [Tree](https://github.com/kamyu104/LintCode#tree)
+* [Stack](https://github.com/kamyu104/LintCode#stack)
 * [Deque](https://github.com/kamyu104/LintCode#deque)
 * [Heap](https://github.com/kamyu104/LintCode#heap)
 * [Sort](https://github.com/kamyu104/LintCode#sort)
@@ -65,6 +66,13 @@ Algorithms
 |85|[Insert Node in a Binary Search Tree](http://lintcode.com/en/problem/delete-digits/)| [C++](./C++/insert-node-in-a-binary-search-tree.cpp)| _O(h)_ | _O(1)_ | Easy | | |
 |88|[Lowest Common Ancestor](http://lintcode.com/en/problem/lowest-common-ancestor/)| [C++](./C++/lowest-common-ancestor.cpp)| _O(n)_ | _O(h)_ | Medium | EPI | |
 |127|[Max Tree](http://lintcode.com/en/problem/max-tree/)| [C++](./C++/max-tree.cpp)| _O(n)_ | _O(n)_ | Hard | | |
+
+---
+
+##Stack
+| # | Title | Solution | Time | Space | Difficulty | Tag | Note |
+|---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|40|[Implement Queue by Two Stacks](http://lintcode.com/en/problem/implement-queue-by-two-stacks/)| [C++](./C++/implement-queue-by-two-stacks.cpp)| _O(1), amortized_ | _O(n)_ | Medium | EPI | |
 
 ---
 
