@@ -55,7 +55,7 @@ Algorithms
 ##String
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
-|13|[strStr](http://lintcode.com/en/problem/strStr/)|[C++](./C++/strStr.cpp)| _O(n)_ | _O(k)_ | Easy | | |
+|13|[strStr](http://lintcode.com/en/problem/strStr/)|[C++](./C++/strStr.cpp)| _O(n)_ | _O(k)_ | Easy | LeetCode | |
 |55|[Compare Strings](http://lintcode.com/en/problem/compare-strings/)|[C++](./C++/compare-strings.cpp)| _O(n)_ | _O(c)_ | Easy | | |
 |158|[Two Strings Are Anagrams](http://lintcode.com/en/problem/two-strings-are-anagrams/)|[C++](./C++/two-strings-are-anagrams.cpp)| _O(n)_ | _O(1)_ | Easy | | |
 |171|[Anagrams](http://lintcode.com/en/problem/anagrams/)|[C++](./C++/anagrams.cpp)| _O(n * klogk)_ | _O(m)_ | Easy | LeetCode, EPI | |
