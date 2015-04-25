@@ -18,6 +18,7 @@ Algorithms
 * [Stack](https://github.com/kamyu104/LintCode#stack)
 * [Deque](https://github.com/kamyu104/LintCode#deque)
 * [Heap](https://github.com/kamyu104/LintCode#heap)
+* [Hash Tables](https://github.com/kamyu104/LintCode#hash-tables)
 * [Sort](https://github.com/kamyu104/LintCode#sort)
 * [Binary Search](https://github.com/kamyu104/LintCode#binary-search)
 * [Depth First Search](https://github.com/kamyu104/LintCode#depth-first-search)
@@ -90,6 +91,14 @@ Algorithms
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |81|[Median in Data Stream](http://lintcode.com/en/problem/median-in-data-stream/)| [C++](./C++/median-in-data-stream.cpp)| _O(nlogn)_ | _O(n)_ | Hard | EPI | |
 
+---
+
+##Hash Tables
+| # | Title | Solution | Time | Space | Difficulty | Tag | Note |
+|---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|124|[Longest Consecutive Sequence](http://lintcode.com/en/problem/longest-consecutive-sequence/)| [C++](./C++/longest-consecutive-sequence.cpp)| _O(n)_ | _O(n)_ | Medium | LeetCode, EPI | |
+
+---
 ---
 
 ##Math
