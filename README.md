@@ -141,6 +141,7 @@ Algorithms
 |77|[Longest Common Sequence](http://lintcode.com/en/problem/longest-common-sequence/)| [C++](./C++/longest-common-sequence.cpp)| _O(m * n)_ | _O(min(m, n))_ | Medium | | |
 |79|[Longest Common Substring](http://lintcode.com/en/problem/longest-common-substring/)| [C++](./C++/longest-common-substring.cpp)| _O(m * n)_ | _O(min(m, n))_ | Medium | | |
 |89|[K Sum](http://lintcode.com/en/problem/k-sum/)| [C++](./C++/k-sum.cpp)| _O(k * n * t)_ | _O(n * t)_ | Hard | | |
+|91|[Minimum Adjustment Cost](http://lintcode.com/en/problem/minimum-adjustment-cost/)| [C++](./C++/minimum-adjustment-cost.cpp)| _O(k * n * t)_ | _O(k)_ | Medium | | |
 |92|[Backpack](http://lintcode.com/en/problem/backpack/)| [C++](./C++/backpack.cpp)| _O(m * n)_ | _O(m)_ | Easy | | |
 |125|[Backpack II](http://lintcode.com/en/problem/backpack-ii/)| [C++](./C++/backpack-ii.cpp)| _O(m * n)_ | _O(m)_ | Medium | | |
 
