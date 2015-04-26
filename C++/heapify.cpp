@@ -1,4 +1,4 @@
-// Time:  O(nlogn)
+// Time:  O(n)
 // Space: O(1)
 
 class Solution {
@@ -8,7 +8,7 @@ public:
      * @return: void
      */
     void heapify(vector<int> &A) {
-        for (int i = 0; i < A.size(); i++) {
+        for (int i = 0; i < A.size(); ++i) {
             minHeapify(A, i);
         }
     }
@@ -26,3 +26,4 @@ public:
         }
     }
 };
+
