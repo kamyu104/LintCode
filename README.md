@@ -20,6 +20,7 @@ Algorithms
 * [Heap](https://github.com/kamyu104/LintCode#heap)
 * [Hash Tables](https://github.com/kamyu104/LintCode#hash-tables)
 * [Sort](https://github.com/kamyu104/LintCode#sort)
+* [Divide and Conquer](https://github.com/kamyu104/LintCode#divide-and-conquer)
 * [Binary Search](https://github.com/kamyu104/LintCode#binary-search)
 * [Depth First Search](https://github.com/kamyu104/LintCode#depth-first-search)
 * [Dynamic Programming](https://github.com/kamyu104/LintCode#dynamic-programming)
@@ -115,6 +116,13 @@ Algorithms
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |80|[Median](http://lintcode.com/en/problem/median/)| [C++](./C++/median.cpp)| _O(n)_ | _O(1)_ | Easy | EPI | |
 |184|[Largest Number](http://lintcode.com/en/problem/largest-number/)| [C++](./C++/largest-number.cpp)| _O(nlogn)_ | _O(1)_ | Medium | LeetCode | |
+
+---
+
+##Divide and Conquer
+| # | Title | Solution | Time | Space | Difficulty | Tag | Note |
+|---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|140|[Median](http://lintcode.com/en/problem/fast-power/)| [C++](./C++/fast-power.cpp)| _O(logn)_ | _O(logn)_ | Medium | LeetCode| |
 
 ---
 
