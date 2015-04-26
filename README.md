@@ -19,6 +19,7 @@ Algorithms
 * [Deque](https://github.com/kamyu104/LintCode#deque)
 * [Heap](https://github.com/kamyu104/LintCode#heap)
 * [Hash Tables](https://github.com/kamyu104/LintCode#hash-tables)
+* [Data Structure](https://github.com/kamyu104/LintCode#data-structure)
 * [Sort](https://github.com/kamyu104/LintCode#sort)
 * [Divide and Conquer](https://github.com/kamyu104/LintCode#divide-and-conquer)
 * [Binary Search](https://github.com/kamyu104/LintCode#binary-search)
@@ -107,6 +108,12 @@ Algorithms
 |129|[Rehashing](http://lintcode.com/en/problem/rehashing/)| [C++](./C++/rehashing.cpp)| _O(n)_ | _O(n)_ | Medium | | |
 
 ---
+
+##Data Structure
+| # | Title | Solution | Time | Space | Difficulty | Tag | Note |
+|---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|134|[LRU Cache](http://lintcode.com/en/problem/lru-cache/)| [C++](./C++/lru-cache.cpp)| _O(1)_ | _O(c)_ | Hard | LeetCode, EPI | |
+
 ---
 
 ##Math
