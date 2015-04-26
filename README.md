@@ -147,6 +147,7 @@ Algorithms
 |74|[First Bad Version](http://lintcode.com/en/problem/first-bad-version/)| [C++](./C++/first-bad-version.cpp)| _O(logn)_ | _O(1)_ | Medium | | |
 |75|[Find Peak Element](http://lintcode.com/en/problem/find-peak-element/)| [C++](./C++/find-peak-element.cpp)| _O(logn)_ | _O(1)_ | Medium | LeetCode | |
 |76|[Longest Increasing Subsequence](http://lintcode.com/en/problem/longest-increasing-subsequence/)| [C++](./C++/longest-increasing-subsequence.cpp)| _O(nlogn)_ | _O(n)_ | Medium | CC150 | |
+|183|[Wood Cut](http://lintcode.com/en/problem/wood-cut/)| [C++](./C++/wood-cut.cpp)| _O(nlogL)_ | _O(1)_ | Medium | | |
 
 ---
 
