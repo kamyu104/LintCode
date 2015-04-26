@@ -23,6 +23,7 @@ Algorithms
 * [Divide and Conquer](https://github.com/kamyu104/LintCode#divide-and-conquer)
 * [Binary Search](https://github.com/kamyu104/LintCode#binary-search)
 * [Depth First Search](https://github.com/kamyu104/LintCode#depth-first-search)
+* [Breadth First Search](https://github.com/kamyu104/LintCode#breath-first-search)
 * [Dynamic Programming](https://github.com/kamyu104/LintCode#dynamic-programming)
 * [Greedy](https://github.com/kamyu104/LintCode#greedy)
 * [Design Pattern](https://github.com/kamyu104/LintCode#design-pattern)
@@ -142,6 +143,13 @@ Algorithms
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |90|[K Sum II](http://lintcode.com/en/problem/k-sum-ii/)| [C++](./C++/k-sum-ii.cpp)| _O(C(n, k))_ | _O(k)_ | Medium | | |
 |97|[Maximum Depth of Binary Tree](http://lintcode.com/en/problem/maximum-depth-of-binary-tree/)| [C++](./C++/maximum-depth-of-binary-tree.cpp)| _O(n)_ | _O(h)_ | Easy | LeetCode | |
+
+---
+
+##Breadth First Search
+| # | Title | Solution | Time | Space | Difficulty | Tag | Note |
+|---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|176|[Route Between Two Nodes in Graph](http://lintcode.com/en/problem/route-between-two-nodes-in-graph/)| [C++](./C++/route-between-two-nodes-in-graph.cpp)| _O(n)_ | _O(n)_ | Medium | | |
 
 ---
 
