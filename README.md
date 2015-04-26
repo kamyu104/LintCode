@@ -1,9 +1,9 @@
 LintCode
 ======== 
 
-Up to date (2015-04-23), there are `176` problems on [LintCode Online Judge](https://lintcode.com/).
+Up to date (2015-04-26), there are `177` problems on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `176` problems.
+Here is the classification of all `177` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -94,6 +94,7 @@ Algorithms
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |4|[Ugly Number](http://lintcode.com/en/problem/ugly-number/)| [C++](./C++/ugly-number.cpp)| _O(k)_ | _O(1)_ | Medium | CC150 | |
 |81|[Median in Data Stream](http://lintcode.com/en/problem/median-in-data-stream/)| [C++](./C++/median-in-data-stream.cpp)| _O(nlogn)_ | _O(n)_ | Hard | EPI | |
+|130|[Heapify](http://lintcode.com/en/problem/heapify/)| [C++](./C++/heapify.cpp)| _O(nlogn)_ | _O(1)_ | Medium | | |
 
 ---
 
