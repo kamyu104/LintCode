@@ -36,6 +36,7 @@ public:
         
         // BFS with priority queue (min heap)
         while(!heap.empty()) {
+            // Get the lowest cell.
             cell c = heap.top();
             heap.pop();
             is_visited[c.i][c.j] = true;
@@ -43,28 +44,28 @@ public:
             // Up
             if (c.i + 1 < m && !is_visited[c.i + 1][c.j]) {
                 is_visited[c.i + 1][c.j] = true;
-                trap += max(0, c.height - heights[c.i + 1][c.j]);
+                trap += max(0, c.height - heights[c.i + 1][c.j]); // Fill in the gap.
                 heap.emplace(cell{c.i + 1, c.j, max(c.height,
                                                     heights[c.i + 1][c.j])});
             }
             // Down
             if (c.i - 1 >= 0 && !is_visited[c.i - 1][c.j]) {
                 is_visited[c.i - 1][c.j] = true;
-                trap += max(0, c.height - heights[c.i - 1][c.j]);
+                trap += max(0, c.height - heights[c.i - 1][c.j]); // Fill in the gap.
                 heap.emplace(cell{c.i - 1, c.j, max(c.height,
                                                     heights[c.i - 1][c.j])});
             }
             // Right
             if (c.j + 1 < n && !is_visited[c.i][c.j + 1]) {
                 is_visited[c.i][c.j + 1] = true;
-                trap += max(0, c.height - heights[c.i][c.j + 1]);
+                trap += max(0, c.height - heights[c.i][c.j + 1]); // Fill in the gap.
                 heap.emplace(cell{c.i, c.j + 1, max(c.height,
                                                     heights[c.i][c.j + 1])});
             }
             // Left
             if (c.j - 1 >= 0 && !is_visited[c.i][c.j - 1]) {
                 is_visited[c.i][c.j - 1] = true;
-                trap += max(0, c.height - heights[c.i][c.j - 1]);
+                trap += max(0, c.height - heights[c.i][c.j - 1]); // Fill in the gap.
                 heap.emplace(cell{c.i, c.j - 1, max(c.height,
                                                     heights[c.i][c.j - 1])});
             }
