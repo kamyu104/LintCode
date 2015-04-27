@@ -4,7 +4,7 @@
 // BFS with priority queue (min heap)
 class Solution {
 public:
-    struct cell {
+    struct Cell {
         int i;
         int j;
         int height;
@@ -20,24 +20,24 @@ public:
         int trap = 0;
         vector<vector<bool>> is_visited(m, vector<bool>(n, false));
         
-        // Use min heap to get the lowerest cell.
-        auto comp = [](cell a, cell b ) { return a.height > b.height; };
-        priority_queue<cell , vector<cell>, decltype(comp)> heap(comp);
+        // Use min heap to get the lowerest Cell.
+        auto comp = [](Cell a, Cell b ) { return a.height > b.height; };
+        priority_queue<Cell , vector<Cell>, decltype(comp)> heap(comp);
         
-        // Put the cells on the border into min heap.
+        // Put the Cells on the border into min heap.
         for (int i = 0; i < m; ++i) {
-            heap.emplace(cell{i, 0, heights[i][0]});
-            heap.emplace(cell{i, n - 1, heights[i][n - 1]});
+            heap.emplace(Cell{i, 0, heights[i][0]});
+            heap.emplace(Cell{i, n - 1, heights[i][n - 1]});
         }
         for (int j = 0; j < n; ++j) {
-            heap.emplace(cell{0, j, heights[0][j]});
-            heap.emplace(cell{m - 1, j, heights[m - 1][j]});
+            heap.emplace(Cell{0, j, heights[0][j]});
+            heap.emplace(Cell{m - 1, j, heights[m - 1][j]});
         }
         
         // BFS with priority queue (min heap)
         while(!heap.empty()) {
-            // Get the lowest cell.
-            cell c = heap.top();
+            // Get the lowest Cell.
+            Cell c = heap.top();
             heap.pop();
             is_visited[c.i][c.j] = true;
             
@@ -45,28 +45,28 @@ public:
             if (c.i + 1 < m && !is_visited[c.i + 1][c.j]) {
                 is_visited[c.i + 1][c.j] = true;
                 trap += max(0, c.height - heights[c.i + 1][c.j]); // Fill in the gap.
-                heap.emplace(cell{c.i + 1, c.j, max(c.height,
+                heap.emplace(Cell{c.i + 1, c.j, max(c.height,
                                                     heights[c.i + 1][c.j])});
             }
             // Down
             if (c.i - 1 >= 0 && !is_visited[c.i - 1][c.j]) {
                 is_visited[c.i - 1][c.j] = true;
                 trap += max(0, c.height - heights[c.i - 1][c.j]); // Fill in the gap.
-                heap.emplace(cell{c.i - 1, c.j, max(c.height,
+                heap.emplace(Cell{c.i - 1, c.j, max(c.height,
                                                     heights[c.i - 1][c.j])});
             }
             // Right
             if (c.j + 1 < n && !is_visited[c.i][c.j + 1]) {
                 is_visited[c.i][c.j + 1] = true;
                 trap += max(0, c.height - heights[c.i][c.j + 1]); // Fill in the gap.
-                heap.emplace(cell{c.i, c.j + 1, max(c.height,
+                heap.emplace(Cell{c.i, c.j + 1, max(c.height,
                                                     heights[c.i][c.j + 1])});
             }
             // Left
             if (c.j - 1 >= 0 && !is_visited[c.i][c.j - 1]) {
                 is_visited[c.i][c.j - 1] = true;
                 trap += max(0, c.height - heights[c.i][c.j - 1]); // Fill in the gap.
-                heap.emplace(cell{c.i, c.j - 1, max(c.height,
+                heap.emplace(Cell{c.i, c.j - 1, max(c.height,
                                                     heights[c.i][c.j - 1])});
             }
         }
