@@ -95,7 +95,7 @@ public:
         vector<vector<bool>> is_visited(m, vector<bool>(n, false));
         
         // Use min heap to get the lowerest Cell.
-        auto comp = [](Cell a, Cell b ) { return a.height > b.height; };
+        auto comp = [](const Cell& a, const Cell& b ) { return a.height > b.height; };
         priority_queue<Cell , vector<Cell>, decltype(comp)> heap(comp);
         
         // Put the Cells on the border into min heap.
