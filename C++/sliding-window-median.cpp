@@ -1,8 +1,8 @@
-#include <iostream>
-#include <vector>
-#include <deque>
+// Time:  O(nlogw)
+// Space: O(w)
 
-using namespace std;
+#include <vector>
+#include <set>
 
 class Solution {
 public:
@@ -11,72 +11,46 @@ public:
      * @return: The median of the element inside the window at each moving
      */
     vector<int> medianSlidingWindow(vector<int> &nums, int k) {
-        deque<int> window;
-        for (int i = 0; i < k; ++i) {
-            insert(window, nums[i]);
-        }
-
+        // min_heap stores the larger half seen so far.
+        multiset<int, less<int>> min_bst;
+        // max_heap stores the smaller half seen so far.
+        multiset<int, greater<int>> max_bst;
         
         vector<int> ans;
-        int x;
-        int prev = nums[0];
-        for (int i = k; i < nums.size(); ++i) {
-            //cout << "erase " << prev << endl;
-            erase(window, prev);
-            //cout << "insert " << nums[i] << endl;
-            insert(window, nums[i]);
-            /*for (auto i : window) {
-                cout << " " << i;
+        for (int i = 0; i < nums.size(); ++i) {
+            if (i >= k) {
+                // Remove the element outside the window.
+                if (max_bst.find(nums[i - k]) != max_bst.end()) {
+                    max_bst.erase(max_bst.find(nums[i - k]));
+                } else {
+                    min_bst.erase(min_bst.find(nums[i - k]));
+                }
             }
-            cout << endl;
-*/
-            ans.emplace_back(window[(k - 1) / 2]);
-            prev = nums[i + 1 - k];
+            
+            // Balance smaller half and larger half.
+            if (max_bst.empty() || nums[i] > *max_bst.begin()) {
+                min_bst.insert(nums[i]);
+                if (min_bst.size() > max_bst.size() + 1) {
+                    max_bst.insert(*min_bst.begin());
+                    min_bst.erase(min_bst.begin());
+                }
+            }
+            else {
+                max_bst.insert(nums[i]);
+                if (max_bst.size() > min_bst.size()) {
+                    min_bst.insert(*max_bst.begin());
+                    max_bst.erase(max_bst.begin());
+                }
+            }
+            
+            // If window is full, get the median from 2 BST.
+            if (i >= k - 1) {
+                ans.emplace_back(min_bst.size() == max_bst.size() ?
+                                 *max_bst.begin() : *min_bst.begin());
+            }
         }
         
         return ans;
     }
-    
-    void insert(deque<int>& window, int x) {
-        int left = 0;
-        int right = window.size() - 1;
-        while (left <= right) {
-            int mid = left + (right - left) / 2;
-            if (window[mid] > x) {
-                right = mid - 1;
-            }
-            else {
-                left = mid + 1;
-            }
-            
-        }
-        if(left == window.size()) {
-            window.emplace_back(x);
-        } else {
-            window.insert(window.begin() + left, x);
-        }
-    }
-    
-    void erase(deque<int>& window, int x) {
-        int left = 0;
-        int right = window.size() - 1;
-        while (left <= right) {
-            int mid = left + (right - left) / 2;
-            if (window[mid] >= x) {
-                right = mid - 1;
-            }
-            else {
-                left = mid + 1;
-            }
-            
-        }
-        window.erase(window.begin() + left);
-    }
 };
-
-int main() {
-    vector<int> nums{1,2,7,7,2};
-    Solution().medianSlidingWindow(nums, 3);
-    return 0;
-}
 

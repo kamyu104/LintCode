@@ -25,6 +25,7 @@ Algorithms
 * [Binary Search](https://github.com/kamyu104/LintCode#binary-search)
 * [Depth First Search](https://github.com/kamyu104/LintCode#depth-first-search)
 * [Breadth First Search](https://github.com/kamyu104/LintCode#breath-first-search)
+* [Binary Search Trees](https://github.com/kamyu104/LintCode#binary-search-trees)
 * [Dynamic Programming](https://github.com/kamyu104/LintCode#dynamic-programming)
 * [Greedy](https://github.com/kamyu104/LintCode#greedy)
 * [Design Pattern](https://github.com/kamyu104/LintCode#design-pattern)
@@ -165,6 +166,13 @@ Algorithms
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |127|[Topological Sorting](http://lintcode.com/en/problem/topological-sorting/)| [C++](./C++/topological-sorting.cpp)| _O(|V|+|E|)_ | _O(|E|)_ | Medium | | |
 |176|[Route Between Two Nodes in Graph](http://lintcode.com/en/problem/route-between-two-nodes-in-graph/)| [C++](./C++/route-between-two-nodes-in-graph.cpp)| _O(n)_ | _O(n)_ | Medium | | |
+
+---
+
+##Binary Search Trees
+| # | Title | Solution | Time | Space | Difficulty | Tag | Note |
+|---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|360|[Sliding Window Median](http://lintcode.com/en/problem/sliding-window-median/)| [C++](./C++/sliding-window-median.cpp)| _O(nlogw)_ | _O(w)_ | Hard | | |
 
 ---
 
