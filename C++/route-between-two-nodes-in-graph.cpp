@@ -9,6 +9,8 @@
  *     DirectedGraphNode(int x) : label(x) {};
  * };
  */
+
+// BFS
 class Solution {
 public:
     /**
