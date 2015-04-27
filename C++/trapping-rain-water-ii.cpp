@@ -21,7 +21,7 @@ public:
      * @return: an integer
      */
     int trapRainWater(vector<vector<int> > &heights) {
-        // Init m, n, trap.
+        // Init m, n, trap, is_visited.
         m = heights.size();
         n = heights[0].size();
         trap = 0;
