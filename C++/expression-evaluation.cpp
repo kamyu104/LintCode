@@ -30,8 +30,9 @@ public:
                 while (!s.empty()) {
                     tok = s.top();
                     s.pop();
-                    if (tok == "(")
+                    if (tok == "(") {
                         break;
+                    }
                     postfix.push_back(tok);
                 }
             } else {
