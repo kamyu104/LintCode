@@ -6,12 +6,38 @@ public:
     /**
      * @param A: A string includes Upper Case letters
      * @param B: A string includes Upper Case letter
+     * @return:  if string A contains all of the characters in B return true 
+     *           else return false
+     */
+    bool compareStrings(string A, string B) {
+        unordered_map<char, int> h;
+        for (auto& c: A) {
+            ++h[c];
+        }
+        
+        for (auto& c: B) {
+            if (--h[c] < 0) {
+                return false;
+            }
+        }
+        
+        return true;
+    }
+};
+
+
+
+class Solution2 {
+public:
+    /**
+     * @param A: A string includes Upper Case letters
+     * @param B: A string includes Upper Case letter
      * @return:  if string A contains all of the characters in B return true
      *           else return false
      */
     bool compareStrings(string A, string B) {
         // write your code here
-        unordered_map<char, size_t> h;
+        unordered_map<char, int> h;
         for (auto& c: B) {
             ++h[c];
         }
