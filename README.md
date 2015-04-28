@@ -178,6 +178,7 @@ Algorithms
 ##Binary Search Trees
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|85|[Implement Iterator of Binary Search Tree](http://lintcode.com/en/problem/implement-iterator-of-binary-search-tree/)| [C++](./C++/implement-iterator-of-binary-search-tree.cpp)| _O(1)_ | _O(h)_ | Hard | LeetCode | |
 |360|[Sliding Window Median](http://lintcode.com/en/problem/sliding-window-median/)| [C++](./C++/sliding-window-median.cpp)| _O(nlogw)_ | _O(w)_ | Hard | | |
 
 ---
