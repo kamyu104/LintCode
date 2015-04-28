@@ -13,7 +13,7 @@ public:
         }
         vector<string> postfix;
         infixToPostfix(expression, postfix);
-        return evalPostfixExpression(postfix);
+        return evaluatePostfixExpression(postfix);
     }
     
     // Convert Infix to Postfix Expression.
@@ -63,7 +63,7 @@ public:
     
     
     // Evaluate Postfix Expression.
-    int evalPostfixExpression(vector<string> &postfix) {
+    int evaluatePostfixExpression(vector<string> &postfix) {
         if (postfix.empty()) {
             return 0;
         }
