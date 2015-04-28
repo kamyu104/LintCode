@@ -1,9 +1,9 @@
 LintCode
 ======== 
 
-Up to date (2015-04-27), there are `178` problems on [LintCode Online Judge](https://lintcode.com/).
+Up to date (2015-04-28), there are `179` problems on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `178` problems.
+Here is the classification of all `179` problems.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 --- 
@@ -86,6 +86,7 @@ Algorithms
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |40|[Implement Queue by Two Stacks](http://lintcode.com/en/problem/implement-queue-by-two-stacks/)| [C++](./C++/implement-queue-by-two-stacks.cpp)| _O(1), amortized_ | _O(n)_ | Medium | EPI | |
+|368|[Expression evaluation](http://lintcode.com/en/problem/expression-evaluation/)| [C++](./expression-evaluation.cpp)| _O(n)_ | _O(n)_ | | |
 
 ---
 
