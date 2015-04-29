@@ -20,6 +20,7 @@ public:
     void infixToPostfix(vector<string>& infix, vector<string>& postfix) {
         stack<string> s;
         for (auto tok : infix) {
+            // Any number would be pushed into stack.
             if (atoi(tok.c_str())) {
                 postfix.push_back(tok);
             }
@@ -27,6 +28,7 @@ public:
                 s.push(tok);
             }
             else if (tok == ")") {
+                // Meet ")", then pop until "(".
                 while (!s.empty()) {
                     tok = s.top();
                     s.pop();
@@ -36,6 +38,8 @@ public:
                     postfix.push_back(tok);
                 }
             } else {
+                // Order of tokens in stack should be like "(-*",
+                // The token will be added in an strictly increasing precedence order.
                 while(!s.empty() && precedence(tok) <= precedence(s.top())) {
                     postfix.push_back(s.top());
                     s.pop();
@@ -43,6 +47,7 @@ public:
                 s.push(tok);
             }
         }
+        // Pop the remaining token and add them to the postfix.
         while (!s.empty()) {
             postfix.push_back(s.top());
             s.pop();
@@ -50,7 +55,7 @@ public:
     }
     
     int precedence(string x) {
-        if(x == "(") {
+        if(x == "(") { // The least precedence.
             return 0;
         }
         else if(x == "+" || x == "-") {
