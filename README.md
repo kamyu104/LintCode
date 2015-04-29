@@ -127,6 +127,7 @@ Algorithms
 ##Math
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|2|[Trailing Zeros](http://lintcode.com/en/problem/trailing-zeros/)| [C++](./C++/trailing-zeros.cpp)| _O(logn)_ | _O(1)_ | Easy | LeetCode | |
 |3|[Digit Counts](http://lintcode.com/en/problem/digit-counts/)| [C++](./C++/digit-counts.cpp)| _O(logn)_ | _O(1)_ | Medium | CC150 | |
 |180|[Binary Represention](http://lintcode.com/en/problem/delete-digits/)| [C++](./C++/binary-representation.cpp)| _O(1)_ | _O(1)_ | Hard | CC150 | |
 
