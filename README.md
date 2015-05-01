@@ -162,6 +162,7 @@ Algorithms
 |202|[Segment Tree Query](http://lintcode.com/en/problem/segment-tree-query/)| [C++](./C++/segment-tree-query.cpp)| _O(h)_ | _O(h)_ | Medium | | Segment Tree, BST |
 |203|[Segment Tree Modify](http://lintcode.com/en/problem/segment-tree-modify/)| [C++](./C++/segment-tree-modify.cpp)| _O(h)_ | _O(h)_ | Medium | | Segment Tree, BST |
 |205|[Interval Minimum Number](http://lintcode.com/en/problem/interval-minimum-number/)| [C++](./C++/interval-minimum-number.cpp)| build tree: _O(n)_, query: _(h)_ | _O(h)_ | Hard | | Segment Tree, BST |
+|206|[Interval Sum](http://lintcode.com/en/problem/interval-sum/)| [C++](./C++/interval-sum.cpp)| build tree: _O(n)_, query: _(h)_ | _O(h)_ | Hard | | Segment Tree, BST |
 |247|[Segment Tree Query II](http://lintcode.com/en/problem/segment-tree-query-ii/)| [C++](./C++/segment-tree-query-ii.cpp)| _O(h)_ | _O(h)_ | Hard | | Segment Tree, BST |
 
 ---
