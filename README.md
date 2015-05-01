@@ -50,6 +50,7 @@ Algorithms
 ##Array
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|9|[Fizz Buzz](http://lintcode.com/en/problem/fizz-buzz/)| [C++](./C++/fizz-buzz.cpp)| _O(n)_ | _O(1)_ | Easy | | |
 |46|[Majority Number](http://lintcode.com/en/problem/majority-number/)| [C++](./C++/majority-number.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
 |47|[Majority Number II](http://lintcode.com/en/problem/majority-number/)| [C++](./C++/majority-number-ii.cpp)| _O(n)_ | _O(1)_ | Medium | EPI | |
 |48|[Majority Number III](http://lintcode.com/en/problem/majority-number-iii/)| [C++](./C++/majority-number-iii.cpp)| _O(n)_ | _O(k)_ | Medium | EPI | |
