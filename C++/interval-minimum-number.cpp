@@ -11,20 +11,17 @@
  *     }
  */
 
-/**
- * Definition of SegmentTreeNode:
- * class SegmentTreeNode {
- * public:
- *     int start, end, max;
- *     SegmentTreeNode *left, *right;
- *     SegmentTreeNode(int start, int end, int max) {
- *         this->start = start;
- *         this->end = end;
- *         this->max = max;
- *         this->left = this->right = NULL;
- *     }
- * }
- */
+class SegmentTreeMinNode {
+public:
+    int start, end, min;
+    SegmentTreeMinNode *left, *right;
+    SegmentTreeMinNode(int start, int end, int min) {
+        this->start = start;
+        this->end = end;
+        this->min = min;
+        this->left = this->right = NULL;
+    }
+};
 
 class Solution {
 public:
@@ -36,7 +33,7 @@ public:
         vector<int> res;
         
         // Build segment tree.
-        SegmentTreeNode *root =build(A, 0, A.size() - 1);
+        SegmentTreeMinNode *root =build(A, 0, A.size() - 1);
         
         // Do each query.
         for (const auto& q : queries) {
@@ -48,17 +45,17 @@ public:
     
     
     // Build segment tree.
-    SegmentTreeNode *build(vector<int> &A, int start, int end) {
+    SegmentTreeMinNode *build(vector<int> &A, int start, int end) {
         if (start > end) {
             return nullptr;
         }
         
         // The root's start and end is given by build method.
-        SegmentTreeNode *root = new SegmentTreeNode(start, end, INT_MAX);
+        SegmentTreeMinNode *root = new SegmentTreeMinNode(start, end, INT_MAX);
         
         // If start equals to end, there will be no children for this node.
         if (start == end) {
-            root->max = A[start];
+            root->min = A[start];
             return root;
         }
         
@@ -68,17 +65,17 @@ public:
         // Right child: start=(A.left + A.right) / 2 + 1, end=A.right.
         root->right = build(A, (start + end) / 2 + 1, end);
         
-        int left_min = root->left != nullptr? root->left->max : INT_MAX;
-        int right_min = root->right != nullptr? root->right->max : INT_MAX;
+        int left_min = root->left != nullptr? root->left->min : INT_MAX;
+        int right_min = root->right != nullptr? root->right->min : INT_MAX;
         
         // Update min.
-        root->max = min(left_min, right_min);
+        root->min = min(left_min, right_min);
         return root;
     }
     
     
     // Query min in given range.
-    int query(SegmentTreeNode *root, int start, int end) {
+    int query(SegmentTreeMinNode *root, int start, int end) {
         // Out of range.
         if (root == nullptr || root->start > end || root->end <  start) {
             return INT_MAX;
@@ -86,7 +83,7 @@ public:
         
         // Current segment is totally within range [start, end]
         if (root->start >= start && root->end <= end) {
-            return root->max;
+            return root->min;
         }
         
         int left = query(root->left, start, end);
