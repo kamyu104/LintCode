@@ -154,9 +154,13 @@ Algorithms
 ##Divide and Conquer
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
-|93|[Balanced Binary Tree](http://lintcode.com/en/problem/balanced-binary-tree/)| [C++](./C++/balanced-binary-tree.cpp)| _O(logn)_ | _O(logn)_ | Easy | LeetCode | |
+|93|[Balanced Binary Tree](http://lintcode.com/en/problem/balanced-binary-tree/)| [C++](./C++/balanced-binary-tree.cpp)| _O(n)_ | _O(h)_ | Easy | LeetCode | |
 |94|[Binary Tree Maximum Path Sum](http://lintcode.com/en/problem/binary-tree-maximum-path-sum/)| [C++](./C++/binary-tree-maximum-path-sum.cpp)| _O(n)_ | _O(h)_ | Medium | LeetCode | |
 |140|[Fast Power](http://lintcode.com/en/problem/fast-power/)| [C++](./C++/fast-power.cpp)| _O(logn)_ | _O(logn)_ | Medium | | |
+|155|[Minimum Depth of Binary Tree](http://lintcode.com/en/problem/minimum-depth-of-binary-tree/)| [C++](./C++/minimum-depth-of-binary-tree.cpp)| _O(n)_ | _O(h)_ | Easy | LeetCode | |
+|201|[Segment Tree Build](http://lintcode.com/en/problem/segment-tree-build/)| [C++](./C++/segment-tree-build.cpp)| _O(n)_ | _O(logn)_ | Medium | | Segment Tree, BST |
+|202|[Segment Tree Query](http://lintcode.com/en/problem/segment-tree-query/)| [C++](./C++/segment-tree-query.cpp)| _O(logn)_ | _O(logn)_ | Medium | | Segment Tree, BST |
+|247|[Segment Tree Query II](http://lintcode.com/en/problem/segment-tree-query-ii/)| [C++](./C++/segment-tree-query-ii.cpp)| _O(logn)_ | _O(logn)_ | Hard | | Segment Tree, BST |
 
 ---
 
@@ -178,7 +182,6 @@ Algorithms
 |97|[Maximum Depth of Binary Tree](http://lintcode.com/en/problem/maximum-depth-of-binary-tree/)| [C++](./C++/maximum-depth-of-binary-tree.cpp)| _O(n)_ | _O(h)_ | Easy | LeetCode | |
 |123|[Word Search](http://lintcode.com/en/problem/word-search/)| [C++](./C++/word-search.cpp)| _O(m * n * l)_ | _O(l)_ | Medium | LeetCode | |
 |132|[Word Search II](http://lintcode.com/en/problem/word-search-ii/)| [C++](./C++/word-search-ii.cpp)| _O(m * n * l)_ | _O(l)_ | Hard | | Trie, BFS |
-|155|[Minimum Depth of Binary Tree](http://lintcode.com/en/problem/minimum-depth-of-binary-tree/)| [C++](./C++/minimum-depth-of-binary-tree.cpp)| _O(n)_ | _O(h)_ | Easy | LeetCode | |
 
 ---
 
