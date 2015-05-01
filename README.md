@@ -17,7 +17,7 @@ Algorithms
 * [Math](https://github.com/kamyu104/LintCode#math)
 * [Tree](https://github.com/kamyu104/LintCode#tree)
 * [Stack](https://github.com/kamyu104/LintCode#stack)
-* [Deque](https://github.com/kamyu104/LintCode#deque)
+* [Queue](https://github.com/kamyu104/LintCode#queue)
 * [Heap](https://github.com/kamyu104/LintCode#heap)
 * [Hash Tables](https://github.com/kamyu104/LintCode#hash-tables)
 * [Data Structure](https://github.com/kamyu104/LintCode#data-structure)
@@ -99,7 +99,7 @@ Algorithms
 
 ---
 
-##Deque
+##Queue
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |362|[Sliding Window Maximum](http://lintcode.com/en/problem/sliding-window-maximum/)| [C++](./C++/sliding-window-maximum.cpp)| _O(n)_ | _O(k)_ | Hard | EPI | Deque, Tricky |
