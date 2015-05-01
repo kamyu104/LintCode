@@ -9,7 +9,7 @@ public:
      * @return: The sum of a and b
      */
     int aplusb(int a, int b) {
-        while(b != 0){
+        while (b != 0) {
             int carry = a & b;
             a ^= b;
             b = carry << 1;
@@ -26,8 +26,9 @@ public:
      * @return: The sum of a and b
      */
     int aplusb(int a, int b) {
-        if(b == 0)
+        if (b == 0) {
             return a;
+        }
         return aplusb(a ^ b, (a & b) << 1);
     }
 };
