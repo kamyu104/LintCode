@@ -70,6 +70,7 @@ Algorithms
 |13|[strStr](http://lintcode.com/en/problem/strstr/)|[C++](./C++/strstr.cpp)| _O(n)_ | _O(k)_ | Easy | LeetCode | `KMP Algorithm` |
 |54|[Convert String to Integer](http://lintcode.com/en/problem/convert-string-to-integer/)|[C++](./C++/convert-string-to-integer.cpp)| _O(n)_ | _O(1)_ | Hard | LeetCode | |
 |55|[Compare Strings](http://lintcode.com/en/problem/compare-strings/)|[C++](./C++/compare-strings.cpp)| _O(n)_ | _O(c)_ | Easy | | |
+|78|[Longest Common Prefix](http://lintcode.com/en/problem/longest-common-prefix/)|[C++](./C++/longest-common-prefix.cpp)| _O(n)_ | _O(1)_ | Medium | | |
 |157|[Unique Characters](http://lintcode.com/en/problem/unique-characters/)|[C++](./C++/unique-characters.cpp)| _O(n)_ | _O(1)_ | Easy | CC150 | |
 |158|[Two Strings Are Anagrams](http://lintcode.com/en/problem/two-strings-are-anagrams/)|[C++](./C++/two-strings-are-anagrams.cpp)| _O(n)_ | _O(1)_ | Easy | | |
 |171|[Anagrams](http://lintcode.com/en/problem/anagrams/)|[C++](./C++/anagrams.cpp)| _O(n * klogk)_ | _O(m)_ | Easy | LeetCode, EPI | |

@@ -1,5 +1,5 @@
-// Time:  O(n * k), k is the max length of strings
-// Space: O(k)
+// Time:  O(n * k), k is length of the common prefix
+// Space: O(1)
 
 // BFS
 class Solution {
@@ -26,6 +26,9 @@ public:
         return strs[0].substr(0, prefix_len);
     }
 };
+
+// Time:  O(n * l), l is the max length of strings
+// Space: O(1)
 
 // DFS
 class Solution2 {
