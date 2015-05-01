@@ -129,7 +129,7 @@ Algorithms
 ##Data Structure
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
-|134|[LRU Cache](http://lintcode.com/en/problem/lru-cache/)| [C++](./C++/lru-cache.cpp)| _O(1)_ | _O(c)_ | Hard | LeetCode, EPI | |
+|134|[LRU Cache](http://lintcode.com/en/problem/lru-cache/)| [C++](./C++/lru-cache.cpp)| _O(1)_ | _O(c)_ | Hard | LeetCode, EPI | List, Hash |
 
 ---
 
