@@ -9,7 +9,7 @@ public:
      */
     vector<string> fizzBuzz(int n) {
         vector<string> results;
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i <= n; ++i) {
             if (i % 15 == 0) {
                 results.push_back("fizz buzz");
             } else if (i % 5 == 0) {
