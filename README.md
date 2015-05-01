@@ -58,7 +58,7 @@ Algorithms
 |52|[Next Permutation](http://lintcode.com/en/problem/next-permutation/)| [C++](./C++/next-permutation.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 |185|[Matrix Zigzag Traversal](http://lintcode.com/en/problem/matrix-zigzag-traversal/)| [C++](./C++/matrix-zigzag-traversal.cpp)| _O(m * n)_ | _O(1)_ | Easy | | |
 |189|[First Missing Positive](http://lintcode.com/en/problem/first-missing-positive/)| [C++](./C++/first-missing-positive.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode, EPI | |
-|363|[Trapping Rain Water](http://lintcode.com/en/problem/trapping-rain-water/)| [C++](./C++/trapping-rain-water.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | Two Pointer |
+|363|[Trapping Rain Water](http://lintcode.com/en/problem/trapping-rain-water/)| [C++](./C++/trapping-rain-water.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | Two Pointer, Tricky |
 
 ---
 
@@ -102,7 +102,7 @@ Algorithms
 ##Deque
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
-|362|[Sliding Window Maximum](http://lintcode.com/en/problem/sliding-window-maximum/)| [C++](./C++/sliding-window-maximum.cpp)| _O(n)_ | _O(k)_ | Hard | EPI | |
+|362|[Sliding Window Maximum](http://lintcode.com/en/problem/sliding-window-maximum/)| [C++](./C++/sliding-window-maximum.cpp)| _O(n)_ | _O(k)_ | Hard | EPI | Deque, Tricky |
 
 ---
 
@@ -112,7 +112,7 @@ Algorithms
 |4|[Ugly Number](http://lintcode.com/en/problem/ugly-number/)| [C++](./C++/ugly-number.cpp)| _O(k)_ | _O(1)_ | Medium | CC150 | |
 |81|[Median in Data Stream](http://lintcode.com/en/problem/median-in-data-stream/)| [C++](./C++/median-in-data-stream.cpp)| _O(nlogn)_ | _O(n)_ | Hard | EPI | BST, Heap |
 |130|[Heapify](http://lintcode.com/en/problem/heapify/)| [C++](./C++/heapify.cpp)| _O(n)_ | _O(1)_ | Medium | | |
-|364|[Trapping Rain Water II](http://lintcode.com/en/problem/trapping-rain-water-ii/)| [C++](./C++/trapping-rain-water-ii.cpp)| _O(n^2 * logn)_ | _O(n^2)_ | Hard | | BFS, Heap |
+|364|[Trapping Rain Water II](http://lintcode.com/en/problem/trapping-rain-water-ii/)| [C++](./C++/trapping-rain-water-ii.cpp)| _O(n^2 * logn)_ | _O(n^2)_ | Hard | | BFS, Heap, Tricky |
 
 ---
 
@@ -202,7 +202,7 @@ Algorithms
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |84|[Remove Node in Binary Search Tree](http://lintcode.com/en/problem/remove-node-in-binary-search-tree/)| [C++](./C++/remove-node-in-binary-search-tree.cpp)| _O(h)_ | _O(h)_ | Hard | | |
 |85|[Implement Iterator of Binary Search Tree](http://lintcode.com/en/problem/implement-iterator-of-binary-search-tree/)| [C++](./C++/implement-iterator-of-binary-search-tree.cpp)| _O(1)_ | _O(h)_ | Hard | LeetCode | |
-|360|[Sliding Window Median](http://lintcode.com/en/problem/sliding-window-median/)| [C++](./C++/sliding-window-median.cpp)| _O(nlogw)_ | _O(w)_ | Hard | | |
+|360|[Sliding Window Median](http://lintcode.com/en/problem/sliding-window-median/)| [C++](./C++/sliding-window-median.cpp)| _O(nlogw)_ | _O(w)_ | Hard | | BST, Tricky |
 
 ---
 
