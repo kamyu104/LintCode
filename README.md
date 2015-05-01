@@ -218,6 +218,7 @@ Algorithms
 |92|[Backpack](http://lintcode.com/en/problem/backpack/)| [C++](./C++/backpack.cpp)| _O(m * n)_ | _O(m)_ | Easy | | |
 |109|[Triangle](http://lintcode.com/en/problem/triangle/)| [C++](./C++/triangle.cpp)| _O(n)_ | _O(n)_ | Easy | LeetCode, EPI | |
 |125|[Backpack II](http://lintcode.com/en/problem/backpack-ii/)| [C++](./C++/backpack-ii.cpp)| _O(m * n)_ | _O(m)_ | Medium | | |
+|191|[Maximum Product Subarray](http://lintcode.com/en/problem/maximum-product-subarray/)| [C++](./C++/maximum-product-subarray.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 
 ---
 
