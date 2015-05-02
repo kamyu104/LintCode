@@ -2,7 +2,7 @@
 // Space: O(1)
 
 // If size of A >>>> size of B, you can use binary search to insert the smaller array.
-// It only const O(mlogn) comparisons instead of O(n), much better.
+// It only cost O(mlogn) comparisons instead of O(n), much better.
 class Solution {
 public:
     /**
