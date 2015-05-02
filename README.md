@@ -58,6 +58,7 @@ Algorithms
 |50|[Product of Array Exclude Itself](http://lintcode.com/en/problem/product-of-array-exclude-itself/)| [C++](./C++/product-of-array-exclude-itself.cpp)| _O(n)_ | _O(n)_ | Easy | | |
 |51|[Previous Permutation](http://lintcode.com/en/problem/previous-permutation/)| [C++](./C++/previous-permutation.cpp)| _O(n)_ | _O(1)_ | Medium | | |
 |52|[Next Permutation](http://lintcode.com/en/problem/next-permutation/)| [C++](./C++/next-permutation.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
+|57|[3 Sum](http://lintcode.com/en/problem/3-sum/)| [C++](./C++/3-sum.cpp)| _O(n^2)_ | _O(1)_ | Medium | LeetCode | Two Pointer, Sort |
 |185|[Matrix Zigzag Traversal](http://lintcode.com/en/problem/matrix-zigzag-traversal/)| [C++](./C++/matrix-zigzag-traversal.cpp)| _O(m * n)_ | _O(1)_ | Easy | | |
 |189|[First Missing Positive](http://lintcode.com/en/problem/first-missing-positive/)| [C++](./C++/first-missing-positive.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode, EPI | |
 |363|[Trapping Rain Water](http://lintcode.com/en/problem/trapping-rain-water/)| [C++](./C++/trapping-rain-water.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | Two Pointer, Tricky |
