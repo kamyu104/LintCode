@@ -60,7 +60,6 @@ Algorithms
 |51|[Previous Permutation](http://lintcode.com/en/problem/previous-permutation/)| [C++](./C++/previous-permutation.cpp)| _O(n)_ | _O(1)_ | Medium | | |
 |52|[Next Permutation](http://lintcode.com/en/problem/next-permutation/)| [C++](./C++/next-permutation.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 |57|[3 Sum](http://lintcode.com/en/problem/3-sum/)| [C++](./C++/3-sum.cpp)| _O(n^2)_ | _O(1)_ | Medium | LeetCode | Two Pointers, Sort |
-|58|[4 Sum](http://lintcode.com/en/problem/4-sum/)| [C++](./C++/4-sum.cpp)| _O(n^2 * p)_ | _O(n^2)_ | Medium | LeetCode | Hash |
 |59|[3 Sum Closest](http://lintcode.com/en/problem/3-sum-closest/)| [C++](./C++/3-sum-closest.cpp)| _O(n^2)_ | _O(1)_ | Medium | LeetCode | Two Pointers, Sort |
 |185|[Matrix Zigzag Traversal](http://lintcode.com/en/problem/matrix-zigzag-traversal/)| [C++](./C++/matrix-zigzag-traversal.cpp)| _O(m * n)_ | _O(1)_ | Easy | | |
 |189|[First Missing Positive](http://lintcode.com/en/problem/first-missing-positive/)| [C++](./C++/first-missing-positive.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode, EPI | |
@@ -127,6 +126,7 @@ Algorithms
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |56|[2 Sum](http://lintcode.com/en/problem/2-sum/)| [C++](./C++/2-sum.cpp)| _O(n)_ | _O(n)_ | Medium | LeetCode | |
+|58|[4 Sum](http://lintcode.com/en/problem/4-sum/)| [C++](./C++/4-sum.cpp)| _O(n^2 * p)_ | _O(n^2 * p)_ | Medium | LeetCode | Hash |
 |124|[Longest Consecutive Sequence](http://lintcode.com/en/problem/longest-consecutive-sequence/)| [C++](./C++/longest-consecutive-sequence.cpp)| _O(n)_ | _O(n)_ | Medium | LeetCode, EPI | |
 |128|[Hash Function](http://lintcode.com/en/problem/hash-function/)| [C++](./C++/hash-function.cpp)| _O(n)_ | _O(1)_ | Easy | | |
 |129|[Rehashing](http://lintcode.com/en/problem/rehashing/)| [C++](./C++/rehashing.cpp)| _O(n)_ | _O(n)_ | Medium | | |
