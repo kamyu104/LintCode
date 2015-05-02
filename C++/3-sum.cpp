@@ -1,5 +1,5 @@
 // Time:  O(n^2)
-// Space: O(n)
+// Space: O(1)
 
 class Solution {
 public:
@@ -8,13 +8,13 @@ public:
      * @return : Find all unique triplets in the array which gives the sum of zero.
      */
     vector<vector<int> > threeSum(vector<int> &nums) {
-        vector<vector<int> > ans;
+        vector<vector<int>> ans;
         const int target = 0;
         
         // Make nums in increasing order. Time: O(nlogn)
         sort(nums.begin(), nums.end());
         
-        for(int i = 0; i < nums.size(); ++i) {
+        for(int i = 0; i < nums.size() - 2; ++i) {
             // Skip duplicated.
             if(i > 0 && nums[i] == nums[i - 1]) {
                 continue;
