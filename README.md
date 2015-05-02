@@ -235,6 +235,7 @@ Algorithms
 |44|[Minimum Subarray](http://lintcode.com/en/problem/minimum-subarray/)| [C++](./C++/minimum-subarray.cpp)| _O(n)_ | _O(1)_ | Easy | | |
 |45|[Maximum Subarray Difference](http://lintcode.com/en/problem/maximum-subarray-difference/)| [C++](./C++/maximum-subarray-difference.cpp)| _O(n)_ | _O(n)_ | Medium | | |
 |182|[Delete Digits](http://lintcode.com/en/problem/delete-digits/)| [C++](./C++/delete-digits.cpp)| _O(n)_ | _O(n)_ | Medium | | |
+|192|[Wildcard Matching](http://lintcode.com/en/problem/wildcard-matching/)| [C++](./C++/wildcard-matching.cpp)| _O(m + n)_ | _O(1)_ | Hard | LeetCode | Greedy, DP, Recursion |
 
 ---
 
