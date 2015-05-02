@@ -1,6 +1,3 @@
-// Time:  O(n)
-// Space: O(n)
-
 class Solution {
 public:
     /**
@@ -10,16 +7,11 @@ public:
      */
     vector<int> subarraySum(vector<int> nums){
         unordered_map<int, int> table;
-        
+        table[0] = -1;
         for (int i = 0, sum = 0; i < nums.size(); ++i) {
             sum += nums[i];
-            if (sum == 0) {
-                return vector<int>{0, i};
-            }
-            else if (table.find(sum) != table.end()) {
+            if (!table.insert(make_pair(sum, i)).second) { // Already exists.
                 return vector<int>{table[sum] + 1, i};
-            } else {
-                table[sum] = i;
             }
         }
     }
