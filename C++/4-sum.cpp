@@ -1,5 +1,5 @@
 // Time:  O(n^2 * p), p is max number of the same two sum pairs.
-// Space: O(n^2)
+// Space: O(n^2 * p)
 
 class Solution {
 public:
