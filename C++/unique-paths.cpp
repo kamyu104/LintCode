@@ -9,15 +9,17 @@ public:
      * @return an integer
      */
     int uniquePaths(int m, int n) {
-        long long k = 1;
-        long long path_count = 1;
-        // C(m + n - 2, min(m - 1, n - 1))
-        // = (m + n - 2) / 1 * (m + n - 3) / 2 ... * (m) / n - 1
-        for (long long i = m + n - 2; k <= min(m - 1, n - 1); ++k, --i) {
-            path_count = path_count * i / k;
+        return combination(m + n - 2, min(m - 1, n - 1));
+    }
+    
+    int combination(int  n, int k) {
+        long long count = 1;
+        // C(n, k) = (n) / 1 * (n - 1) / 2 ... * (n - k + 1) / k
+        for (int i = 1; i <= k; ++i, --n) {
+            count = count * n / i;
         }
         
-        return path_count;
+        return count;
     }
 };
 
