@@ -16,7 +16,8 @@ public:
                 return -1;
             }
             if (i > curr_reachable) {
-                // current jumps are not enough, jump one more.
+                // current jumps are not enough,
+                // jump one more step, which enlarges curr_reachable to reachable.
                 curr_reachable = reachable;
                 ++jump_count;
             }
