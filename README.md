@@ -56,7 +56,7 @@ Algorithms
 |46|[Majority Number](http://lintcode.com/en/problem/majority-number/)| [C++](./C++/majority-number.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
 |47|[Majority Number II](http://lintcode.com/en/problem/majority-number/)| [C++](./C++/majority-number-ii.cpp)| _O(n)_ | _O(1)_ | Medium | EPI | |
 |48|[Majority Number III](http://lintcode.com/en/problem/majority-number-iii/)| [C++](./C++/majority-number-iii.cpp)| _O(n)_ | _O(k)_ | Medium | EPI | |
-|49|[Sort Letters by Case](http://lintcode.com/en/problem/sort-letters-by-case/)| [C++](./C++/sort-letters-by-case.cpp)| _O(n)_ | _O(1)_ | Medium | | |
+|49|[Sort Letters by Case](http://lintcode.com/en/problem/sort-letters-by-case/)| [C++](./C++/sort-letters-by-case.cpp)| _O(n)_ | _O(1)_ | Medium | | Two Pointers |
 |50|[Product of Array Exclude Itself](http://lintcode.com/en/problem/product-of-array-exclude-itself/)| [C++](./C++/product-of-array-exclude-itself.cpp)| _O(n)_ | _O(n)_ | Easy | | |
 |51|[Previous Permutation](http://lintcode.com/en/problem/previous-permutation/)| [C++](./C++/previous-permutation.cpp)| _O(n)_ | _O(1)_ | Medium | | |
 |52|[Next Permutation](http://lintcode.com/en/problem/next-permutation/)| [C++](./C++/next-permutation.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
@@ -67,7 +67,7 @@ Algorithms
 |101|[Remove Duplicates from Sorted Array II](http://lintcode.com/en/problem/remove-duplicates-from-sorted-array-ii/)| [C++](./C++/remove-duplicates-from-sorted-array-ii.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | Two Pointers |
 |172|[Remove Element](http://lintcode.com/en/problem/remove-element/)| [C++](./C++/remove-element.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | Two Pointers |
 |185|[Matrix Zigzag Traversal](http://lintcode.com/en/problem/matrix-zigzag-traversal/)| [C++](./C++/matrix-zigzag-traversal.cpp)| _O(m * n)_ | _O(1)_ | Easy | | |
-|189|[First Missing Positive](http://lintcode.com/en/problem/first-missing-positive/)| [C++](./C++/first-missing-positive.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode, EPI | |
+|189|[First Missing Positive](http://lintcode.com/en/problem/first-missing-positive/)| [C++](./C++/first-missing-positive.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode, EPI | Hash |
 |363|[Trapping Rain Water](http://lintcode.com/en/problem/trapping-rain-water/)| [C++](./C++/trapping-rain-water.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | Two Pointers, Tricky |
 
 ---
