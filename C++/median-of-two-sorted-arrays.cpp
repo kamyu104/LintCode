@@ -29,10 +29,10 @@ public:
         
         int left = 0;
         int right = m;
-        // Find min left s.t. A[left] >= B[k - 1 - left].
+        // Find min left s.t. A[left] >= B[k - 1 - left]. left is the (k + 1)-th element.
         while (left < right) {
             int mid = left + (right - left) / 2;
-            if (k - 1 - mid < n && A[mid] >= B[k - 1 - mid]) {
+            if (0 <= k - 1 - mid && k - 1 - mid < n && A[mid] >= B[k - 1 - mid]) {
                 right = mid;
             } else {
                 left = mid + 1;
@@ -42,6 +42,7 @@ public:
         int Ai_minus_1 = left - 1 >= 0 ? A[left - 1] : INT_MIN;
         int Bj = k - 1 - left >= 0 ? B[k - 1 - left] : INT_MIN;
         
+        // kth element would be A[left - 1] or B[k - 1 - left].
         return max(Ai_minus_1, Bj);
     }
 };
