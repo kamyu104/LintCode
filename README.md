@@ -63,6 +63,8 @@ Algorithms
 |57|[3 Sum](http://lintcode.com/en/problem/3-sum/)| [C++](./C++/3-sum.cpp)| _O(n^2)_ | _O(1)_ | Medium | LeetCode | Two Pointers, Sort |
 |59|[3 Sum Closest](http://lintcode.com/en/problem/3-sum-closest/)| [C++](./C++/3-sum-closest.cpp)| _O(n^2)_ | _O(1)_ | Medium | LeetCode | Two Pointers, Sort |
 |64|[Merge Sorted Array II](http://lintcode.com/en/problem/merge-sorted-array-ii/)| [C++](./C++/merge-sorted-array-ii.cpp)| _O(m + n)_ | _O(1)_ | Easy | LeetCode | Two Pointers |
+|100|[Remove Duplicates from Sorted Array](http://lintcode.com/en/problem/remove-duplicates-from-sorted-array/)| [C++](./C++/remove-duplicates-from-sorted-array.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | Two Pointers |
+|101|[Remove Duplicates from Sorted Array II](http://lintcode.com/en/problem/remove-duplicates-from-sorted-array-ii/)| [C++](./C++/remove-duplicates-from-sorted-array-ii.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | Two Pointers |
 |172|[Remove Element](http://lintcode.com/en/problem/remove-element/)| [C++](./C++/remove-element.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | Two Pointers |
 |185|[Matrix Zigzag Traversal](http://lintcode.com/en/problem/matrix-zigzag-traversal/)| [C++](./C++/matrix-zigzag-traversal.cpp)| _O(m * n)_ | _O(1)_ | Easy | | |
 |189|[First Missing Positive](http://lintcode.com/en/problem/first-missing-positive/)| [C++](./C++/first-missing-positive.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode, EPI | |
