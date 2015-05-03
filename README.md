@@ -187,6 +187,7 @@ Algorithms
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |14|[Binary Search](http://lintcode.com/en/problem/binary-search/)| [C++](./C++/binary-search.cpp)| _O(logn)_ | _O(1)_ | Easy | | |
+|60|[Search Insert Position](http://lintcode.com/en/problem/search-insert-position/)| [C++](./C++/search-insert-position.cpp)| _O(logn)_ | _O(1)_ | Easy | LeetCode | |
 |74|[First Bad Version](http://lintcode.com/en/problem/first-bad-version/)| [C++](./C++/first-bad-version.cpp)| _O(logn)_ | _O(1)_ | Medium | | |
 |75|[Find Peak Element](http://lintcode.com/en/problem/find-peak-element/)| [C++](./C++/find-peak-element.cpp)| _O(logn)_ | _O(1)_ | Medium | LeetCode | |
 |76|[Longest Increasing Subsequence](http://lintcode.com/en/problem/longest-increasing-subsequence/)| [C++](./C++/longest-increasing-subsequence.cpp)| _O(nlogn)_ | _O(n)_ | Medium | CC150 | |
