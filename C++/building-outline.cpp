@@ -3,7 +3,7 @@
 
 class Solution {
 public:
-    enum idx {start = 0, end = 1, height = 2};
+    enum {start = 0, end = 1, height = 2};
     /**
      * @param buildings: A list of lists of integers
      * @return: Find the outline of those buildings
