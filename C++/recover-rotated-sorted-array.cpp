@@ -15,7 +15,7 @@ public:
         int left = 0;
         int right = num.size() - 1;
         
-        // Find min left s.t. num[left] < num[left'].
+        // Find min left s.t. num[left] > num[left + 1].
         while (left < right && num[left] >= num[right]) {
             int mid = left + (right - left) / 2;
             if (num[mid] < num[left]) {

@@ -11,9 +11,9 @@ public:
      * @return: The median of the element inside the window at each moving
      */
     vector<int> medianSlidingWindow(vector<int> &nums, int k) {
-        // min_heap stores the larger half seen so far.
+        // min_bst stores the larger half seen so far.
         multiset<int, less<int>> min_bst;
-        // max_heap stores the smaller half seen so far.
+        // max_bst stores the smaller half seen so far.
         multiset<int, greater<int>> max_bst;
         
         vector<int> ans;
