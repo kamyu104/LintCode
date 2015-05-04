@@ -162,6 +162,7 @@ Algorithms
 ##Sort
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|5|[Kth Largest Element](http://lintcode.com/en/problem/kth-largest-element/)| [C++](./C++/kth-largest-element.cpp)| _O(n)_ | _O(1)_ | Medium | EPI | Two Pointers, Quick Sort |
 |80|[Median](http://lintcode.com/en/problem/median/)| [C++](./C++/median.cpp)| _O(n)_ | _O(1)_ | Easy | EPI | |
 |139|[Subarray Sum Closest](http://lintcode.com/en/problem/subarray-sum-closest/)| [C++](./C++/subarray-sum-closest.cpp)| _O(nlogn)_ | _O(n)_ | Medium | | Sort |
 |143|[Sort Colors II](http://lintcode.com/en/problem/sort-colors-ii/)| [C++](./C++/sort-colors-ii.cpp)| _O(n)_ | _O(1)_ | Medium | | |
