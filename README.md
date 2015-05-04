@@ -69,6 +69,7 @@ Algorithms
 |185|[Matrix Zigzag Traversal](http://lintcode.com/en/problem/matrix-zigzag-traversal/)| [C++](./C++/matrix-zigzag-traversal.cpp)| _O(m * n)_ | _O(1)_ | Easy | | |
 |189|[First Missing Positive](http://lintcode.com/en/problem/first-missing-positive/)| [C++](./C++/first-missing-positive.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode, EPI | Hash |
 |363|[Trapping Rain Water](http://lintcode.com/en/problem/trapping-rain-water/)| [C++](./C++/trapping-rain-water.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | Two Pointers, Tricky |
+|389|[Valid Sudoku](http://lintcode.com/en/problem/valid-sudoku/)| [C++](./C++/valid-sudoku.cpp)| _O(9^2)_ | _O(9)_ | Easy | LeetCode | |
 
 ---
 
