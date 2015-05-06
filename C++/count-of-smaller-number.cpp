@@ -16,6 +16,7 @@
  * }
  */
 
+// Segment tree solution.
 class Solution {
 public:
     /**
@@ -99,6 +100,7 @@ public:
 
 // Time:  O(logn)
 // Space: O(1)
+// Binary search solution.
 class Solution2 {
 public:
     /**
@@ -119,6 +121,7 @@ public:
 
 // Time:  O(n)
 // Space: O(1)
+// Loop solution.
 class Solution_TLE {
 public:
     /**
