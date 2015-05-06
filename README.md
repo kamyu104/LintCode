@@ -176,6 +176,7 @@ Algorithms
 |80|[Median](http://lintcode.com/en/problem/median/)| [C++](./C++/median.cpp)| _O(n)_ | _O(1)_ | Easy | EPI | |
 |139|[Subarray Sum Closest](http://lintcode.com/en/problem/subarray-sum-closest/)| [C++](./C++/subarray-sum-closest.cpp)| _O(nlogn)_ | _O(n)_ | Medium | | Sort |
 |143|[Sort Colors II](http://lintcode.com/en/problem/sort-colors-ii/)| [C++](./C++/sort-colors-ii.cpp)| _O(n)_ | _O(1)_ | Medium | | |
+|148|[Sort Colors](http://lintcode.com/en/problem/sort-colors/)| [C++](./C++/sort-colors.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 |184|[Largest Number](http://lintcode.com/en/problem/largest-number/)| [C++](./C++/largest-number.cpp)| _O(nlogn)_ | _O(1)_ | Medium | LeetCode | |
 
 ---
