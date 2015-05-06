@@ -5,47 +5,49 @@ class Solution {
 public:
     /**
      * @param expression: A string array
-     * @return: The Reverse Polish notation of this expression
+     * @return: The Polish notation of this expression
      */
-    vector<string> convertToRPN(vector<string> &expression) {
+    vector<string> convertToPN(vector<string> &expression) {
         vector<string> output;
-        infixToPostfix(expression, output);
+        infixToPrefix(expression, output);
         return output;
     }
     
-    // Convert Infix to Postfix Expression.
-    void infixToPostfix(vector<string>& infix, vector<string>& postfix) {
+    // Convert Infix to Prefix Expression.
+    void infixToPrefix(vector<string>& infix, vector<string>& prefix) {
+        reverse(infix.begin(), infix.end());
         stack<string> s;
         for (auto tok : infix) {
             if (atoi(tok.c_str())) {
-                postfix.push_back(tok);
-            } else if (tok == "(") {
-                s.push(tok);
+                prefix.push_back(tok);
             } else if (tok == ")") {
+                s.push(tok);
+            } else if (tok == "(") {
                 while (!s.empty()) {
                     tok = s.top();
                     s.pop();
-                    if (tok == "(") {
+                    if (tok == ")") {
                         break;
                     }
-                    postfix.push_back(tok);
+                    prefix.push_back(tok);
                 }
             } else {
-                while (!s.empty() && precedence(tok) <= precedence(s.top())) {
-                    postfix.push_back(s.top());
+                while (!s.empty() && precedence(tok) < precedence(s.top())) {
+                    prefix.push_back(s.top());
                     s.pop();
                 }
                 s.push(tok);
             }
         }
         while (!s.empty()) {
-            postfix.push_back(s.top());
+            prefix.push_back(s.top());
             s.pop();
         }
+        reverse(prefix.begin(), prefix.end());
     }
     
     int precedence(string x) {
-        if (x == "(") {
+        if(x == ")") {
             return 0;
         } else if (x == "+" || x == "-") {
             return 1;

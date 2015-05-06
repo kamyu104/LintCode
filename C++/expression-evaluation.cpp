@@ -23,11 +23,9 @@ public:
             // Any number would be pushed into stack.
             if (atoi(tok.c_str())) {
                 postfix.push_back(tok);
-            }
-            else if (tok == "(") {
+            } else if (tok == "(") {
                 s.push(tok);
-            }
-            else if (tok == ")") {
+            } else if (tok == ")") {
                 // Meet ")", then pop until "(".
                 while (!s.empty()) {
                     tok = s.top();
@@ -57,11 +55,9 @@ public:
     int precedence(string x) {
         if(x == "(") { // The least precedence.
             return 0;
-        }
-        else if(x == "+" || x == "-") {
+        } else if (x == "+" || x == "-") {
             return 1;
-        }
-        else if(x == "*" || x== "/") {
+        } else if (x == "*" || x == "/") {
             return 2;
         }
         return 3;
@@ -74,11 +70,10 @@ public:
             return 0;
         }
         stack<string> s;
-        for(auto& tok : postfix) {
-            if(!is_operator(tok)) {
+        for (auto& tok : postfix) {
+            if (!is_operator(tok)) {
                 s.push(tok);
-            }
-            else {
+            } else {
                 int y = stoi(s.top());
                 s.pop();
                 int x = stoi(s.top());
