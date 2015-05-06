@@ -113,6 +113,7 @@ Algorithms
 |12|[Min Stack](http://lintcode.com/en/problem/min-stack/)| [C++](./C++/min-stack.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode, EPI | |
 |40|[Implement Queue by Two Stacks](http://lintcode.com/en/problem/implement-queue-by-two-stacks/)| [C++](./C++/implement-queue-by-two-stacks.cpp)| _O(1), amortized_ | _O(n)_ | Medium | EPI | |
 |122|[Largest Rectangle in Histogram](http://lintcode.com/en/problem/largest-rectangle-in-histogram/)| [C++](./C++/largest-rectangle-in-histogram.cpp)| _O(n)_ | _O(n)_ | Hard | LeetCode, EPI | |
+|367|[Expression Tree Build](http://lintcode.com/en/problem/expression-tree-build/)| [C++](./C++/expression-tree-build.cpp)| _O(n)_ | _O(n)_ | Hard | | |
 |368|[Expression evaluation](http://lintcode.com/en/problem/expression-evaluation/)| [C++](./C++/expression-evaluation.cpp)| _O(n)_ | _O(n)_ | Hard | | |
 |369|[Convert Expression to Polish Notation](http://lintcode.com/en/problem/convert-expression-to-reverse-notation/)| [C++](./C++/convert-expression-to-polish-notation.cpp)| _O(n)_ | _O(n)_ | Hard | | |
 |370|[Convert Expression to Reverse Polish Notation](http://lintcode.com/en/problem/convert-expression-to-reverse-polish-notation/)| [C++](./C++/convert-expression-to-reverse-polish-notation.cpp)| _O(n)_ | _O(n)_ | Hard | | |

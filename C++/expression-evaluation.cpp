@@ -16,6 +16,42 @@ public:
         return evaluatePostfixExpression(postfix);
     }
     
+    // Evaluate Postfix Expression.
+    int evaluatePostfixExpression(vector<string> &postfix) {
+        if (postfix.empty()) {
+            return 0;
+        }
+        stack<string> s;
+        for (auto& tok : postfix) {
+            if (!is_operator(tok)) {
+                s.push(tok);
+            } else {
+                int y = stoi(s.top());
+                s.pop();
+                int x = stoi(s.top());
+                s.pop();
+                if(tok[0] == '+') {
+                    x += y;
+                }
+                else if (tok[0] == '-') {
+                    x -= y;
+                }
+                else if (tok[0] == '*') {
+                    x *= y;
+                }
+                else {
+                    x /= y;
+                }
+                s.push(to_string(x));
+            }
+        }
+        return stoi(s.top());
+    }
+    
+    bool is_operator(const string &op) {
+        return op.length() == 1 && string("+-*/").find(op) != string::npos;
+    }
+    
     // Convert Infix to Postfix Expression.
     void infixToPostfix(vector<string>& infix, vector<string>& postfix) {
         stack<string> s;
@@ -61,42 +97,5 @@ public:
             return 2;
         }
         return 3;
-    }
-    
-    
-    // Evaluate Postfix Expression.
-    int evaluatePostfixExpression(vector<string> &postfix) {
-        if (postfix.empty()) {
-            return 0;
-        }
-        stack<string> s;
-        for (auto& tok : postfix) {
-            if (!is_operator(tok)) {
-                s.push(tok);
-            } else {
-                int y = stoi(s.top());
-                s.pop();
-                int x = stoi(s.top());
-                s.pop();
-                if(tok[0] == '+') {
-                    x += y;
-                }
-                else if (tok[0] == '-') {
-                    x -= y;
-                }
-                else if (tok[0] == '*') {
-                    x *= y;
-                }
-                else {
-                    x /= y;
-                }
-                s.push(to_string(x));
-            }
-        }
-        return stoi(s.top());
-    }
-    
-    bool is_operator(const string &op) {
-        return op.length() == 1 && string("+-*/").find(op) != string::npos;
     }
 };
