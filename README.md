@@ -54,6 +54,7 @@ Algorithms
 |8|[Rotate String](http://lintcode.com/en/problem/rotate-string/)| [C++](./C++/rotate-string.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
 |9|[Fizz Buzz](http://lintcode.com/en/problem/fizz-buzz/)| [C++](./C++/fizz-buzz.cpp)| _O(n)_ | _O(1)_ | Easy | | |
 |31|[Partition Array](http://lintcode.com/en/problem/partition-array/)| [C++](./C++/partition-array.cpp)| _O(n)_ | _O(1)_ | Medium | | Two Pointers |
+|32|[Minimum Window Substring](http://lintcode.com/en/problem/minimum-window-substring/)| [C++](./C++/minimum-window-substring.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 |38|[Search a 2D Matrix II](http://lintcode.com/en/problem/search-a-2d-matrix-ii/)| [C++](./C++/search-a-2d-matrix-ii.cpp)| _O(m + n)_ | _O(1)_ | Medium | EPI | |
 |39|[Recover Rotated Sorted Array](http://lintcode.com/en/problem/recover-rotated-sorted-array/)| [C++](./C++/recover-rotated-sorted-array.cpp)| _O(n)_ | _O(1)_ | Easy | | |
 |46|[Majority Number](http://lintcode.com/en/problem/majority-number/)| [C++](./C++/majority-number.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
