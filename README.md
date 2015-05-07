@@ -191,6 +191,7 @@ Algorithms
 |131|[Building Outline](http://lintcode.com/en/problem/building-outline/)| [C++](./C++/building-outline.cpp)| _O(nlogn)_ | _O(n)_ | Hard | EPI | |
 |140|[Fast Power](http://lintcode.com/en/problem/fast-power/)| [C++](./C++/fast-power.cpp)| _O(logn)_ | _O(logn)_ | Medium | | |
 |155|[Minimum Depth of Binary Tree](http://lintcode.com/en/problem/minimum-depth-of-binary-tree/)| [C++](./C++/minimum-depth-of-binary-tree.cpp)| _O(n)_ | _O(h)_ | Easy | LeetCode | |
+|164|[Unique Binary Search Trees II](http://lintcode.com/en/problem/unique-binary-search-trees-ii/)| [C++](./C++/unique-binary-search-trees-ii.cpp)| _O(n * 4^n / n^(3/2))_ | _O(n)_ | Medium | LeetCode | |
 |201|[Segment Tree Build](http://lintcode.com/en/problem/segment-tree-build/)| [C++](./C++/segment-tree-build.cpp)| _O(n)_ | _O(h)_ | Medium | | Segment Tree, BST |
 |202|[Segment Tree Query](http://lintcode.com/en/problem/segment-tree-query/)| [C++](./C++/segment-tree-query.cpp)| _O(h)_ | _O(h)_ | Medium | | Segment Tree, BST |
 |203|[Segment Tree Modify](http://lintcode.com/en/problem/segment-tree-modify/)| [C++](./C++/segment-tree-modify.cpp)| _O(h)_ | _O(h)_ | Medium | | Segment Tree, BST |
