@@ -84,8 +84,8 @@ public:
             return 0;
         }
         
-        // Current segment is totally within range [start, end]
-        if (root->start >= start && root->end <= end && q > A[root->end]) {
+        // Current segment is totally smaller than q.
+        if (q > A[root->end]) {
             return root->count;
         }
         
