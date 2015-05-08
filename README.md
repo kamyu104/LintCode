@@ -258,6 +258,7 @@ Algorithms
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |69|[Binary Tree Level Order Traversal](http://lintcode.com/en/problem/binary-tree-level-order-traversal/)| [C++](./C++/binary-tree-level-order-traversal.cpp)| _O(n)_ | _O(n)_ | Medium | LeetCode | BFS |
+|70|[Binary Tree Level Order Traversal II](http://lintcode.com/en/problem/binary-tree-level-order-traversal-ii/)| [C++](./C++/binary-tree-level-order-traversal-ii.cpp)| _O(n)_ | _O(n)_ | Medium | LeetCode | BFS |
 |71|[Binary Tree Zigzag Level Order Traversal](http://lintcode.com/en/problem/binary-tree-zigzag-level-order-traversal/)| [C++](./C++/binary-tree-zigzag-level-order-traversal.cpp)| _O(n)_ | _O(n)_ | Medium | LeetCode | BFS |
 |120|[Word Ladder](http://lintcode.com/en/problem/word-ladder/)| [C++](./C++/word-ladder.cpp)| _O(n * d)_ | _O(d)_ | Medium | LeetCode | BFS |
 |121|[Word Ladder II](http://lintcode.com/en/problem/word-ladder-ii/)| [C++](./C++/word-ladder-ii.cpp)| _O(n * d)_ | _O(d)_ | Hard | LeetCode | BFS, Back Trace |
