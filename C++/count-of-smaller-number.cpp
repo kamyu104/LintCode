@@ -113,7 +113,7 @@ public:
         sort(A.begin(), A.end());
         for (int i = 0; i < queries.size(); ++i) {
             auto it = lower_bound(A.begin(), A.end(), queries[i]);
-            result.emplace_back(it- A.begin());
+            result.emplace_back(it - A.begin());
         }
         return result;
     }

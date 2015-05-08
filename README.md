@@ -1,9 +1,9 @@
 LintCode
 ======== 
 
-Up to date (2015-05-05), there are `187` problems on [LintCode Online Judge](https://lintcode.com/).
+Up to date (2015-05-08), there are `188` problems on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `187` problems.
+Here is the classification of all `188` problems.
 For extra problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repo.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -101,6 +101,7 @@ Algorithms
 |35|[Reverse Linked List](http://lintcode.com/en/problem/reverse-linked-list/)|[C++](./C++/reverse-linked-list.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode, EPI | |
 |102|[Linked List Cycle](http://lintcode.com/en/problem/linked-list-cycle/)|[C++](./C++/linked-list-cycle.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 |103|[Linked List Cycle II](http://lintcode.com/en/problem/linked-list-cycle-ii/)|[C++](./C++/linked-list-cycle-ii.cpp)| _O(n)_ | _O(1)_ | Hard | LeetCode | |
+|112|[Remove Duplicates from Sorted List](http://lintcode.com/en/problem/remove-duplicates-from-sorted-list/)|[C++](./C++/remove-duplicates-from-sorted-list.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
 |166|[Nth to Last Node in List](http://lintcode.com/en/problem/nth-to-last-node-in-list/)|[C++](./C++/nth-to-last-node-in-list.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
 |173|[Insertion Sort List](http://lintcode.com/en/problem/insertion-sort-list/)|[C++](./C++/insertion-sort-list.cpp)| _O(n^2)_ | _O(1)_ | Easy | LeetCode | |
 |174|[Remove Nth Node From End of List](http://lintcode.com/en/problem/remove-nth-node-from-end-of-list/)|[C++](./C++/remove-nth-node-from-end-of-list.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
