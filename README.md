@@ -204,6 +204,7 @@ Algorithms
 ##Divide and Conquer
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|72|[Construct Binary Tree from Inorder and Postorder Traversal](http://lintcode.com/en/problem/construct-binary-tree-from-inorder-and-postorder-traversal/)| [C++](./C++/construct-binary-tree-from-inorder-and-postorder-traversal.cpp)| _O(n)_ | _O(h)_ | Medium | LeetCode, EPI | |
 |73|[Construct Binary Tree from Preorder and Inorder Traversal](http://lintcode.com/en/problem/construct-binary-tree-from-preorder-and-inorder-traversal/)| [C++](./C++/construct-binary-tree-from-preorder-and-inorder-traversal.cpp)| _O(n)_ | _O(h)_ | Medium | LeetCode, EPI | |
 |93|[Balanced Binary Tree](http://lintcode.com/en/problem/balanced-binary-tree/)| [C++](./C++/balanced-binary-tree.cpp)| _O(n)_ | _O(h)_ | Easy | LeetCode | |
 |94|[Binary Tree Maximum Path Sum](http://lintcode.com/en/problem/binary-tree-maximum-path-sum/)| [C++](./C++/binary-tree-maximum-path-sum.cpp)| _O(n)_ | _O(h)_ | Medium | LeetCode | |
