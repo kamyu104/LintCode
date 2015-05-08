@@ -102,6 +102,7 @@ Algorithms
 |102|[Linked List Cycle](http://lintcode.com/en/problem/linked-list-cycle/)|[C++](./C++/linked-list-cycle.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 |103|[Linked List Cycle II](http://lintcode.com/en/problem/linked-list-cycle-ii/)|[C++](./C++/linked-list-cycle-ii.cpp)| _O(n)_ | _O(1)_ | Hard | LeetCode | |
 |112|[Remove Duplicates from Sorted List](http://lintcode.com/en/problem/remove-duplicates-from-sorted-list/)|[C++](./C++/remove-duplicates-from-sorted-list.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode, EPI | |
+|113|[Remove Duplicates from Sorted List II](http://lintcode.com/en/problem/remove-duplicates-from-sorted-list-ii/)|[C++](./C++/remove-duplicates-from-sorted-list-ii.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode, EPI | |
 |166|[Nth to Last Node in List](http://lintcode.com/en/problem/nth-to-last-node-in-list/)|[C++](./C++/nth-to-last-node-in-list.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
 |173|[Insertion Sort List](http://lintcode.com/en/problem/insertion-sort-list/)|[C++](./C++/insertion-sort-list.cpp)| _O(n^2)_ | _O(1)_ | Easy | LeetCode | |
 |174|[Remove Nth Node From End of List](http://lintcode.com/en/problem/remove-nth-node-from-end-of-list/)|[C++](./C++/remove-nth-node-from-end-of-list.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
