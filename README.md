@@ -99,6 +99,7 @@ Algorithms
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |16|[Merge Two Sorted Lists](http://lintcode.com/en/problem/merge-two-sorted-lists/)|[C++](./C++/merge-two-sorted-lists.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode, EPI | |
 |35|[Reverse Linked List](http://lintcode.com/en/problem/reverse-linked-list/)|[C++](./C++/reverse-linked-list.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode, EPI | |
+|96|[Partition List](http://lintcode.com/en/problem/partition-list/)|[C++](./C++/partition-list.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
 |102|[Linked List Cycle](http://lintcode.com/en/problem/linked-list-cycle/)|[C++](./C++/linked-list-cycle.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 |103|[Linked List Cycle II](http://lintcode.com/en/problem/linked-list-cycle-ii/)|[C++](./C++/linked-list-cycle-ii.cpp)| _O(n)_ | _O(1)_ | Hard | LeetCode | |
 |112|[Remove Duplicates from Sorted List](http://lintcode.com/en/problem/remove-duplicates-from-sorted-list/)|[C++](./C++/remove-duplicates-from-sorted-list.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode, EPI | |
