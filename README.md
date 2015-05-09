@@ -134,6 +134,7 @@ Algorithms
 |40|[Implement Queue by Two Stacks](http://lintcode.com/en/problem/implement-queue-by-two-stacks/)| [C++](./C++/implement-queue-by-two-stacks.cpp)| _O(1), amortized_ | _O(n)_ | Medium | EPI | |
 |66|[Binary Tree Preorder Traversal](http://lintcode.com/en/problem/binary-tree-preorder-traversal/)| [C++](./C++/binary-tree-preorder-traversal.cpp)| _O(n)_ | _O(h)_ | Easy | LeetCode, EPI | |
 |67|[Binary Tree Inorder Traversal](http://lintcode.com/en/problem/binary-tree-inorder-traversal/)| [C++](./C++/binary-tree-inorder-traversal.cpp)| _O(n)_ | _O(h)_ | Easy | LeetCode, EPI | |
+|678|[Binary Tree Postorder Traversal](http://lintcode.com/en/problem/binary-tree-postorder-traversal/)| [C++](./C++/binary-tree-postorder-traversal.cpp)| _O(n)_ | _O(h)_ | Easy | LeetCode, EPI | |
 |122|[Largest Rectangle in Histogram](http://lintcode.com/en/problem/largest-rectangle-in-histogram/)| [C++](./C++/largest-rectangle-in-histogram.cpp)| _O(n)_ | _O(n)_ | Hard | LeetCode, EPI | |
 |367|[Expression Tree Build](http://lintcode.com/en/problem/expression-tree-build/)| [C++](./C++/expression-tree-build.cpp)| _O(n)_ | _O(n)_ | Hard | | |
 |368|[Expression evaluation](http://lintcode.com/en/problem/expression-evaluation/)| [C++](./C++/expression-evaluation.cpp)| _O(n)_ | _O(n)_ | Hard | | |
