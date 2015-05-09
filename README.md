@@ -198,6 +198,7 @@ Algorithms
 |143|[Sort Colors II](http://lintcode.com/en/problem/sort-colors-ii/)| [C++](./C++/sort-colors-ii.cpp)| _O(n)_ | _O(1)_ | Medium | | |
 |148|[Sort Colors](http://lintcode.com/en/problem/sort-colors/)| [C++](./C++/sort-colors.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 |184|[Largest Number](http://lintcode.com/en/problem/largest-number/)| [C++](./C++/largest-number.cpp)| _O(nlogn)_ | _O(1)_ | Medium | LeetCode | |
+|387|[The Smallest Difference](http://lintcode.com/en/problem/the-smallest-difference/)| [C++](./C++/the-smallest-difference.cpp)| _O(nlogn)_ | _O(1)_ | Medium | | Two Pointers |
 
 ---
 
