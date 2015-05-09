@@ -37,8 +37,8 @@ public:
                 }
                 if (!node->right) {
                     res.emplace_back(curr->val);
-                    node->right = curr;
                     prev = curr;
+                    node->right = curr;
                     curr = curr->left;
                 } else {
                     node->right = nullptr;
