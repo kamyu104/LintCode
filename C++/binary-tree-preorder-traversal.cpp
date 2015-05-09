@@ -1,5 +1,5 @@
 // Time:  O(n)
-// Space: O(h)
+// Space: O(1)
 
 /**
  * Definition of TreeNode:
@@ -14,6 +14,46 @@
  * }
  */
 
+// Morris Traversal.
+class Solution {
+public:
+    /**
+     * @param root: The root of binary tree.
+     * @return: Preorder in vector which contains node values.
+     */
+    vector<int> preorderTraversal(TreeNode *root) {
+        vector<int> res;
+        TreeNode *prev = nullptr;
+        TreeNode *curr = root;
+        while (curr) {
+            if (!curr->left) {
+                res.emplace_back(curr->val);
+                prev = curr;
+                curr = curr->right;
+            } else {
+                TreeNode *node = curr->left;
+                while (node->right && node->right != curr) {
+                    node = node->right;
+                }
+                if (!node->right) {
+                    res.emplace_back(curr->val);
+                    node->right = curr;
+                    prev = curr;
+                    curr = curr->left;
+                } else {
+                    node->right = nullptr;
+                    curr = curr->right;
+                }
+            }
+        }
+        return res;
+    }
+};
+
+
+// Time:  O(n)
+// Space: O(h)
+// Stack solution.
 class Solution {
 public:
     /**
