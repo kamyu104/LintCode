@@ -254,6 +254,7 @@ Algorithms
 ##Depth First Search
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|33|[N-Queens](http://lintcode.com/en/problem/n-queens/)| [C++](./C++/n-queens.cpp)| _O(n!)_ | _O(n)_ | Medium | LeetCode, EPI | |
 |34|[N-Queens II](http://lintcode.com/en/problem/n-queens-ii/)| [C++](./C++/n-queens-ii.cpp)| _O(n!)_ | _O(n)_ | Medium | LeetCode, EPI | |
 |90|[K Sum II](http://lintcode.com/en/problem/k-sum-ii/)| [C++](./C++/k-sum-ii.cpp)| _O(C(n, k))_ | _O(k)_ | Medium | | |
 |123|[Word Search](http://lintcode.com/en/problem/word-search/)| [C++](./C++/word-search.cpp)| _O(m * n * l)_ | _O(l)_ | Medium | LeetCode | |
