@@ -1,4 +1,4 @@
-// Time:  O(C(n, k))
+// Time:  O(k * C(n, k))
 // Space: O(k)
 
 class Solution {
@@ -17,7 +17,9 @@ public:
     }
     
     void helper(vector<int> A, int k, int start, int target, vector<int>& curr, vector<vector<int>> & ans) {
-        if (k < 0 || target < 0) return;
+        if (k < 0 || target < 0) {
+            return;
+        }
         
         if (k == 0 && target == 0) {
             ans.emplace_back(curr);

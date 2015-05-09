@@ -1,4 +1,4 @@
-// Time:  O(n^k)
+// Time:  O(k * n^k)
 // Space: O(k)
 
 class Solution {

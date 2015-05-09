@@ -209,6 +209,8 @@ Algorithms
 ##Divide and Conquer
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|17|[Subsets](http://lintcode.com/en/problem/subsets/)| [C++](./C++/subsets.cpp)| _O(n * 2^n)_ | _O(1)_ | Medium | LeetCode | |
+|18|[Subsets II](http://lintcode.com/en/problem/subsets-ii/)| [C++](./C++/subsets-ii.cpp)| _O(n * 2^n)_ | _O(1)_ | Medium | LeetCode | |
 |72|[Construct Binary Tree from Inorder and Postorder Traversal](http://lintcode.com/en/problem/construct-binary-tree-from-inorder-and-postorder-traversal/)| [C++](./C++/construct-binary-tree-from-inorder-and-postorder-traversal.cpp)| _O(n)_ | _O(h)_ | Medium | LeetCode, EPI | |
 |73|[Construct Binary Tree from Preorder and Inorder Traversal](http://lintcode.com/en/problem/construct-binary-tree-from-preorder-and-inorder-traversal/)| [C++](./C++/construct-binary-tree-from-preorder-and-inorder-traversal.cpp)| _O(n)_ | _O(h)_ | Medium | LeetCode, EPI | |
 |93|[Balanced Binary Tree](http://lintcode.com/en/problem/balanced-binary-tree/)| [C++](./C++/balanced-binary-tree.cpp)| _O(n)_ | _O(h)_ | Easy | LeetCode | |
@@ -254,15 +256,17 @@ Algorithms
 ##Depth First Search
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
-|33|[N-Queens](http://lintcode.com/en/problem/n-queens/)| [C++](./C++/n-queens.cpp)| _O(n!)_ | _O(n)_ | Medium | LeetCode, EPI | |
-|34|[N-Queens II](http://lintcode.com/en/problem/n-queens-ii/)| [C++](./C++/n-queens-ii.cpp)| _O(n!)_ | _O(n)_ | Medium | LeetCode, EPI | |
-|90|[K Sum II](http://lintcode.com/en/problem/k-sum-ii/)| [C++](./C++/k-sum-ii.cpp)| _O(C(n, k))_ | _O(k)_ | Medium | | |
+|15|[Permutations](http://lintcode.com/en/problem/permutations/)| [C++](./C++/permutations.cpp)| _O(n * n!)_ | _O(n)_ | Medium | LeetCode, EPI | |
+|16|[Permutations II](http://lintcode.com/en/problem/permutations-ii/)| [C++](./C++/permutations-ii.cpp)| _O(n * n!)_ | _O(n)_ | Medium | LeetCode, EPI | |
+|33|[N-Queens](http://lintcode.com/en/problem/n-queens/)| [C++](./C++/n-queens.cpp)| _O(n * n!)_ | _O(n)_ | Medium | LeetCode, EPI | |
+|34|[N-Queens II](http://lintcode.com/en/problem/n-queens-ii/)| [C++](./C++/n-queens-ii.cpp)| _O(n * n!)_ | _O(n)_ | Medium | LeetCode, EPI | |
+|90|[K Sum II](http://lintcode.com/en/problem/k-sum-ii/)| [C++](./C++/k-sum-ii.cpp)| _O(k * C(n, k))_ | _O(k)_ | Medium | | |
 |123|[Word Search](http://lintcode.com/en/problem/word-search/)| [C++](./C++/word-search.cpp)| _O(m * n * l)_ | _O(l)_ | Medium | LeetCode | |
 |132|[Word Search II](http://lintcode.com/en/problem/word-search-ii/)| [C++](./C++/word-search-ii.cpp)| _O(m * n * l)_ | _O(l)_ | Hard | | Trie, DFS |
-|135|[Combination Sum](http://lintcode.com/en/problem/combination-sum/)| [C++](./C++/combination-sum.cpp)| _O(n^k)_ | _O(k)_ | Medium | LeetCode | DFS |
-|136|[Palindrome Partitioning](http://lintcode.com/en/problem/palindrome-partitioning/)| [C++](./C++/palindrome-partitioning.cpp)| _O(n * 2^n)_ | _O(n)_ | Easy | LeetCode, EPI | |
-|152|[Combinations](http://lintcode.com/en/problem/combinations/)| [C++](./C++/combinations.cpp)| _O(n^k)_ | _O(k)_ | Medium | LeetCode, EPI | |
-|153|[Combination Sum II](http://lintcode.com/en/problem/combination-sum-ii/)| [C++](./C++/combination-sum-ii.cpp)| _O(C(n, k))_ | _O(k)_ | Medium | LeetCode | DFS |
+|135|[Combination Sum](http://lintcode.com/en/problem/combination-sum/)| [C++](./C++/combination-sum.cpp)| _O(k * n^k)_ | _O(k)_ | Medium | LeetCode | DFS |
+|136|[Palindrome Partitioning](http://lintcode.com/en/problem/palindrome-partitioning/)| [C++](./C++/palindrome-partitioning.cpp)| _O(2^n)_ | _O(n)_ | Easy | LeetCode, EPI | |
+|152|[Combinations](http://lintcode.com/en/problem/combinations/)| [C++](./C++/combinations.cpp)| _O(k * n^k)_ | _O(k)_ | Medium | LeetCode, EPI | |
+|153|[Combination Sum II](http://lintcode.com/en/problem/combination-sum-ii/)| [C++](./C++/combination-sum-ii.cpp)| _O(k * C(n, k))_ | _O(k)_ | Medium | LeetCode | DFS |
 
 ---
 

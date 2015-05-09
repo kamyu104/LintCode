@@ -1,4 +1,4 @@
-// Time:  O(n^k), k is max length of combination
+// Time:  O(k * n^k), k is max length of combination
 // Space: O(k)
 
 class Solution {

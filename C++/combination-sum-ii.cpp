@@ -1,4 +1,4 @@
-// Time:  O(C(n, k)), k is max length of combination
+// Time:  O(k * C(n, k)), k is max length of combination
 // Space: O(k)
 
 class Solution {
