@@ -296,6 +296,7 @@ Algorithms
 |91|[Minimum Adjustment Cost](http://lintcode.com/en/problem/minimum-adjustment-cost/)| [C++](./C++/minimum-adjustment-cost.cpp)| _O(k * n * t)_ | _O(k)_ | Medium | | |
 |92|[Backpack](http://lintcode.com/en/problem/backpack/)| [C++](./C++/backpack.cpp)| _O(m * n)_ | _O(m)_ | Easy | | |
 |107|[Word Segmentation](http://lintcode.com/en/problem/word-segmentation/)| [C++](./C++/word-segmentation.cpp)| _O(n^2)_ | _O(n)_ | Medium | LeetCode, EPI | |
+|108|[Palindrome Partitioning II](http://lintcode.com/en/problem/palindrome-partitioning-ii/)| [C++](./C++/palindrome-partitioning-ii.cpp)| _O(n^2)_ | _O(n)_ | Medium | LeetCode, EPI | |
 |109|[Triangle](http://lintcode.com/en/problem/triangle/)| [C++](./C++/triangle.cpp)| _O(n)_ | _O(n)_ | Easy | LeetCode, EPI | |
 |110|[Minimum Path Sum](http://lintcode.com/en/problem/minimum-path-sum/)| [C++](./C++/minimum-path-sum.cpp)| _O(m * n)_ | _O(min(m, n))_ | Easy | LeetCode, EPI | |
 |111|[Climbing Stairs](http://lintcode.com/en/problem/climbing-stairs/)| [C++](./C++/climbing-stairs.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
