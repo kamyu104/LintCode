@@ -259,8 +259,10 @@ Algorithms
 |90|[K Sum II](http://lintcode.com/en/problem/k-sum-ii/)| [C++](./C++/k-sum-ii.cpp)| _O(C(n, k))_ | _O(k)_ | Medium | | |
 |123|[Word Search](http://lintcode.com/en/problem/word-search/)| [C++](./C++/word-search.cpp)| _O(m * n * l)_ | _O(l)_ | Medium | LeetCode | |
 |132|[Word Search II](http://lintcode.com/en/problem/word-search-ii/)| [C++](./C++/word-search-ii.cpp)| _O(m * n * l)_ | _O(l)_ | Hard | | Trie, DFS |
+|135|[Combination Sum](http://lintcode.com/en/problem/combination-sum/)| [C++](./C++/combination-sum.cpp)| _O(n^k)_ | _O(k)_ | Medium | LeetCode | DFS |
 |136|[Palindrome Partitioning](http://lintcode.com/en/problem/palindrome-partitioning/)| [C++](./C++/palindrome-partitioning.cpp)| _O(n * 2^n)_ | _O(n)_ | Easy | LeetCode, EPI | |
 |152|[Combinations](http://lintcode.com/en/problem/combinations/)| [C++](./C++/combinations.cpp)| _O(n^k)_ | _O(k)_ | Medium | LeetCode, EPI | |
+|153|[Combination Sum II](http://lintcode.com/en/problem/combination-sum-ii/)| [C++](./C++/combination-sum-ii.cpp)| _O(C(n, k))_ | _O(k)_ | Medium | LeetCode | DFS |
 
 ---
 
