@@ -40,10 +40,10 @@ Algorithms
 |1|[A + B Problem](http://lintcode.com/en/problem/a-b-problem/)| [C++](./C++/a-b-problem.cpp)| _O(1)_ | _O(1)_ | Hard | | |
 |82|[Single Number](http://lintcode.com/en/problem/single-number-iii/)| [C++](./C++/single-number.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode| |
 |83|[Single Number II](http://lintcode.com/en/problem/single-number-iii/)| [C++](./C++/single-number-ii.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
-|84|[Single Number III](http://lintcode.com/en/problem/single-number-iii/)| [C++](./C++/single-number-iii.cpp)| _O(n)_ | _O(1)_ | Medium | CC150 | |
+|84|[Single Number III](http://lintcode.com/en/problem/single-number-iii/)| [C++](./C++/single-number-iii.cpp)| _O(n)_ | _O(1)_ | Medium | CTCI | |
 |142|[O(1) Check Power of 2](http://lintcode.com/en/problem/o1-check-power-of-2/)| [C++](./C++/o1-check-power-of-2.cpp)| _O(1)_ | _O(1)_ | Easy | | |
-|179|[Update Bits](http://lintcode.com/en/problem/update-bits/)| [C++](./C++/update-bits.cpp)| _O(1)_ | _O(1)_ | Medium | CC150 | |
-|181|[Convert Integer A to Integer B](http://lintcode.com/en/problem/convert-integer-a-to-integer-b/)| [C++](./C++/convert-integer-a-to-integer-b.cpp)| _O(1)_ | _O(1)_ | Easy | CC150 | |
+|179|[Update Bits](http://lintcode.com/en/problem/update-bits/)| [C++](./C++/update-bits.cpp)| _O(1)_ | _O(1)_ | Medium | CTCI | |
+|181|[Convert Integer A to Integer B](http://lintcode.com/en/problem/convert-integer-a-to-integer-b/)| [C++](./C++/convert-integer-a-to-integer-b.cpp)| _O(1)_ | _O(1)_ | Easy | CTCI | |
 
 ---
 
@@ -90,7 +90,7 @@ Algorithms
 |54|[Convert String to Integer](http://lintcode.com/en/problem/convert-string-to-integer/)|[C++](./C++/convert-string-to-integer.cpp)| _O(n)_ | _O(1)_ | Hard | LeetCode | |
 |55|[Compare Strings](http://lintcode.com/en/problem/compare-strings/)|[C++](./C++/compare-strings.cpp)| _O(n)_ | _O(c)_ | Easy | | |
 |78|[Longest Common Prefix](http://lintcode.com/en/problem/longest-common-prefix/)|[C++](./C++/longest-common-prefix.cpp)| _O(n)_ | _O(1)_ | Medium | | |
-|157|[Unique Characters](http://lintcode.com/en/problem/unique-characters/)|[C++](./C++/unique-characters.cpp)| _O(n)_ | _O(1)_ | Easy | CC150 | |
+|157|[Unique Characters](http://lintcode.com/en/problem/unique-characters/)|[C++](./C++/unique-characters.cpp)| _O(n)_ | _O(1)_ | Easy | CTCI | |
 |158|[Two Strings Are Anagrams](http://lintcode.com/en/problem/two-strings-are-anagrams/)|[C++](./C++/two-strings-are-anagrams.cpp)| _O(n)_ | _O(1)_ | Easy | | |
 |171|[Anagrams](http://lintcode.com/en/problem/anagrams/)|[C++](./C++/anagrams.cpp)| _O(n * klogk)_ | _O(m)_ | Easy | LeetCode, EPI | |
 
@@ -154,7 +154,7 @@ Algorithms
 ##Heap
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
-|4|[Ugly Number](http://lintcode.com/en/problem/ugly-number/)| [C++](./C++/ugly-number.cpp)| _O(k)_ | _O(1)_ | Medium | CC150 | |
+|4|[Ugly Number](http://lintcode.com/en/problem/ugly-number/)| [C++](./C++/ugly-number.cpp)| _O(k)_ | _O(1)_ | Medium | CTCI | |
 |81|[Median in Data Stream](http://lintcode.com/en/problem/median-in-data-stream/)| [C++](./C++/median-in-data-stream.cpp)| _O(nlogn)_ | _O(n)_ | Hard | EPI | BST, Heap |
 |104|[Merge k Sorted Lists](http://lintcode.com/en/problem/merge-k-sorted-lists/)| [C++](./C++/merge-k-sorted-lists.cpp)| _O(n * logk)_ | _O(k)_ | Medium | LeetCode | |
 |130|[Heapify](http://lintcode.com/en/problem/heapify/)| [C++](./C++/heapify.cpp)| _O(n)_ | _O(1)_ | Medium | | |
@@ -186,10 +186,10 @@ Algorithms
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |2|[Trailing Zeros](http://lintcode.com/en/problem/trailing-zeros/)| [C++](./C++/trailing-zeros.cpp)| _O(logn)_ | _O(1)_ | Easy | LeetCode | |
-|3|[Digit Counts](http://lintcode.com/en/problem/digit-counts/)| [C++](./C++/digit-counts.cpp)| _O(logn)_ | _O(1)_ | Medium | CC150 | |
-|114|[Unique Paths](http://lintcode.com/en/problem/unique-paths/)| [C++](./C++/unique-paths.cpp)| _O(min(m, n))_ | _O(1)_ | Easy | LeetCode, CC150 | DP, Math |
-|163|[Unique Binary Search Trees](http://lintcode.com/en/problem/unique-binary-search-trees/)| [C++](./C++/unique-binary-search-trees.cpp)| _O(n)_ | _O(1)_ | Medium | CC150 | DP, Math, `Catalan Number` |
-|180|[Binary Represention](http://lintcode.com/en/problem/delete-digits/)| [C++](./C++/binary-representation.cpp)| _O(1)_ | _O(1)_ | Hard | CC150 | |
+|3|[Digit Counts](http://lintcode.com/en/problem/digit-counts/)| [C++](./C++/digit-counts.cpp)| _O(logn)_ | _O(1)_ | Medium | CTCI | |
+|114|[Unique Paths](http://lintcode.com/en/problem/unique-paths/)| [C++](./C++/unique-paths.cpp)| _O(min(m, n))_ | _O(1)_ | Easy | LeetCode, CTCI | DP, Math |
+|163|[Unique Binary Search Trees](http://lintcode.com/en/problem/unique-binary-search-trees/)| [C++](./C++/unique-binary-search-trees.cpp)| _O(n)_ | _O(1)_ | Medium | CTCI | DP, Math, `Catalan Number` |
+|180|[Binary Represention](http://lintcode.com/en/problem/delete-digits/)| [C++](./C++/binary-representation.cpp)| _O(1)_ | _O(1)_ | Hard | CTCI | |
 
 ---
 
@@ -244,7 +244,7 @@ Algorithms
 |65|[Median of two Sorted Arrays](http://lintcode.com/en/problem/median-of-two-sorted-arrays/)| [C++](./C++/median-of-two-sorted-arrays.cpp)| _O(log(min(m, n)))_ | _O(1)_ | Hard | LeetCode, EPI | Tricky |
 |74|[First Bad Version](http://lintcode.com/en/problem/first-bad-version/)| [C++](./C++/first-bad-version.cpp)| _O(logn)_ | _O(1)_ | Medium | | |
 |75|[Find Peak Element](http://lintcode.com/en/problem/find-peak-element/)| [C++](./C++/find-peak-element.cpp)| _O(logn)_ | _O(1)_ | Medium | LeetCode | |
-|76|[Longest Increasing Subsequence](http://lintcode.com/en/problem/longest-increasing-subsequence/)| [C++](./C++/longest-increasing-subsequence.cpp)| _O(nlogn)_ | _O(n)_ | Medium | CC150 | |
+|76|[Longest Increasing Subsequence](http://lintcode.com/en/problem/longest-increasing-subsequence/)| [C++](./C++/longest-increasing-subsequence.cpp)| _O(nlogn)_ | _O(n)_ | Medium | CTCI | |
 |141|[Sqrt(x)](http://lintcode.com/en/problem/sqrtx/)| [C++](./C++/sqrtx.cpp)| _O(logn)_ | _O(1)_ | Easy | LeetCode | |
 |159|[Find Minimum in Rotated Sorted Array](http://lintcode.com/en/problem/find-minimum-in-rotated-sorted-array/)| [C++](./C++/find-minimum-in-rotated-sorted-array.cpp)| _O(logn)_ | _O(1)_ | Medium | LeetCode | |
 |160|[Find Minimum in Rotated Sorted Array II](http://lintcode.com/en/problem/find-minimum-in-rotated-sorted-array-ii/)| [C++](./C++/find-minimum-in-rotated-sorted-array-ii.cpp)| _O(logn)_ | _O(1)_ | Medium | LeetCode | |
@@ -311,9 +311,9 @@ Algorithms
 |109|[Triangle](http://lintcode.com/en/problem/triangle/)| [C++](./C++/triangle.cpp)| _O(n)_ | _O(n)_ | Easy | LeetCode, EPI | |
 |110|[Minimum Path Sum](http://lintcode.com/en/problem/minimum-path-sum/)| [C++](./C++/minimum-path-sum.cpp)| _O(m * n)_ | _O(min(m, n))_ | Easy | LeetCode, EPI | |
 |111|[Climbing Stairs](http://lintcode.com/en/problem/climbing-stairs/)| [C++](./C++/climbing-stairs.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
-|115|[Unique Paths II](http://lintcode.com/en/problem/unique-paths-ii/)| [C++](./C++/unique-paths-ii.cpp)| _O(m * n)_ | _O(min(m, n))_ | Easy | LeetCode, CC150 | DP, Math |
+|115|[Unique Paths II](http://lintcode.com/en/problem/unique-paths-ii/)| [C++](./C++/unique-paths-ii.cpp)| _O(m * n)_ | _O(min(m, n))_ | Easy | LeetCode, CTCI | DP, Math |
 |118|[Distinct Subsequences](http://lintcode.com/en/problem/distinct-subsequences/)| [C++](./C++/distinct-subsequences.cpp)| _O(m * n)_ | _O(m))_ | Medium | LeetCode | DP |
-|119|[Edit Distance](http://lintcode.com/en/problem/edit-distance/)| [C++](./C++/edit-distance.cpp)| _O(m * n)_ | _O(min(m, n))_ | Medium | LeetCode, CC150 | DP |
+|119|[Edit Distance](http://lintcode.com/en/problem/edit-distance/)| [C++](./C++/edit-distance.cpp)| _O(m * n)_ | _O(min(m, n))_ | Medium | LeetCode, CTCI | DP |
 |125|[Backpack II](http://lintcode.com/en/problem/backpack-ii/)| [C++](./C++/backpack-ii.cpp)| _O(m * n)_ | _O(m)_ | Medium | | |
 |149|[Best Time to Buy and Sell Stock](http://lintcode.com/en/problem/best-time-to-buy-and-sell-stock/)| [C++](./C++/best-time-to-buy-and-sell-stock.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode, EPI | |
 |150|[Best Time to Buy and Sell Stock II](http://lintcode.com/en/problem/best-time-to-buy-and-sell-stock-ii/)| [C++](./C++/best-time-to-buy-and-sell-stock-ii.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode, EPI | |
