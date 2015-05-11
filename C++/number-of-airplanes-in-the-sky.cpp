@@ -1,7 +1,6 @@
 // Time:  O(nlogn)
 // Space: O(n)
 
-// BST solution.
 /**
  * Definition of Interval:
  * classs Interval {
@@ -11,7 +10,61 @@
  *         this->end = end;
  *     }
  */
+
+/**
+ * Definition of Interval:
+ * classs Interval {
+ *     int start, end;
+ *     Interval(int start, int end) {
+ *         this->start = start;
+ *         this->end = end;
+ *     }
+ */
+
 class Solution {
+public:
+    typedef enum {START, END} Endpoint;
+    
+    struct Point {
+        Endpoint type;
+        int time;
+    };
+    
+    struct Compare {
+        bool operator() (const Point&a, const Point&b) {
+            return a.time != b.time ? a.time < b.time : a.type > b.type;
+        }
+    };
+    
+    /**
+     * @param intervals: An interval array
+     * @return: Count of airplanes are in the sky.
+     */
+    int countOfAirplanes(vector<Interval> &airplanes) {
+        int max_planes = 0;
+        int planes = 0;
+        
+        vector<Point> points;
+        for (const auto& i : airplanes) {
+            points.emplace_back(Point{START, i.start});
+            points.emplace_back(Point{END, i.end});
+        }
+        sort(points.begin(), points.end(), Compare());
+        
+        for (const auto& i : points) {
+            if (i.type == START) {
+                ++planes;
+                max_planes = max(max_planes, planes);
+            } else {
+                --planes;
+            }
+        }
+        return max_planes;
+    }
+};
+
+// BST solution.
+class Solution2 {
 public:
     struct Compare {
         bool operator() (const Interval&a, const Interval&b) {
@@ -41,7 +94,7 @@ public:
 };
 
 // Heap solution.
-class Solution2 {
+class Solution3 {
 public:
     struct Compare {
         bool operator() (const Interval&a, const Interval&b) {
