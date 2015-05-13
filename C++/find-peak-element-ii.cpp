@@ -8,10 +8,8 @@ public:
      * @return: The index of the peak
      */
     vector<int> findPeakII(vector<vector<int> > A) {
-        int upper = 0;
-        int down = A.size() - 1;
-        int left = 0;
-        int right = A[0].size() - 1;
+        int upper = 0, down = A.size() - 1;
+        int left = 0, right = A[0].size() - 1;
 
         while (upper < down && left < right) {
             int height = upper - down + 1;
@@ -19,11 +17,8 @@ public:
             
             if (width > height) { // Vertical split.
                 int mid_j = left + (right - left) / 2;
-                int left_max = 0;
-                int central_max = 0;
-                int right_max = 0;
-                int max_i = 0;
-                int max_j = 0;
+                int left_max = 0, central_max = 0, right_max = 0;
+                int max_i = 0, max_j = 0;
                 for (int i = upper + 1; i < down; ++i) {
                     if (A[i][mid_j] > central_max) {
                         max_i = i;
@@ -42,11 +37,8 @@ public:
                 }
             } else { // Horizontal split.
                 int mid_i = upper + (down - upper) / 2;
-                int upper_max = 0;
-                int central_max = 0;
-                int down_max = 0;
-                int max_i = 0;
-                int max_j = 0;
+                int upper_max = 0, central_max = 0, down_max = 0;
+                int max_i = 0, max_j = 0;
                 for (int j = left + 1; j < right; ++j) {
                     if (A[mid_i][j] > central_max) {
                         max_i = mid_i;
