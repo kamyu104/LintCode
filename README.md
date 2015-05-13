@@ -1,9 +1,9 @@
 LintCode
 ======== 
 
-Up to date (2015-05-11), there are `193` problems on [LintCode Online Judge](https://lintcode.com/).
+Up to date (2015-05-12), there are `194` problems on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `193` problems.
+Here is the classification of all `194` problems.
 For extra problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repo.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -246,6 +246,7 @@ Algorithms
 |65|[Median of two Sorted Arrays](http://lintcode.com/en/problem/median-of-two-sorted-arrays/)| [C++](./C++/median-of-two-sorted-arrays.cpp)| _O(log(min(m, n)))_ | _O(1)_ | Hard | LeetCode, EPI | Tricky |
 |74|[First Bad Version](http://lintcode.com/en/problem/first-bad-version/)| [C++](./C++/first-bad-version.cpp)| _O(logn)_ | _O(1)_ | Medium | | |
 |75|[Find Peak Element](http://lintcode.com/en/problem/find-peak-element/)| [C++](./C++/find-peak-element.cpp)| _O(logn)_ | _O(1)_ | Medium | LeetCode | |
+|390|[Find Peak Element II](http://lintcode.com/en/problem/find-peak-element-ii/)| [C++](./C++/find-peak-element-ii.cpp)| _O(max(m, n))_ | _O(1)_ | Hard | | |
 |76|[Longest Increasing Subsequence](http://lintcode.com/en/problem/longest-increasing-subsequence/)| [C++](./C++/longest-increasing-subsequence.cpp)| _O(nlogn)_ | _O(n)_ | Medium | CTCI | |
 |141|[Sqrt(x)](http://lintcode.com/en/problem/sqrtx/)| [C++](./C++/sqrtx.cpp)| _O(logn)_ | _O(1)_ | Easy | LeetCode | |
 |159|[Find Minimum in Rotated Sorted Array](http://lintcode.com/en/problem/find-minimum-in-rotated-sorted-array/)| [C++](./C++/find-minimum-in-rotated-sorted-array.cpp)| _O(logn)_ | _O(1)_ | Medium | LeetCode | |
