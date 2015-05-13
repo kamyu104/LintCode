@@ -21,8 +21,7 @@ public:
                 int max_i = 0, max_j = 0;
                 for (int i = upper + 1; i < down; ++i) {
                     if (A[i][mid_j] > central_max) {
-                        max_i = i;
-                        max_j = mid_j;
+                        max_i = i, max_j = mid_j;
                         central_max = A[i][mid_j];
                     }
                     left_max = max(left_max, A[i][mid_j - 1]);
@@ -41,8 +40,7 @@ public:
                 int max_i = 0, max_j = 0;
                 for (int j = left + 1; j < right; ++j) {
                     if (A[mid_i][j] > central_max) {
-                        max_i = mid_i;
-                        max_j = j;
+                        max_i = mid_i, max_j = j;
                         central_max = A[mid_i][j];
                     }
                     upper_max = max(upper_max, A[mid_i - 1][j]);
