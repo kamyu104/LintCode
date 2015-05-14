@@ -1,7 +1,10 @@
 // Time:  O(max(m, n))
 // Space: O(1)
 
-class Solution { // TLE, test case #15 it never returns even if the function directly returns without computing.
+// TLE, test case #15 it never returns
+// even if the function directly returns without computing.
+// But Python works with the same solution.
+class Solution { 
 public:
     /**
      * @param A: An integer matrix
