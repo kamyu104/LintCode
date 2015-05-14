@@ -3,7 +3,7 @@
 
 // TLE, test case #15 it never returns
 // even if the function directly returns the answer peak "{1, 2}" without computing.
-// But Python works with the same solution.
+// But Python works with the same solution. There might be some problem with test runners of c++ and java.
 class Solution { 
 public:
     /**
