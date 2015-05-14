@@ -2,7 +2,7 @@
 // Space: O(1)
 
 // TLE, test case #15 it never returns
-// even if the function directly returns without computing.
+// even if the function directly returns the answer peak "{1, 2}" without computing.
 // But Python works with the same solution.
 class Solution { 
 public:
