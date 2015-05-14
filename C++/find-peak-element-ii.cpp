@@ -1,9 +1,10 @@
 // Time:  O(max(m, n))
 // Space: O(1)
 
-// TLE, test case #15 it never returns
-// even if the function directly returns the answer peak "{1, 2}" without computing.
-// But Python works with the same solution. There might be some problem with test runners of c++ and java.
+// Currently (2015-05-14), there might be some problem with test runners of C++ and Java.
+// Because whenever running test case #15 it always shows TLE.
+// Even if the function directly returns the answer peak "{1, 2}" without any computing cost, it still gets TLE or MLE.
+// But the same solution really works in Python.
 class Solution { 
 public:
     /**
