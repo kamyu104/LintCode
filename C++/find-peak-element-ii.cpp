@@ -12,7 +12,7 @@ public:
         int left = 0, right = A[0].size() - 1;
 
         while (upper < down && left < right) {
-            int height = upper - down + 1;
+            int height = down - upper + 1;
             int width = right - left + 1;
             
             // T(m, n) = T(m, n / 2) + O(m) = T(m / 2, n / 2) + O(m) + O(n / 2) = ... = O(2m) + O(2n) = O(max(m, n))
