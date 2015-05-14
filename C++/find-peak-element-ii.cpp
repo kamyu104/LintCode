@@ -19,7 +19,7 @@ public:
             if (width > height) { // Vertical split.
                 int mid_j = left + (right - left) / 2;
                 int left_max = 0, central_max = 0, right_max = 0;
-                int max_i = 0, max_j = 0;
+                int max_i = -1, max_j = -1;
                 for (int i = upper + 1; i < down; ++i) {
                     if (A[i][mid_j] > central_max) {
                         max_i = i, max_j = mid_j;
@@ -38,7 +38,7 @@ public:
             } else { // Horizontal split.
                 int mid_i = upper + (down - upper) / 2;
                 int upper_max = 0, central_max = 0, down_max = 0;
-                int max_i = 0, max_j = 0;
+                int max_i = -1, max_j = -1;
                 for (int j = left + 1; j < right; ++j) {
                     if (A[mid_i][j] > central_max) {
                         max_i = mid_i, max_j = j;
