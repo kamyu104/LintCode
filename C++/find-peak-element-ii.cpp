@@ -1,4 +1,4 @@
-// Time:  O(max(m, n))
+// Time:  O(m + n)
 // Space: O(1)
 
 // Currently (2015-05-14), there might be some problem with test runners of C++ and Java.
