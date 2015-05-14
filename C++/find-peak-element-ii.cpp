@@ -15,7 +15,7 @@ public:
             int height = upper - down + 1;
             int width = right - left + 1;
             
-            // T(m, n) = T(m / 2, n / 2) + O(m) + O(n / 2) = O(max(m, n))
+            // T(m, n) = T(m / 2, n / 2) + O(m) + O(n) = O(max(m, n))
             if (width > height) { // Vertical split.
                 int mid_j = left + (right - left) / 2;
                 int left_max = 0, central_max = 0, right_max = 0;
