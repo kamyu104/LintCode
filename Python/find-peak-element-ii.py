@@ -8,12 +8,11 @@ class Solution:
         upper, down = 0, len(A) - 1
         left, right = 0, len(A[0]) - 1
 
-            
         while upper < down and left < right:
             height = down - upper + 1
             width = right - left + 1
             
-            # T(m, n) = T(m / 2, n / 2) + O(m) + O(n / 2) = O(max(m, n))
+            # T(m, n) = T(m, n / 2) + O(m) = T(m / 2, n / 2) + O(m) + O(n / 2) = ... = O(2m) + O(2n) = O(max(m, n))
             if width > height: # Vertical split.
                 mid_j = left + (right - left) / 2
                 left_max, central_max, right_max = 0, 0, 0
@@ -35,7 +34,7 @@ class Solution:
             else: # Horizontal split.
                 mid_i = upper + (down - upper) / 2
                 upper_max, central_max, down_max = 0, 0, 0
-                max_i, max_j = 0, 0
+                max_i, max_j = -1, -1
                 for j in xrange(left + 1, right):
                     if A[mid_i][j] > central_max:
                         max_i, max_j = mid_i, j
