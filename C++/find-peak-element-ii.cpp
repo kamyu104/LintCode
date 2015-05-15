@@ -1,10 +1,6 @@
 // Time:  O(m + n)
 // Space: O(1)
 
-// Currently (2015-05-14), there might be some problem with test runners of C++ and Java.
-// Because whenever running test case #15 it always shows TLE.
-// Even if the function directly returns the answer peak "{1, 2}" without any computing cost, it still gets TLE or MLE.
-// But the same solution really works in Python.
 class Solution { 
 public:
     /**
