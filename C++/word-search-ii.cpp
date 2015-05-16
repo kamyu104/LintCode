@@ -7,7 +7,7 @@ private:
         bool isString = false;
         unordered_map<char, TrieNode *> leaves;
         
-        bool Add(const string& s) {
+        bool Insert(const string& s) {
             auto* p = this;
             for (const auto& c : s) {
                 if (p->leaves.find(c) == p->leaves.cend()) {
@@ -46,7 +46,7 @@ public:
         string curr;
         TrieNode trie;
         for(const auto& word : words) {
-            trie.Add(word);
+            trie.Insert(word);
         }
         
         for(int i = 0; i < board.size(); ++i) {
