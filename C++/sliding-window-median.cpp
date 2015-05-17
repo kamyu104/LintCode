@@ -20,7 +20,7 @@ public:
         for (int i = 0; i < nums.size(); ++i) {
             if (i >= k) {
                 // Remove the element outside the window.
-                if (max_bst.find(nums[i - k]) != max_bst.end()) {
+                if (max_bst.find(nums[i - k]) != max_bst.cend()) {
                     max_bst.erase(max_bst.find(nums[i - k]));
                 } else {
                     min_bst.erase(min_bst.find(nums[i - k]));
@@ -28,25 +28,25 @@ public:
             }
             
             // Balance smaller half and larger half.
-            if (max_bst.empty() || nums[i] > *max_bst.begin()) {
+            if (max_bst.empty() || nums[i] > *max_bst.cbegin()) {
                 min_bst.insert(nums[i]);
                 if (min_bst.size() > max_bst.size() + 1) {
-                    max_bst.insert(*min_bst.begin());
-                    min_bst.erase(min_bst.begin());
+                    max_bst.insert(*min_bst.cbegin());
+                    min_bst.erase(min_bst.cbegin());
                 }
             }
             else {
                 max_bst.insert(nums[i]);
                 if (max_bst.size() > min_bst.size()) {
-                    min_bst.insert(*max_bst.begin());
-                    max_bst.erase(max_bst.begin());
+                    min_bst.insert(*max_bst.cbegin());
+                    max_bst.erase(max_bst.cbegin());
                 }
             }
             
             // If window is full, get the median from 2 BST.
             if (i >= k - 1) {
                 ans.emplace_back(min_bst.size() == max_bst.size() ?
-                                 *max_bst.begin() : *min_bst.begin());
+                                 *max_bst.cbegin() : *min_bst.cbegin());
             }
         }
         
