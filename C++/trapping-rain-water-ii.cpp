@@ -39,7 +39,7 @@ public:
         }
         
         // BFS with priority queue (min heap)
-        while(!heap_.empty()) {
+        while (!heap_.empty()) {
             Cell c = heap_.top();
             heap_.pop();
             is_visited_[c.i][c.j] = true;
@@ -93,8 +93,8 @@ public:
      * @return: an integer
      */
     int trapRainWater(vector<vector<int> > &heights) {
-        int m = heights.size();
-        int n = heights[0].size();
+        const int m = heights.size();
+        const int n = heights[0].size();
         int trap = 0;
         vector<vector<bool>> is_visited(m, vector<bool>(n, false));
         
@@ -113,7 +113,7 @@ public:
         }
         
         // BFS with priority queue (min heap)
-        while(!heap.empty()) {
+        while (!heap.empty()) {
             // Get the lowest Cell.
             Cell c = heap.top();
             heap.pop();
