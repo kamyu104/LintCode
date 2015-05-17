@@ -9,10 +9,10 @@ public:
      * @return: The majority number
      */
     int majorityNumber(vector<int> nums, int k) {
+        const int n = nums.size();
         unordered_map<int, int> hash;
-        int n = nums.size();
         
-        for (auto& i : nums) {
+        for (const auto& i : nums) {
             ++hash[i];
             // Detecting k items in hash, at least one of them must have exactly
             // one in it. We will discard those k items by one for each.
@@ -36,7 +36,7 @@ public:
         }
         
         // Counts the occurrence of each candidate integer.
-        for (auto& i : nums) {
+        for (const auto& i : nums) {
             auto it = hash.find(i);
             if (it != hash.end()) {
                 ++it->second;
