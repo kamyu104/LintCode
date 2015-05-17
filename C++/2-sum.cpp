@@ -14,12 +14,12 @@ public:
         for (int i = 0; i < nums.size(); ++i) {
             // Check if "target - nums[i]" exists or not
             if (hash.find(target - nums[i]) != hash.end()) {
-                return vector<int>{hash[target - nums[i]] + 1, i + 1};
+                return {hash[target - nums[i]] + 1, i + 1};
             }
             hash[nums[i]] = i;
         }
         
-        return vector<int>();
+        return {};
     }
 };
 
