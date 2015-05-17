@@ -29,9 +29,9 @@ public:
         
         // Copy the remaining elements to the new array.
         if (i < A.size()) {
-            copy(A.begin() + i, A.end(), C.begin() + i + j);
+            copy(A.cbegin() + i, A.cend(), C.begin() + i + j);
         } else if (j < B.size()) {
-            copy(B.begin() + j, B.end(), C.begin() + i + j);
+            copy(B.cbegin() + j, B.cend(), C.begin() + i + j);
         }
         
         return C;
