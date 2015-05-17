@@ -19,7 +19,7 @@ public:
         for (const auto& str : strs) {
             string sorted_str(str);
             sort(sorted_str.begin(), sorted_str.end());
-            if(table[sorted_str] >= 2) {
+            if (table[sorted_str] >= 2) {
                 anagrams.emplace_back(str);
             }
         }
