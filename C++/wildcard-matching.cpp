@@ -12,7 +12,7 @@ public:
     bool isMatch(const char *s, const char *p) {
         int p_pos = 0, s_pos = 0;
         int last_s_pos = -1, last_p_pos = -1;
-        int s_len = strlen(s), p_len = strlen(p);
+        const int s_len = strlen(s), p_len = strlen(p);
         while (s_pos < s_len) {
             if (p_pos < p_len && (p[p_pos] == s[s_pos] || p[p_pos] == '?')) {
                 // Matched a char.
@@ -57,8 +57,8 @@ public:
      * @return: A boolean
      */
     bool isMatch(const char *s, const char *p) {
-        size_t s_len = strlen(s);
-        size_t p_len = strlen(p);
+        const size_t s_len = strlen(s);
+        const size_t p_len = strlen(p);
         
         // match[i][j] denotes as:
         // s[0, i - 1] matches p[0, j - 1] or not.
@@ -99,8 +99,8 @@ public:
      * @return: A boolean
      */
     bool isMatch(const char *s, const char *p) {
-        size_t s_len = strlen(s);
-        size_t p_len = strlen(p);
+        const size_t s_len = strlen(s);
+        const size_t p_len = strlen(p);
         
         // match[i][j] denotes as:
         // s[0, i - 1] matches p[0, j - 1] or not.
