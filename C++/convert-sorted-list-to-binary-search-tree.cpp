@@ -41,8 +41,7 @@ public:
     
     // Builds a BST from the (s + 1)-th to the e-th node in L, and returns the
     // root. Node numbering is from 1 to n.
-    TreeNode * BuildBSTFromSortedDoublyListHelper(
-                                                  ListNode **L, int s, int e) {
+    TreeNode * BuildBSTFromSortedDoublyListHelper(ListNode **L, int s, int e) {
         if (s >= e) {
             return nullptr;
         }
