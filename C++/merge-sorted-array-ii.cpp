@@ -1,31 +1,39 @@
 // Time:  O(m + n)
 // Space: O(1)
 
+// If size of A >>>> size of B, you can use binary search to insert the smaller array.
+// It only cost O(mlogn) comparisons instead of O(n), much better.
 class Solution {
 public:
     /**
-     * @param A: sorted integer array A which has m elements,
-     *           but size of A is m+n
-     * @param B: sorted integer array B which has n elements
-     * @return: void
+     * @param A and B: sorted integer array A and B.
+     * @return: A new sorted integer array
      */
-    void mergeSortedArray(int A[], int m, int B[], int n) {
-        int i = m + n;
-        while (m > 0 && n > 0) {
-            if (A[m - 1] > B[n - 1]) {
-                A[i - 1] = A[m - 1];
-                --m;
+    vector<int> mergeSortedArray(vector<int> &A, vector<int> &B) {
+        vector<int> C(A.size() + B.size());
+        
+        int i = 0;
+        int j = 0;
+        
+        // Stop comparing while one of array ends.
+        // Smaller one has high possibility to end first.
+        while (i < A.size() && j < B.size()) {
+            if (A[i] >= B[j]) {
+                C[i + j] = B[j];
+                ++j;
             } else {
-                A[i - 1] = B[n - 1];
-                --n;
+                C[i + j] = A[i];
+                ++i;
             }
-            --i;
         }
         
-        while (n > 0) {
-            A[i - 1] = B[n - 1];
-            --n;
-            --i;
+        // Copy the remaining elements to the new array.
+        if (i < A.size()) {
+            copy(A.begin() + i, A.end(), C.begin() + i + j);
+        } else if (j < B.size()) {
+            copy(B.begin() + j, B.end(), C.begin() + i + j);
         }
+        
+        return C;
     }
 };
