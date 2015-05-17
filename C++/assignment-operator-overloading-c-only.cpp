@@ -21,6 +21,7 @@ public:
                 new_pData = new char[count];
                 copy(object.m_pData, object.m_pData + count, new_pData);
             }
+            
             // 2: Deallocate old memory.
             if (m_pData != nullptr) {
                 delete[] m_pData;
