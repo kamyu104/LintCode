@@ -8,7 +8,7 @@ public:
      * @return: The maximum number inside the window at each moving.
      */
     vector<int> maxSlidingWindow(vector<int> &nums, int k) {
-        int n = nums.size();
+        const int n = nums.size();
         deque<int> q;
         vector<int> max_numbers;
         
