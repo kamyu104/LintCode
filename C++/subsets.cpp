@@ -18,10 +18,10 @@ public:
         for (int i = 0; i < set_size; ++i) {
             for (int j = 0; j < size; ++j) {
                 if (i & (1 << j)) {
-                    v.push_back(nums[j]);
+                    v.emplace_back(nums[j]);
                 }
             }
-            ans.push_back(v);
+            ans.emplace_back(v);
             v.clear();
         }
         

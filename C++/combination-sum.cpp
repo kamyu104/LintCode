@@ -19,7 +19,7 @@ public:
 private:
     void combinationSumHelper(vector<int>& num, int gap, int begin, vector<int>& v,vector<vector<int> > &ans) {
         if (gap == 0) {
-            ans.push_back(v);
+            ans.emplace_back(v);
             return;
         }
         
@@ -27,7 +27,7 @@ private:
             if (gap < num[i]) {
                 return;
             }
-            v.push_back(num[i]);
+            v.emplace_back(num[i]);
             combinationSumHelper(num, gap - num[i], i, v, ans);
             v.pop_back();
         }

@@ -18,7 +18,7 @@ public:
         stack<string> s;
         for (auto tok : infix) {
             if (atoi(tok.c_str())) {
-                postfix.push_back(tok);
+                postfix.emplace_back(tok);
             } else if (tok == "(") {
                 s.push(tok);
             } else if (tok == ")") {
@@ -28,18 +28,18 @@ public:
                     if (tok == "(") {
                         break;
                     }
-                    postfix.push_back(tok);
+                    postfix.emplace_back(tok);
                 }
             } else {
                 while (!s.empty() && precedence(tok) <= precedence(s.top())) {
-                    postfix.push_back(s.top());
+                    postfix.emplace_back(s.top());
                     s.pop();
                 }
                 s.push(tok);
             }
         }
         while (!s.empty()) {
-            postfix.push_back(s.top());
+            postfix.emplace_back(s.top());
             s.pop();
         }
     }

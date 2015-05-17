@@ -58,7 +58,7 @@ public:
                 }
                 isLeftToRight = !isLeftToRight;
                 cur_level_size = q.size();
-                output.push_back(move(cur_level));
+                output.emplace_back(move(cur_level));
             }
         }
         return output;

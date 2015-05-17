@@ -59,7 +59,7 @@ public:
                    vector<string> &temp,
                    string end,
                    vector<vector<string>> &result) {
-        temp.push_back(end);
+        temp.emplace_back(end);
         if (trace.count(end) != 1) {
             vector<string> path = temp;
             reverse(path.begin(), path.end());

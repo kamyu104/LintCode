@@ -58,7 +58,7 @@ public:
         for (auto tok : infix) {
             // Any number would be pushed into stack.
             if (atoi(tok.c_str())) {
-                postfix.push_back(tok);
+                postfix.emplace_back(tok);
             } else if (tok == "(") {
                 s.push(tok);
             } else if (tok == ")") {
@@ -69,13 +69,13 @@ public:
                     if (tok == "(") {
                         break;
                     }
-                    postfix.push_back(tok);
+                    postfix.emplace_back(tok);
                 }
             } else {
                 // Order of tokens in stack should be like "(-*",
                 // The token will be added in an strictly increasing precedence order.
                 while(!s.empty() && precedence(tok) <= precedence(s.top())) {
-                    postfix.push_back(s.top());
+                    postfix.emplace_back(s.top());
                     s.pop();
                 }
                 s.push(tok);
@@ -83,7 +83,7 @@ public:
         }
         // Pop the remaining token and add them to the postfix.
         while (!s.empty()) {
-            postfix.push_back(s.top());
+            postfix.emplace_back(s.top());
             s.pop();
         }
     }

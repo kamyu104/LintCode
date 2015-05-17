@@ -53,7 +53,7 @@ public:
         stack<string> s;
         for (auto tok : infix) {
             if (atoi(tok.c_str())) {
-                prefix.push_back(tok);
+                prefix.emplace_back(tok);
             } else if (tok == ")") {
                 s.push(tok);
             } else if (tok == "(") {
@@ -63,18 +63,18 @@ public:
                     if (tok == ")") {
                         break;
                     }
-                    prefix.push_back(tok);
+                    prefix.emplace_back(tok);
                 }
             } else {
                 while (!s.empty() && precedence(tok) < precedence(s.top())) {
-                    prefix.push_back(s.top());
+                    prefix.emplace_back(s.top());
                     s.pop();
                 }
                 s.push(tok);
             }
         }
         while (!s.empty()) {
-            prefix.push_back(s.top());
+            prefix.emplace_back(s.top());
             s.pop();
         }
         reverse(prefix.begin(), prefix.end());

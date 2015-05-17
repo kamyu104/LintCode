@@ -79,7 +79,7 @@ public:
         TrieNode *nextNode = trie->leaves[grid[i][j]];
         
         // Update current string.
-        curr.push_back(grid[i][j]);
+        curr.emplace_back(grid[i][j]);
         
         // Find the string, add to the answers.
         if (nextNode->isString) {

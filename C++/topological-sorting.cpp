@@ -116,7 +116,7 @@ private:
             for(auto& ancestor: ancestors[node]) {
                 topSortDFS(ancestor, ancestors, scheduled, output);
             }
-            output.push_back(node);
+            output.emplace_back(node);
         }
     }
 public:

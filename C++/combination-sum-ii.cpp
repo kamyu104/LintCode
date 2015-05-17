@@ -19,7 +19,7 @@ public:
 private:
     void combinationSum2Helper(vector<int>& num, int gap, int begin, vector<int>& v,vector<vector<int> > &ans) {
         if (gap == 0) {
-            ans.push_back(v);
+            ans.emplace_back(v);
             return;
         }
         
@@ -30,7 +30,7 @@ private:
             if ( i > begin && num[i] == num[i - 1]) { // skip duplicates
                 continue;
             }
-            v.push_back(num[i]);
+            v.emplace_back(num[i]);
             combinationSum2Helper(num, gap - num[i], i + 1, v, ans); // each element could be chosen only once
             v.pop_back();
         }

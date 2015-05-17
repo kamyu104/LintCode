@@ -17,8 +17,8 @@ public:
             for (size_t j = 0; j < size; ++j) {
                 // only union non-duplicate element or new union set
                 if (i == 0 || sorted_S[i] != sorted_S[i - 1] || j >= previous_size) {
-                    result.push_back(result[j]);
-                    result.back().push_back(sorted_S[i]);
+                    result.emplace_back(result[j]);
+                    result.back().emplace_back(sorted_S[i]);
                 }
             }
             previous_size = size;
