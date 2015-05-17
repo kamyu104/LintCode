@@ -23,7 +23,7 @@ private:
                            unordered_map<DirectedGraphNode *, int> &ancestors) {
         if (nodes.insert(node).second) {
             queue<DirectedGraphNode *> scheduled;
-            scheduled.push(node);
+            scheduled.emplace(node);
             while (!scheduled.empty()) {
                 DirectedGraphNode *node = scheduled.front();
                 scheduled.pop();
@@ -47,7 +47,7 @@ private:
         queue<DirectedGraphNode *> scheduled;
         for (auto& node : graph) {
             if (ancestors[node] == 0) {
-                scheduled.push(node);
+                scheduled.emplace(node);
             }
         }
         

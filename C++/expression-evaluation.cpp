@@ -24,7 +24,7 @@ public:
         stack<string> s;
         for (auto& tok : postfix) {
             if (!is_operator(tok)) {
-                s.push(tok);
+                s.emplace(tok);
             } else {
                 int y = stoi(s.top());
                 s.pop();
@@ -42,7 +42,7 @@ public:
                 else {
                     x /= y;
                 }
-                s.push(to_string(x));
+                s.emplace(to_string(x));
             }
         }
         return stoi(s.top());
@@ -60,7 +60,7 @@ public:
             if (atoi(tok.c_str())) {
                 postfix.emplace_back(tok);
             } else if (tok == "(") {
-                s.push(tok);
+                s.emplace(tok);
             } else if (tok == ")") {
                 // Meet ")", then pop until "(".
                 while (!s.empty()) {
@@ -78,7 +78,7 @@ public:
                     postfix.emplace_back(s.top());
                     s.pop();
                 }
-                s.push(tok);
+                s.emplace(tok);
             }
         }
         // Pop the remaining token and add them to the postfix.

@@ -35,7 +35,7 @@ public:
                 s.pop();
                 --k;
             }
-            s.push(A[i]);
+            s.emplace(A[i]);
         }
         
         // If all digits are increasingly sorted, delete last.

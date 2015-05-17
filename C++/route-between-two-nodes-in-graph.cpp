@@ -28,7 +28,7 @@ public:
     bool BFS( DirectedGraphNode* s, DirectedGraphNode* t,
              unordered_set<DirectedGraphNode *> &visited_node) {
         queue<DirectedGraphNode *> q;
-        q.push(s);
+        q.emplace(s);
         while (!q.empty()) {
             s = q.front();
             q.pop();
@@ -40,7 +40,7 @@ public:
             // Add neighbors which are not visited into the queue
             for (auto& node: s->neighbors) {
                 if (visited_node.insert(node).second) {
-                    q.push(node);
+                    q.emplace(node);
                 }
             }
         }

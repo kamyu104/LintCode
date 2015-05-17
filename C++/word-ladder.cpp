@@ -105,7 +105,7 @@ public:
     int ladderLength(string start, string end, unordered_set<string> &dict) {
         int rounds = 1;
         queue<string> que;
-        que.push(start);
+        que.emplace(start);
         unordered_set<string> visited;
         
         // BFS
@@ -124,7 +124,7 @@ public:
                     for (int j= 'a'; j <= 'z'; ++j) {
                         w[i] = j; // Change one character.
                         if (j != c && visited.count(w) == 0 && dict.count(w) == 1) {
-                            que.push(w);
+                            que.emplace(w);
                             visited.insert(w); // Marked as visited.
                         }
                     }
@@ -149,7 +149,7 @@ public:
     int ladderLength(string start, string end, unordered_set<string> &dict) {
         int rounds = 1;
         queue<string> que;
-        que.push(start);
+        que.emplace(start);
         
         // BFS
         while (que.size() > 0) {
@@ -167,7 +167,7 @@ public:
                     for (int j= 'a'; j <= 'z'; ++j) {
                         w[i] = j; // Change one character.
                         if (j != c && dict.count(w) == 1) {
-                            que.push(w);
+                            que.emplace(w);
                             dict.erase(w); // Marked as visited.
                         }
                     }

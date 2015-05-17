@@ -16,7 +16,7 @@ public:
             if (increasing_height.empty() ||
                 (i < height.size() && height[i] > height[increasing_height.top()])) {
                 // Stores height in a strictly increasing order.
-                increasing_height.push(i);
+                increasing_height.emplace(i);
                 ++i;
             } else {
                 // Compute all largest rectangles of heights in stack which height >= current height.

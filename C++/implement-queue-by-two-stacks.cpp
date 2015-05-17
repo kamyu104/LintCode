@@ -11,7 +11,7 @@ public:
     }
     
     void push(int element) {
-        stack1.push(element);
+        stack1.emplace(element);
     }
     
     int pop() {
@@ -23,7 +23,7 @@ public:
     int top() {
         if (stack2.empty()) {
             while (!stack1.empty()) {
-                stack2.push(stack1.top());
+                stack2.emplace(stack1.top());
                 stack1.pop();
             }
         }

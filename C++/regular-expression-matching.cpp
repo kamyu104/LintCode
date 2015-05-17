@@ -136,7 +136,7 @@ public:
             } else if (p_pos < p_len && (p_pos != p_len - 1 && p[p_pos + 1] == '*')) {
                 // Matched '*'.
                 p_pos += 2;
-                last_pos.push({s_pos, p_pos});
+                last_pos.emplace({s_pos, p_pos});
             } else if (!last_pos.empty()) {
                 // Rollback to the last position of '*' plus 2.
                 // And try next position of last matched one.
@@ -150,7 +150,7 @@ public:
                     ++last_s_pos;
                     s_pos = last_s_pos;
                     p_pos = last_p_pos;
-                    last_pos.push({s_pos, p_pos});
+                    last_pos.emplace({s_pos, p_pos});
                 }
                 else {
                     return false;

@@ -55,7 +55,7 @@ public:
             if (atoi(tok.c_str())) {
                 prefix.emplace_back(tok);
             } else if (tok == ")") {
-                s.push(tok);
+                s.emplace(tok);
             } else if (tok == "(") {
                 while (!s.empty()) {
                     tok = s.top();
@@ -70,7 +70,7 @@ public:
                     prefix.emplace_back(s.top());
                     s.pop();
                 }
-                s.push(tok);
+                s.emplace(tok);
             }
         }
         while (!s.empty()) {

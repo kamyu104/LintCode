@@ -9,10 +9,10 @@ public:
     
     void push(int number) {
         if (elements_.empty()) {
-            elements_.push(0);
+            elements_.emplace(0);
             stack_min_ = number;
         } else {
-            elements_.push(number - stack_min_);
+            elements_.emplace(number - stack_min_);
             if (number < stack_min_) {
                 stack_min_ = number; // Update min.
             }
@@ -50,7 +50,7 @@ public:
         } else if (cached_min_with_count_.top().first == number) {
             ++cached_min_with_count_.top().second;
         }
-        elements_.push(number);
+        elements_.emplace(number);
     }
     
     int pop() {
@@ -87,9 +87,9 @@ public:
     
     void push(int number) {
         if (cached_min_.empty() || cached_min_.top() >= number) {
-            cached_min_.push(number);
+            cached_min_.emplace(number);
         }
-        elements_.push(number);
+        elements_.emplace(number);
     }
     
     int pop() {

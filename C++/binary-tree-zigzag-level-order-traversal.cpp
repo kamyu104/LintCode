@@ -32,7 +32,7 @@ public:
             return output;
         }
         
-        q.push(root);
+        q.emplace(root);
         int cur_level_size = 1;
         while (!q.empty()) {
             // Get the front node in current level.
