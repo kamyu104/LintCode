@@ -27,6 +27,6 @@ public:
             }
         }
         
-        return vector<int>{x, x_xor_y ^ x};
+        return {x, x_xor_y ^ x};
     }
 };

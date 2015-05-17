@@ -16,7 +16,7 @@ public:
             while (!q.empty() && nums[i] >= nums[q.back()]) {
                 q.pop_back();
             }
-            q.push_back(i);
+            q.emplace_back(i);
         }
         
         for (int i = k; i < n; ++i) {
