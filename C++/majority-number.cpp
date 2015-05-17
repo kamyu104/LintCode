@@ -9,7 +9,7 @@ public:
      */
     int majorityNumber(vector<int> nums) {
         int ans = nums[0], cnt = 1;
-        for (auto& i : nums) {
+        for (const auto& i : nums) {
             if (i == ans) {
                 ++cnt;
             }
