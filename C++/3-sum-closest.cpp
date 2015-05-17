@@ -28,7 +28,7 @@ public:
                 
                 if (sum > target) { // Should decrease sum.
                     --k;
-                } else if (sum < target) { // Should increase sum
+                } else if (sum < target) { // Should increase sum.
                     ++j;
                 } else {
                     return target;
