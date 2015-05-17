@@ -21,16 +21,16 @@ class Solution {
      */
     TreeNode* maxTree(vector<int> A) {
         if (A.empty()) {
-            return NULL;
+            return nullptr;
         }
 
         stack<TreeNode *> nodeStack;
-        nodeStack.push(new TreeNode(A[0]));
+        nodeStack.emplace(new TreeNode(A[0]));
         for (int i = 1; i < A.size(); ++i) {
             // The stack stores nodes in descending order.
             if (A[i] <= nodeStack.top()->val) {
                 TreeNode *node = new TreeNode(A[i]);
-                nodeStack.push(node);
+                nodeStack.emplace(node);
             } else {
                 // Pop every node which value is less than A[i],
                 // and let them as right children of
@@ -48,7 +48,7 @@ class Solution {
                 // and push A[i] to the stack.
                 TreeNode *node = new TreeNode(A[i]);
                 node->left = smaller_node;
-                nodeStack.push(node);
+                nodeStack.emplace(node);
             }
         }
 
