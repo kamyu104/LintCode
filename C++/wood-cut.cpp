@@ -14,7 +14,7 @@ public:
             return 0;
         }
         
-        int left = 1, right = *max_element(L.begin(), L.end());
+        int left = 1, right = *max_element(L.cbegin(), L.cend());
         while (left <= right) {
             int mid = left + (right - left) / 2;
             

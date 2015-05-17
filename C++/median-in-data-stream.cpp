@@ -17,23 +17,23 @@ public:
         for (int i = 0; i < nums.size(); ++i) {
             
             // Balance smaller half and larger half.
-            if (max_bst.empty() || nums[i] > *max_bst.begin()) {
+            if (max_bst.empty() || nums[i] > *max_bst.cbegin()) {
                 min_bst.insert(nums[i]);
                 if (min_bst.size() > max_bst.size() + 1) {
-                    max_bst.insert(*min_bst.begin());
-                    min_bst.erase(min_bst.begin());
+                    max_bst.insert(*min_bst.cbegin());
+                    min_bst.erase(min_bst.cbegin());
                 }
             }
             else {
                 max_bst.insert(nums[i]);
                 if (max_bst.size() > min_bst.size()) {
-                    min_bst.insert(*max_bst.begin());
-                    max_bst.erase(max_bst.begin());
+                    min_bst.insert(*max_bst.cbegin());
+                    max_bst.erase(max_bst.cbegin());
                 }
             }
             
             ans.emplace_back(min_bst.size() == max_bst.size() ?
-                             *max_bst.begin() : *min_bst.begin());
+                             *max_bst.cbegin() : *min_bst.cbegin());
         }
         
         return ans;
