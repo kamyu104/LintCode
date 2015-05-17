@@ -66,7 +66,7 @@ public:
             result.emplace_back(move(path));
         }
         else {
-            for(auto& word: trace[end]) {
+            for (auto& word: trace[end]) {
                 traceBack(trace, temp, word, result);
             }
         }

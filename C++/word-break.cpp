@@ -16,11 +16,11 @@ public:
         // Filter out impossible string which alphabet set is not covered by dict.
         unordered_set<char> chrs;
         for (const auto& word : dict) {
-            for(const auto& c : word) {
+            for (const auto& c : word) {
                 chrs.insert(c);
             }
         } 
-        for(const auto& c : s) {
+        for (const auto& c : s) {
             if (chrs.find(c) == chrs.end())
                 return false;
         }

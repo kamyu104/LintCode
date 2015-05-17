@@ -70,13 +70,13 @@ public:
         
         // BFS
         while (level[rounds % 2].size() > 0) {
-            for(auto& word : level[rounds % 2]) {
+            for (auto& word : level[rounds % 2]) {
                 if (word == end) {
                     return rounds;
                 }
                 
                 for (int i = 0; i < word.length(); ++i) {
-                    for(int j= 'a'; j <= 'z'; ++j) {
+                    for (int j= 'a'; j <= 'z'; ++j) {
                         string candidate(word);
                         candidate[i] = j; // Change one character.
                         if (visited.count(candidate) == 0 && dict.count(candidate) == 1) {
@@ -121,7 +121,7 @@ public:
                 
                 for (int i = 0; i < w.length(); ++i) {
                     char c = w[i]; // Keep the original character.
-                    for(int j= 'a'; j <= 'z'; ++j) {
+                    for (int j= 'a'; j <= 'z'; ++j) {
                         w[i] = j; // Change one character.
                         if (j != c && visited.count(w) == 0 && dict.count(w) == 1) {
                             que.push(w);
@@ -164,7 +164,7 @@ public:
                 
                 for (int i = 0; i < w.length(); ++i) {
                     char c = w[i]; // Keep the original character.
-                    for(int j= 'a'; j <= 'z'; ++j) {
+                    for (int j= 'a'; j <= 'z'; ++j) {
                         w[i] = j; // Change one character.
                         if (j != c && dict.count(w) == 1) {
                             que.push(w);

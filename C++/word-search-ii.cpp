@@ -45,12 +45,12 @@ public:
         vector<vector<bool>> visited(board.size(), vector<bool>(board[0].size(), false));
         string curr;
         TrieNode trie;
-        for(const auto& word : words) {
+        for (const auto& word : words) {
             trie.Insert(word);
         }
         
-        for(int i = 0; i < board.size(); ++i) {
-            for(int j = 0; j < board[0].size(); ++j) {
+        for (int i = 0; i < board.size(); ++i) {
+            for (int j = 0; j < board[0].size(); ++j) {
                 wordSearchDFS(board, visited, &trie, i, j, curr,  ret);
             }
         }
@@ -91,7 +91,7 @@ public:
         
         // Try each direction.
         vector<pair<int, int>> direction{{0, -1}, {0, 1}, {-1, 0}, {1, 0}};
-        for(int k = 0; k < 4; ++k) {
+        for (int k = 0; k < 4; ++k) {
             wordSearchDFS(grid, visited, nextNode,
                           i + direction[k].first, j + direction[k].second, curr, ret);
         }

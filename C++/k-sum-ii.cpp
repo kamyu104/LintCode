@@ -26,7 +26,7 @@ public:
             return;
         }
         
-        for(int i = start; i <= A.size() - k; i++) {
+        for (int i = start; i <= A.size() - k; i++) {
             curr.emplace_back(A[i]);
             helper(A, k - 1, i + 1, target - A[i], curr, ans);
             curr.pop_back();

@@ -24,7 +24,7 @@ public:
         
         for (int i = 1; i < m + 1; ++i) {
             steps[i % 2][0] = i;
-            for(int j = 1; j < n + 1; ++j) {
+            for (int j = 1; j < n + 1; ++j) {
                 steps[i % 2][j] = word1[i - 1] == word2[j - 1] ?
                 steps[(i - 1) % 2][j - 1] :
                 1 + min(steps[(i - 1) % 2][j - 1],
@@ -61,7 +61,7 @@ public:
         
         for (int i = 1; i < m + 1; ++i) {
             steps[i][0] = i;
-            for(int j = 1; j < n + 1; ++j) {
+            for (int j = 1; j < n + 1; ++j) {
                 steps[i][j] = word1[i - 1] == word2[j - 1] ?
                 steps[i - 1][j - 1] :
                 1 + min(steps[i - 1][j - 1],

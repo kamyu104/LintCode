@@ -45,7 +45,7 @@ public:
         auto prefix_len = strs[0].length();
         for (const auto& str : strs) {
             auto i = 0;
-            for(; i < str.length() && i < prefix_len && str[i] == strs[0][i]; ++i);
+            for (; i < str.length() && i < prefix_len && str[i] == strs[0][i]; ++i);
             if (i < prefix_len) {
                 prefix_len = i;
             }

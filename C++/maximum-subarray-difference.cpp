@@ -61,7 +61,7 @@ public:
         
         // Compute the max diff of two non-overlapping subarrays.
         int max_diff = 0;
-        for(int i = 0; i < n - 1; ++i) {
+        for (int i = 0; i < n - 1; ++i) {
             max_diff = max(max_diff, abs(max_LR[i] - min_RL[i+1]));
             max_diff = max(max_diff, abs(min_LR[i] - max_RL[i+1]));
         }

@@ -9,7 +9,7 @@ public:
      */
     int minSubArray(vector<int> nums) {
         int min_sum = INT_MAX, sum = 0;
-        for(auto& i : nums) {
+        for (auto& i : nums) {
             sum += i;
             min_sum = min(min_sum, sum);
             if (sum > 0) {

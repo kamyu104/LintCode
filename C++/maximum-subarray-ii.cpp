@@ -36,7 +36,7 @@ public:
         
         // Compute the max sum of two non-overlapping subarrays.
         int max_sum = INT_MIN;
-        for(int i = 0; i < n - 1; ++i) {
+        for (int i = 0; i < n - 1; ++i) {
             max_sum = max(max_sum, max_LR[i] + max_RL[i+1]);
         }
         

@@ -13,8 +13,8 @@ public:
         vector<vector<bool>> visited(board.size(), vector<bool>(board[0].size(), false));
         int curr = 0;
         
-        for(int i = 0; i < board.size(); ++i) {
-            for(int j = 0; j < board[0].size(); ++j) {
+        for (int i = 0; i < board.size(); ++i) {
+            for (int j = 0; j < board[0].size(); ++j) {
                 if (wordSearchDFS(board, visited, word, i, j, curr)) {
                     return true;
                 }
@@ -53,7 +53,7 @@ public:
         
         // Try each direction.
         vector<pair<int, int>> direction{{0, -1}, {0, 1}, {-1, 0}, {1, 0}};
-        for(int k = 0; k < 4; ++k) {
+        for (int k = 0; k < 4; ++k) {
             if (wordSearchDFS(grid, visited, word,
                               i + direction[k].first, j + direction[k].second, curr)) {
                 return true;

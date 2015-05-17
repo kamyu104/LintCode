@@ -76,7 +76,7 @@ public:
         // Find ancestors of each node by DFS
         unordered_set<DirectedGraphNode *> nodes;
         unordered_map<DirectedGraphNode *, int> ancestors;
-        for(auto& node :graph) {
+        for (auto& node :graph) {
             findDependencyBFS(node, nodes, ancestors);
         }
         
@@ -100,7 +100,7 @@ private:
                            unordered_set<DirectedGraphNode *> &nodes,
                            unordered_map<DirectedGraphNode *, vector<DirectedGraphNode *>> &ancestors) {
         if (nodes.insert(node).second) {
-            for(auto& neighbor : node->neighbors) {
+            for (auto& neighbor : node->neighbors) {
                 ancestors[neighbor].emplace_back(node);
                 findDependencyDFS(neighbor, nodes, ancestors);
             }
@@ -113,7 +113,7 @@ private:
                     unordered_set<DirectedGraphNode *> &scheduled,
                     vector<DirectedGraphNode *> &output) {
         if (scheduled.insert(node).second) {
-            for(auto& ancestor: ancestors[node]) {
+            for (auto& ancestor: ancestors[node]) {
                 topSortDFS(ancestor, ancestors, scheduled, output);
             }
             output.emplace_back(node);
@@ -130,13 +130,13 @@ public:
         // Find ancestors of each node by DFS
         unordered_set<DirectedGraphNode *> nodes;
         unordered_map<DirectedGraphNode *, vector<DirectedGraphNode *>> ancestors;
-        for(auto& node :graph) {
+        for (auto& node :graph) {
             findDependencyDFS(node, nodes, ancestors);
         }
         
         // Output topological order by DFS
         unordered_set<DirectedGraphNode *> scheduled;
-        for(auto& node : graph) {
+        for (auto& node : graph) {
             topSortDFS(node, ancestors, scheduled, output);
         }
         

@@ -23,7 +23,7 @@ public:
                 int upper = min(max_num, j + target);
                 int lower = max(1, j - target);
                 min_cost[i % 2][j] = INT_MAX;
-                for(int k = lower; k <= upper; ++k) {
+                for (int k = lower; k <= upper; ++k) {
                     min_cost[i % 2][j] = min(min_cost[i % 2][j],
                                              min_cost[(i - 1) % 2][k]);
                 }

@@ -10,7 +10,7 @@ public:
      * @return: nothing
      */
     void sortColors2(vector<int> &colors, int k) {
-        for(int i = 0; i < colors.size(); ++i) {
+        for (int i = 0; i < colors.size(); ++i) {
             if (colors[i] > 0) {
                 int pos = colors[i] - 1;
                 if (colors[pos] <= 0) { // Bucket exists.

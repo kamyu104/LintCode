@@ -20,7 +20,7 @@ public:
         heap.emplace(5);
         heap.emplace(7);
         
-        for(int i = 0; i < k; ++i) {
+        for (int i = 0; i < k; ++i) {
             if (heap.top() % 3 == 0) {
                 ugly_number = heap.top();
                 heap.pop();
