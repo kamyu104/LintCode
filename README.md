@@ -305,7 +305,7 @@ Algorithms
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |29|[Interleaving String](http://lintcode.com/en/problem/interleaving-string/)| [C++](./C++/interleaving-string.cpp)| _O(m * b)_ | _O(min(m, n))_ | Medium | EPI | |
 |43|[Maximum Subarray III](http://lintcode.com/en/problem/maximum-subarray-iii/)| [C++](./C++/maximum-subarray-iii.cpp)| _O(k * n^2)_ | _O(k * n)_ | Hard | | |
-|77|[Longest Common Sequence](http://lintcode.com/en/problem/longest-common-sequence/)| [C++](./C++/longest-common-sequence.cpp)| _O(m * n)_ | _O(min(m, n))_ | Medium | | |
+|77|[Longest Common Subsequence](http://lintcode.com/en/problem/longest-common-subsequence/)| [C++](./C++/longest-common-subsequence.cpp)| _O(m * n)_ | _O(min(m, n))_ | Medium | | |
 |79|[Longest Common Substring](http://lintcode.com/en/problem/longest-common-substring/)| [C++](./C++/longest-common-substring.cpp)| _O(m * n)_ | _O(min(m, n))_ | Medium | | |
 |89|[K Sum](http://lintcode.com/en/problem/k-sum/)| [C++](./C++/k-sum.cpp)| _O(k * n * t)_ | _O(n * t)_ | Hard | | |
 |91|[Minimum Adjustment Cost](http://lintcode.com/en/problem/minimum-adjustment-cost/)| [C++](./C++/minimum-adjustment-cost.cpp)| _O(k * n * t)_ | _O(k)_ | Medium | | |
