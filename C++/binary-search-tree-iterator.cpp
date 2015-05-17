@@ -18,23 +18,6 @@
  *    TreeNode * node = iterator.next();
  *    do something for node
  */
-/**
- * Definition of TreeNode:
- * class TreeNode {
- * public:
- *     int val;
- *     TreeNode *left, *right;
- *     TreeNode(int val) {
- *         this->val = val;
- *         this->left = this->right = NULL;
- *     }
- * }
- * Example of iterate a tree:
- * Solution iterator = Solution(root);
- * while (iterator.hasNext()) {
- *    TreeNode * node = iterator.next();
- *    do something for node
- */
 class Solution {
 public:
     //@param root: The root of binary tree.

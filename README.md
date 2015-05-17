@@ -294,7 +294,7 @@ Algorithms
 |7|[Binary Tree Serialization](http://lintcode.com/en/problem/binary-tree-serialization/)| [C++](./C++/binary-tree-serialization.cpp)| _O(n)_ | _O(h)_ | Medium | LeetCode | |
 |11|[Search Range in Binary Search Tree](http://lintcode.com/en/problem/search-range-in-binary-search-tree/)| [C++](./C++/search-range-in-binary-search-tree.cpp)| _O(n)_ | _O(h)_ | Medium | EPI | |
 |84|[Remove Node in Binary Search Tree](http://lintcode.com/en/problem/remove-node-in-binary-search-tree/)| [C++](./C++/remove-node-in-binary-search-tree.cpp)| _O(h)_ | _O(h)_ | Hard | | |
-|85|[Implement Iterator of Binary Search Tree](http://lintcode.com/en/problem/implement-iterator-of-binary-search-tree/)| [C++](./C++/implement-iterator-of-binary-search-tree.cpp)| _O(1)_ | _O(h)_ | Hard | LeetCode | |
+|86|[Binary Search Tree Iterator](http://lintcode.com/en/problem/binary-search-tree-iterator/)| [C++](./C++/binary-search-tree-iterator.cpp)| _O(1)_ | _O(h)_ | Hard | LeetCode | |
 |360|[Sliding Window Median](http://lintcode.com/en/problem/sliding-window-median/)| [C++](./C++/sliding-window-median.cpp)| _O(nlogw)_ | _O(w)_ | Hard | | BST, Tricky |
 |391|[Number of Airplanes in the Sky](http://lintcode.com/en/problem/number-of-airplanes-in-the-sky/)| [C++](./C++/number-of-airplanes-in-the-sky.cpp)| _O(nlogn)_ | _O(1)_ | Easy | | BST, Heap |
 
