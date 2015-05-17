@@ -10,16 +10,15 @@ public:
      * @return an integer
      */
     int kSum(vector<int> A, int k, int target) {
-        int n = A.size();
+        const int n = A.size();
         
         // table[i][j][t] denotes the number of ways to select,
         // from first i elements, j elements whose sum equals to t
         vector<vector<vector<int>>> table(2, vector<vector<int>>(n + 1, vector<int>(target + 1, 0)));
         
-        for(int i = 1; i <= n; ++i) {
-            if (A[i - 1] <= target)
-            {
-                for(int j = i; j <= n; ++j) {
+        for (int i = 1; i <= n; ++i) {
+            if (A[i - 1] <= target) {
+                for (int j = i; j <= n; ++j) {
                     table[1][j][A[i - 1]] = 1;
                 }
             }
@@ -54,7 +53,7 @@ public:
      * @return an integer
      */
     int kSum(vector<int> A, int k, int target) {
-        int n = A.size();
+        const int n = A.size();
         
         // table[i][j][t] denotes the number of ways to select,
         // from first i elements, j elements whose sum equals to t

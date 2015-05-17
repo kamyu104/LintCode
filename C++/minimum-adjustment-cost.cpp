@@ -8,15 +8,15 @@ public:
      * @param target: An integer.
      */
     int MinAdjustmentCost(vector<int> A, int target) {
-        int n = A.size();
-        int max_num = 100;
+        const int n = A.size();
+        const int max_num = 100;
         
         // min_cost[i][j] denotes the min cost of the first i elements
         // with target j.
         vector<vector<int>> min_cost(2, vector<int>(max_num + 1, 0));
         
-        for(int i = 1; i <= n; ++i) {
-            for(int j = 1; j <= max_num; ++j) {
+        for (int i = 1; i <= n; ++i) {
+            for (int j = 1; j <= max_num; ++j) {
                 // min_cost[i][j] = abs(A[i - 1] - j) +
                 //                  min(min_cost[i][k],
                 //                  for each k s.t. | k - j | <= target)
