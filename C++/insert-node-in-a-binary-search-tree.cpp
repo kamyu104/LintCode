@@ -9,13 +9,13 @@ public:
      * @return: The root of the new binary search tree->
      */
     TreeNode* insertNode(TreeNode* root, TreeNode* node) {
-        if (root == NULL) {
+        if (root == nullptr) {
             return node;
         }
         TreeNode* curr = root;
         while (true) {
             if (node->val < curr->val) {
-                if (curr->left != NULL) {
+                if (curr->left != nullptr) {
                     curr = curr->left;
                 }
                 else {
@@ -23,7 +23,7 @@ public:
                     break;
                 }
             } else if (node->val > curr->val) {
-                if (curr->right != NULL) {
+                if (curr->right != nullptr) {
                     curr = curr->right;
                 }
                 else {
@@ -47,7 +47,7 @@ public:
      * @return: The root of the new binary search tree->
      */
     TreeNode* insertNode(TreeNode* root, TreeNode* node) {
-        if (root == NULL) {
+        if (root == nullptr) {
             return node;
         }
         if (node->val < root->val) {

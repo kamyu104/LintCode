@@ -26,7 +26,7 @@ public:
     vector<TreeNode *> generateTrees(int start, int end) {
         vector<TreeNode *> output;
         if (start > end) {
-            output.push_back(NULL);
+            output.emplace_back(nullptr);
             return output;
         }
         
@@ -38,7 +38,7 @@ public:
                     TreeNode *root = new TreeNode(i);
                     root->left = clone(left);
                     root->right = clone(right);
-                    output.push_back(root);
+                    output.emplace_back(root);
                 }
             }
             
@@ -47,7 +47,7 @@ public:
     }
     
     TreeNode *clone(TreeNode *root) {
-        TreeNode *newRoot = NULL;
+        TreeNode *newRoot = nullptr;
         
         if (root) {
             newRoot = new TreeNode(root->val);
