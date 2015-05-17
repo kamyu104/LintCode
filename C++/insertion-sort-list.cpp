@@ -38,7 +38,7 @@ public:
     }
     
     ListNode* findInsertPos(ListNode *head, int x) {
-        ListNode *pre = NULL;
+        ListNode *pre = nullptr;
         for (ListNode *cur = head; cur && cur->val <= x;
              pre = cur, cur = cur->next);
         return pre;

@@ -33,7 +33,7 @@ private:
     void deserializeHelper(string data, int &start,  TreeNode *&root) {
         int num;
         if (!getNumber(data, start, num)) {
-            root = NULL;
+            root = nullptr;
             return;
         }
         else {
@@ -76,7 +76,7 @@ public:
      * "serialize" method.
      */
     TreeNode *deserialize(string data) {
-        TreeNode *root = NULL;
+        TreeNode *root = nullptr;
         int start = 0;
         deserializeHelper(data, start, root);
         return root;
