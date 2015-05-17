@@ -10,7 +10,7 @@ public:
     int singleNumberII(vector<int> &A) {
         int one = 0, two = 0;
         
-        for (auto& i : A) {
+        for (const auto& i : A) {
             int new_one, new_two;
             new_one = (~i & one) | (i & ~one & ~two);
             new_two = (~i & two) | (i & one);
