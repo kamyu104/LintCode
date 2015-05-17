@@ -70,7 +70,7 @@ public:
         if (source != nullptr && target != nullptr) {
             string src(source), tgt(target);
             for (int i = 0; i < src.length() - tgt.length() + 1; ++i) {
-                if(src.substr(i, tgt.length()) == tgt) {
+                if (src.substr(i, tgt.length()) == tgt) {
                     return i;
                 }
             }
