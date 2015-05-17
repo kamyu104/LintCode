@@ -9,11 +9,11 @@ public:
      * @return: An integer indicate the total occurrence of target in the given matrix
      */
     int searchMatrix(vector<vector<int> > &matrix, int target) {
-        int m = matrix.size();
+        const int m = matrix.size();
         if (m == 0) {
             return 0;
         }
-        int n = matrix[0].size();
+        const int n = matrix[0].size();
         if  (n == 0) {
             return 0;
         }

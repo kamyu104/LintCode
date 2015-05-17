@@ -14,8 +14,8 @@ public:
         }
         
         // Treat matrix as 1D array.
-        int m = matrix.size();
-        int n = matrix[0].size();
+        const int m = matrix.size();
+        const int n = matrix[0].size();
         int left = 0;
         int right = m * n - 1;
         
@@ -52,8 +52,8 @@ public:
         }
         
         // Treat matrix as 1D array.
-        int m = matrix.size();
-        int n = matrix[0].size();
+        const int m = matrix.size();
+        const int n = matrix[0].size();
         int left = 0;
         int right = m * n;
         
@@ -89,8 +89,8 @@ public:
         }
         
         // Treat matrix as 1D array.
-        int m = matrix.size();
-        int n = matrix[0].size();
+        const int m = matrix.size();
+        const int n = matrix[0].size();
         int left = -1;
         int right = m * n;
         
