@@ -1,9 +1,9 @@
 LintCode
 ======== 
 
-Up to date (2015-05-12), there are `194` problems on [LintCode Online Judge](https://lintcode.com/).
+Up to date (2015-05-17), there are `196` problems on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `194` problems.
+Here is the classification of all `196` problems.
 For extra problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repo.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -30,7 +30,7 @@ Algorithms
 * [Binary Search Trees](https://github.com/kamyu104/LintCode#binary-search-trees)
 * [Dynamic Programming](https://github.com/kamyu104/LintCode#dynamic-programming)
 * [Greedy](https://github.com/kamyu104/LintCode#greedy)
-* [Design Pattern](https://github.com/kamyu104/LintCode#design-pattern)
+* [OO Design](https://github.com/kamyu104/LintCode#oo-pattern)
 
 ---
 
@@ -341,8 +341,9 @@ Algorithms
 
 ---
 
-##Design Pattern
+##OO Pattern
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |204|[Singleton](http://lintcode.com/en/problem/singleton/)| [C++](./C++/singleton.cpp)| _O(1)_ | _O(1)_ | Easy | | |
+|208|[Assignment Operator Overloading (C++ Only)](http://lintcode.com/en/problem/assignment-operator-overloading-c-only/)| [C++](./C++/assignment-operator-overloading-c-only.cpp)| _O(n)_ | _O(1)_ | Medium | | |
 
