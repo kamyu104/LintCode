@@ -19,7 +19,7 @@ public:
             if (object.m_pData != nullptr) {
                 size_t count = strlen(object.m_pData);
                 new_pData = new char[count];
-                std::copy(object.m_pData, object.m_pData + count, new_pData);
+                copy(object.m_pData, object.m_pData + count, new_pData);
             }
             // 2: Deallocate old memory.
             if (m_pData != nullptr) {
