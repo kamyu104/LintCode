@@ -12,12 +12,12 @@ public:
      */
     bool compareStrings(string A, string B) {
         unordered_map<char, int> h;
-        for (auto& c: B) {
+        for (const auto& c: B) {
             ++h[c];
         }
         
         size_t cnt = B.length();
-        for (auto& c: A) {
+        for (const auto& c: A) {
             if (h[c] > 0) {
                 --h[c];
                 --cnt;
@@ -45,11 +45,11 @@ public:
      */
     bool compareStrings(string A, string B) {
         unordered_map<char, int> h;
-        for (auto& c: A) {
+        for (const auto& c: A) {
             ++h[c];
         }
         
-        for (auto& c: B) {
+        for (const auto& c: B) {
             if (--h[c] < 0) {
                 return false;
             }
