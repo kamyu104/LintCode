@@ -10,7 +10,7 @@ public:
         BSTreeNode(int val, int count) {
             this->val = val;
             this->count = count;
-            this->left = this->right = NULL;
+            this->left = this->right = nullptr;
         }
     };
     /**
@@ -37,7 +37,7 @@ public:
     
     // Insert node into BST.
     BSTreeNode* insertNode(BSTreeNode* root, BSTreeNode* node) {
-        if (root == NULL) {
+        if (root == nullptr) {
             return node;
         }
         BSTreeNode* curr = root;
@@ -45,14 +45,14 @@ public:
             // Insert left if smaller.
             if (node->val < curr->val) {
                 ++curr->count; // Increase the number of left children.
-                if (curr->left != NULL) {
+                if (curr->left != nullptr) {
                     curr = curr->left;
                 } else {
                     curr->left = node;
                     break;
                 }
             } else { // Insert right if larger or equal.
-                if (curr->right != NULL) {
+                if (curr->right != nullptr) {
                     curr = curr->right;
                 } else {
                     curr->right = node;
@@ -65,7 +65,7 @@ public:
     
     // Query the smaller count of the value.
     int query(BSTreeNode* root, int val) {
-        if (root == NULL) {
+        if (root == nullptr) {
             return 0;
         }
         int count = 0;
