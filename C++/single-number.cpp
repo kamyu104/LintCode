@@ -9,11 +9,10 @@ public:
      */
     int singleNumber(vector<int> &A) {
         int single = 0;
-        for (auto& i : A) {
+        for (const auto& i : A) {
             single ^= i;
         }
         
         return single;
     }
 };
-
