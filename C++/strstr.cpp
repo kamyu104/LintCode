@@ -11,7 +11,7 @@ public:
      */
     int strStr(const char *source, const char *target) {
         if (source != nullptr && target != nullptr) {
-            string src(source), tgt(target);
+            const string src(source), tgt(target);
             if (tgt.empty()) {
                 return 0;
             }
@@ -23,7 +23,7 @@ public:
     
     
     int KMP(const string& text, const string& pattern) {
-        vector<int> prefix = getPrefix(pattern);
+        const vector<int> prefix = getPrefix(pattern);
         int j = -1;
         for (int i = 0; i < text.length(); ++i) {
             while (j > -1 && pattern[j + 1] != text[i]) {
@@ -68,7 +68,7 @@ public:
      */
     int strStr(const char *source, const char *target) {
         if (source != nullptr && target != nullptr) {
-            string src(source), tgt(target);
+            const string src(source), tgt(target);
             for (int i = 0; i < src.length() - tgt.length() + 1; ++i) {
                 if (src.substr(i, tgt.length()) == tgt) {
                     return i;
