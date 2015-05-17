@@ -10,9 +10,9 @@ public:
      */
     int hashCode(string key,int HASH_SIZE) {
         long long value = 0L;
-        for (auto& c : key) {
+        for (const auto& c : key) {
             value = value * 33L % HASH_SIZE;
-            value = (value + static_cast<long long>(c) % HASH_SIZE) % HASH_SIZE;
+            value = (value + static_cast<const long long>(c) % HASH_SIZE) % HASH_SIZE;
         }
         return static_cast<int>(value);
     }
