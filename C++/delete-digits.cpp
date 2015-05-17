@@ -21,7 +21,7 @@ public:
      *@return: A string
      */
     string DeleteDigits(string A, int k) {
-        auto len = A.size();
+        const auto len = A.size();
         
         // Handle boundary case
         if (len == k) {
@@ -77,7 +77,7 @@ public:
      *@return: A string
      */
     string DeleteDigits(string A, int k) {
-        auto len = A.size();
+        const auto len = A.size();
         
         // Handle boundary case
         if (len == k) {
