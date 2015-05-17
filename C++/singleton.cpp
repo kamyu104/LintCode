@@ -8,7 +8,7 @@ public:
      * @return: The same instance of this class every time
      */
     static Solution* getInstance() {
-        static Solution *instance = new Solution();
+        static Solution *instance = new Solution(); // C++ 11 thread-safe local-static-initialization
         return instance;
     }
 private:
