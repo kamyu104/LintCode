@@ -32,6 +32,6 @@ public:
         }
         
         // return min of min_cost[n] excluding min_cost[n][0]
-        return *min_element(next(min_cost[n % 2].begin()), min_cost[n % 2].end());
+        return *min_element(next(min_cost[n % 2].cbegin()), min_cost[n % 2].cend());
     }
 };
