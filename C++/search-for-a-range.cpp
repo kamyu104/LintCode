@@ -9,10 +9,10 @@ class Solution {
      */
 public:
     vector<int> searchRange(vector<int> &A, int target) {
-        auto start = lower_bound(A.begin(), A.end(), target);
-        auto end = upper_bound(A.begin(), A.end(), target);
-        if (start != A.end() && *start == target) {
-            return {start - A.begin(), end - A.begin() - 1};
+        const auto start = lower_bound(A.cbegin(), A.cend(), target);
+        const auto end = upper_bound(A.cbegin(), A.cend(), target);
+        if (start != A.cend() && *start == target) {
+            return {start - A.cbegin(), end - A.cbegin() - 1};
         }
         return {-1, -1};
     }
@@ -26,8 +26,8 @@ class Solution2 {
      */
 public:
     vector<int> searchRange(vector<int> &A, int target) {
-        int begin = lower_bound(A, target);
-        int end = upper_bound(A, target);
+        const int begin = lower_bound(A, target);
+        const int end = upper_bound(A, target);
         
         if(begin < A.size() && A[begin] == target)
             return {begin, end - 1};
@@ -40,9 +40,9 @@ private:
         int left = 0;
         int right = A.size();
         // Find min left s.t. A[left] >= target.
-        while(left < right) {
+        while (left < right) {
             int mid = left + (right - left) / 2;
-            if(A[mid] >= target) {
+            if (A[mid] >= target) {
                 right = mid;
             } else {
                 left = mid + 1;
@@ -55,9 +55,9 @@ private:
         int left = 0;
         int right = A.size();
         // Find min left s.t. A[left] > target.
-        while(left < right) {
+        while (left < right) {
             int mid = left + (right - left) / 2;
-            if(A[mid] > target) {
+            if (A[mid] > target) {
                 right = mid;
             } else {
                 left = mid + 1;
