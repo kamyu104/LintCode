@@ -71,7 +71,7 @@ Algorithms
 |100|[Remove Duplicates from Sorted Array](http://lintcode.com/en/problem/remove-duplicates-from-sorted-array/)| [C++](./C++/remove-duplicates-from-sorted-array.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | Two Pointers |
 |101|[Remove Duplicates from Sorted Array II](http://lintcode.com/en/problem/remove-duplicates-from-sorted-array-ii/)| [C++](./C++/remove-duplicates-from-sorted-array-ii.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | Two Pointers |
 |144|[Interleaving Positive and Negative Numbers](http://lintcode.com/en/problem/interleaving-positive-and-negative-numbers/)| [C++](./C++/interleaving-positive-and-negative-numbers.cpp)| _O(n)_ | _O(1)_ | Medium | | Two Pointers |
-|161|[Rotate Image](http://lintcode.com/en/problem/rotate-image/)| [C++](./C++/rotate-image.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
+|161|[Rotate Image](http://lintcode.com/en/problem/rotate-image/)| [C++](./C++/rotate-image.cpp)| _O(n^2)_ | _O(1)_ | Medium | LeetCode | |
 |162|[Set Matrix Zeroes](http://lintcode.com/en/problem/set-matrix-zeroes/)| [C++](./C++/set-matrix-zeroes.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 |172|[Remove Element](http://lintcode.com/en/problem/remove-element/)| [C++](./C++/remove-element.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | Two Pointers |
 |185|[Matrix Zigzag Traversal](http://lintcode.com/en/problem/matrix-zigzag-traversal/)| [C++](./C++/matrix-zigzag-traversal.cpp)| _O(m * n)_ | _O(1)_ | Easy | | |
