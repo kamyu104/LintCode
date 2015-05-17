@@ -9,7 +9,6 @@ public:
      * @return: The total number of distinct solutions.
      */
     int totalNQueens(int n) {
-        
         vector<int> placement(n);
         return n_queens_helper(n, 0, &placement);
     }
