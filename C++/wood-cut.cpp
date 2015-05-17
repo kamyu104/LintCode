@@ -9,13 +9,13 @@ public:
      *return: The maximum length of the small pieces.
      */
     int woodCut(vector<int> L, int k) {
-        int n = L.size();
-        if(n == 0) {
+        const int n = L.size();
+        if (n == 0) {
             return 0;
         }
         
         int left = 1, right = *max_element(L.begin(), L.end());
-        while(left <= right) {
+        while (left <= right) {
             int mid = left + (right - left) / 2;
             
             // Find the smallest x,  s.t. pieceCount(x) < k <= pieceCound(x - 1)
@@ -33,7 +33,7 @@ public:
     
     int pieceCount(vector<int>& L, int x) {
         int cnt = 0;
-        for (auto& len : L) {
+        for (const auto& len : L) {
             cnt += len / x;
         }
         return cnt;
