@@ -20,8 +20,8 @@ public:
      * @return: A list of The first node of linked list which have twice size
      */
     vector<ListNode*> rehashing(vector<ListNode*> hashTable) {
-        int old_size = hashTable.size();
-        int new_size = old_size * 2;
+        const int old_size = hashTable.size();
+        const int new_size = old_size * 2;
         if (old_size == 0) {
             return hashTable;
         }
@@ -35,7 +35,7 @@ public:
     }
     
     void rehash(vector<ListNode*>& hashTable, vector<ListNode*>& rehashTable, int i) {
-        int new_size = rehashTable.size();
+        const int new_size = rehashTable.size();
         ListNode *curr = hashTable[i];
         while (curr != nullptr) {
             int val = curr->val;

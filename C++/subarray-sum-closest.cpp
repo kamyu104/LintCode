@@ -9,9 +9,9 @@ public:
      *          and the index of the last number
      */
     vector<int> subarraySumClosest(vector<int> nums){
-        auto n = nums.size();
+        const int n = nums.size();
         
-        if(n == 1) {
+        if (n == 1) {
             return {0,0};
         }
         
@@ -24,7 +24,7 @@ public:
         }
         
         // Sort each sum from start.
-        std::sort(sum_from_start.begin(), sum_from_start.end());
+        sort(sum_from_start.begin(), sum_from_start.end());
         
         int min_diff = INT_MAX;
         int start = -1;
@@ -40,6 +40,6 @@ public:
             }
         }
         
-        return vector<int>{start, end};
+        return {start, end};
     }
 };
