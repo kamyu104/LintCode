@@ -12,7 +12,7 @@ public:
         auto comp = [](int x, int target) { return x <= target; };
         
         // Find the largest index "left" which satisfies LIS[left] <= target
-        while(left <= right) {
+        while (left <= right) {
             int mid = left + (right - left) / 2;
             if (!comp(LIS[mid], target)) {
                 right = mid - 1;

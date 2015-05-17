@@ -27,7 +27,7 @@ public:
         
         int i = colors.size() - 1;
         for (int j = k - 1;j >= 0; --j) {
-            while(colors[j] < 0) { // Reorder the color by count of each bucket.
+            while (colors[j] < 0) { // Reorder the color by count of each bucket.
                 ++colors[j];
                 colors[i--] = j + 1;
             }

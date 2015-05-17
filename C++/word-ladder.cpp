@@ -69,7 +69,7 @@ public:
         unordered_set<string> visited;
         
         // BFS
-        while(level[rounds % 2].size() > 0) {
+        while (level[rounds % 2].size() > 0) {
             for(auto& word : level[rounds % 2]) {
                 if (word == end) {
                     return rounds;
@@ -109,9 +109,9 @@ public:
         unordered_set<string> visited;
         
         // BFS
-        while(que.size() > 0) {
+        while (que.size() > 0) {
             int qSize = que.size();
-            while(--qSize >= 0) {
+            while (--qSize >= 0) {
                 string w = que.front();
                 que.pop();
                 
@@ -152,9 +152,9 @@ public:
         que.push(start);
         
         // BFS
-        while(que.size() > 0) {
+        while (que.size() > 0) {
             int qSize = que.size();
-            while(--qSize >= 0) {
+            while (--qSize >= 0) {
                 string w = que.front();
                 que.pop();
                 

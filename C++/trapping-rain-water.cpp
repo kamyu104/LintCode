@@ -9,7 +9,7 @@ public:
      * @return: a integer
      */
     int trapRainWater(vector<int> &heights) {
-        if(heights.empty()) {
+        if (heights.empty()) {
             return 0;
         }
         

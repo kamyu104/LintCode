@@ -25,7 +25,7 @@ public:
         
         // update random node
         for (RandomListNode *cur = head; cur; cur = cur->next->next) {
-            if(cur->random) {
+            if (cur->random) {
                 cur->next->random = cur->random->next;
             }
         }

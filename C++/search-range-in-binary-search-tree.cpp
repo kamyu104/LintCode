@@ -62,7 +62,7 @@ public:
         
         pushLeft(st, root, k1);
         
-        while(st.size() > 0) {
+        while (st.size() > 0) {
             TreeNode *t = st.top();
             st.pop();
             

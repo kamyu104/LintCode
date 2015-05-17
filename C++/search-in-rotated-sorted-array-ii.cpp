@@ -23,7 +23,7 @@ public:
                 } else {
                     left = mid + 1;
                 }
-            } else if (A[left] > A[mid]){
+            } else if (A[left] > A[mid]) {
                 if (A[mid] < target and target <= A[right]) {
                     left = mid + 1;
                 } else {
@@ -60,7 +60,7 @@ public:
                 } else {
                     left = mid + 1;
                 }
-            } else if (A[left] > A[mid]){
+            } else if (A[left] > A[mid]) {
                 if (A[mid] < target and target <= A[right - 1]) {
                     left = mid + 1;
                 } else {

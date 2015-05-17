@@ -36,7 +36,7 @@ public:
         }
         
         // Not mathced or visited.
-        if(grid[i][j] != word[curr] || visited[i][j] ) {
+        if (grid[i][j] != word[curr] || visited[i][j] ) {
             return false;
         }
         

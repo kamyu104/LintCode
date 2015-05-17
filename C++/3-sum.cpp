@@ -30,7 +30,7 @@ public:
                 } else {
                     const auto sum = nums[i] + nums[j] + nums[k];
                     
-                    if(sum > target) { // Should decrease sum.
+                    if (sum > target) { // Should decrease sum.
                         --k;
                     } else if (sum < target) { // Should increase sum.
                         ++j;

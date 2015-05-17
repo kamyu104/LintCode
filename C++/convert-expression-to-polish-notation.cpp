@@ -47,7 +47,7 @@ public:
     }
     
     int precedence(string x) {
-        if(x == ")") {
+        if (x == ")") {
             return 0;
         } else if (x == "+" || x == "-") {
             return 1;

@@ -53,7 +53,7 @@ public:
             // Current level comes to the end.
             // Goes to the next level.
             if (cur_level_size == 0) {
-                if(!isLeftToRight) {
+                if (!isLeftToRight) {
                     reverse(cur_level.begin(), cur_level.end());
                 }
                 isLeftToRight = !isLeftToRight;

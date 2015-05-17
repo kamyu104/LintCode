@@ -15,7 +15,7 @@ public:
             }
             else {
                 --cnt;
-                if(cnt == 0) {
+                if (cnt == 0) {
                     ans = i;
                     cnt = 1;
                 }

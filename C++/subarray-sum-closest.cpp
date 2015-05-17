@@ -8,7 +8,7 @@ public:
      * @return: A list of integers includes the index of the first number
      *          and the index of the last number
      */
-    vector<int> subarraySumClosest(vector<int> nums){
+    vector<int> subarraySumClosest(vector<int> nums) {
         const int n = nums.size();
         
         if (n == 1) {

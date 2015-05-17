@@ -33,7 +33,7 @@ public:
                 map_.erase(del.first);
             }
             auto x = make_pair(key, value);
-            list_.push_front(x);
+            list_.emplace_front(x);
             map_[key]=list_.begin();
         }
     }
@@ -48,7 +48,7 @@ private:
         auto l_it = it->second;
         int key = l_it->first;
         list_.erase(l_it);
-        list_.push_front(make_pair(key, value));
+        list_.emplace_front(make_pair(key, value));
         it->second = list_.begin();
     }
 };

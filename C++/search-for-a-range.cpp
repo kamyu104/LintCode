@@ -29,7 +29,7 @@ public:
         const int begin = lower_bound(A, target);
         const int end = upper_bound(A, target);
         
-        if(begin < A.size() && A[begin] == target)
+        if (begin < A.size() && A[begin] == target)
             return {begin, end - 1};
         
         return {-1, -1};

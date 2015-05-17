@@ -44,7 +44,7 @@ private:
     ListNode *reverse(ListNode *head) {
         ListNode dummy(INT_MIN);
         
-        while(head) {
+        while (head) {
             ListNode *tmp = head->next;
             head->next = dummy.next;
             dummy.next = head;

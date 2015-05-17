@@ -22,7 +22,7 @@ private:
         }
         
         num = 0;
-        while(data[start] != ' ') {
+        while (data[start] != ' ') {
             num = num * 10 + data[start++] - '0';
         }
         

@@ -34,7 +34,7 @@ public:
         
         last = root;
         
-        if(!isValidBST(root->right)) {
+        if (!isValidBST(root->right)) {
             return false;
         }
         

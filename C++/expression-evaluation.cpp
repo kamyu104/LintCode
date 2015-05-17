@@ -30,7 +30,7 @@ public:
                 s.pop();
                 int x = stoi(s.top());
                 s.pop();
-                if(tok[0] == '+') {
+                if (tok[0] == '+') {
                     x += y;
                 }
                 else if (tok[0] == '-') {
@@ -74,7 +74,7 @@ public:
             } else {
                 // Order of tokens in stack should be like "(-*",
                 // The token will be added in an strictly increasing precedence order.
-                while(!s.empty() && precedence(tok) <= precedence(s.top())) {
+                while (!s.empty() && precedence(tok) <= precedence(s.top())) {
                     postfix.emplace_back(s.top());
                     s.pop();
                 }
@@ -89,7 +89,7 @@ public:
     }
     
     int precedence(string x) {
-        if(x == "(") { // The least precedence.
+        if (x == "(") { // The least precedence.
             return 0;
         } else if (x == "+" || x == "-") {
             return 1;
