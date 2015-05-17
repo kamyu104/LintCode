@@ -43,7 +43,7 @@ Algorithms
 |84|[Single Number III](http://lintcode.com/en/problem/single-number-iii/)| [C++](./C++/single-number-iii.cpp)| _O(n)_ | _O(1)_ | Medium | CTCI | |
 |142|[O(1) Check Power of 2](http://lintcode.com/en/problem/o1-check-power-of-2/)| [C++](./C++/o1-check-power-of-2.cpp)| _O(1)_ | _O(1)_ | Easy | | |
 |179|[Update Bits](http://lintcode.com/en/problem/update-bits/)| [C++](./C++/update-bits.cpp)| _O(1)_ | _O(1)_ | Medium | CTCI | |
-|181|[Convert Integer A to Integer B](http://lintcode.com/en/problem/convert-integer-a-to-integer-b/)| [C++](./C++/convert-integer-a-to-integer-b.cpp)| _O(1)_ | _O(1)_ | Easy | CTCI | |
+|181|[Flip Bits](http://lintcode.com/en/problem/flip-bits/)| [C++](./C++/flip-bits.cpp)| _O(1)_ | _O(1)_ | Easy | CTCI | |
 
 ---
 
