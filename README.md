@@ -30,7 +30,7 @@ Algorithms
 * [Binary Search Trees](https://github.com/kamyu104/LintCode#binary-search-trees)
 * [Dynamic Programming](https://github.com/kamyu104/LintCode#dynamic-programming)
 * [Greedy](https://github.com/kamyu104/LintCode#greedy)
-* [OO Design](https://github.com/kamyu104/LintCode#oo-pattern)
+* [OO Design](https://github.com/kamyu104/LintCode#oo-design)
 
 ---
 
@@ -342,7 +342,7 @@ Algorithms
 
 ---
 
-##OO Pattern
+##OO Design
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |204|[Singleton](http://lintcode.com/en/problem/singleton/)| [C++](./C++/singleton.cpp)| _O(1)_ | _O(1)_ | Easy | | |
