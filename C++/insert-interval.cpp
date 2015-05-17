@@ -35,7 +35,7 @@ public:
         result.emplace_back(newInterval);
         
         // Insert intervals appearing after newInterval.
-        result.insert(result.end(), intervals.begin() + i, intervals.end());
+        result.insert(result.end(), intervals.cbegin() + i, intervals.cend());
         return result;
     }
 };
