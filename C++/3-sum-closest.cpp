@@ -24,7 +24,7 @@ public:
             int k = nums.size() - 1;
             
             while (j < k) { // Time: O(n) for each i.
-                const auto& sum = nums[i] + nums[j] + nums[k];
+                const auto sum = nums[i] + nums[j] + nums[k];
                 
                 if (sum > target) { // Should decrease sum.
                     --k;
