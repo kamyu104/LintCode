@@ -1,9 +1,9 @@
 LintCode
 ======== 
 
-Up to date (2015-05-17), there are `196` problems on [LintCode Online Judge](https://lintcode.com/).
+Up to date (2015-05-19), there are `200` problems on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `196` problems.
+Here is the classification of all `200` problems.
 For extra problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repo.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -77,6 +77,7 @@ Algorithms
 |185|[Matrix Zigzag Traversal](http://lintcode.com/en/problem/matrix-zigzag-traversal/)| [C++](./C++/matrix-zigzag-traversal.cpp)| _O(m * n)_ | _O(1)_ | Easy | | |
 |189|[First Missing Positive](http://lintcode.com/en/problem/first-missing-positive/)| [C++](./C++/first-missing-positive.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode, EPI | Hash |
 |363|[Trapping Rain Water](http://lintcode.com/en/problem/trapping-rain-water/)| [C++](./C++/trapping-rain-water.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | Two Pointers, Tricky |
+|382|[Triangle Count](http://lintcode.com/en/problem/triangle-count/)| [C++](./C++/triangle-count.cpp)| _O(n^2)_ | _O(1)_ | Medium | | Two Pointers |
 |383|[Container With Most Water](http://lintcode.com/en/problem/container-with-most-water/)| [C++](./C++/container-with-most-water.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode, EPI | Two Pointers |
 |388|[Permutation Sequence](http://lintcode.com/en/problem/permutation-sequence/)| [C++](./C++/permutation-sequence.cpp)| _O(n^2)_ | _O(n)_ | Medium | LeetCode | |
 |389|[Valid Sudoku](http://lintcode.com/en/problem/valid-sudoku/)| [C++](./C++/valid-sudoku.cpp)| _O(9^2)_ | _O(9)_ | Easy | LeetCode | |
@@ -94,6 +95,8 @@ Algorithms
 |157|[Unique Characters](http://lintcode.com/en/problem/unique-characters/)|[C++](./C++/unique-characters.cpp)| _O(n)_ | _O(1)_ | Easy | CTCI | |
 |158|[Two Strings Are Anagrams](http://lintcode.com/en/problem/two-strings-are-anagrams/)|[C++](./C++/two-strings-are-anagrams.cpp)| _O(n)_ | _O(1)_ | Easy | | |
 |171|[Anagrams](http://lintcode.com/en/problem/anagrams/)|[C++](./C++/anagrams.cpp)| _O(n * klogk)_ | _O(m)_ | Easy | LeetCode, EPI | |
+|407|[Plus One](http://lintcode.com/en/problem/plus-one.cpp/)|[C++](./C++/plus-one.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
+|408|[Add Binary](http://lintcode.com/en/problem/add-binary.cpp/)|[C++](./C++/add-binary.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
 
 ---
 
@@ -223,6 +226,7 @@ Algorithms
 |140|[Fast Power](http://lintcode.com/en/problem/fast-power/)| [C++](./C++/fast-power.cpp)| _O(logn)_ | _O(logn)_ | Medium | | |
 |155|[Minimum Depth of Binary Tree](http://lintcode.com/en/problem/minimum-depth-of-binary-tree/)| [C++](./C++/minimum-depth-of-binary-tree.cpp)| _O(n)_ | _O(h)_ | Easy | LeetCode | |
 |164|[Unique Binary Search Trees II](http://lintcode.com/en/problem/unique-binary-search-trees-ii/)| [C++](./C++/unique-binary-search-trees-ii.cpp)| _O(n * 4^n / n^(3/2))_ | _O(n)_ | Medium | LeetCode | |
+|177|[Convert Sorted Array to Binary Search Tree With Minimal Height](http://lintcode.com/en/problem/convert-sorted-array-to-binary-search-tree-with-minimal-height/)| [C++](./C++/convert-sorted-array-to-binary-search-tree-with-minimal-height.cpp)| _O(n)_ | _O(logn)_ | Easy | LeetCode | |
 |201|[Segment Tree Build](http://lintcode.com/en/problem/segment-tree-build/)| [C++](./C++/segment-tree-build.cpp)| _O(n)_ | _O(h)_ | Medium | | Segment Tree, BST |
 |202|[Segment Tree Query](http://lintcode.com/en/problem/segment-tree-query/)| [C++](./C++/segment-tree-query.cpp)| _O(h)_ | _O(h)_ | Medium | | Segment Tree, BST |
 |203|[Segment Tree Modify](http://lintcode.com/en/problem/segment-tree-modify/)| [C++](./C++/segment-tree-modify.cpp)| _O(h)_ | _O(h)_ | Medium | | Segment Tree, BST |
