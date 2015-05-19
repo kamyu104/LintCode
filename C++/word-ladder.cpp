@@ -70,7 +70,7 @@ public:
         
         // BFS
         while (level[rounds % 2].size() > 0) {
-            for (auto& word : level[rounds % 2]) {
+            for (const auto& word : level[rounds % 2]) {
                 if (word == end) {
                     return rounds;
                 }
@@ -138,7 +138,7 @@ public:
     }
 };
 
-class Solution2 {
+class Solution4 {
 public:
     /**
      * @param start, a string
