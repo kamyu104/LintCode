@@ -25,12 +25,12 @@ public:
             }
             
             // clear words from the dictionary to avoid it' apear in future level again
-            for (auto& word : levels[cur_level % 2]) {
+            for (const auto& word : levels[cur_level % 2]) {
                 dict.erase(word);
             }
             
             levels[(cur_level + 1) % 2].clear();
-            for (auto& from : levels[cur_level % 2]) {
+            for (const auto& from : levels[cur_level % 2]) {
                 string new_word = from;
                 for (int i = 0; i < new_word.length(); i++) {
                     char orig_c = from[i];
