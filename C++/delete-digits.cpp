@@ -47,7 +47,7 @@ public:
         // Assemble the answer in reverse order
         string ans;
         while (!s.empty()) {
-            ans.emplace_back(s.top());
+            ans.push_back(s.top());
             s.pop();
         }
         reverse(ans.begin(), ans.end());
