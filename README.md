@@ -96,7 +96,7 @@ Algorithms
 |158|[Two Strings Are Anagrams](http://lintcode.com/en/problem/two-strings-are-anagrams/)|[C++](./C++/two-strings-are-anagrams.cpp)| _O(n)_ | _O(1)_ | Easy | | |
 |171|[Anagrams](http://lintcode.com/en/problem/anagrams/)|[C++](./C++/anagrams.cpp)| _O(n * klogk)_ | _O(m)_ | Easy | LeetCode, EPI | |
 |407|[Plus One](http://lintcode.com/en/problem/plus-one.cpp/)|[C++](./C++/plus-one.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
-|408|[Add Binary](http://lintcode.com/en/problem/add-binary.cpp/)|[C++](./C++/add-binary.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
+|408|[Add Binary](http://lintcode.com/en/problem/add-binary/)|[C++](./C++/add-binary.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
 
 ---
 
