@@ -14,12 +14,12 @@ public:
         string dec_str = "";
         
         if (int_part == 0) {
-            int_str.emplace_back('0');
+            int_str.push_back('0');
         }
         
         while (int_part > 0) {
             int c = int_part % 2;
-            int_str.emplace_back('0' + c);
+            int_str.push_back('0' + c);
             int_part = int_part >> 1;
         }
         reverse(int_str.begin(), int_str.end());
@@ -30,11 +30,11 @@ public:
             }
             double remain = dec_part * 2;
             if (remain >= 1.0) {
-                dec_str.emplace_back('1');
+                dec_str.push_back('1');
                 dec_part = remain - 1.0;
             }
             else {
-                dec_str.emplace_back('0');
+                dec_str.push_back('0');
                 dec_part = remain;
             }
         }
