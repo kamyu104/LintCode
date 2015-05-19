@@ -29,7 +29,6 @@ public:
     }
 };
 
-
 // Time:  O(n^3)
 // Space: O(1)
 class Solution2 {
