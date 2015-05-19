@@ -50,8 +50,6 @@ public:
         
         return cur_level;
     }
-    
-    
 };
 
 class Solution2 {
@@ -70,7 +68,7 @@ public:
         
         // BFS
         while (level[rounds % 2].size() > 0) {
-            for (const auto& word : level[rounds % 2]) {
+            for (auto& word : level[rounds % 2]) {
                 if (word == end) {
                     return rounds;
                 }
@@ -138,7 +136,7 @@ public:
     }
 };
 
-class Solution4 {
+class Solution2 {
 public:
     /**
      * @param start, a string
