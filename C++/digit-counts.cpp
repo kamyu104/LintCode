@@ -19,7 +19,7 @@ public:
             // count of (c000 ~ oooc000) = (ooo + (k < curr)? 1 : 0) * 1000
             cnt += (left_part / 10 + (k < curr)) * multiplier;
             
-            // if k == 0, oooc000 = = (ooo - 1) * 1000
+            // if k == 0, oooc000 = (ooo - 1) * 1000
             if (k == 0 && multiplier > 1) {
                 cnt -= multiplier;
             }
