@@ -195,6 +195,7 @@ Algorithms
 |114|[Unique Paths](http://lintcode.com/en/problem/unique-paths/)| [C++](./C++/unique-paths.cpp)| _O(min(m, n))_ | _O(1)_ | Easy | LeetCode, CTCI | DP, Math |
 |163|[Unique Binary Search Trees](http://lintcode.com/en/problem/unique-binary-search-trees/)| [C++](./C++/unique-binary-search-trees.cpp)| _O(n)_ | _O(1)_ | Medium | CTCI | DP, Math, `Catalan Number` |
 |180|[Binary Represention](http://lintcode.com/en/problem/delete-digits/)| [C++](./C++/binary-representation.cpp)| _O(1)_ | _O(1)_ | Hard | CTCI | |
+|394|[Coins in a Line](http://lintcode.com/en/problem/coins-in-a-line/)| [C++](./C++/coins-in-a-line.cpp)| _O(1)_ | _O(1)_ | Easy | | |
 
 ---
 
@@ -328,6 +329,7 @@ Algorithms
 |151|[Best Time to Buy and Sell Stock III](http://lintcode.com/en/problem/best-time-to-buy-and-sell-stock-iii/)| [C++](./C++/best-time-to-buy-and-sell-stock-iii.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode, EPI | |
 |154|[Regular Expression Matching](http://lintcode.com/en/problem/regular-expression-matching/)| [C++](./C++/regular-expression-matching.cpp)| _O(m * n)_ | _O(m)_ | Hard | LeetCode | DP, Recursion |
 |191|[Maximum Product Subarray](http://lintcode.com/en/problem/maximum-product-subarray/)| [C++](./C++/maximum-product-subarray.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
+|396|[Coins in a Line](http://lintcode.com/en/problem/coins-in-a-line/)| [C++](./C++/coins-in-a-line.cpp)| _O(n^2)_ | _O(n^2)_ | Medium | | |
 
 ---
 
