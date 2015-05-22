@@ -31,7 +31,7 @@ public:
                 int b = i + 1 <= values.size() - 1 && n - 2 >= 0 ? P[i + 1][(n - 2) % 3] : 0;
                 int c = n - 2 >= 0 ? P[i][(n - 2) % 3] : 0;
                 P[i][n % 3] = max(values[i] + min(a, b),
-                              values[i + n - 1] + min(b, c));
+                                  values[i + n - 1] + min(b, c));
             }
         }
         return P[0][values.size() % 3] > sum - P[0][values.size() % 3];
