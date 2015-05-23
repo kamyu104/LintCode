@@ -1,9 +1,9 @@
 LintCode
 ======== 
 
-Up to date (2015-05-22), there are `214` problems on [LintCode Online Judge](https://lintcode.com/).
+Up to date (2015-05-23), there are `216` problems on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `214` problems.
+Here is the classification of all `216` problems.
 For extra problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repo.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -329,6 +329,7 @@ Algorithms
 |151|[Best Time to Buy and Sell Stock III](http://lintcode.com/en/problem/best-time-to-buy-and-sell-stock-iii/)| [C++](./C++/best-time-to-buy-and-sell-stock-iii.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode, EPI | |
 |154|[Regular Expression Matching](http://lintcode.com/en/problem/regular-expression-matching/)| [C++](./C++/regular-expression-matching.cpp)| _O(m * n)_ | _O(m)_ | Hard | LeetCode | DP, Recursion |
 |191|[Maximum Product Subarray](http://lintcode.com/en/problem/maximum-product-subarray/)| [C++](./C++/maximum-product-subarray.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
+|395|[Coins in a Line II](http://lintcode.com/en/problem/coins-in-a-line-ii/)| [C++](./C++/coins-in-a-line-ii.cpp)| _O(n)_ | _O(1)_ | Medium | | |
 |396|[Coins in a Line III](http://lintcode.com/en/problem/coins-in-a-line-iii/)| [C++](./C++/coins-in-a-line-iii.cpp)| _O(n^2)_ | _O(n)_ | Medium | | |
 
 ---
