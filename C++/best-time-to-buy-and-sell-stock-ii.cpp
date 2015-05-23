@@ -44,15 +44,15 @@ public:
         return maxAtMostKTransactionsProfit(prices, k);
     }
     
-    int maxUnlimitedTransactionsProfit(vector<int> &prices) {
+    int maxUnlimitedTransactionsProfit(const vector<int> &prices) {
         int profit = 0;
-        for (int i = 0; i < prices.size() - 1; ++i) {
+        for (int i = 0; i < static_cast<int>(prices.size()) - 1; ++i) {
             profit += max(0, prices[i + 1] - prices[i]);
         }
         return profit;
     }
     
-    int maxAtMostKTransactionsProfit(vector<int> &prices, int k) {
+    int maxAtMostKTransactionsProfit(const vector<int> &prices, int k) {
         // max_sell[j] short for max_sell[i][j]
         // denotes as max profit at most j - 1 buy and sell transactions
         // and buy the ith prices in the first i prices.
