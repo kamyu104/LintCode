@@ -76,6 +76,7 @@ Algorithms
 |172|[Remove Element](http://lintcode.com/en/problem/remove-element/)| [C++](./C++/remove-element.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | Two Pointers |
 |185|[Matrix Zigzag Traversal](http://lintcode.com/en/problem/matrix-zigzag-traversal/)| [C++](./C++/matrix-zigzag-traversal.cpp)| _O(m * n)_ | _O(1)_ | Easy | | |
 |189|[First Missing Positive](http://lintcode.com/en/problem/first-missing-positive/)| [C++](./C++/first-missing-positive.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode, EPI | Hash |
+|190|[Next Permutation II](http://lintcode.com/en/problem/next-permutation-ii/)| [C++](./C++/next-permutation-ii.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 |363|[Trapping Rain Water](http://lintcode.com/en/problem/trapping-rain-water/)| [C++](./C++/trapping-rain-water.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | Two Pointers, Tricky |
 |382|[Triangle Count](http://lintcode.com/en/problem/triangle-count/)| [C++](./C++/triangle-count.cpp)| _O(n^2)_ | _O(1)_ | Medium | | Two Pointers |
 |383|[Container With Most Water](http://lintcode.com/en/problem/container-with-most-water/)| [C++](./C++/container-with-most-water.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode, EPI | Two Pointers |
