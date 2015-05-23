@@ -25,10 +25,6 @@ public:
      * @return: Maximum profit
      */
     int maxProfit(vector<int> &prices) {
-        if (prices.empty()) {
-            return 0;
-        }
-        
         const int k = prices.size();
         
         // Optimized solution for unlimited transactions.
