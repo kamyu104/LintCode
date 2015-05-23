@@ -1,6 +1,7 @@
 // Time:  O(n^2)
 // Space: O(n)
 
+// DP with rolling window.
 class Solution {
 public:
     /**
@@ -8,7 +9,7 @@ public:
      * @return: a boolean which equals to true if the first player will win
      */
     bool firstWillWin(vector<int> &values) {
-        // Even number case;
+        // Even number case.
         if (values.size() % 2 == 0) {
             if (firstWinEvenCoins(values)) {
                 return true;
@@ -65,7 +66,7 @@ public:
      * @return: a boolean which equals to true if the first player will win
      */
     bool firstWillWin(vector<int> &values) {
-        // Even number case;
+        // Even number case.
         if (values.size() % 2 == 0) {
             if (firstWinEvenCoins(values)) {
                 return true;
