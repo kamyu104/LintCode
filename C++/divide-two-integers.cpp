@@ -94,3 +94,33 @@ public:
         return negative ? -res : res;
     }
 };
+
+// Time:  O(1)
+// Space: O(1)
+// a / b = exp^(ln(a) - ln(b))
+class Solution3 {
+public:
+    /**
+     * @param dividend the dividend
+     * @param divisor the divisor
+     * @return the result
+     */
+    int divide(int dividend, int divisor) {
+        if (dividend == 0) { 
+            return 0;
+        }
+        if (divisor == 0) {
+            return INT_MAX;
+        }
+        
+        long long res = double(exp(log(fabs(dividend)) - log(fabs(divisor))));
+        
+        if ((dividend < 0) ^ (divisor < 0)) {
+            res = -res;
+        }
+        if (res > INT_MAX) {
+            res = INT_MAX;
+        }
+        return res;
+    }
+};
