@@ -352,6 +352,7 @@ Algorithms
 |182|[Delete Digits](http://lintcode.com/en/problem/delete-digits/)| [C++](./C++/delete-digits.cpp)| _O(n)_ | _O(n)_ | Medium | | |
 |187|[Gas Station](http://lintcode.com/en/problem/gas-station/)| [C++](./C++/gas-station.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
 |192|[Wildcard Matching](http://lintcode.com/en/problem/wildcard-matching/)| [C++](./C++/wildcard-matching.cpp)| _O(m + n)_ | _O(1)_ | Hard | LeetCode | Greedy, DP, Recursion |
+|412|[Candy](http://lintcode.com/en/problem/candy/)| [C++](./C++/candy.cpp)| _O(n)_ | _O(n)_ | Hard | LeetCode | Greedy |
 
 ---
 
