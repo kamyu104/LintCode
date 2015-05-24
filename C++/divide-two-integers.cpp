@@ -113,7 +113,7 @@ public:
             return INT_MAX;
         }
         
-        long long res = double(exp(log(fabs(dividend)) - log(fabs(divisor))));
+        long long res = exp(log(fabs(dividend)) - log(fabs(divisor)));
         
         if ((dividend < 0) ^ (divisor < 0)) {
             res = -res;
