@@ -1,6 +1,7 @@
 // Time:  O(logn)
 // Space: O(1)
 
+// Only using integer type.
 class Solution {
 public:
     /**
@@ -50,6 +51,9 @@ public:
     }
 };
 
+// Time:  O(logn)
+// Space: O(1)
+// Using long long type.
 class Solution2 {
 public:
     /**
@@ -58,40 +62,32 @@ public:
      * @return the result
      */
     int divide(int dividend, int divisor) {
-        // Handle corner case.
-        if (divisor == INT_MIN) {
-            return dividend == divisor ? 1 : 0;
-        } else if (!divisor || divisor == -1 && dividend == INT_MIN) {
-            return INT_MAX;
-        } else if (divisor == 1) {
-            return dividend;
+        long long result = 0, dvd = llabs(dividend), dvs = llabs(divisor);
+        
+        long long inc = dvs;
+        long long multiplier = 1; 
+        int i = 0;
+        while (dvd >= inc) {
+                inc <<= 1;
+                multiplier <<= 1;
+                ++i;
         }
         
-        bool negative = (dividend > 0) ^ (divisor > 0);
-        if (dividend > 0) {
-            dividend = -dividend;
+        while (inc && i >= 0) {
+                while (dvd >= inc) {
+                    dvd -= inc;
+                    result += multiplier;
+                }
+                inc >>= 1;
+                multiplier >>= 1;
+                --i;
         }
-        if (divisor > 0) {
-            divisor = -divisor;
+            
+        if (dividend > 0 and divisor < 0 or dividend < 0 and divisor > 0) {
+            return -result;
+        } else {
+            return min(result, static_cast<long long>(INT_MAX));
         }
-        vector<int> multipliers, products;
-        multipliers.push_back(1);
-        products.push_back(divisor);
-        int idx = 1, res = 0;
-        while (products[idx - 1] < 0 && idx < 32) {
-            products.push_back(divisor << idx);
-            multipliers.push_back(1 << idx);
-            ++idx;
-        }
-        idx -= 2;
-        while (dividend <= divisor) {
-            if (dividend <= products[idx]) {
-                res += multipliers[idx];
-                dividend -= products[idx];
-            }
-            --idx;
-        }
-        return negative ? -res : res;
     }
 };
 
