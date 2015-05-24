@@ -198,6 +198,7 @@ Algorithms
 |163|[Unique Binary Search Trees](http://lintcode.com/en/problem/unique-binary-search-trees/)| [C++](./C++/unique-binary-search-trees.cpp)| _O(n)_ | _O(1)_ | Medium | CTCI | DP, Math, `Catalan Number` |
 |180|[Binary Represention](http://lintcode.com/en/problem/delete-digits/)| [C++](./C++/binary-representation.cpp)| _O(1)_ | _O(1)_ | Hard | CTCI | |
 |394|[Coins in a Line](http://lintcode.com/en/problem/coins-in-a-line/)| [C++](./C++/coins-in-a-line.cpp)| _O(1)_ | _O(1)_ | Easy | | |
+|414|[Divide Two Integer](http://lintcode.com/en/problem/divide-two-integers/)| [C++](./C++/divide-two-integers.cpp)| _O(logn)_ | _O(1)_ | Medium | | |
 
 ---
 
