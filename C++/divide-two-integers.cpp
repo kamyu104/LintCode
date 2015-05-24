@@ -83,7 +83,7 @@ public:
                 --i;
         }
             
-        if (dividend > 0 and divisor < 0 or dividend < 0 and divisor > 0) {
+        if ((dividend > 0 && divisor < 0) || (dividend < 0 && divisor > 0)) {
             return -result;
         } else {
             return min(result, static_cast<long long>(INT_MAX));
