@@ -241,6 +241,7 @@ Algorithms
 |205|[Interval Minimum Number](http://lintcode.com/en/problem/interval-minimum-number/)| [C++](./C++/interval-minimum-number.cpp)| build tree: _O(n)_, query: _(h)_ | _O(h)_ | Hard | | Segment Tree, BST |
 |206|[Interval Sum](http://lintcode.com/en/problem/interval-sum/)| [C++](./C++/interval-sum.cpp)| build tree: _O(n)_, query: _O(h)_ | _O(h)_ | Hard | | Segment Tree, BST |
 |207|[Interval Sum II](http://lintcode.com/en/problem/interval-sum-ii/)| [C++](./C++/interval-sum-ii.cpp)| build tree: _O(n)_, query: _O(h)_, modify: _O(h)_ | _O(h)_ | Hard | | Segment Tree, BST |
+|245|[Subtree](http://lintcode.com/en/problem/subtree/)| [C++](./C++/subtree.cpp)| _O(m * n)_ | _O(h)_ | Easy | | |
 |247|[Segment Tree Query II](http://lintcode.com/en/problem/segment-tree-query-ii/)| [C++](./C++/segment-tree-query-ii.cpp)| _O(h)_ | _O(h)_ | Hard | | Segment Tree, BST |
 |248|[Count of Smaller Number](http://lintcode.com/en/problem/count-of-smaller-number/)| [C++](./C++/count-of-smaller-number.cpp)| build tree: _O(n)_, query: _O(logn)_ | _O(h)_ | Medium | | Segment Tree, BST |
 |371|[Print Numbers by Recursion](http://lintcode.com/en/problem/print-numbers-by-recursion/)| [C++](./C++/print-numbers-by-recursion.cpp)| _O(n)_ | _O(n)_ | Medium | | |
