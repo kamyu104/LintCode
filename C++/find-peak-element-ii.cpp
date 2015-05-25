@@ -60,3 +60,43 @@ public:
         return {-1, -1}; // Not found.
     }
 };
+
+// This solution may pass LintCode test cases, 
+// but it fails to get the peak in the following case:
+// A = {{ 1,  2,  3,  4,  5},
+//      { 6, 22, 23, 28,  7},
+//      { 8, 24, 25, 26,  9},
+//      {10, 11, 12, 13, 14}};
+class Solution_Wrong {
+public:
+    /**
+     * @param A: An integer matrix
+     * @return: The index of the peak
+     */
+    bool isPeak(const vector<vector<int>> &A, const int i, const int j) {
+        if (i < 1 || i >= A.size() - 1 || j < 1 || j >= A[0].size() - 1) {
+            return false;
+        }
+        
+        return A[i][j] > A[i][j - 1] && A[i][j] > A[i - 1][j]  &&
+               A[i][j] > A[i][j + 1] && A[i][j] > A[i + 1][j];
+    }
+    
+    vector<int> findPeakII(vector<vector<int> > A) {
+        int i = 1, j = 1;
+        while (i < A.size() - 1 && j < A[0].size() - 1) {
+            if (isPeak(A, i, j)) {
+                return {i, j};
+            } else {
+                if (A[i + 1][j] > A[i][j + 1]) {
+                    ++i;
+                } else {
+                    ++j;
+                }
+            }
+        }
+        return {-1, -1};
+    }
+};
+
+
