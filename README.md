@@ -79,11 +79,11 @@ Algorithms
 |190|[Next Permutation II](http://lintcode.com/en/problem/next-permutation-ii/)| [C++](./C++/next-permutation-ii.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 |200|[Longest Palindromic Substring](http://lintcode.com/en/problem/longest-palindromic-substring/)| [C++](./C++/longest-palindromic-substring.cpp)| _O(n)_ | _O(n)_ | Medium | LeetCode | `Manacher's Algorithm` |
 |363|[Trapping Rain Water](http://lintcode.com/en/problem/trapping-rain-water/)| [C++](./C++/trapping-rain-water.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | Two Pointers, Tricky |
+|373|[Partition Array by Odd and Even](http://lintcode.com/en/problem/partition-array-by-odd-and-even/)| [C++](./C++/partition-array-by-odd-and-even.cpp)| _O(n)_ | _O(1)_ | Easy | | Two Pointers |
 |382|[Triangle Count](http://lintcode.com/en/problem/triangle-count/)| [C++](./C++/triangle-count.cpp)| _O(n^2)_ | _O(1)_ | Medium | | Two Pointers |
 |383|[Container With Most Water](http://lintcode.com/en/problem/container-with-most-water/)| [C++](./C++/container-with-most-water.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode, EPI | Two Pointers |
 |388|[Permutation Sequence](http://lintcode.com/en/problem/permutation-sequence/)| [C++](./C++/permutation-sequence.cpp)| _O(n^2)_ | _O(n)_ | Medium | LeetCode | |
 |389|[Valid Sudoku](http://lintcode.com/en/problem/valid-sudoku/)| [C++](./C++/valid-sudoku.cpp)| _O(9^2)_ | _O(9)_ | Easy | LeetCode | |
-||[Partition Array by Odd and Even](http://lintcode.com/en/problem/partition-array-by-odd-and-even/)| [C++](./C++/partition-array-by-odd-and-even.cpp)| _O(n)_ | _O(1)_ | Easy | | Two Pointers |
 
 ---
 
@@ -340,8 +340,8 @@ Algorithms
 |393|[Best Time to Buy and Sell Stock IV](http://lintcode.com/en/problem/best-time-to-buy-and-sell-stock-iv/)| [C++](./C++/best-time-to-buy-and-sell-stock-iv.cpp)| _O(k * n)_ | _O(k)_ | Hard | LeetCode, EPI | |
 |395|[Coins in a Line II](http://lintcode.com/en/problem/coins-in-a-line-ii/)| [C++](./C++/coins-in-a-line-ii.cpp)| _O(n)_ | _O(1)_ | Medium | | |
 |396|[Coins in a Line III](http://lintcode.com/en/problem/coins-in-a-line-iii/)| [C++](./C++/coins-in-a-line-iii.cpp)| _O(n^2)_ | _O(n)_ | Medium | | |
-|397|[Longest Increasing Continuous subsequence](http://lintcode.com/en/problem/longest-increasing-continuous-subsequence/)| [C++](./C++/longest-increasing-continuous-subsequence.cpp)| _O(n)_ | _O(1)_ | Easy | | |
-|398|[Longest Increasing Continuous subsequence II](http://lintcode.com/en/problem/longest-increasing-continuous-subsequence-ii/)| [C++](./C++/longest-increasing-continuous-subsequence-ii.cpp)| _O(m * n)_ | _O(m * n)_ | Hard | | |
+||[Longest Increasing Continuous subsequence](http://lintcode.com/en/problem/longest-increasing-continuous-subsequence/)| [C++](./C++/longest-increasing-continuous-subsequence.cpp)| _O(n)_ | _O(1)_ | Easy | | |
+||[Longest Increasing Continuous subsequence II](http://lintcode.com/en/problem/longest-increasing-continuous-subsequence-ii/)| [C++](./C++/longest-increasing-continuous-subsequence-ii.cpp)| _O(m * n)_ | _O(m * n)_ | Hard | | |
 
 ---
 
