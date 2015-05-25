@@ -83,6 +83,7 @@ Algorithms
 |383|[Container With Most Water](http://lintcode.com/en/problem/container-with-most-water/)| [C++](./C++/container-with-most-water.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode, EPI | Two Pointers |
 |388|[Permutation Sequence](http://lintcode.com/en/problem/permutation-sequence/)| [C++](./C++/permutation-sequence.cpp)| _O(n^2)_ | _O(n)_ | Medium | LeetCode | |
 |389|[Valid Sudoku](http://lintcode.com/en/problem/valid-sudoku/)| [C++](./C++/valid-sudoku.cpp)| _O(9^2)_ | _O(9)_ | Easy | LeetCode | |
+||[Partition Array by Odd and Even](http://lintcode.com/en/problem/partition-array-by-odd-and-even/)| [C++](./C++/partition-array-by-odd-and-even.cpp)| _O(n)_ | _O(1)_ | Easy | | Two Pointers |
 
 ---
 
