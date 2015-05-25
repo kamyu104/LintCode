@@ -217,6 +217,7 @@ Algorithms
 |148|[Sort Colors](http://lintcode.com/en/problem/sort-colors/)| [C++](./C++/sort-colors.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 |156|[Merge Intervals](http://lintcode.com/en/problem/merge-intervals/)| [C++](./C++/merge-intervals.cpp)| _O(nlogn)_ | _O(1)_ | Easy | LeetCode, EPI | |
 |184|[Largest Number](http://lintcode.com/en/problem/largest-number/)| [C++](./C++/largest-number.cpp)| _O(nlogn)_ | _O(1)_ | Medium | LeetCode | |
+|366|[Fibonacci](http://lintcode.com/en/problem/fibonacci/)| [C++](./C++/fibonacci.cpp)| _O(n)_ | _O(1)_ | Easy | | |
 |387|[The Smallest Difference](http://lintcode.com/en/problem/the-smallest-difference/)| [C++](./C++/the-smallest-difference.cpp)| _O(nlogn)_ | _O(1)_ | Medium | | Two Pointers |
 
 ---
