@@ -32,7 +32,7 @@ public:
         pair<bool, int> right =  isBalancedRecu(root->right);
         
         if (left.first && right.first && abs(left.second - right.second) <= 1) {
-            return make_pair(true, max(left.second, right.second) + 1);
+            return {true, max(left.second, right.second) + 1};
         }
         else {
             return {false, 0};
