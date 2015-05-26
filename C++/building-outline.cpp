@@ -79,7 +79,7 @@ public:
                     merged.emplace_back(move(vector<int>{a[start], b[start], a[height]}));
                 }
                 a[start] = b[end];
-                merged.emplace_back(b), ++b_idx;
+                merged.emplace_back(move(b)), ++b_idx;
             }
         }
     }
