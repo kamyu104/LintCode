@@ -168,7 +168,7 @@ Algorithms
 |81|[Median in Data Stream](http://lintcode.com/en/problem/median-in-data-stream/)| [C++](./C++/median-in-data-stream.cpp)| _O(nlogn)_ | _O(n)_ | Hard | EPI | BST, Heap |
 |104|[Merge k Sorted Lists](http://lintcode.com/en/problem/merge-k-sorted-lists/)| [C++](./C++/merge-k-sorted-lists.cpp)| _O(n * logk)_ | _O(k)_ | Medium | LeetCode | |
 |130|[Heapify](http://lintcode.com/en/problem/heapify/)| [C++](./C++/heapify.cpp)| _O(n)_ | _O(1)_ | Medium | | |
-|364|[Trapping Rain Water II](http://lintcode.com/en/problem/trapping-rain-water-ii/)| [C++](./C++/trapping-rain-water-ii.cpp)| _O(m * n * max(logm, logn))_ | _O(m * n)_ | Hard | | BFS, Heap, Tricky |
+|364|[Trapping Rain Water II](http://lintcode.com/en/problem/trapping-rain-water-ii/)| [C++](./C++/trapping-rain-water-ii.cpp)| _O(m * n * (logm + logn))_ | _O(m * n)_ | Hard | | BFS, Heap, Tricky |
 
 ---
 
