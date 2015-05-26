@@ -1,4 +1,4 @@
-// Time:  O(m * n * max(logm, logn))
+// Time:  O(m * n * (logm + logn))
 // Space: O(m * n)
 
 // BFS with priority queue (min heap), refactored version.
@@ -76,7 +76,7 @@ private:
     priority_queue<Cell ,vector<Cell>, Compare> heap_; // Use min heap to get the lowerest cell.
 };
 
-// Time:  O(m * n * max(logm, logn))
+// Time:  O(m * n * (logm + logn))
 // Space: O(m * n)
 // BFS with priority queue (min heap)
 class Solution2 {
