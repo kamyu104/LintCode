@@ -16,12 +16,12 @@ public:
     vector<vector<int>> ComputeSkylineInInterval(const vector<vector<int>>& buildings,
                                                  int left_endpoint, int right_endpoint) {
         if (right_endpoint - left_endpoint <= 1) {  // 0 or 1 skyline, just copy it.
-            return {buildings.cbegin() + left_endpoint,
-                buildings.cbegin() + right_endpoint};
+            return {buildings.cbegin() + left_endpoint, 
+                    buildings.cbegin() + right_endpoint};
         }
         int mid = left_endpoint + ((right_endpoint - left_endpoint) / 2);
-        auto left_skyline = ComputeSkylineInInterval(buildings, left_endpoint, mid);
-        auto right_skyline = ComputeSkylineInInterval(buildings, mid, right_endpoint);
+        auto left_skyline = move(ComputeSkylineInInterval(buildings, left_endpoint, mid));
+        auto right_skyline = move(ComputeSkylineInInterval(buildings, mid, right_endpoint));
         return MergeSkylines(left_skyline, right_skyline);
     }
     
@@ -32,9 +32,9 @@ public:
         
         while (i < left_skyline.size() && j < right_skyline.size()) {
             if (left_skyline[i][end] < right_skyline[j][start]) {
-                merged.emplace_back(left_skyline[i++]);
+                merged.emplace_back(move(left_skyline[i++]));
             } else if (right_skyline[j][end] < left_skyline[i][start]) {
-                merged.emplace_back(right_skyline[j++]);
+                merged.emplace_back(move(right_skyline[j++]));
             } else if (left_skyline[i][start] <= right_skyline[j][start]) {
                 MergeIntersectSkylines(merged, left_skyline[i], i,
                                        right_skyline[j], j);
@@ -56,8 +56,8 @@ public:
         if (a[end] <= b[end]) {
             if (a[height] > b[height]) {  // |aaa|
                 if (b[end] != a[end]) {   // |abb|b
-                    merged.emplace_back(a), ++a_idx;
                     b[start] = a[end];
+                    merged.emplace_back(move(a)), ++a_idx;
                 } else {        // aaa
                     ++b_idx;    // abb
                 }
@@ -65,7 +65,7 @@ public:
                 b[start] = a[start], ++a_idx;    // abb
             } else {  // a[height] < b[height].
                 if (a[start] != b[start]) {                                           //    bb
-                    merged.emplace_back(vector<int>{a[start], b[start], a[height]});  // |a|bb
+                    merged.emplace_back(move(vector<int>{a[start], b[start], a[height]}));  // |a|bb
                 }
                 ++a_idx;
             }
@@ -76,7 +76,7 @@ public:
                 //    |bb|
                 // |a||bb|a
                 if (a[start] != b[start]) {
-                    merged.emplace_back(vector<int>{a[start], b[start], a[height]});
+                    merged.emplace_back(move(vector<int>{a[start], b[start], a[height]}));
                 }
                 a[start] = b[end];
                 merged.emplace_back(b), ++b_idx;
