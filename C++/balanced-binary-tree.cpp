@@ -25,7 +25,7 @@ public:
     
     pair<bool, int> isBalancedRecu(TreeNode *root) {
         if (root == nullptr) {
-            return make_pair(true, 0);
+            return {true, 0};
         }
         
         pair<bool, int> left = isBalancedRecu(root->left);
@@ -35,7 +35,7 @@ public:
             return make_pair(true, max(left.second, right.second) + 1);
         }
         else {
-            return make_pair(false, 0);
+            return {false, 0};
         }
     }
 };
