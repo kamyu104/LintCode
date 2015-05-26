@@ -61,8 +61,8 @@ public:
     }
 };
 
-// This solution may pass LintCode test cases, 
-// but it fails to get the peak in the following case:
+// Although this solution passes current LintCode test cases, 
+// it may fail to find the peak like the following case:
 // A = {{ 1,  2,  3,  4,  5},
 //      { 6, 22, 23, 28,  7},
 //      { 8, 24, 25, 26,  9},
