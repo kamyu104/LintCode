@@ -94,25 +94,6 @@ public:
      * @return: Find the outline of those buildings
      */
     vector<vector<int> > buildingOutline(vector<vector<int> > &buildings) {
-        auto outline(move(getSkyline(buildings)));
-        
-        vector<vector<int>> res;
-        int start = -1, height = 0;
-        for (const auto& h : outline) {
-            if (start == -1) {
-                start = h.first, height = h.second;
-            } else if (height != h.second) {
-                if (height > 0) {
-                    res.emplace_back(move(vector<int>{start, h.first, height}));
-                }
-                start = h.first, height = h.second;
-            }
-        }
-        
-        return res;
-    }
-    
-    vector<pair<int, int> > getSkyline(const vector<vector<int>>& buildings) {
         unordered_map<int, vector<int>> start_point_to_heights;
         unordered_map<int, vector<int>> end_point_to_heights;
         set<int> points;
@@ -124,8 +105,9 @@ public:
             points.emplace(buildings[i][1]);
         }
 
-        vector<pair<int, int>> res;
+        vector<vector<int>> res;
         map<int, int> height_to_count;
+        int curr_start = -1;
         int curr_max = 0;
         // Enumerate each point in increasing order.
         for (auto it = points.begin(); it != points.end(); ++it) {
@@ -143,12 +125,13 @@ public:
                 }
             }
  
-            if (height_to_count.empty()) {
-                curr_max = 0;
-                res.emplace_back(*it, curr_max);
-            } else if (curr_max != height_to_count.rbegin()->first) {
-                curr_max = height_to_count.rbegin()->first;
-                res.emplace_back(*it, curr_max);
+            if (height_to_count.empty() || curr_max != height_to_count.rbegin()->first) {
+                if (curr_max > 0) {
+                    res.emplace_back(move(vector<int>{curr_start, *it, curr_max}));
+                }
+                
+                curr_start = *it;
+                curr_max = height_to_count.empty() ? 0 : height_to_count.rbegin()->first;
             }
         }
         return res;
