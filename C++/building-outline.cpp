@@ -11,7 +11,7 @@ public:
     vector<vector<int> > buildingOutline(vector<vector<int> > &buildings) {
         unordered_map<int, vector<int>> start_point_to_heights;
         unordered_map<int, vector<int>> end_point_to_heights;
-        set<int> points;
+        set<int> points; // Ordered, no duplicates.
 
         for (const auto& building : buildings) {
             start_point_to_heights[building[0]].emplace_back(building[2]);
@@ -21,7 +21,7 @@ public:
         }
 
         vector<vector<int>> res;
-        map<int, int> height_to_count;
+        map<int, int> height_to_count; // BST.
         int curr_start = -1;
         int curr_max = 0;
         // Enumerate each point in increasing order.
