@@ -12,7 +12,7 @@ public:
         const int n = nums.size();
         
         if (n == 1) {
-            return {0,0};
+            return {0, 0};
         }
         
         // sum_from_start[i] denotes sum for 0 ~ i - 1.
