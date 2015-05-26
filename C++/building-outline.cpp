@@ -129,7 +129,6 @@ public:
                 if (curr_max > 0) {
                     res.emplace_back(move(vector<int>{curr_start, *it, curr_max}));
                 }
-                
                 curr_start = *it;
                 curr_max = height_to_count.empty() ? 0 : height_to_count.rbegin()->first;
             }
