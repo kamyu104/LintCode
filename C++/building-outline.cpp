@@ -1,7 +1,61 @@
 // Time:  O(nlogn)
 // Space: O(n)
 
+// BST solution.
 class Solution {
+public:
+    /**
+     * @param buildings: A list of lists of integers
+     * @return: Find the outline of those buildings
+     */
+    vector<vector<int> > buildingOutline(vector<vector<int> > &buildings) {
+        unordered_map<int, vector<int>> start_point_to_heights;
+        unordered_map<int, vector<int>> end_point_to_heights;
+        set<int> points;
+
+        for (int i = 0; i < buildings.size(); ++i) {
+            start_point_to_heights[buildings[i][0]].push_back(buildings[i][2]);
+            end_point_to_heights[buildings[i][1]].push_back(buildings[i][2]);
+            points.emplace(buildings[i][0]);
+            points.emplace(buildings[i][1]);
+        }
+
+        vector<vector<int>> res;
+        map<int, int> height_to_count;
+        int curr_start = -1;
+        int curr_max = 0;
+        // Enumerate each point in increasing order.
+        for (auto it = points.begin(); it != points.end(); ++it) {
+            vector<int> start_point_heights = start_point_to_heights[*it];
+            vector<int> end_point_heights = end_point_to_heights[*it];
+
+            for (int i = 0; i < start_point_heights.size(); ++i) {
+                ++height_to_count[start_point_heights[i]];
+            }
+
+            for (int i = 0; i < end_point_heights.size(); ++i) {
+                --height_to_count[end_point_heights[i]];
+                if (height_to_count[end_point_heights[i]] == 0) {
+                    height_to_count.erase(end_point_heights[i]);
+                }
+            }
+ 
+            if (height_to_count.empty() || curr_max != height_to_count.rbegin()->first) {
+                if (curr_max > 0) {
+                    res.emplace_back(move(vector<int>{curr_start, *it, curr_max}));
+                }
+                curr_start = *it;
+                curr_max = height_to_count.empty() ? 0 : height_to_count.rbegin()->first;
+            }
+        }
+        return res;
+    }
+};
+
+// Time:  O(nlogn)
+// Space: O(n)
+// Divide and conquer solution.
+class Solution2 {
 public:
     enum {start, end, height};
     /**
@@ -84,56 +138,3 @@ public:
         }
     }
 };
-
-// Time:  O(nlogn)
-// Space: O(n)
-class Solution2 {
-public:
-    /**
-     * @param buildings: A list of lists of integers
-     * @return: Find the outline of those buildings
-     */
-    vector<vector<int> > buildingOutline(vector<vector<int> > &buildings) {
-        unordered_map<int, vector<int>> start_point_to_heights;
-        unordered_map<int, vector<int>> end_point_to_heights;
-        set<int> points;
-
-        for (int i = 0; i < buildings.size(); ++i) {
-            start_point_to_heights[buildings[i][0]].push_back(buildings[i][2]);
-            end_point_to_heights[buildings[i][1]].push_back(buildings[i][2]);
-            points.emplace(buildings[i][0]);
-            points.emplace(buildings[i][1]);
-        }
-
-        vector<vector<int>> res;
-        map<int, int> height_to_count;
-        int curr_start = -1;
-        int curr_max = 0;
-        // Enumerate each point in increasing order.
-        for (auto it = points.begin(); it != points.end(); ++it) {
-            vector<int> start_point_heights = start_point_to_heights[*it];
-            vector<int> end_point_heights = end_point_to_heights[*it];
-
-            for (int i = 0; i < start_point_heights.size(); ++i) {
-                ++height_to_count[start_point_heights[i]];
-            }
-
-            for (int i = 0; i < end_point_heights.size(); ++i) {
-                --height_to_count[end_point_heights[i]];
-                if (height_to_count[end_point_heights[i]] == 0) {
-                    height_to_count.erase(end_point_heights[i]);
-                }
-            }
- 
-            if (height_to_count.empty() || curr_max != height_to_count.rbegin()->first) {
-                if (curr_max > 0) {
-                    res.emplace_back(move(vector<int>{curr_start, *it, curr_max}));
-                }
-                curr_start = *it;
-                curr_max = height_to_count.empty() ? 0 : height_to_count.rbegin()->first;
-            }
-        }
-        return res;
-    }
-};
-
