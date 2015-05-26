@@ -16,7 +16,7 @@ public:
         }
         
         // sum_from_start[i] denotes sum for 0 ~ i - 1.
-        vector<pair<int,int>> sum_from_start(n + 1, make_pair(0, 0));
+        vector<pair<int,int>> sum_from_start(n + 1, {0, 0});
         sum_from_start[0].second = -1; // For case closest sum is from 0.
         for (int  i = 0; i < n; ++i) {
             sum_from_start[i+1].first = sum_from_start[i].first + nums[i];
