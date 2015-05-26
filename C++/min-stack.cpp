@@ -46,7 +46,7 @@ public:
     
     void push(int number) {
         if (cached_min_with_count_.empty() || cached_min_with_count_.top().first > number) {
-            cached_min_with_count_.emplace(make_pair(number, 1));
+            cached_min_with_count_.emplace(number, 1);
         } else if (cached_min_with_count_.top().first == number) {
             ++cached_min_with_count_.top().second;
         }
