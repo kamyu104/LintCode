@@ -10,7 +10,7 @@ public:
         table[0] = -1;
         for (int i = 0, sum = 0; i < nums.size(); ++i) {
             sum += nums[i];
-            if (!table.insert(make_pair(sum, i)).second) { // Already exists.
+            if (!table.emplace(sum, i).second) { // Already exists.
                 return {table[sum] + 1, i};
             }
         }
