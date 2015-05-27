@@ -1,9 +1,9 @@
 LintCode
 ======== 
 
-Up to date (2015-05-25), there are `219` problems on [LintCode Online Judge](https://lintcode.com/).
+Up to date (2015-05-25), there are `220` problems on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `219` problems.
+Here is the classification of all `220` problems.
 For extra problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repo.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -85,6 +85,7 @@ Algorithms
 |383|[Container With Most Water](http://lintcode.com/en/problem/container-with-most-water/)| [C++](./C++/container-with-most-water.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode, EPI | Two Pointers |
 |388|[Permutation Sequence](http://lintcode.com/en/problem/permutation-sequence/)| [C++](./C++/permutation-sequence.cpp)| _O(n^2)_ | _O(n)_ | Medium | LeetCode | |
 |389|[Valid Sudoku](http://lintcode.com/en/problem/valid-sudoku/)| [C++](./C++/valid-sudoku.cpp)| _O(9^2)_ | _O(9)_ | Easy | LeetCode | |
+|406|[Minimum Size Subarray Sum](http://lintcode.com/en/problem/minimum-size-subarray-sum/)| [C++](./C++/minimum-size-subarray-sum.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 
 ---
 
