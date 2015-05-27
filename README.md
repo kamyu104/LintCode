@@ -85,7 +85,7 @@ Algorithms
 |383|[Container With Most Water](http://lintcode.com/en/problem/container-with-most-water/)| [C++](./C++/container-with-most-water.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode, EPI | Two Pointers |
 |388|[Permutation Sequence](http://lintcode.com/en/problem/permutation-sequence/)| [C++](./C++/permutation-sequence.cpp)| _O(n^2)_ | _O(n)_ | Medium | LeetCode | |
 |389|[Valid Sudoku](http://lintcode.com/en/problem/valid-sudoku/)| [C++](./C++/valid-sudoku.cpp)| _O(9^2)_ | _O(9)_ | Easy | LeetCode | |
-|406|[Minimum Size Subarray Sum](http://lintcode.com/en/problem/minimum-size-subarray-sum/)| [C++](./C++/minimum-size-subarray-sum.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
+|406|[Minimum Size Subarray Sum](http://lintcode.com/en/problem/minimum-size-subarray-sum/)| [C++](./C++/minimum-size-subarray-sum.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | Binary Search |
 
 ---
 
