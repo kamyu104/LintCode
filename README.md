@@ -1,9 +1,9 @@
 LintCode
 ======== 
 
-Up to date (2015-05-27), there are `220` problems on [LintCode Online Judge](https://lintcode.com/).
+Up to date (2015-05-27), there are `222` problems on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `220` problems.
+Here is the classification of all `222` problems.
 For extra problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repo.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -102,6 +102,8 @@ Algorithms
 |171|[Anagrams](http://lintcode.com/en/problem/anagrams/)|[C++](./C++/anagrams.cpp)| _O(n * klogk)_ | _O(m)_ | Easy | LeetCode, EPI | |
 |407|[Plus One](http://lintcode.com/en/problem/plus-one.cpp/)|[C++](./C++/plus-one.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
 |408|[Add Binary](http://lintcode.com/en/problem/add-binary/)|[C++](./C++/add-binary.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
+|415|[Valid Palindrome](http://lintcode.com/en/problem/valid-palindrome/)|[C++](./C++/valid-palindrome.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
+|417|[Valid Number](http://lintcode.com/en/problem/valid-number/)|[C++](./C++/valid-number.cpp)| _O(n)_ | _O(1)_ | Hard | LeetCode | Automata |
 
 ---
 
