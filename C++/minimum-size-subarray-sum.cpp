@@ -1,6 +1,7 @@
 // Time:  O(n)
 // Space: O(1)
 
+// Sliding window solution.
 class Solution {
 public:
     /**
