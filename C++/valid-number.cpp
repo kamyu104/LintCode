@@ -57,3 +57,17 @@ public:
         return state == 1 || state == 4 || state == 7 || state == 8;
     }
 };
+
+#include <regex>
+// It shows runtime error on LintCode Online Judge, but it works with the latest C++14 compiler.
+class Solution2 {
+public:
+    /**
+     * @param s the string that represents a number
+     * @return whether the string is a valid number
+     */
+    bool isNumber(string& s) {
+        regex e("^\\s*[\\+-]?((\\d+(\\.\\d*)?)|\\.\\d+)([eE][\\+-]?\\d+)?\\s*$");
+        return regex_match(s, e);
+    }
+};
