@@ -41,8 +41,8 @@ public:
         partial_sum(nums.begin(), nums.end(), sum_from_start.begin());
         for (int i = 0; i < nums.size(); ++i) {
             const auto& end_it = lower_bound(sum_from_start.begin() + i,
-                                          sum_from_start.end(),
-                                          sum_from_start[i] - nums[i] + s);
+                                             sum_from_start.end(),
+                                             sum_from_start[i] - nums[i] + s);
             int end = static_cast<int>(end_it - sum_from_start.begin());
             if (end_it != sum_from_start.end()) {
                 min_size = min(min_size, end - i + 1);
