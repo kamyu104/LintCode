@@ -45,7 +45,7 @@ public:
                                           sum_from_start[i] - nums[i] + s);
             int end = static_cast<int>(end_it - sum_from_start.begin());
             if (end_it != sum_from_start.end()) {
-                min_size = min(min_size,  end - i + 1);
+                min_size = min(min_size, end - i + 1);
             }
         }
         if (min_size == INT_MAX) {
