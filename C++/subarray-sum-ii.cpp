@@ -16,20 +16,17 @@ public:
         
         int result = 0;
         for (int i = 0, j = 0; j < A.size(); ++j) {
-            if (sum_from_start[j + 1] >= start) {
-                auto l = lower_bound(sum_from_start.begin(), sum_from_start.begin() + j + 1,
-                                     sum_from_start[j + 1] - end);
-                auto r = upper_bound(sum_from_start.begin(), sum_from_start.begin() + j + 1,
-                                     sum_from_start[j + 1] - start);
-                if (l != sum_from_start.begin() + j + 1) {
-                    result += (r - sum_from_start.begin()) - (l - sum_from_start.begin());
-                }
-            }
+            auto l = lower_bound(sum_from_start.begin(), sum_from_start.begin() + j + 1,
+                                 sum_from_start[j + 1] - end);
+            auto r = upper_bound(sum_from_start.begin(), sum_from_start.begin() + j + 1,
+                                 sum_from_start[j + 1] - start);
+            result += (r - sum_from_start.begin()) - (l - sum_from_start.begin());
         }
         
         return result;
     }
 };
+
 
 // Time:  O(n^2)
 // Space: O(n)
