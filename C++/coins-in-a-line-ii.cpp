@@ -24,7 +24,6 @@ public:
             int a = i + 2 < values.size() ? P[(i + 2) % 5] : 0;
             int b = i + 3 < values.size() ? P[(i + 3) % 5] : 0;
             int c = i + 4 < values.size() ? P[(i + 4) % 5] : 0;
-            
             P[i % 5] = max(values[i] + min(a, b), 
                            values[i] + values_i_plus_1 + min(b, c));
         }
