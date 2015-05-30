@@ -58,7 +58,6 @@ public:
 
 // Time:  O(k * log(min(m, n)))
 // Space: O(min(m, n))
-
 // Heap solution.
 class Solution {
 public:
