@@ -8,18 +8,8 @@ public:
      * @param values: a vector of integers
      * @return: a boolean which equals to true if the first player will win
      */
-// Time:  O(n)
-// Space: O(1)
-
-// DP with rolling window.
-class Solution {
-public:
-    /**
-     * @param values: a vector of integers
-     * @return: a boolean which equals to true if the first player will win
-     */
     bool firstWillWin(vector<int> &values) {
-        // For corner case.
+        // For boundary case.
         if (values.size() < 2) {
             return values.size() % 2;
         }
@@ -53,7 +43,11 @@ public:
      * @return: a boolean which equals to true if the first player will win
      */
     bool firstWillWin(vector<int> &values) {
-        // For corner case.
+        // For boundary case.
+        if (values.size() < 2) {
+            return values.size() % 2;
+        }
+        
         vector<int> P(values.size(), 0);
         int sum = 0;
         // P[i] = max(values[i] + min(P[i + 2], P[i + 3]),
