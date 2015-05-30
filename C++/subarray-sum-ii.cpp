@@ -1,6 +1,7 @@
 // Time:  O(nlogn)
 // Space: O(n)
 
+// Binary search solution.
 class Solution {
 public:
     /**
