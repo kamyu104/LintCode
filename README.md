@@ -225,6 +225,7 @@ Algorithms
 |184|[Largest Number](http://lintcode.com/en/problem/largest-number/)| [C++](./C++/largest-number.cpp)| _O(nlogn)_ | _O(1)_ | Medium | LeetCode | |
 |366|[Fibonacci](http://lintcode.com/en/problem/fibonacci/)| [C++](./C++/fibonacci.cpp)| _O(n)_ | _O(1)_ | Easy | | |
 |387|[The Smallest Difference](http://lintcode.com/en/problem/the-smallest-difference/)| [C++](./C++/the-smallest-difference.cpp)| _O(nlogn)_ | _O(1)_ | Medium | | Two Pointers |
+|400|[Maximum Gap](http://lintcode.com/en/problem/maximum-gap/)| [C++](./C++/maximum-gap.cpp) [Python](./Python/maximum-gap.py)| _O(n)_ | _O(n)_ | Hard | LeetCode | Bucket Sort |
 |418|[Integer to Roman](http://lintcode.com/en/problem/integer-to-roman/)| [C++](./C++/integer-to-roman.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 |419|[Roman to Integer](http://lintcode.com/en/problem/roman-to-integer/)| [C++](./C++/roman-to-integer.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 
