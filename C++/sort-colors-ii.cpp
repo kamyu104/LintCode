@@ -25,10 +25,10 @@ public:
             }
         }
         
-        for (int i = colors.size() - 1, j = k - 1; j >= 0; --j) {
-            while (colors[j] < 0) { // Reorder the color by count of each bucket.
-                ++colors[j];
-                colors[i--] = j + 1;
+        for (int i = colors.size() - 1, pos = k - 1; pos >= 0; --pos) {
+            while (colors[pos] < 0) { // Reorder the color by count of each bucket.
+                ++colors[pos];
+                colors[i--] = pos + 1;
             }
         }
     }
