@@ -10,10 +10,13 @@ public:
      */
     bool firstWillWin(vector<int> &values) {
         vector<int> P(5, 0);
+        if (values.size() == 0) return false;
         int sum = 0;
         // P[i] = max(values[i] + min(P[i + 2], P[i + 3]),
         //            values[i] + values[i + 1] + min(P[i + 3], P[i + 4]))
-        for (int i = values.size() - 1; i >= 0; --i) {
+        P [(values.size()-1) % 5] = values[values.size()-1];
+        sum += values[values.size()-1];
+        for (int i = values.size() - 2; i >= 0; --i) {
             sum += values[i];
             int a = i + 2 < values.size() ? P[(i + 2) % 5] : 0;
             int b = i + 3 < values.size() ? P[(i + 3) % 5] : 0;
@@ -38,9 +41,12 @@ public:
     bool firstWillWin(vector<int> &values) {
         vector<int> P(values.size(), 0);
         int sum = 0;
+        if (values.size() == 0) return false;
         // P[i] = max(values[i] + min(P[i + 2], P[i + 3]),
         //            values[i] + values[i + 1] + min(P[i + 3], P[i + 4]))
-        for (int i = values.size() - 1; i >= 0; --i) {
+        P[i] = values[values.size() - 1];
+        sum += values[values.size() - 1];
+        for (int i = values.size() - 2; i >= 0; --i) {
             sum += values[i];
             int a = i + 2 < values.size() ? P[i + 2] : 0;
             int b = i + 3 < values.size() ? P[i + 3] : 0;
