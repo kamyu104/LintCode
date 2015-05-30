@@ -17,11 +17,14 @@ public:
         
         int result = 0;
         for (int j = 0; j < A.size(); ++j) {
-            const auto left = lower_bound(sum_from_start.cbegin(), sum_from_start.cbegin() + j + 1,
+            const auto left = lower_bound(sum_from_start.cbegin(),
+                                          sum_from_start.cbegin() + j + 1,
                                           sum_from_start[j + 1] - end);
-            const auto right = upper_bound(sum_from_start.cbegin(), sum_from_start.cbegin() + j + 1,
+            const auto right = upper_bound(sum_from_start.cbegin(),
+                                           sum_from_start.cbegin() + j + 1,
                                            sum_from_start[j + 1] - start);
-            result += (right - sum_from_start.cbegin()) - (left - sum_from_start.cbegin());
+            result += (right - sum_from_start.cbegin()) - 
+                      (left - sum_from_start.cbegin());
         }
         
         return result;
