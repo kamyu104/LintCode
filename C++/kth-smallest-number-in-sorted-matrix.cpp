@@ -1,5 +1,5 @@
-// Time:  O(klogk)
-// Space: O(k)
+// Time:  O(klog(min(n, k)) + klog(min(m, k)))
+// Space: O(min(n, k) + min(m, k))
 
 // BST solution.
 class Solution {
@@ -70,8 +70,8 @@ public:
     }
 };
 
-// Time:  O(klogk)
-// Space: O(k)
+// Time:  O(klog(min(n, k)) + klog(min(m, k)))
+// Space: O(min(n, k) + min(m, k))
 // Heap solution.
 class Solution2 {
 public:
