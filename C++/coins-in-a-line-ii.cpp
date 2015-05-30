@@ -11,7 +11,7 @@ public:
     bool firstWillWin(vector<int> &values) {
         // For boundary case.
         if (values.size() < 2) {
-            return values.size() % 2;
+            return values.size() % 2 == 1;
         }
         
         vector<int> P(5, 0);
@@ -45,7 +45,7 @@ public:
     bool firstWillWin(vector<int> &values) {
         // For boundary case.
         if (values.size() < 2) {
-            return values.size() % 2;
+            return values.size() % 2 == 1;
         }
         
         vector<int> P(values.size(), 0);
