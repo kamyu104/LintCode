@@ -15,7 +15,8 @@ public:
         // Init bucket.
         int max_val = *max_element(nums.cbegin(), nums.cend());
         int min_val = *min_element(nums.cbegin(), nums.cend());
-        int gap = max(1, static_cast<int>((max_val - min_val) / (nums.size() - 1)));
+        int gap = max(1, static_cast<int>((max_val - min_val) /
+                                          (nums.size() - 1)));
         map<int, array<int, 2>> bucket;
         typedef enum {MIN, MAX} ValueType;
 
