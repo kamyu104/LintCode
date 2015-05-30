@@ -16,7 +16,7 @@ public:
         partial_sum(A.begin(), A.end(), sum_from_start.begin() + 1);
         
         int result = 0;
-        for (int i = 0, j = 0; j < A.size(); ++j) {
+        for (int j = 0; j < A.size(); ++j) {
             const auto left = lower_bound(sum_from_start.cbegin(), sum_from_start.cbegin() + j + 1,
                                           sum_from_start[j + 1] - end);
             const auto right = upper_bound(sum_from_start.cbegin(), sum_from_start.cbegin() + j + 1,
