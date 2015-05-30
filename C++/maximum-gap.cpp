@@ -27,9 +27,9 @@ public:
             }
             int i = (n - min_val) / gap;
             bucket[i][MIN] = min(!bucket[i][MIN] ? INT_MAX : 
-                                                       bucket[i][MIN], n);
+                                                   bucket[i][MIN], n);
             bucket[i][MAX] = max(!bucket[i][MAX] ? INT_MIN :
-                                                       bucket[i][MAX], n);
+                                                   bucket[i][MAX], n);
         }
         
         // Count each bucket gap between the first and the last bucket.
