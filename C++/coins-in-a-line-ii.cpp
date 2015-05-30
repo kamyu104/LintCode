@@ -53,6 +53,7 @@ public:
      * @return: a boolean which equals to true if the first player will win
      */
     bool firstWillWin(vector<int> &values) {
+        // For corner case.
         vector<int> P(values.size(), 0);
         int sum = 0;
         // P[i] = max(values[i] + min(P[i + 2], P[i + 3]),
