@@ -17,7 +17,7 @@ public:
         multimap<int, pair<int, int> >min_bst;
 
         // Init BST by the first element of each row.
-        for (int i = 0; i < min(int(matrix.size()), k); ++i) {
+        for (int i = 0; i < min(static_cast<int>(matrix.size()), k); ++i) {
             min_bst.emplace(move(pair<int, pair<int, int>>{matrix[i][0], {i, 0}}));
         }
         
@@ -45,7 +45,7 @@ public:
         multimap<int, pair<int, int>> min_bst;
 
         // Init BST by the first element of each column.
-        for (int j = 0; j < min(int(matrix[0].size()), k); ++j) {
+        for (int j = 0; j < min(static_cast<int>(matrix[0].size()), k); ++j) {
             min_bst.emplace(move(pair<int, pair<int, int>>{matrix[0][j], {0, j}}));
         }
         
@@ -93,7 +93,7 @@ public:
         priority_queue<pair<int, pair<int, int>>, vector<pair<int, pair<int, int>>>, Compare> min_heap;
 
         // Init Heap by the first element of each row.
-        for (int i = 0; i < min(int(matrix.size()), k); ++i) {
+        for (int i = 0; i < min(static_cast<int>(matrix.size()), k); ++i) {
             min_heap.emplace(move(pair<int, pair<int, int>>{matrix[i][0], {i, 0}}));
         }
         
@@ -121,7 +121,7 @@ public:
         priority_queue<pair<int, pair<int, int>>, vector<pair<int, pair<int, int>>>, Compare> min_heap;
 
         // Init Heap by the first element of each column.
-        for (int j = 0; j < min(int(matrix[0].size()), k); ++j) {
+        for (int j = 0; j < min(static_cast<int>(matrix[0].size()), k); ++j) {
             min_heap.emplace(move(pair<int, pair<int, int>>{matrix[0][j], {0, j}}));
         }
         
