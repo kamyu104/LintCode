@@ -16,7 +16,7 @@ public:
     int horizontal_search(const vector<vector<int> > &matrix, int k) {
         multimap<int, pair<int, int> >min_bst;
 
-        // Init BST by the first element of each row.
+        // Init BST by the first element of the first kth row.
         for (int i = 0; i < min(static_cast<int>(matrix.size()), k); ++i) {
             min_bst.emplace(move(pair<int, pair<int, int>>{matrix[i][0], {i, 0}}));
         }
@@ -44,7 +44,7 @@ public:
     int vertical_search(const vector<vector<int> > &matrix, int k) {
         multimap<int, pair<int, int>> min_bst;
 
-        // Init BST by the first element of each column.
+        // Init BST by the first element of the first kth column.
         for (int j = 0; j < min(static_cast<int>(matrix[0].size()), k); ++j) {
             min_bst.emplace(move(pair<int, pair<int, int>>{matrix[0][j], {0, j}}));
         }
@@ -92,7 +92,7 @@ public:
     int horizontal_search(const vector<vector<int> > &matrix, int k) {
         priority_queue<pair<int, pair<int, int>>, vector<pair<int, pair<int, int>>>, Compare> min_heap;
 
-        // Init Heap by the first element of each row.
+        // Init Heap by the first element of the first kth row.
         for (int i = 0; i < min(static_cast<int>(matrix.size()), k); ++i) {
             min_heap.emplace(move(pair<int, pair<int, int>>{matrix[i][0], {i, 0}}));
         }
@@ -120,7 +120,7 @@ public:
     int vertical_search(const vector<vector<int> > &matrix, int k) {
         priority_queue<pair<int, pair<int, int>>, vector<pair<int, pair<int, int>>>, Compare> min_heap;
 
-        // Init Heap by the first element of each column.
+        // Init Heap by the first element of the first kth column.
         for (int j = 0; j < min(static_cast<int>(matrix[0].size()), k); ++j) {
             min_heap.emplace(move(pair<int, pair<int, int>>{matrix[0][j], {0, j}}));
         }
