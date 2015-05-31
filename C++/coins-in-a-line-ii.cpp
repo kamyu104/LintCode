@@ -37,7 +37,7 @@ public:
      * @return: a boolean which equals to true if the first player will win
      */
     bool firstWillWin(vector<int> &values) {
-        vector<int> P(values.size();
+        vector<int> P(values.size());
         int sum = 0;
         for (int i = values.size() - 1; i >= 0; --i) {
             sum += values[i];
