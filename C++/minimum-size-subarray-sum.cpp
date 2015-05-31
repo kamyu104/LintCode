@@ -40,8 +40,8 @@ public:
         vector<int> sum_from_start(nums.size() + 1);
         partial_sum(nums.cbegin(), nums.cend(), sum_from_start.begin() + 1);
         for (int i = 0; i < nums.size(); ++i) {
-            const auto& end_it = lower_bound(sum_from_start.begin() + i,
-                                             sum_from_start.end(),
+            const auto& end_it = lower_bound(sum_from_start.cbegin() + i,
+                                             sum_from_start.cend(),
                                              sum_from_start[i] + s);
             if (end_it != sum_from_start.cend()) {
                 int end = static_cast<int>(end_it - sum_from_start.cbegin());
