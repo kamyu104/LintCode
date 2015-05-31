@@ -13,7 +13,7 @@ public:
     int subarraySumII(vector<int>& A, int start, int end) {
         // sum_from_start[i] denotes sum for 0 ~ i - 1.
         vector<int> sum_from_start(A.size() + 1);
-        partial_sum(A.begin(), A.end(), sum_from_start.begin() + 1);
+        partial_sum(A.cbegin(), A.cend(), sum_from_start.begin() + 1);
         
         int result = 0;
         for (int j = 0; j < A.size(); ++j) {
@@ -44,7 +44,7 @@ public:
     int subarraySumII(vector<int>& A, int start, int end) {
         // sum_from_start[i] denotes sum for 0 ~ i - 1.
         vector<int> sum_from_start(A.size() + 1);
-        partial_sum(A.begin(), A.end(), sum_from_start.begin() + 1);
+        partial_sum(A.cbegin(), A.cend(), sum_from_start.begin() + 1);
         
         int result = 0;
         for (int i = 0, j = 0; j < A.size(); ++j) {
