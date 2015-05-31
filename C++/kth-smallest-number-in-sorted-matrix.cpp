@@ -18,7 +18,7 @@ public:
     }
     
     int horizontal_search(const vector<vector<int> > &matrix, int k) {
-        multimap<int, pair<int, int>>min_bst;
+        multimap<int, pair<int, int>> min_bst;
 
         // Init BST by the first element of the first kth row.
         for (int i = 0; i < min(static_cast<int>(matrix.size()), k); ++i) {
