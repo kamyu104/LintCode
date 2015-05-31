@@ -1,5 +1,5 @@
-// Time:  O(klog(min(n, k)) + klog(min(m, k)))
-// Space: O(min(n, k) + min(m, k))
+// Time:  O(klog(min(m, k)) + klog(min(n, k))) = O(klog(max(m, n)))
+// Space: O(min(m, k) + min(n, k)) = O(max(m, n))
 
 // BST solution.
 class Solution {
@@ -10,6 +10,14 @@ public:
      * @return: the kth smallest number in the matrix
      */
     int kthSmallest(vector<vector<int> > &matrix, int k) {
+        if (k >= min(matrix.size(), matrix[0].size())) {
+            if (matrix.size() < matrix[0].size()) {  // Height is smaller.
+                return horizontal_search(matrix, k);
+            } else {  // Width is smaller
+                return vertical_search(matrix, k);
+            }
+        }
+        // min may be found in each horizontal search of vertical search.
         return min(horizontal_search(matrix, k),  vertical_search(matrix, k));
     }
     
@@ -70,8 +78,8 @@ public:
     }
 };
 
-// Time:  O(klog(min(n, k)) + klog(min(m, k)))
-// Space: O(min(n, k) + min(m, k))
+// Time:  O(klog(min(m, k)) + klog(min(n, k))) = O(klog(max(m, n)))
+// Space: O(min(m, k) + min(n, k)) = O(max(m, n))
 // Heap solution.
 class Solution2 {
 public:
@@ -86,6 +94,14 @@ public:
      * @return: the kth smallest number in the matrix
      */
     int kthSmallest(vector<vector<int> > &matrix, int k) {
+        if (k >= min(matrix.size(), matrix[0].size())) {
+            if (matrix.size() < matrix[0].size()) {  // Height is smaller.
+                return horizontal_search(matrix, k);
+            } else {  // Width is smaller
+                return vertical_search(matrix, k);
+            }
+        }
+        // min may be found in each horizontal search of vertical search.
         return min(horizontal_search(matrix, k),  vertical_search(matrix, k));
     }
     
