@@ -9,11 +9,6 @@ public:
      * @return: a boolean which equals to true if the first player will win
      */
     bool firstWillWin(vector<int> &values) {
-        // For boundary case.
-        if (values.size() < 2) {
-            return values.size() % 2 == 1;
-        }
-        
         vector<int> P(5, 0);
         int sum = 0;
         for (int i = values.size() - 1; i >= 0; --i) {
@@ -42,11 +37,6 @@ public:
      * @return: a boolean which equals to true if the first player will win
      */
     bool firstWillWin(vector<int> &values) {
-        // For boundary case.
-        if (values.size() < 2) {
-            return values.size() % 2 == 1;
-        }
-        
         vector<int> P(values.size(), 0);
         int sum = 0;
         for (int i = values.size() - 1; i >= 0; --i) {
