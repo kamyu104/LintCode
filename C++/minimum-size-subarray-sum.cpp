@@ -43,8 +43,8 @@ public:
             const auto& end_it = lower_bound(sum_from_start.begin() + i,
                                              sum_from_start.end(),
                                              sum_from_start[i] + s);
-            if (end_it != sum_from_start.end()) {
-                int end = static_cast<int>(end_it - sum_from_start.begin());
+            if (end_it != sum_from_start.cend()) {
+                int end = static_cast<int>(end_it - sum_from_start.cbegin());
                 min_size = min(min_size, end - i);
             }
         }
