@@ -38,7 +38,7 @@ public:
     int minimumSize(vector<int> &nums, int s) {
         int min_size = INT_MAX;
         vector<int> sum_from_start(nums.size() + 1);
-        partial_sum(nums.begin(), nums.end(), sum_from_start.begin() + 1);
+        partial_sum(nums.cbegin(), nums.cend(), sum_from_start.begin() + 1);
         for (int i = 0; i < nums.size(); ++i) {
             const auto& end_it = lower_bound(sum_from_start.begin() + i,
                                              sum_from_start.end(),
