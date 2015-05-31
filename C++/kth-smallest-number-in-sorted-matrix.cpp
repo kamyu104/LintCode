@@ -13,7 +13,7 @@ public:
         if (k >= min(matrix.size(), matrix[0].size())) {
             if (matrix.size() < matrix[0].size()) {  // Height is smaller.
                 return horizontal_search(matrix, k);
-            } else {  // Width is smaller
+            } else {  // Width is smaller.
                 return vertical_search(matrix, k);
             }
         }
@@ -97,7 +97,7 @@ public:
         if (k >= min(matrix.size(), matrix[0].size())) {
             if (matrix.size() < matrix[0].size()) {  // Height is smaller.
                 return horizontal_search(matrix, k);
-            } else {  // Width is smaller
+            } else {  // Width is smaller.
                 return vertical_search(matrix, k);
             }
         }
