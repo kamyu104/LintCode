@@ -8,8 +8,8 @@ public:
      *@return: A string
      */
     string binaryRepresentation(string n) {
-        int int_part = atoi(n.substr(0, n.find('.')).c_str());
-        double dec_part = atof(n.substr(n.find('.')).c_str());
+        int int_part = stoi(n.substr(0, n.find('.'));
+        double dec_part = stod(n.substr(n.find('.')));
         string int_str = "";
         string dec_str = "";
         
