@@ -22,7 +22,7 @@ public:
             return 0;
         }
         stack<string> s;
-        for (auto& tok : postfix) {
+        for (const auto& tok : postfix) {
             if (!is_operator(tok)) {
                 s.emplace(tok);
             } else {
@@ -32,14 +32,11 @@ public:
                 s.pop();
                 if (tok[0] == '+') {
                     x += y;
-                }
-                else if (tok[0] == '-') {
+                } else if (tok[0] == '-') {
                     x -= y;
-                }
-                else if (tok[0] == '*') {
+                } else if (tok[0] == '*') {
                     x *= y;
-                }
-                else {
+                } else {
                     x /= y;
                 }
                 s.emplace(to_string(x));
