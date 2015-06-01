@@ -14,7 +14,7 @@ public:
         }
         
         vector<string> result = {""};
-        vector<string> lookup = {"", "", "abc", "def", "ghi", "jkl", "mno", \
+        vector<string> lookup = {"", "", "abc", "def", "ghi", "jkl", "mno",
                                  "pqrs", "tuv", "wxyz"};
         
         for (int i = digits.size() - 1; i >= 0; --i) {
@@ -32,5 +32,43 @@ public:
         }
         
         return result;
+    }
+};
+
+// Time:  O(n)
+// Space: O(n)
+// Recursion solution.
+class Solution2 {
+public:
+    /**
+     * @param digits A digital string
+     * @return all posible letter combinations
+     */
+    vector<string> letterCombinations(string& digits) {
+        if (digits.empty()) {
+            return {};
+        }
+        
+        vector<string> result = {};
+        vector<string> lookup = {"", "", "abc", "def", "ghi", "jkl", "mno",
+                                 "pqrs", "tuv", "wxyz"};
+        string combination;
+        int len = 0;
+        letterCombinationsRecu(digits, lookup, &combination, &len, &result);
+        return result;
+    }
+    
+    void letterCombinationsRecu(const string& digits, vector<string>& lookup, 
+                                string *combination, 
+                                int *len, vector<string> *result) {
+       if (*len == digits.size()) {
+            result->emplace_back(*combination);
+        } else {
+            for (const auto& c : lookup[digits[*len] - '0']) {
+                combination->insert(combination->end(), c), ++(*len);
+                letterCombinationsRecu(digits, lookup, combination, len, result);
+                combination->pop_back(), --(*len);
+            }
+        }
     }
 };
