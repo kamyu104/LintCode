@@ -132,7 +132,6 @@ Algorithms
 |174|[Remove Nth Node From End of List](http://lintcode.com/en/problem/remove-nth-node-from-end-of-list/)|[C++](./C++/remove-nth-node-from-end-of-list.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
 |372|[Delete Node in the Middle of Singly Linked List](http://lintcode.com/en/problem/delete-node-in-the-middle-of-singly-linked-list/)|[C++](./C++/delete-node-in-the-middle-of-singly-linked-list.cpp)| _O(1)_ | _O(1)_ | Easy | CTCI | |
 
-
 ---
 
 ##Tree
@@ -260,6 +259,7 @@ Algorithms
 |247|[Segment Tree Query II](http://lintcode.com/en/problem/segment-tree-query-ii/)| [C++](./C++/segment-tree-query-ii.cpp)| _O(h)_ | _O(h)_ | Hard | | Segment Tree, BST |
 |248|[Count of Smaller Number](http://lintcode.com/en/problem/count-of-smaller-number/)| [C++](./C++/count-of-smaller-number.cpp)| build tree: _O(n)_, query: _O(logn)_ | _O(h)_ | Medium | | Segment Tree, BST |
 |371|[Print Numbers by Recursion](http://lintcode.com/en/problem/print-numbers-by-recursion/)| [C++](./C++/print-numbers-by-recursion.cpp)| _O(n)_ | _O(n)_ | Medium | | |
+|425|[Letter Combinations of a Phone Number](http://lintcode.com/en/problem/letter-combinations-of-a-phone-number/)| [C++](./C++/letter-combinations-of-a-phone-number.cpp)| _O(n * 4^n)_ | _O(n)_ | Medium | LeetCode | |
 
 ---
 
