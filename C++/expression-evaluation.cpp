@@ -54,7 +54,7 @@ public:
         stack<string> s;
         for (auto tok : infix) {
             // Any number would be pushed into stack.
-            if (atoi(tok.c_str())) {
+            if (stoi(tok)) {
                 postfix.emplace_back(tok);
             } else if (tok == "(") {
                 s.emplace(tok);
