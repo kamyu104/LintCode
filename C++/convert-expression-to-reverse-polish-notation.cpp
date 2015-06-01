@@ -16,8 +16,8 @@ public:
     // Convert Infix to Postfix Expression.
     void infixToPostfix(vector<string>& infix, vector<string>& postfix) {
         stack<string> s;
-        for (auto tok : infix) {
-            if (atoi(tok.c_str())) {
+        for (const auto& tok : infix) {
+            if (stoi(tok)) {
                 postfix.emplace_back(tok);
             } else if (tok == "(") {
                 s.emplace(tok);
