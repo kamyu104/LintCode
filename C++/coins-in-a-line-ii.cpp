@@ -13,10 +13,10 @@ public:
         int sum = 0;
         for (int i = values.size() - 1; i >= 0; --i) {
             sum += values[i];
-            int a = i + 1 < values.size() ? values[i + 1]: 0;
-            int b = i + 2 < values.size() ? P[(i + 2) % 5] : 0;
-            int c = i + 3 < values.size() ? P[(i + 3) % 5] : 0;
-            int d = i + 4 < values.size() ? P[(i + 4) % 5] : 0;
+            const int a = i + 1 < values.size() ? values[i + 1]: 0;
+            const int b = i + 2 < values.size() ? P[(i + 2) % 5] : 0;
+            const int c = i + 3 < values.size() ? P[(i + 3) % 5] : 0;
+            const int d = i + 4 < values.size() ? P[(i + 4) % 5] : 0;
             // P[i] = max(values[i] + min(P[i + 2], P[i + 3]),
             //            values[i] + values[i + 1] + min(P[i + 3], P[i + 4]))
             P[i % 5] = max(values[i] + min(b, c), values[i] + a + min(c, d));
@@ -40,10 +40,10 @@ public:
         int sum = 0;
         for (int i = values.size() - 1; i >= 0; --i) {
             sum += values[i];
-            int a = i + 1 < values.size() ? values[i + 1]: 0;
-            int b = i + 2 < values.size() ? P[i + 2] : 0;
-            int c = i + 3 < values.size() ? P[i + 3] : 0;
-            int d = i + 4 < values.size() ? P[i + 4] : 0;
+            const int a = i + 1 < values.size() ? values[i + 1]: 0;
+            const int b = i + 2 < values.size() ? P[i + 2] : 0;
+            const int c = i + 3 < values.size() ? P[i + 3] : 0;
+            const int d = i + 4 < values.size() ? P[i + 4] : 0;
             // P[i] = max(values[i] + min(P[i + 2], P[i + 3]),
             //            values[i] + values[i + 1] + min(P[i + 3], P[i + 4]))
             P[i] = max(values[i] + min(b, c),  values[i] + a + min(c, d));
