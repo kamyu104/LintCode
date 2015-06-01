@@ -131,6 +131,7 @@ Algorithms
 |173|[Insertion Sort List](http://lintcode.com/en/problem/insertion-sort-list/)|[C++](./C++/insertion-sort-list.cpp)| _O(n^2)_ | _O(1)_ | Easy | LeetCode | |
 |174|[Remove Nth Node From End of List](http://lintcode.com/en/problem/remove-nth-node-from-end-of-list/)|[C++](./C++/remove-nth-node-from-end-of-list.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
 |372|[Delete Node in the Middle of Singly Linked List](http://lintcode.com/en/problem/delete-node-in-the-middle-of-singly-linked-list/)|[C++](./C++/delete-node-in-the-middle-of-singly-linked-list.cpp)| _O(1)_ | _O(1)_ | Easy | CTCI | |
+|422|[Length of Last Word](http://lintcode.com/en/problem/length-of-last-word/)|[C++](./C++/length-of-last-word.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
 
 ---
 
