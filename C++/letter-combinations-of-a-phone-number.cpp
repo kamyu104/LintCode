@@ -14,7 +14,8 @@ public:
         }
         
         vector<string> result = {""};
-        vector<string> lookup = {"", "", "abc", "def", "ghi", "jkl", "mno",
+        vector<string> lookup = {"", "", "abc", "def",
+                                 "ghi", "jkl", "mno",
                                  "pqrs", "tuv", "wxyz"};
         
         for (int i = digits.size() - 1; i >= 0; --i) {
@@ -50,7 +51,8 @@ public:
         }
         
         vector<string> result = {};
-        vector<string> lookup = {"", "", "abc", "def", "ghi", "jkl", "mno",
+        vector<string> lookup = {"", "", "abc", "def",
+                                 "ghi", "jkl", "mno",
                                  "pqrs", "tuv", "wxyz"};
         string combination;
         int len = 0;
