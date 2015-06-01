@@ -8,16 +8,16 @@ public:
      * @return the simplified path
      */
     string simplifyPath(string& path) {
-        vector<string> stk;
+        vector<string> names;
         vector<string> tokens(move(split(path, '/')));
         for (const auto& token : tokens) {
-            if (token == ".." && !stk.empty()) {
-                stk.pop_back();
+            if (token == ".." && !names.empty()) {
+                names.pop_back();
             } else if (token != ".." && token != "." && !token.empty()) {
-                stk.emplace_back(token);
+                names.emplace_back(token);
             }
         }
-        return string("/").append(move(join(stk, '/')));
+        return string("/").append(move(join(names, '/')));
     }
     
     // Split string by delimitor.
@@ -32,15 +32,15 @@ public:
     }
     
     // Join strings with delimitor.
-    string join(const vector<string>& stk, const char& delim) {
+    string join(const vector<string>& names, const char& delim) {
         string s;
-        if (!stk.empty()) {
+        if (!names.empty()) {
             ostringstream ss;
             string delim_str;
             delim_str.insert(delim_str.begin(), delim);
-            copy(stk.cbegin(), prev(stk.cend()), 
+            copy(names.cbegin(), prev(names.cend()), 
                  ostream_iterator<string>(ss, delim_str.c_str()));
-            ss << stk.back();
+            ss << names.back();
             s = ss.str();
         }
         return s;
