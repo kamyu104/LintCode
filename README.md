@@ -154,7 +154,7 @@ Algorithms
 |68|[Binary Tree Postorder Traversal](http://lintcode.com/en/problem/binary-tree-postorder-traversal/)| [C++](./C++/binary-tree-postorder-traversal.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode, EPI | `Morris Traversal` |
 |122|[Largest Rectangle in Histogram](http://lintcode.com/en/problem/largest-rectangle-in-histogram/)| [C++](./C++/largest-rectangle-in-histogram.cpp)| _O(n)_ | _O(n)_ | Hard | LeetCode, EPI | |
 |367|[Expression Tree Build](http://lintcode.com/en/problem/expression-tree-build/)| [C++](./C++/expression-tree-build.cpp)| _O(n)_ | _O(n)_ | Hard | | |
-|368|[Expression evaluation](http://lintcode.com/en/problem/expression-evaluation/)| [C++](./C++/expression-evaluation.cpp)| _O(n)_ | _O(n)_ | Hard | | |
+|368|[Expression Evaluation](http://lintcode.com/en/problem/expression-evaluation/)| [C++](./C++/expression-evaluation.cpp)| _O(n)_ | _O(n)_ | Hard | | |
 |369|[Convert Expression to Polish Notation](http://lintcode.com/en/problem/convert-expression-to-reverse-notation/)| [C++](./C++/convert-expression-to-polish-notation.cpp)| _O(n)_ | _O(n)_ | Hard | | |
 |370|[Convert Expression to Reverse Polish Notation](http://lintcode.com/en/problem/convert-expression-to-reverse-polish-notation/)| [C++](./C++/convert-expression-to-reverse-polish-notation.cpp)| _O(n)_ | _O(n)_ | Hard | | |
 |421|[Simplify Path](http://lintcode.com/en/problem/simplify-path/)| [C++](./C++/simplify-path.cpp)| _O(n)_ | _O(n)_ | Medium | LeetCode | |
