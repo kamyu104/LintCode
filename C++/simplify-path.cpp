@@ -20,7 +20,7 @@ public:
         return string("/").append(move(join(stk, '/')));
     }
     
-    // Split string by delim.
+    // Split string by delimitor.
     vector<string> split(const string& s, const char delim) {
         vector<string> tokens;
         stringstream ss(s);
@@ -31,7 +31,7 @@ public:
         return tokens;
     }
     
-    // Join strings with delim
+    // Join strings with delimitor.
     string join(const vector<string>& stk, const char& delim) {
         string s;
         if (!stk.empty()) {
