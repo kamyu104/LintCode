@@ -1,9 +1,9 @@
 LintCode
 ======== 
 
-Up to date (2015-05-31), there are `228` problems on [LintCode Online Judge](https://lintcode.com/).
+Up to date (2015-06-01), there are `233` problems on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `228` problems.
+Here is the classification of all `233` problems.
 For extra problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -157,6 +157,7 @@ Algorithms
 |368|[Expression evaluation](http://lintcode.com/en/problem/expression-evaluation/)| [C++](./C++/expression-evaluation.cpp)| _O(n)_ | _O(n)_ | Hard | | |
 |369|[Convert Expression to Polish Notation](http://lintcode.com/en/problem/convert-expression-to-reverse-notation/)| [C++](./C++/convert-expression-to-polish-notation.cpp)| _O(n)_ | _O(n)_ | Hard | | |
 |370|[Convert Expression to Reverse Polish Notation](http://lintcode.com/en/problem/convert-expression-to-reverse-polish-notation/)| [C++](./C++/convert-expression-to-reverse-polish-notation.cpp)| _O(n)_ | _O(n)_ | Hard | | |
+|421|[Simplify Path](http://lintcode.com/en/problem/simplify-path/)| [C++](./C++/simplify-path.cpp)| _O(n)_ | _O(n)_ | Medium | LeetCode | |
 
 ---
 
