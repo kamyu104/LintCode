@@ -1,4 +1,4 @@
-// Time:  O(n)
+// Time:  O(n * 4^n)
 // Space: O(n)
 
 // Iterative solution.
@@ -36,7 +36,7 @@ public:
     }
 };
 
-// Time:  O(n)
+// Time:  O(n * 4^n)
 // Space: O(n)
 // Recursion solution.
 class Solution2 {
