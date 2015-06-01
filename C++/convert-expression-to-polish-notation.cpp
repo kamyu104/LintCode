@@ -18,7 +18,7 @@ public:
         reverse(infix.begin(), infix.end());
         stack<string> s;
         for (auto tok : infix) {
-            if (atoi(tok.c_str())) {
+            if (stoi(tok)) {
                 prefix.emplace_back(tok);
             } else if (tok == ")") {
                 s.emplace(tok);
