@@ -16,9 +16,8 @@ public:
                 for (int y = min(i, n - 1);  y >= max(0, i - m + 1); --y) {
                     zigzag.emplace_back(matrix[i - y][y]);
                 }
-            }
-            else {
-                for (int x = min(i, m - 1);  x >= max(0, i - n + 1) ; --x) {
+            } else {
+                for (int x = min(i, m - 1);  x >= max(0, i - n + 1); --x) {
                     zigzag.emplace_back(matrix[x][i - x]);
                 }
             }
@@ -48,8 +47,7 @@ public:
                         zigzag.emplace_back(matrix[i - y][y]);
                     }
                 }
-            }
-            else {
+            } else {
                 for (int x = 0; x < m; ++x) {
                     if (n > i - x && i - x >= 0) {
                         zigzag.emplace_back(matrix[x][i - x]);
