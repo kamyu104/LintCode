@@ -13,13 +13,6 @@ public:
             return {-1, -1};
         }
         
-        // Case for all elements are negative.
-        const auto it = max_element(A.cbegin(), A.cend());
-        if (*it < 0) {
-            const int i = distance(A.cbegin(), it);
-            return {i, i};
-        }
-        
         // Calculates the circular / non-circular solution.
         vector<int> circular(2), non_circular(2);
         if (findMaxSubarray(A, &non_circular) >= 
@@ -32,22 +25,19 @@ public:
     
     // Calculates the non-circular solution.
     int findMaxSubarray(const vector<int>& A, vector<int> *max_i_j) {
-        int curr_sum = 0;
-        int max_sum = INT_MIN;
-        int i = 0, j = 0;
-        *max_i_j = move(vector<int>{i, j});
-        while (j < A.size()) {
-            curr_sum += A[j];
-            if (curr_sum >= 0) {
-                if (curr_sum > max_sum) {
-                    max_sum = curr_sum;
-                    (*max_i_j)[0] = i, (*max_i_j)[1] = j;
-                }
-            } else {
+        int curr_sum = A[0];
+        int max_sum = curr_sum;
+        for (int i = 0, j = 1; j < A.size(); ++j) {
+            if (curr_sum < 0) {
+                i = j;
                 curr_sum = 0;
-                i = j + 1;
             }
-            ++j;
+            
+            curr_sum += A[j];
+            if (curr_sum > max_sum) {
+                max_sum = curr_sum;
+                (*max_i_j)[0] = i, (*max_i_j)[1] = j;
+            }
         }
         
         return max_sum;
@@ -90,7 +80,7 @@ public:
         }
         
         // Calculates the max subarray which is circular.
-        int circular_max = 0;
+        int circular_max = INT_MIN;
         for (int i = 0; i < A.size(); ++i) {
             if (max_sum_from_start[i] + max_sum_to_end[i] > circular_max) {
                 circular_max = max_sum_from_start[i] + max_sum_to_end[i];
