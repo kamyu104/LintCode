@@ -45,23 +45,24 @@ private:
     }
  
     int partition(vector<int>& arr, int left, int right, int pivot) {
-        int i = left;
-        for (int j = left; j < right; ++j) {
-            if (Compare::cmp(arr[j], pivot) == CompareResult::SMALLER ||
-                (Compare::cmp(arr[j], pivot) == CompareResult::REVERSE &&
-                 Compare::cmp(pivot, arr[j]) == CompareResult::BIGGER)){
-                swap(arr[i], arr[j]);
+        for (int i = left; i < right; ) {
+            if (Compare::cmp(arr[i], pivot) == CompareResult::SMALLER ||
+                (Compare::cmp(arr[i], pivot) == CompareResult::REVERSE &&
+                 Compare::cmp(pivot, arr[i]) == CompareResult::BIGGER)) {
+                swap(arr[left++], arr[i++]);
+            } else if (Compare::cmp(arr[i], pivot) == CompareResult::BIGGER ||
+                      (Compare::cmp(arr[i], pivot) == CompareResult::REVERSE &&
+                       Compare::cmp(pivot, arr[i]) == CompareResult::SMALLER)) {
                 ++i;
-            } else if (Compare::cmp(arr[j], pivot) == CompareResult::EQUAL ||
-                      (Compare::cmp(arr[j], pivot) == CompareResult::REVERSE &&
-                       Compare::cmp(pivot, arr[j]) == CompareResult::EQUAL)){
-                swap(arr[j], arr[right]);
-                --j;
+            } else { // Equal.
+                swap(arr[i], arr[right]);
             }
         }
-        swap(arr[i], arr[right]);
+        // Put the pivot to the right place
+        swap(arr[left], arr[right]);
  
         // Return the partition index of an array.
-        return i;
+        // All the elements before the index left are smaller than the pivot.
+        return left;
     }
 };
