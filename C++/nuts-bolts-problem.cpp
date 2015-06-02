@@ -27,23 +27,28 @@ private:
     // Method which works just like quick sort
     void quickSort(vector<int>& nuts, vector<int>& bolts, int left, int right) {
         if (left < right) {
-            // Random choice of bolts array as pivot for nuts partition.
+            // Random chossing a bolt as a pivot for nuts partition.
             default_random_engine gen((random_device())());
             uniform_int_distribution<int> dis(left, right);
             int pivot = dis(gen);
             
-            // Find the place where the pivot will be, let it be k_th_element.
+            // Use the pivot bolt to make a partition of nuts. 
+            // The we could know the index where the pivot (bolt, nut) pair should be in sorted order.
             pivot = partition(nuts, left, right, bolts[pivot]);
  
-            // Using the index of nuts k_th_element as a pivot for bolts partition.
+            // Using the nut in the pivot bolt to make a partition of bolts.
             partition(bolts, left, right, nuts[pivot]);
  
-            // Now, both nuts and bolts are partitioned by k_th_element.
+            // Now, both nuts and bolts are partitioned by the pivot nut-bolt pair.
+            // The pivot nut-bolt pair is also in the correct index of the sorted order.
+            // Recursively do the same thing in the left and right side of the pivot.
             quickSort(nuts, bolts, left, pivot - 1);
             quickSort(nuts, bolts, pivot + 1, right);
         }
     }
  
+    // All the smaller elements should be in the left side of the pivot,
+    // and all the bigger elements should in the right side of the pivot.
     int partition(vector<int>& arr, int left, int right, int pivot) {
         for (int i = left; i < right; ) {
             if (Compare::cmp(arr[i], pivot) == SMALLER ||  // Smaller.
@@ -58,11 +63,10 @@ private:
                 swap(arr[i], arr[right]);
             }
         }
-        // Put the pivot to the right place
+        // Put the pivot to the partition index.
         swap(arr[left], arr[right]);
- 
+        
         // Return the partition index of an array.
-        // All the elements before the index left are smaller than the pivot.
         return left;
     }
 };
