@@ -46,11 +46,11 @@ private:
  
     int partition(vector<int>& arr, int left, int right, int pivot) {
         for (int i = left; i < right; ) {
-            if (Compare::cmp(arr[i], pivot) == CompareResult::SMALLER ||
+            if (Compare::cmp(arr[i], pivot) == CompareResult::SMALLER ||  // Smaller.
                 (Compare::cmp(arr[i], pivot) == CompareResult::REVERSE &&
                  Compare::cmp(pivot, arr[i]) == CompareResult::BIGGER)) {
                 swap(arr[left++], arr[i++]);
-            } else if (Compare::cmp(arr[i], pivot) == CompareResult::BIGGER ||
+            } else if (Compare::cmp(arr[i], pivot) == CompareResult::BIGGER ||  // Bigger.
                       (Compare::cmp(arr[i], pivot) == CompareResult::REVERSE &&
                        Compare::cmp(pivot, arr[i]) == CompareResult::SMALLER)) {
                 ++i;
