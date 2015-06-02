@@ -27,7 +27,7 @@ private:
     // Method which works just like quick sort
     void quickSort(vector<int>& nuts, vector<int>& bolts, int left, int right) {
         if (left < right) {
-            // Random chossing a bolt as a pivot for nuts partition.
+            // Randomly choose a bolt as a pivot for nuts partition.
             default_random_engine gen((random_device())());
             uniform_int_distribution<int> dis(left, right);
             int pivot = dis(gen);
