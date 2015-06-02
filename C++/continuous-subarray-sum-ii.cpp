@@ -17,7 +17,7 @@ public:
         vector<int> circular(2), non_circular(2);
         if (findMaxSubarray(A, &non_circular) >= 
             findCircularMaxSubarray(A, &circular)) {
-                return non_circular;
+            return non_circular;
         } else {
             return circular;
         }
@@ -87,6 +87,7 @@ public:
                 (*max_i_j)[0] = max_i[i], (*max_i_j)[1] = max_j[i];
             }
         }
+        
         return circular_max;
     }
 };
