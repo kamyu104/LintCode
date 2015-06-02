@@ -18,9 +18,7 @@ public:
             LR_sum += nums[i];
             max_LR_sum = max(max_LR_sum, LR_sum);
             max_LR[i] = max_LR_sum;
-            if (LR_sum < 0) {
-                LR_sum = 0;
-            }
+            LR_sum = max(LR_sum, 0);
         }
         
         // Compute the max sum of subarray from right to left.
@@ -29,9 +27,7 @@ public:
             RL_sum += nums[i];
             max_RL_sum = max(max_RL_sum, RL_sum);
             max_RL[i] = max_RL_sum;
-            if (RL_sum < 0) {
-                RL_sum = 0;
-            }
+            RL_sum = max(RL_sum, 0);
         }
         
         // Compute the max sum of two non-overlapping subarrays.
