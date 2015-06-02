@@ -13,7 +13,7 @@
 */
 class Solution {
 public:
-    typedef enum compare{SMALLER = -1, EQUAL = 0, BIGGER = 1, REVERSE = 2};
+    typedef enum { SMALLER = -1, EQUAL = 0, BIGGER = 1, REVERSE = 2 } CompareResult;
     /**
      * @param nuts: a vector of integers
      * @param bolts: a vector of integers
@@ -31,11 +31,14 @@ private:
             default_random_engine gen((random_device())());
             uniform_int_distribution<int> dis(left, right);
             int pivot = dis(gen);
+            
+            // Find the place where the pivot will be, let it be k_th_element.
             pivot = partition(nuts, left, right, bolts[pivot]);
  
-            // Using the pivot index of nuts as a pivot for bolts partition.
+            // Using the index of nuts k_th_element as a pivot for bolts partition.
             partition(bolts, left, right, nuts[pivot]);
  
+            // Now, both nuts and bolts are partitioned by k_th_element.
             quickSort(nuts, bolts, left, pivot - 1);
             quickSort(nuts, bolts, pivot + 1, right);
         }
@@ -44,14 +47,14 @@ private:
     int partition(vector<int>& arr, int left, int right, int pivot) {
         int i = left;
         for (int j = left; j < right; ++j) {
-            if (Compare::cmp(arr[j], pivot) == SMALLER ||
-                (Compare::cmp(arr[j], pivot) == REVERSE &&
-                 Compare::cmp(pivot, arr[j]) == BIGGER)){
+            if (Compare::cmp(arr[j], pivot) == CompareResult::SMALLER ||
+                (Compare::cmp(arr[j], pivot) == CompareResult::REVERSE &&
+                 Compare::cmp(pivot, arr[j]) == CompareResult::BIGGER)){
                 swap(arr[i], arr[j]);
                 ++i;
-            } else if (Compare::cmp(arr[j], pivot) == EQUAL ||
-                      (Compare::cmp(arr[j], pivot) == REVERSE &&
-                       Compare::cmp(pivot, arr[j]) == EQUAL)){
+            } else if (Compare::cmp(arr[j], pivot) == CompareResult::EQUAL ||
+                      (Compare::cmp(arr[j], pivot) == CompareResult::REVERSE &&
+                       Compare::cmp(pivot, arr[j]) == CompareResult::EQUAL)){
                 swap(arr[j], arr[right]);
                 --j;
             }
