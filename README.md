@@ -364,6 +364,7 @@ Algorithms
 |397|[Longest Increasing Continuous subsequence](http://lintcode.com/en/problem/longest-increasing-continuous-subsequence/)| [C++](./C++/longest-increasing-continuous-subsequence.cpp)| _O(n)_ | _O(1)_ | Easy | | |
 |398|[Longest Increasing Continuous subsequence II](http://lintcode.com/en/problem/longest-increasing-continuous-subsequence-ii/)| [C++](./C++/longest-increasing-continuous-subsequence-ii.cpp)| _O(m * n)_ | _O(m * n)_ | Hard | | |
 |403|[Continuous Subarray Sum II](http://lintcode.com/en/problem/continuous-subarray-sum-ii/)| [C++](./C++/continuous-subarray-sum-ii.cpp)| _O(n)_ | _O(n)_ | Medium | EPI | |
+|430|[Scramble String](http://lintcode.com/en/problem/scramble-string/)| [C++](./C++/scramble-string.cpp)| _O(n^4)_ | _O(n^3)_ | Hard | LeetCode | |
 
 ---
 
