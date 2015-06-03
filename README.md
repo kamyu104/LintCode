@@ -1,9 +1,9 @@
 LintCode
 ======== 
 
-Up to date (2015-06-02), there are `236` problems on [LintCode Online Judge](https://lintcode.com/).
+Up to date (2015-06-03), there are `237` problems on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `236` problems.
+Here is the classification of all `237` problems.
 For extra problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
