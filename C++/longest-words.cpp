@@ -10,7 +10,7 @@ public:
     vector<string> longestWords(vector<string> &dictionary) {
         vector<string> longest_words;
         for (const auto& word : dictionary) {
-            if (!longest_words.empty() && 
+            if (!longest_words.empty() &&
                 word.length() > longest_words[0].length()) {
                 longest_words = move(vector<string>{word});
             } else if (longest_words.empty() ||

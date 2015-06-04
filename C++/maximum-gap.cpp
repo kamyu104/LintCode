@@ -40,7 +40,7 @@ public:
             pre_bucket_max = (kvp.second)[MAX];
         }
         // Count the last bucket.
-        max_gap = max(max_gap, max_val - pre_bucket_max); 
+        max_gap = max(max_gap, max_val - pre_bucket_max);
 
         return max_gap;
     }

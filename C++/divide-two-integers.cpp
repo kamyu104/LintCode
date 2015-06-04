@@ -65,7 +65,7 @@ public:
         long long result = 0, dvd = llabs(dividend), dvs = llabs(divisor);
 
         long long inc = dvs;
-        long long multiplier = 1; 
+        long long multiplier = 1;
         int i = 0;
         while (dvd >= inc) {
                 inc <<= 1;

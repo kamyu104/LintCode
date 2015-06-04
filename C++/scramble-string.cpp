@@ -36,9 +36,9 @@ public:
             for (int i = 0; i <  n - l + 1; ++i) {
                 for (int j = 0; j < n - l + 1; ++j) {
                     for (int k = 1; k < l; ++k) {
-                        if ((is_scramble[k][i][j] && 
+                        if ((is_scramble[k][i][j] &&
                              is_scramble[l - k][i + k][j + k]) ||
-                            (is_scramble[k][i][j + l - k] && 
+                            (is_scramble[k][i][j + l - k] &&
                              is_scramble[l - k][i + k][j])) {
                             is_scramble[l][i][j] = true;
                             break; // Pruning.
