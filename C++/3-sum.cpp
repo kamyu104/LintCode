@@ -7,7 +7,7 @@ public:
      * @param numbers : Give an array numbers of n integer
      * @return : Find all unique triplets in the array which gives the sum of zero.
      */
-    vector<vector<int> > threeSum(vector<int> &nums) {
+    vector<vector<int>> threeSum(vector<int> &nums) {
         vector<vector<int>> ans;
         const int target = 0;
 

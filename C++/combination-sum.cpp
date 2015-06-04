@@ -8,7 +8,7 @@ public:
      * @param target: Given the target number
      * @return: All the combinations that sum to target
      */
-    vector<vector<int> > combinationSum(vector<int> &num, int target) {
+    vector<vector<int>> combinationSum(vector<int> &num, int target) {
         sort(num.begin(), num.end());
         vector<vector<int>> ans;
         vector<int> v;
@@ -17,7 +17,7 @@ public:
     }
 
 private:
-    void combinationSumHelper(vector<int>& num, int gap, int begin, vector<int>& v,vector<vector<int> > &ans) {
+    void combinationSumHelper(vector<int>& num, int gap, int begin, vector<int>& v,vector<vector<int>> &ans) {
         if (gap == 0) {
             ans.emplace_back(v);
             return;

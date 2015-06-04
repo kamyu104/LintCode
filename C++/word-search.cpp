@@ -8,7 +8,7 @@ public:
      * @param word: A string
      * @return: A boolean
      */
-    bool exist(vector<vector<char> > &board, string word) {
+    bool exist(vector<vector<char>> &board, string word) {
         unordered_set<string> ret;
         vector<vector<bool>> visited(board.size(), vector<bool>(board[0].size(), false));
         int curr = 0;

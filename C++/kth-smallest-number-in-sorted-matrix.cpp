@@ -9,7 +9,7 @@ public:
      * @param k: an integer
      * @return: the kth smallest number in the matrix
      */
-    int kthSmallest(vector<vector<int> > &matrix, int k) {
+    int kthSmallest(vector<vector<int>> &matrix, int k) {
         if (matrix.size() < matrix[0].size()) {  // Height is smaller.
             return horizontal_search(matrix, k);
         } else {  // Width is smaller.
@@ -17,7 +17,7 @@ public:
         }
     }
 
-    int horizontal_search(const vector<vector<int> > &matrix, int k) {
+    int horizontal_search(const vector<vector<int>> &matrix, int k) {
         multimap<int, pair<int, int>> min_bst;
 
         // Init BST by the first element of the first kth row.
@@ -45,7 +45,7 @@ public:
         return kth_smallest;
     }
 
-    int vertical_search(const vector<vector<int> > &matrix, int k) {
+    int vertical_search(const vector<vector<int>> &matrix, int k) {
         multimap<int, pair<int, int>> min_bst;
 
         // Init BST by the first element of the first kth column.
@@ -89,7 +89,7 @@ public:
      * @param k: an integer
      * @return: the kth smallest number in the matrix
      */
-    int kthSmallest(vector<vector<int> > &matrix, int k) {
+    int kthSmallest(vector<vector<int>> &matrix, int k) {
         if (matrix.size() < matrix[0].size()) {  // Height is smaller.
             return horizontal_search(matrix, k);
         } else {  // Width is smaller.
@@ -97,7 +97,7 @@ public:
         }
     }
 
-    int horizontal_search(const vector<vector<int> > &matrix, int k) {
+    int horizontal_search(const vector<vector<int>> &matrix, int k) {
         priority_queue<pair<int, pair<int, int>>, vector<pair<int, pair<int, int>>>, Compare> min_heap;
 
         // Init Heap by the first element of the first kth row.
@@ -125,7 +125,7 @@ public:
         return kth_smallest;
     }
 
-    int vertical_search(const vector<vector<int> > &matrix, int k) {
+    int vertical_search(const vector<vector<int>> &matrix, int k) {
         priority_queue<pair<int, pair<int, int>>, vector<pair<int, pair<int, int>>>, Compare> min_heap;
 
         // Init Heap by the first element of the first kth column.

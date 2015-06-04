@@ -7,7 +7,7 @@ public:
      * @param A: An integer matrix
      * @return: The index of the peak
      */
-    vector<int> findPeakII(vector<vector<int> > A) {
+    vector<int> findPeakII(vector<vector<int>> A) {
         int upper = 0, down = A.size() - 1;
         int left = 0, right = A[0].size() - 1;
 
@@ -82,7 +82,7 @@ public:
                A[i][j] > A[i][j + 1] && A[i][j] > A[i + 1][j];
     }
 
-    vector<int> findPeakII(vector<vector<int> > A) {
+    vector<int> findPeakII(vector<vector<int>> A) {
         int i = 1, j = 1;
         while (i < A.size() - 1 && j < A[0].size() - 1) {
             if (isPeak(A, i, j)) {

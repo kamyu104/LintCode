@@ -7,7 +7,7 @@ public:
      * @param matrix: a matrix of integers
      * @return: a vector of integers
      */
-    vector<int> printZMatrix(vector<vector<int> > &matrix) {
+    vector<int> printZMatrix(vector<vector<int>> &matrix) {
         vector<int> zigzag;
         const int m = matrix.size(), n = matrix[0].size();
 
@@ -36,7 +36,7 @@ public:
      * @param matrix: a matrix of integers
      * @return: a vector of integers
      */
-    vector<int> printZMatrix(vector<vector<int> > &matrix) {
+    vector<int> printZMatrix(vector<vector<int>> &matrix) {
         vector<int> zigzag;
         const size_t m = matrix.size(), n = matrix[0].size();
 

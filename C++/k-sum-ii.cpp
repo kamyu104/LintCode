@@ -9,7 +9,7 @@ public:
      * @param target: a integer
      * @return a list of lists of integer
      */
-    vector<vector<int> > kSumII(vector<int> A, int k, int target) {
+    vector<vector<int>> kSumII(vector<int> A, int k, int target) {
         vector<vector<int>> ans;
         vector<int> curr;
         helper(A, k, 0, target, curr, ans);

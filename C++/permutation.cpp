@@ -7,7 +7,7 @@ public:
      * @param nums: A list of integers.
      * @return: A list of permutations.
      */
-    vector<vector<int> > permute(vector<int> nums) {
+    vector<vector<int>> permute(vector<int> nums) {
         if (nums.empty()) {
             return {};
         }

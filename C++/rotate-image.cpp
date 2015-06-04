@@ -7,7 +7,7 @@ public:
      * @param matrix: A list of lists of integers
      * @return: Void
      */
-    void rotate(vector<vector<int> > &matrix) {
+    void rotate(vector<vector<int>> &matrix) {
         const int n = matrix.size();
         for (int i = 0; i < n / 2; ++i) {
             for (int j = i; j < n - 1 - i; ++j) {
@@ -27,7 +27,7 @@ public:
      * @param matrix: A list of lists of integers
      * @return: Void
      */
-    void rotate(vector<vector<int> > &matrix) {
+    void rotate(vector<vector<int>> &matrix) {
         const int n = matrix.size();
         // Anti-diagonal mirror.
         for (int i = 0; i < n; ++i) {

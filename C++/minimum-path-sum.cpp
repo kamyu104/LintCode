@@ -7,7 +7,7 @@ public:
      * @param grid: a list of lists of integers.
      * @return: An integer, minimizes the sum of all numbers along its path
      */
-    int minPathSum(vector<vector<int> > &grid) {
+    int minPathSum(vector<vector<int>> &grid) {
         const int m = grid.size();
         const int n = grid[0].size();
 

@@ -9,7 +9,7 @@ public:
      * @return: Find all unique quadruplets in the array which gives the sum of
      *          zero.
      */
-    vector<vector<int> > fourSum(vector<int> nums, int target) {
+    vector<vector<int>> fourSum(vector<int> nums, int target) {
         sort(nums.begin(), nums.end()); // Make sure quadruplets are in non-descending orders.
         unordered_map<int, vector<vector<size_t>>> two_sum; // two_sum saves "sum to (i, j) pairs, which i < j."
         for (size_t i = 0; i < nums.size(); ++i) {

@@ -15,7 +15,7 @@ public:
      * @param buildings: A list of lists of integers
      * @return: Find the outline of those buildings
      */
-    vector<vector<int> > buildingOutline(vector<vector<int> > &buildings) {
+    vector<vector<int>> buildingOutline(vector<vector<int>> &buildings) {
         map<int, vector<Endpoint>> point_to_height; // Ordered, no duplicates.
         for (const auto& building : buildings) {
             point_to_height[building[start]].emplace_back(Endpoint{building[height], true});
@@ -64,7 +64,7 @@ public:
      * @param buildings: A list of lists of integers
      * @return: Find the outline of those buildings
      */
-    vector<vector<int> > buildingOutline(vector<vector<int> > &buildings) {
+    vector<vector<int>> buildingOutline(vector<vector<int>> &buildings) {
         return ComputeSkylineInInterval(buildings, 0, buildings.size());
     }
 

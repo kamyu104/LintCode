@@ -13,7 +13,7 @@ class Solution {
          * @param triangle: a list of lists of integers.
          * @return: An integer, minimum path sum.
          */
-        int minimumTotal(vector<vector<int> > &triangle) {
+        int minimumTotal(vector<vector<int>> &triangle) {
             // for empty input
             if (triangle.empty()) {
                 return 0;

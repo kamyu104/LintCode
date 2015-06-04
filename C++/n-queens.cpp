@@ -9,7 +9,7 @@ public:
      * @return: All distinct solutions
      * For example, A string '...Q' shows a queen on forth position
      */
-    vector<vector<string> > solveNQueens(int n) {
+    vector<vector<string>> solveNQueens(int n) {
         vector<int> placement(n);
         vector<vector<string>> result;
         NQueensHelper(n, 0, &placement, &result);

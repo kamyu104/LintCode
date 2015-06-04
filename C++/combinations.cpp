@@ -8,7 +8,7 @@ public:
      * @param k: Given the numbers of combinations
      * @return: All the combinations of k numbers out of 1..n
      */
-    vector<vector<int> > combine(int n, int k) {
+    vector<vector<int>> combine(int n, int k) {
         vector<vector<int>> result;
         vector<int> ans;
         CombinationsHelper(n, k, 1, &ans, &result);

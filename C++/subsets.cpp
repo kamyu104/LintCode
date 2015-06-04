@@ -7,10 +7,10 @@ public:
      * @param S: A set of numbers.
      * @return: A list of lists. All valid subsets.
      */
-    vector<vector<int> > subsets(vector<int> &nums) {
+    vector<vector<int>> subsets(vector<int> &nums) {
         const int size = nums.size();
         const int set_size = 1 << size;
-        vector<vector<int> > ans;
+        vector<vector<int>> ans;
         vector<int> v;
 
         sort(nums.begin(), nums.end());

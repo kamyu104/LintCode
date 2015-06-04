@@ -7,7 +7,7 @@ public:
      * @param matrix: A list of lists of integers
      * @return: Void
      */
-    void setZeroes(vector<vector<int> > &matrix) {
+    void setZeroes(vector<vector<int>> &matrix) {
         if (matrix.empty()) {
             return;
         }

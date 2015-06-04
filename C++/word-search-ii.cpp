@@ -40,7 +40,7 @@ public:
      * @param words: A list of string
      * @return: A list of string
      */
-    vector<string> wordSearchII(vector<vector<char> > &board, vector<string> &words) {
+    vector<string> wordSearchII(vector<vector<char>> &board, vector<string> &words) {
         unordered_set<string> ret;
         vector<vector<bool>> visited(board.size(), vector<bool>(board[0].size(), false));
         string curr;

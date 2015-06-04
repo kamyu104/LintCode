@@ -20,7 +20,7 @@ public:
      * @param heights: a matrix of integers
      * @return: an integer
      */
-    int trapRainWater(vector<vector<int> > &heights) {
+    int trapRainWater(vector<vector<int>> &heights) {
         // Init m_, n_, is_visited_.
         m_ = heights.size();
         n_ = heights[0].size();
@@ -91,7 +91,7 @@ public:
      * @param heights: a matrix of integers
      * @return: an integer
      */
-    int trapRainWater(vector<vector<int> > &heights) {
+    int trapRainWater(vector<vector<int>> &heights) {
         const int m = heights.size();
         const int n = heights[0].size();
         int trap = 0;

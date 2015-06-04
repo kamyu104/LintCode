@@ -7,10 +7,10 @@ public:
      * @param S: A set of numbers.
      * @return: A list of lists. All valid subsets.
      */
-    vector<vector<int> > subsetsWithDup(const vector<int> &S) {
+    vector<vector<int>> subsetsWithDup(const vector<int> &S) {
         vector<int> sorted_S(S);
         sort(sorted_S.begin(), sorted_S.end());
-        vector<vector<int> > result(1);
+        vector<vector<int>> result(1);
         size_t previous_size = 0;
         for (size_t i = 0; i < sorted_S.size(); ++i) {
             const size_t size = result.size();
