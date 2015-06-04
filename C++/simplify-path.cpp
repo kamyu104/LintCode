@@ -38,7 +38,7 @@ public:
             ostringstream ss;
             string delim_str;
             delim_str.insert(delim_str.begin(), delim);
-            copy(names.cbegin(), prev(names.cend()), 
+            copy(names.cbegin(), prev(names.cend()),
                  ostream_iterator<string>(ss, delim_str.c_str()));
             ss << names.back();
             s = ss.str();

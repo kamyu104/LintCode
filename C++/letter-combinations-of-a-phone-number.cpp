@@ -60,8 +60,8 @@ public:
         return result;
     }
 
-    void letterCombinationsRecu(const string& digits, vector<string>& lookup, 
-                                string *combination, 
+    void letterCombinationsRecu(const string& digits, vector<string>& lookup,
+                                string *combination,
                                 int *len, vector<string> *result) {
        if (*len == digits.size()) {
             result->emplace_back(*combination);

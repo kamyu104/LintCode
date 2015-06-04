@@ -72,7 +72,7 @@ public:
     vector<vector<int>> ComputeSkylineInInterval(const vector<vector<int>>& buildings,
                                                  int left_endpoint, int right_endpoint) {
         if (right_endpoint - left_endpoint <= 1) {  // 0 or 1 skyline, just copy it.
-            return {buildings.cbegin() + left_endpoint, 
+            return {buildings.cbegin() + left_endpoint,
                     buildings.cbegin() + right_endpoint};
         }
         int mid = left_endpoint + ((right_endpoint - left_endpoint) / 2);

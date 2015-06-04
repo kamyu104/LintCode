@@ -21,7 +21,7 @@ public:
             return intervals;
         }
 
-        sort(intervals.begin(), intervals.end(), 
+        sort(intervals.begin(), intervals.end(),
         [](const Interval& a, const Interval& b) {
              return a.start < b.start;               
         });

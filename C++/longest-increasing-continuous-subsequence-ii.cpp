@@ -46,8 +46,8 @@ public:
         // Try each direction to find the max of max_inc_len[i][j].
         vector<pair<int, int>> directions = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
         for (const auto& d : directions) {
-            max_inc_len[i][j] = max(max_inc_len[i][j], 
-                                    1 + fill(A, i + d.first, j + d.second, 
+            max_inc_len[i][j] = max(max_inc_len[i][j],
+                                    1 + fill(A, i + d.first, j + d.second,
                                              A[i][j], max_inc_len));
         }
 
@@ -103,8 +103,8 @@ public:
         // Try each direction to find the max of max_inc_len[i][j].
         vector<pair<int, int>> directions = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
         for (const auto& d : directions) {
-            max_inc_len[i][j] = max(max_inc_len[i][j], 
-                                    1 + fill(A, i + d.first, j + d.second, 
+            max_inc_len[i][j] = max(max_inc_len[i][j],
+                                    1 + fill(A, i + d.first, j + d.second,
                                              A[i][j], max_inc_len));
         }
 
