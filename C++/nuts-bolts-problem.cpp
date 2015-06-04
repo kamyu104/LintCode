@@ -59,7 +59,7 @@ private:
                       (Compare::cmp(arr[i], pivot) == REVERSE &&
                        Compare::cmp(pivot, arr[i]) == SMALLER)) {
                 ++i;
-            } else { // Equal.
+            } else {  // Equal.
                 swap(arr[i], arr[right]);
             }
         }

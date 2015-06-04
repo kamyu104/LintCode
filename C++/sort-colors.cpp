@@ -17,7 +17,7 @@ public:
                 swap(nums[i], nums[--first_two]);
             } else if (nums[i] == 0) {
                 swap(nums[i++], nums[++last_zero]);
-            } else { // case 1
+            } else {  // case 1
                 ++i;
             }
         }

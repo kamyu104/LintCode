@@ -15,7 +15,7 @@ public:
         int count = 0;
         for (int k = n - 1; k > 1; --k) {
             int i = 0, j = k - 1;
-            while (i < j) { // Two Pointers, linear time.
+            while (i < j) {  // Two Pointers, linear time.
                 if (S[i] + S[j] <= S[k]) {
                     ++i;
                 } else {

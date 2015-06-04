@@ -22,9 +22,9 @@ public:
     bool isSubtree(TreeNode *T1, TreeNode *T2) {
         if (!T2) {
             return true;
-        } else if (!T1) { // !T1 && T2
+        } else if (!T1) {  // !T1 && T2
             return false;
-        } else { // T1 && T2
+        } else {  // T1 && T2
             return isSameTree(T1, T2) ||
                    isSubtree(T1->left, T2) ||
                    isSubtree(T1->right, T2);

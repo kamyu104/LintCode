@@ -82,7 +82,7 @@ public:
 private:
     // Add each valid node to the stack until invalid value appears.
     void pushLeft(stack<TreeNode *> &st, TreeNode *root, int k1) {
-        while (root != nullptr) { // Push until invalid.
+        while (root != nullptr) {  // Push until invalid.
             st.emplace(root);
             if (root->val < k1) {
                 break;

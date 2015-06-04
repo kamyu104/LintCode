@@ -23,12 +23,12 @@ public:
             int j = i + 1;
             int k = nums.size() - 1;
 
-            while (j < k) { // Time: O(n) for each i.
+            while (j < k) {  // Time: O(n) for each i.
                 const auto sum = nums[i] + nums[j] + nums[k];
 
-                if (sum > target) { // Should decrease sum.
+                if (sum > target) {  // Should decrease sum.
                     --k;
-                } else if (sum < target) { // Should increase sum.
+                } else if (sum < target) {  // Should increase sum.
                     ++j;
                 } else {
                     return target;

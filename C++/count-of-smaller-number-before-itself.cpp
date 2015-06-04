@@ -51,7 +51,7 @@ public:
                     curr->left = node;
                     break;
                 }
-            } else { // Insert right if larger or equal.
+            } else {  // Insert right if larger or equal.
                 if (curr->right != nullptr) {
                     curr = curr->right;
                 } else {
@@ -77,7 +77,7 @@ public:
             } else if (val > curr->val) {
                 count += 1 + curr->count; // Count the number of the smaller nodes.
                 curr = curr->right;
-            } else { // Equal.
+            } else {  // Equal.
                 return count + curr->count;
             }
         }

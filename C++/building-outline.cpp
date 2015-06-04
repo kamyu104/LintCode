@@ -117,7 +117,7 @@ public:
                 } else {        // aaa
                     ++b_idx;    // abb
                 }
-            } else if (a[height] == b[height]) { // abb
+            } else if (a[height] == b[height]) {  // abb
                 b[start] = a[start], ++a_idx;    // abb
             } else {  // a[height] < b[height].
                 if (a[start] != b[start]) {                                                 //    bb

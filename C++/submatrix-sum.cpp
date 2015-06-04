@@ -60,7 +60,7 @@ public:
         lookup[0] = -1;
         for (int i = 0, sum = 0; i < A.size(); ++i) {
             sum += A[i];
-            if (!lookup.emplace(sum, i).second) { // Already exists.
+            if (!lookup.emplace(sum, i).second) {  // Already exists.
                 return {lookup[sum] + 1, i};
             }
         }

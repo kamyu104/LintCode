@@ -12,7 +12,7 @@ public:
         int max_area = 0;
         int i = 0;
 
-        while (i <= height.size()) { // "i == height.size()" is to handle remaning heights in stack.
+        while (i <= height.size()) {  // "i == height.size()" is to handle remaning heights in stack.
             if (increasing_height.empty() ||
                 (i < height.size() && height[i] > height[increasing_height.top()])) {
                 // Stores height in a strictly increasing order.

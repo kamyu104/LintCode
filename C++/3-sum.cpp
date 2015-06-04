@@ -22,17 +22,17 @@ public:
             int j = i + 1;
             int k = nums.size() - 1;
 
-            while (j < k) { // Time: O(n) for each i.
-                if (j - 1 > i  && nums[j] == nums[j - 1]) { // Skip duplicated.
+            while (j < k) {  // Time: O(n) for each i.
+                if (j - 1 > i  && nums[j] == nums[j - 1]) {  // Skip duplicated.
                     ++j;
-                } else if (k + 1 < nums.size() && nums[k] == nums[k + 1]) { // Skip duplicated.
+                } else if (k + 1 < nums.size() && nums[k] == nums[k + 1]) {  // Skip duplicated.
                     --k;
                 } else {
                     const auto sum = nums[i] + nums[j] + nums[k];
 
-                    if (sum > target) { // Should decrease sum.
+                    if (sum > target) {  // Should decrease sum.
                         --k;
-                    } else if (sum < target) { // Should increase sum.
+                    } else if (sum < target) {  // Should increase sum.
                         ++j;
                     } else {
                         ans.emplace_back(vector<int>{nums[i], nums[j], nums[k]});

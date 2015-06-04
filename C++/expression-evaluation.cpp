@@ -86,7 +86,7 @@ public:
     }
 
     int precedence(string x) {
-        if (x == "(") { // The least precedence.
+        if (x == "(") {  // The least precedence.
             return 0;
         } else if (x == "+" || x == "-") {
             return 1;

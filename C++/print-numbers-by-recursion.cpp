@@ -19,11 +19,11 @@ public:
             return;
         }
 
-        if (depth == 0) { // Initiate the result.
+        if (depth == 0) {  // Initiate the result.
             for (size_t d = 1; d <= 9; ++d) {
                 result.emplace_back(d);
             }
-        } else { // Construct the numbers by the previous result.
+        } else {  // Construct the numbers by the previous result.
             const size_t count = result.size();
             for (size_t d = 1; d <= 9; ++d) {
                 result.emplace_back(d * pow(10, depth));

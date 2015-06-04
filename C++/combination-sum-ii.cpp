@@ -24,10 +24,10 @@ private:
         }
 
         for (size_t i = begin; i < num.size(); i++) {
-            if (gap < num[i]) { // pruning
+            if (gap < num[i]) {  // pruning
                 return;
             }
-            if ( i > begin && num[i] == num[i - 1]) { // skip duplicates
+            if ( i > begin && num[i] == num[i - 1]) {  // skip duplicates
                 continue;
             }
             v.emplace_back(num[i]);

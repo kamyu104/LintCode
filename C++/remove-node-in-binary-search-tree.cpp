@@ -30,7 +30,7 @@ public:
         else if (value > root->val) {
             root->right = removeNode(root->right, value);
         }
-        else { // Find the target node.
+        else {  // Find the target node.
             if (root->left == nullptr) {
                 return root->right;
             } else if (root->right == nullptr) {

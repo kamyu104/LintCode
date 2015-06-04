@@ -16,12 +16,12 @@ public:
             for (size_t j = i + 1; j < nums.size(); ++j) {
                 bool have_duplicate = false;
                 for (const auto& vec : two_sum[nums[i] + nums[j]]) {
-                    if (nums[vec.front()] == nums[i]) { // Duplicated.
+                    if (nums[vec.front()] == nums[i]) {  // Duplicated.
                         have_duplicate = true;
                         break;
                     }
                 }
-                if (!have_duplicate) { // Not duplicated
+                if (!have_duplicate) {  // Not duplicated
                     vector<size_t> new_vec = {i, j};
                     two_sum[nums[i] + nums[j]].emplace_back(move(new_vec));
                 }
@@ -35,9 +35,9 @@ public:
                 auto it = two_sum.find(target - nums[i] - nums[j]);
                 if (it != two_sum.end()) {
                     for (const auto& vec : it->second) {
-                        if (i > vec.back()) { // {vec.front() < vec.back() < i < j}
+                        if (i > vec.back()) {  // {vec.front() < vec.back() < i < j}
                             vector<int> candidate = {nums[vec.front()], nums[vec.back()], nums[i], nums[j]};
-                            if (answers.emplace(join_vector(candidate)).second) { // Not duplicated.
+                            if (answers.emplace(join_vector(candidate)).second) {  // Not duplicated.
                                 res.emplace_back(move(candidate)); // Add to answers.
                             }
                         }
