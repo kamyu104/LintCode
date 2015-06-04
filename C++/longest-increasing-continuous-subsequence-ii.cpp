@@ -33,7 +33,7 @@ public:
              const int prev_val,
              vector<vector<int>>& max_inc_len) {
         // Invalid cases.
-        if (i < 0 || i >= A.size() || j < 0 || j >= A[0].size() || 
+        if (i < 0 || i >= A.size() || j < 0 || j >= A[0].size() ||
             A[i][j] <= prev_val) {
             return 0;
         }
@@ -90,7 +90,7 @@ public:
              const int prev_val,
              vector<vector<int>>& max_inc_len) {
         // Invalid cases.
-        if (i < 0 || i >= A.size() || j < 0 || j >= A[0].size() || 
+        if (i < 0 || i >= A.size() || j < 0 || j >= A[0].size() ||
             A[i][j] >= prev_val) {
             return 0;
         }

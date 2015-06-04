@@ -15,7 +15,7 @@ public:
         for (const auto& c: s) {
             const auto& it = symbol_pair.find(c);
             if (it != symbol_pair.cend()) {
-                if (parentheses.empty() || 
+                if (parentheses.empty() ||
                     parentheses.top() != it->second) {
                     return false;
                 }

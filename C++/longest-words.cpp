@@ -13,7 +13,7 @@ public:
             if (!longest_words.empty() && 
                 word.length() > longest_words[0].length()) {
                 longest_words = move(vector<string>{word});
-            } else if (longest_words.empty() || 
+            } else if (longest_words.empty() ||
                        word.length() == longest_words[0].length()) {
                 longest_words.emplace_back(word);
             }
