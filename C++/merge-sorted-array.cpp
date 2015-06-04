@@ -21,7 +21,7 @@ public:
             }
             --i;
         }
-        
+
         while (n > 0) {
             A[i - 1] = B[n - 1];
             --n;

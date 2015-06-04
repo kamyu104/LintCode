@@ -22,7 +22,7 @@ public:
     void sortNutsAndBolts(vector<int> &nuts, vector<int> &bolts) {
         quickSort(nuts, bolts, 0, nuts.size() - 1);
     }
- 
+
 private:
     // Method which works just like quick sort
     void quickSort(vector<int>& nuts, vector<int>& bolts, int left, int right) {
@@ -31,14 +31,14 @@ private:
             default_random_engine gen((random_device())());
             uniform_int_distribution<int> dis(left, right);
             int pivot = dis(gen);
-            
+
             // Use the pivot bolt to make a partition of nuts. 
             // The we could know the index where the pivot (bolt, nut) pair should be in sorted order.
             pivot = partition(nuts, left, right, bolts[pivot]);
- 
+
             // Using the nut in the pivot bolt to make a partition of bolts.
             partition(bolts, left, right, nuts[pivot]);
- 
+
             // Now, both nuts and bolts are partitioned by the pivot nut-bolt pair.
             // The pivot nut-bolt pair is also in the correct index of the sorted order.
             // Recursively do the same thing in the left and right side of the pivot.
@@ -46,7 +46,7 @@ private:
             quickSort(nuts, bolts, pivot + 1, right);
         }
     }
- 
+
     // All the smaller elements should be in the left side of the pivot,
     // and all the bigger elements should in the right side of the pivot.
     int partition(vector<int>& arr, int left, int right, int pivot) {
@@ -65,7 +65,7 @@ private:
         }
         // Put the pivot to the partition index.
         swap(arr[left], arr[right]);
-        
+
         // Return the partition index of an array.
         return left;
     }

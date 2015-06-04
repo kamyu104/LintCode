@@ -12,9 +12,9 @@ public:
         const int set_size = 1 << size;
         vector<vector<int> > ans;
         vector<int> v;
-        
+
         sort(nums.begin(), nums.end());
-        
+
         for (int i = 0; i < set_size; ++i) {
             for (int j = 0; j < size; ++j) {
                 if (i & (1 << j)) {
@@ -24,7 +24,7 @@ public:
             ans.emplace_back(v);
             v.clear();
         }
-        
+
         return ans;
     }
 };

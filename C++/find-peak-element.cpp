@@ -10,7 +10,7 @@ public:
     int findPeak(vector<int> A) {
         int left = 1;
         int right = A.size() - 1;
-        
+
         while (left < right) {
             int mid = left + (right - left) / 2;
             if (A[mid - 1] <= A[mid] && A[mid] >= A[mid + 1]) {
@@ -21,7 +21,7 @@ public:
                 left = mid + 1;
             }
         }
-        
+
         return left;
     }
 };
@@ -35,10 +35,10 @@ public:
     int findPeak(vector<int> A) {
         int l = 0;
         int r = A.size() - 1;
-        
+
         while (l < r) {
             int mid = l + (r - l) / 2;
-            
+
             // If mid is a peak
             if ((mid == 0 || A[mid - 1] <= A[mid]) &&
                 (mid == A.size() - 1 || A[mid] >= A[mid + 1])) {
@@ -53,7 +53,7 @@ public:
                 l = mid + 1;
             }
         }
-        
+
         return l;
     }
 };

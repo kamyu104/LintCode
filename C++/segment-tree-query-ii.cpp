@@ -27,15 +27,15 @@ public:
         if (root == nullptr || root->start > end || root->end <  start) {
             return 0;
         }
-        
+
         // Current segment is totally within range [start, end]
         if (root->start >= start && root->end <= end) {
             return root->count;
         }
-        
+
         int left = query(root->left, start, end);
         int right = query(root->right, start, end);
-        
+
         // Find max in the children.
         return left + right;
     }

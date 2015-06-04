@@ -27,7 +27,7 @@ public:
                 }
             }
         }
-        
+
         unordered_set<string> answers; // Use hash to filter duplicated.
         vector<vector<int>> res;
         for (size_t i = 2; i < nums.size(); ++i) {
@@ -47,7 +47,7 @@ public:
         }
         return res;
     }
-    
+
     // Hash vector to string.
     string join_vector(const vector<int>& nums) {
         string ret;

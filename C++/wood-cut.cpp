@@ -13,11 +13,11 @@ public:
         if (n == 0) {
             return 0;
         }
-        
+
         int left = 1, right = *max_element(L.cbegin(), L.cend());
         while (left <= right) {
             int mid = left + (right - left) / 2;
-            
+
             // Find the smallest x,  s.t. pieceCount(x) < k <= pieceCound(x - 1)
             if (pieceCount(L, mid) < k) {
                 right = mid - 1;
@@ -26,11 +26,11 @@ public:
                 left = mid + 1;
             }
         }
-        
+
         // The max length is x - 1
         return left - 1;
     }
-    
+
     int pieceCount(vector<int>& L, int x) {
         int cnt = 0;
         for (const auto& len : L) {

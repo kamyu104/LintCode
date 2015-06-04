@@ -10,7 +10,7 @@ public:
     void partitionArray(vector<int> &nums) {
         int left = 0;
         int right = nums.size() - 1;
-        
+
         while (left < right) {
             while (left <= right && nums[left] % 2 == 1) {
                 ++left;

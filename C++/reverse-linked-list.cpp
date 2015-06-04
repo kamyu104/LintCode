@@ -23,14 +23,14 @@ public:
      */
     ListNode *reverse(ListNode *head) {
         ListNode *dummy_head = new ListNode(INT_MIN);
-        
+
         while (head != nullptr) {
             ListNode *tmp = head->next;
             head->next = dummy_head->next;
             dummy_head->next = head;
             head = tmp;
         }
-        
+
         return dummy_head->next;
     }
 };

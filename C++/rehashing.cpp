@@ -33,7 +33,7 @@ public:
         }
         return rehashTable;
     }
-    
+
     void rehash(vector<ListNode*>& hashTable, vector<ListNode*>& rehashTable, int i) {
         const int new_size = rehashTable.size();
         ListNode *curr = hashTable[i];

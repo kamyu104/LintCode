@@ -22,7 +22,7 @@ public:
     TreeNode *sortedArrayToBST(vector<int> &A) {
         return sortedArrayToBSTHelper(A, 0, A.size() - 1);
     }
-    
+
     TreeNode *sortedArrayToBSTHelper(vector<int> &A, int start, int end) {
         if (start <= end) {
             TreeNode *node = new TreeNode(A[start + (end - start) / 2]);
@@ -43,7 +43,7 @@ public:
     TreeNode *sortedArrayToBST(vector<int> &A) {
         return sortedArrayToBSTHelper(A, 0, A.size());
     }
-    
+
     TreeNode *sortedArrayToBSTHelper(vector<int> &A, int start, int end) {
         if (start < end) {
             TreeNode *node = new TreeNode(A[start + (end - start) / 2]);

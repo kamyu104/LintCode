@@ -25,7 +25,7 @@ public:
         while (i < intervals.size() && newInterval.start > intervals[i].end) {
             result.emplace_back(intervals[i++]);
         }
-        
+
         // Merge intervals that overlap with newInterval.
         while (i < intervals.size() && newInterval.end >= intervals[i].start) {
             newInterval = {min(newInterval.start, intervals[i].start),
@@ -33,7 +33,7 @@ public:
             ++i;
         }
         result.emplace_back(newInterval);
-        
+
         // Insert intervals appearing after newInterval.
         result.insert(result.end(), intervals.cbegin() + i, intervals.cend());
         return result;

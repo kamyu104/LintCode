@@ -14,7 +14,7 @@ public:
         bool has_zero = false;
         int zero_i = -1;
         int zero_j = -1;
-        
+
         for (int i = 0; i < matrix.size(); ++i) {
             for (int j = 0; j < matrix[0].size(); ++j) {
                 if (matrix[i][j] == 0) {
@@ -28,7 +28,7 @@ public:
                 }
             }
         }
-        
+
         if (has_zero) {
             for (int i = 0; i < matrix.size(); ++i) {
                 if (i == zero_i) {
@@ -50,6 +50,6 @@ public:
                 matrix[zero_i][j] = 0;
             }
         }
-        
+
     }
 };

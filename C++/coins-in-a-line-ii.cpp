@@ -21,7 +21,7 @@ public:
             //            values[i] + values[i + 1] + min(P[i + 3], P[i + 4]))
             P[i % 5] = max(values[i] + min(b, c), values[i] + a + min(c, d));
         }
-        
+
         return P[0] > sum - P[0];
     }
 };
@@ -48,7 +48,7 @@ public:
             //            values[i] + values[i + 1] + min(P[i + 3], P[i + 4]))
             P[i] = max(values[i] + min(b, c),  values[i] + a + min(c, d));
         }
-        
+
         return P[0] > sum - P[0];
     }
 };

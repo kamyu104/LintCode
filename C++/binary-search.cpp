@@ -11,7 +11,7 @@ public:
     int binarySearch(vector<int> &array, int target) {
         int left = 0;
         int right = array.size() - 1;
-        
+
         while (left <= right) {
             int mid = left + (right - left) / 2;
             if (array[mid] >= target) {
@@ -21,11 +21,11 @@ public:
                 left = mid + 1;
             }
         }
-        
+
         if (left < array.size() && array[left] == target) {
             return left;
         }
-        
+
         return -1;
     }
 };
@@ -41,7 +41,7 @@ public:
     int binarySearch(vector<int> &array, int target) {
         int left = 0;
         int right = array.size();
-        
+
         while (left < right) {
             int mid = left + (right - left) / 2;
             if (array[mid] >= target) {
@@ -51,11 +51,11 @@ public:
                 left = mid + 1;
             }
         }
-        
+
         if (left < array.size() && array[left] == target) {
             return left;
         }
-        
+
         return -1;
     }
 };
@@ -70,7 +70,7 @@ public:
     int binarySearch(vector<int> &array, int target) {
         int left = -1;
         int right = array.size();
-        
+
         while (right - left > 1) {
             int mid = left + (right - left) / 2;
             if (array[mid] >= target) {
@@ -80,11 +80,11 @@ public:
                 left = mid;
             }
         }
-        
+
         if (right < array.size() && array[right] == target) {
             return right;
         }
-        
+
         return -1;
     }
 };

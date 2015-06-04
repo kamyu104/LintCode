@@ -12,7 +12,7 @@ public:
         infixToPrefix(expression, output);
         return output;
     }
-    
+
     // Convert Infix to Prefix Expression.
     void infixToPrefix(vector<string>& infix, vector<string>& prefix) {
         reverse(infix.begin(), infix.end());
@@ -45,7 +45,7 @@ public:
         }
         reverse(prefix.begin(), prefix.end());
     }
-    
+
     int precedence(string x) {
         if (x == ")") {
             return 0;

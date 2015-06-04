@@ -6,7 +6,7 @@ private:
     struct TrieNode {
         bool isString = false;
         unordered_map<char, TrieNode *> leaves;
-        
+
         bool Insert(const string& s) {
             auto* p = this;
             for (const auto& c : s) {
@@ -15,7 +15,7 @@ private:
                 }
                 p = p->leaves[c];
             }
-            
+
             // s already existed in this trie.
             if (p->isString) {
                 return false;
@@ -24,7 +24,7 @@ private:
                 return true;
             }
         }
-        
+
         ~TrieNode() {
             for (auto& kv : leaves) {
                 if (kv.second) {
@@ -33,7 +33,7 @@ private:
             }
         }
     };
-    
+
 public:
     /**
      * @param board: A list of lists of character
@@ -48,16 +48,16 @@ public:
         for (const auto& word : words) {
             trie.Insert(word);
         }
-        
+
         for (int i = 0; i < board.size(); ++i) {
             for (int j = 0; j < board[0].size(); ++j) {
                 wordSearchDFS(board, visited, &trie, i, j, curr,  ret);
             }
         }
-        
+
         return vector<string>(ret.begin(), ret.end());
     }
-    
+
     void wordSearchDFS(vector<vector<char>> &grid,
              vector<vector<bool>> &visited,
              TrieNode *trie,
@@ -69,33 +69,33 @@ public:
         if (!trie || i < 0 || i >= grid.size() || j < 0 || j >= grid[0].size()) {
             return;
         }
-        
+
         // Not in trie or visited.
         if (!trie->leaves[grid[i][j] ] || visited[i][j]) {
             return;
         }
-        
+
         // Get next trie nodes.
         TrieNode *nextNode = trie->leaves[grid[i][j]];
-        
+
         // Update current string.
         curr.push_back(grid[i][j]);
-        
+
         // Find the string, add to the answers.
         if (nextNode->isString) {
             ret.insert(curr);
         }
-        
+
         // Marked as visited.
         visited[i][j] = true;
-        
+
         // Try each direction.
         vector<pair<int, int>> direction{{0, -1}, {0, 1}, {-1, 0}, {1, 0}};
         for (int k = 0; k < 4; ++k) {
             wordSearchDFS(grid, visited, nextNode,
                           i + direction[k].first, j + direction[k].second, curr, ret);
         }
-        
+
         visited[i][j] = false;
     }
 };

@@ -15,7 +15,7 @@ public:
             nums.emplace_back(i);
             total *= i;
         }
-        
+
         // Cantor Ordering:
         // Construct the k-th permutation with a list of n numbers
         // Idea: group all permutations according to their first number (so n groups, each of
@@ -32,7 +32,7 @@ public:
             k = (k - 1) % group + 1;
             --n;
         }
-        
+
         return output.str();
     }
 };

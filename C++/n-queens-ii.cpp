@@ -12,7 +12,7 @@ public:
         vector<int> placement(n);
         return n_queens_helper(n, 0, &placement);
     }
-    
+
     bool is_feasible(const vector<int>& col_placement, int row) {
         for (int i = 0; i < row; ++i) {
             int diff = abs(col_placement[i] - col_placement[row]);
@@ -22,7 +22,7 @@ public:
         }
         return true;
     }
-    
+
     int n_queens_helper(int n, int row, vector<int>* col_placement) {
         if (row == n) {
             return 1;

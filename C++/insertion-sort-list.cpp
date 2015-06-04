@@ -21,11 +21,11 @@ public:
      */
     ListNode *insertionSortList(ListNode *head) {
         ListNode dummy(INT_MIN);
-        
+
         ListNode *cur = head;
         ListNode *prev = nullptr;
         ListNode *pos = nullptr;
-        
+
         while (cur) {
             pos = findInsertPos(&dummy, cur->val);
             ListNode *tmp = cur->next;
@@ -33,10 +33,10 @@ public:
             pos->next = cur;
             cur = tmp;
         }
-        
+
         return dummy.next;
     }
-    
+
     ListNode* findInsertPos(ListNode *head, int x) {
         ListNode *pre = nullptr;
         for (ListNode *cur = head; cur && cur->val <= x;

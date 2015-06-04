@@ -10,7 +10,7 @@ public:
     int sqrt(int x) {
         int left = 1;
         int right = x / 2;
-        
+
         // Find min of left s.t. left > x / left.
         while (left <= right) {
             int mid = left + (right - left) / 2;
@@ -20,7 +20,7 @@ public:
                 left = mid + 1;
             }
         }
-        
+
         return left - 1;
     }
 };
@@ -34,7 +34,7 @@ public:
     int sqrt(int x) {
         int left = 1;
         int right = x / 2 + 1;
-        
+
         // Find min of left s.t. left > x / left.
         while (left < right) {
             int mid = left + (right - left) / 2;
@@ -44,7 +44,7 @@ public:
                 left = mid + 1;
             }
         }
-        
+
         return left - 1;
     }
 };
@@ -58,7 +58,7 @@ public:
     int sqrt(int x) {
         int left = 0;
         int right = x / 2 + 1;
-        
+
         // Find min of right s.t. right > x / right.
         while (right - left > 1) {
             int mid = left + (right - left) / 2;
@@ -68,7 +68,7 @@ public:
                 left = mid;
             }
         }
-        
+
         return right - 1;
     }
 };

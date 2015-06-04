@@ -22,14 +22,14 @@ public:
             node->next = cur->next;
             cur->next = node;
         }
-        
+
         // update random node
         for (RandomListNode *cur = head; cur; cur = cur->next->next) {
             if (cur->random) {
                 cur->next->random = cur->random->next;
             }
         }
-        
+
         // seperate the copied nodes from original ones
         RandomListNode dummy(INT_MIN);
         for (RandomListNode *cur = head, *copy_cur = &dummy;
@@ -38,7 +38,7 @@ public:
             copy_cur->next = cur->next;
             cur->next = cur->next->next;
         }
-        
+
         return dummy.next;
     }
 };

@@ -16,17 +16,17 @@ public:
                     findKthInTwoSortedArrays(A, B, (A.size() + B.size()) / 2 + 1)) / 2.0;
         }
     }
-    
+
     int findKthInTwoSortedArrays(const vector<int>& A, const vector<int>& B,
                                  int k) {
         int m = A.size();
         int n = B.size();
-        
+
         // Make sure m is the smaller one.
         if (m > n) {
             return findKthInTwoSortedArrays(B, A, k);
         }
-        
+
         int left = 0;
         int right = m;
         // Find a partition of A and B
@@ -39,10 +39,10 @@ public:
                 left = mid + 1;
             }
         }
-        
+
         int Ai_minus_1 = left - 1 >= 0 ? A[left - 1] : INT_MIN;
         int Bj = k - 1 - left >= 0 ? B[k - 1 - left] : INT_MIN;
-        
+
         // kth element would be A[left - 1] or B[k - 1 - left].
         return max(Ai_minus_1, Bj);
     }

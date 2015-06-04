@@ -10,7 +10,7 @@ public:
     int majorityNumber(vector<int> nums) {
         const int k = 3;
         unordered_map<int, int> hash;
-        
+
         for (const auto& i : nums) {
             ++hash[i];
             // Detecting k items in hash, at least one of them must have exactly
@@ -28,12 +28,12 @@ public:
                 }
             }
         }
-        
+
         // Resets hash for the following counting.
         for (auto& it : hash) {
             it.second = 0;
         }
-        
+
         // Counts the occurrence of each candidate word.
         for (const auto& i : nums) {
             auto it = hash.find(i);
@@ -41,7 +41,7 @@ public:
                 ++it->second;
             }
         }
-        
+
         // Selects the integer which occurs > n / k times.
         vector<int> ret;
         for (const pair<int, int>& it : hash) {
@@ -49,7 +49,7 @@ public:
                 ret.emplace_back(it.first);
             }
         }
-        
+
         return ret[0];
     }
 };

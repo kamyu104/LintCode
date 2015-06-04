@@ -22,14 +22,14 @@ public:
     vector<TreeNode *> generateTrees(int n) {
         return generateTrees(1, n);
     }
-    
+
     vector<TreeNode *> generateTrees(int start, int end) {
         vector<TreeNode *> output;
         if (start > end) {
             output.emplace_back(nullptr);
             return output;
         }
-        
+
         for (int i = start; i <= end; i++) {
             vector<TreeNode *> leftSubTrees = generateTrees(start, i - 1);
             vector<TreeNode *> rightSubTrees = generateTrees(i + 1, end);
@@ -41,20 +41,20 @@ public:
                     output.emplace_back(root);
                 }
             }
-            
+
         }
         return output;
     }
-    
+
     TreeNode *clone(TreeNode *root) {
         TreeNode *newRoot = nullptr;
-        
+
         if (root) {
             newRoot = new TreeNode(root->val);
             newRoot->left = clone(root->left);
             newRoot->right = clone(root->right);
         }
-        
+
         return newRoot;
     }
 };

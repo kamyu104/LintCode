@@ -38,14 +38,14 @@ public:
         }
         return BuildBSTFromSortedDoublyListHelper(&L, 0, n);
     }
-    
+
     // Builds a BST from the (s + 1)-th to the e-th node in L, and returns the
     // root. Node numbering is from 1 to n.
     TreeNode * BuildBSTFromSortedDoublyListHelper(ListNode **L, int s, int e) {
         if (s >= e) {
             return nullptr;
         }
-        
+
         int m = s + ((e - s) / 2);
         TreeNode *left = BuildBSTFromSortedDoublyListHelper(L, s, m);
         TreeNode *curr = new TreeNode((*L)->val);  // The last function call sets L to the successor of the

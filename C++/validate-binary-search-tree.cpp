@@ -23,24 +23,24 @@ public:
         if (!root) {
             return true;
         }
-        
+
         if (!isValidBST(root->left)) {
             return false;
         }
-        
+
         if (last && last != root && last->val >= root->val) {
             return false;
         }
-        
+
         last = root;
-        
+
         if (!isValidBST(root->right)) {
             return false;
         }
-        
+
         return true;
     }
-    
+
 private:
     TreeNode *last = nullptr;
 };

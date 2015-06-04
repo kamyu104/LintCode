@@ -11,11 +11,11 @@ public:
      */
     int ladderLength(string start, string end, unordered_set<string> &dict) {
         unordered_map<string, unordered_set<string>> trace;
-        
+
         // BFS, each round is a level
         unordered_set<string> levels[2];
         int cur_level = 0;
-        
+
         levels[cur_level].insert(start);
         while (dict.size() > 0 && levels[cur_level % 2].size() > 0) {
             // end is in current level, stop
@@ -23,12 +23,12 @@ public:
                 ++cur_level;
                 break;
             }
-            
+
             // clear words from the dictionary to avoid it' apear in future level again
             for (const auto& word : levels[cur_level % 2]) {
                 dict.erase(word);
             }
-            
+
             levels[(cur_level + 1) % 2].clear();
             for (const auto& from : levels[cur_level % 2]) {
                 string new_word = from;
@@ -44,10 +44,10 @@ public:
                     new_word[i] = orig_c;
                 }
             }
-            
+
             ++cur_level;
         }
-        
+
         return cur_level;
     }
 };
@@ -65,14 +65,14 @@ public:
         vector<vector<string>> level(2, vector<string>());
         level[rounds % 2].emplace_back(start);
         unordered_set<string> visited;
-        
+
         // BFS
         while (level[rounds % 2].size() > 0) {
             for (auto& word : level[rounds % 2]) {
                 if (word == end) {
                     return rounds;
                 }
-                
+
                 for (int i = 0; i < word.length(); ++i) {
                     for (int j= 'a'; j <= 'z'; ++j) {
                         string candidate(word);
@@ -87,7 +87,7 @@ public:
             level[rounds % 2].clear();
             ++rounds;
         }
-        
+
         return 0;
     }
 };
@@ -105,18 +105,18 @@ public:
         queue<string> que;
         que.emplace(start);
         unordered_set<string> visited;
-        
+
         // BFS
         while (que.size() > 0) {
             int qSize = que.size();
             while (--qSize >= 0) {
                 string w = que.front();
                 que.pop();
-                
+
                 if (w == end) {
                     return rounds;
                 }
-                
+
                 for (int i = 0; i < w.length(); ++i) {
                     char c = w[i]; // Keep the original character.
                     for (int j= 'a'; j <= 'z'; ++j) {
@@ -131,7 +131,7 @@ public:
             }
             ++rounds;
         }
-        
+
         return 0;
     }
 };
@@ -148,18 +148,18 @@ public:
         int rounds = 1;
         queue<string> que;
         que.emplace(start);
-        
+
         // BFS
         while (que.size() > 0) {
             int qSize = que.size();
             while (--qSize >= 0) {
                 string w = que.front();
                 que.pop();
-                
+
                 if (w == end) {
                     return rounds;
                 }
-                
+
                 for (int i = 0; i < w.length(); ++i) {
                     char c = w[i]; // Keep the original character.
                     for (int j= 'a'; j <= 'z'; ++j) {
@@ -174,7 +174,7 @@ public:
             }
             ++rounds;
         }
-        
+
         return 0;
     }
 };

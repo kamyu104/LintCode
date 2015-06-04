@@ -6,7 +6,7 @@ public:
     MinStack() {
         // do initialization if necessary
     }
-    
+
     void push(int number) {
         if (elements_.empty()) {
             elements_.emplace(0);
@@ -18,7 +18,7 @@ public:
             }
         }
     }
-    
+
     int pop() {
         int diff = elements_.top();
         elements_.pop();
@@ -27,7 +27,7 @@ public:
         }
         return stack_min_ + diff;
     }
-    
+
     int min() {
         return stack_min_;
     }
@@ -43,7 +43,7 @@ public:
     MinStack() {
         // do initialization if necessary
     }
-    
+
     void push(int number) {
         if (cached_min_with_count_.empty() || cached_min_with_count_.top().first > number) {
             cached_min_with_count_.emplace(number, 1);
@@ -52,7 +52,7 @@ public:
         }
         elements_.emplace(number);
     }
-    
+
     int pop() {
         if (!elements_.empty()) {
             if (!cached_min_with_count_.empty() && cached_min_with_count_.top().first == elements_.top()) {
@@ -65,7 +65,7 @@ public:
             return number;
         }
     }
-    
+
     int min() {
         if (!cached_min_with_count_.empty()) {
             return cached_min_with_count_.top().first;
@@ -84,14 +84,14 @@ public:
     MinStack() {
         // do initialization if necessary
     }
-    
+
     void push(int number) {
         if (cached_min_.empty() || cached_min_.top() >= number) {
             cached_min_.emplace(number);
         }
         elements_.emplace(number);
     }
-    
+
     int pop() {
         if (!elements_.empty()) {
             if (!cached_min_.empty() && cached_min_.top() == elements_.top()) {
@@ -102,7 +102,7 @@ public:
             return number;
         }
     }
-    
+
     int min() {
         if (!cached_min_.empty()) {
             return cached_min_.top();

@@ -9,12 +9,12 @@ public:
      */
     vector<string> anagrams(vector<string> &strs) {
         unordered_map<string, int> table;
-        
+
         for (auto str : strs) {
             sort(str.begin(), str.end());
             ++table[str];
         }
-        
+
         vector<string> anagrams;
         for (const auto& str : strs) {
             string sorted_str(str);
@@ -23,7 +23,7 @@ public:
                 anagrams.emplace_back(str);
             }
         }
-        
+
         return anagrams;
     }
 };

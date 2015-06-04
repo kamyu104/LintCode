@@ -26,17 +26,17 @@ public:
         while (!q.empty()) {
             auto node = q.front();
             q.pop();
-            
+
             for (const auto& n : node->neighbors) {
                 if (copied.find(n) == copied.end()) {
                     copied[n] = new UndirectedGraphNode(n->label);
                     q.emplace(n);
                 }
-                
+
                 copied[node]->neighbors.emplace_back(copied[n]);
             }
         }
-        
+
         return copied[node];
     }
 };

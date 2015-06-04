@@ -29,7 +29,7 @@ public:
         int start = 0;
         return buildExpressionTree(prefix, start);
     }
-    
+
     // Build expression tree by prefix expression.
     ExpressionTreeNode* buildExpressionTree(vector<string>& prefix, int& start) {
         if (prefix.empty()) {
@@ -42,11 +42,11 @@ public:
         }
         return node;
     }
-    
+
     bool is_operator(const string &op) {
         return op.length() == 1 && string("+-*/").find(op) != string::npos;
     }
-    
+
     // Convert Infix to Prefix Expression.
     void infixToPrefix(vector<string>& infix, vector<string>& prefix) {
         reverse(infix.begin(), infix.end());
@@ -79,7 +79,7 @@ public:
         }
         reverse(prefix.begin(), prefix.end());
     }
-    
+
     int precedence(string x) {
         if (x == ")") {
             return 0;
@@ -90,5 +90,5 @@ public:
         }
         return 3;
     }
-    
+
 };

@@ -28,7 +28,7 @@ public:
         RangeLookupInBSTHelper(root, interval, &result);
         return result;
     }
-    
+
     void RangeLookupInBSTHelper(const TreeNode* tree,
                                 const pair<int, int>& interval,
                                 vector<int>* result) {
@@ -59,24 +59,24 @@ public:
     vector<int> searchRange(TreeNode* root, int k1, int k2) {
         stack<TreeNode *> st;
         vector<int> output;
-        
+
         pushLeft(st, root, k1);
-        
+
         while (st.size() > 0) {
             TreeNode *t = st.top();
             st.pop();
-            
+
             // Add valid nodes to the stack.
             if (t->val >= k1 && t->val <= k2) {
                 output.emplace_back(t->val);
             }
-            
+
             // Push until the min of right descendant.
             if (t->val <= k2)  {
                 pushLeft(st, t->right, k1);
             }
         }
-        
+
         return output;
     }
 private:

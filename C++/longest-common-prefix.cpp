@@ -12,7 +12,7 @@ public:
         if (strs.size() == 0) {
             return "";
         }
-        
+
         auto prefix_len = strs[0].length();
         for (int i = 0; i < prefix_len; ++i) {
             for (const auto& str : strs) {
@@ -22,7 +22,7 @@ public:
                 }
             }
         }
-        
+
         return strs[0].substr(0, prefix_len);
     }
 };
@@ -41,7 +41,7 @@ public:
         if (strs.size() == 0) {
             return "";
         }
-        
+
         auto prefix_len = strs[0].length();
         for (const auto& str : strs) {
             auto i = 0;
@@ -50,7 +50,7 @@ public:
                 prefix_len = i;
             }
         }
-        
+
         return strs[0].substr(0, prefix_len);
     }
 };

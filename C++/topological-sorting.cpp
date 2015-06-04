@@ -27,7 +27,7 @@ private:
             while (!scheduled.empty()) {
                 DirectedGraphNode *node = scheduled.front();
                 scheduled.pop();
-                
+
                 // Update in degree of neighbors.
                 for (auto& neighbor : node->neighbors) {
                     ++ancestors[neighbor];
@@ -38,7 +38,7 @@ private:
             }
         }
     }
-    
+
     void topSortBFS(
                     vector<DirectedGraphNode*>& graph,
                     unordered_map<DirectedGraphNode *, int> &ancestors,
@@ -50,12 +50,12 @@ private:
                 scheduled.emplace(node);
             }
         }
-        
+
         while (!scheduled.empty()) {
             DirectedGraphNode *node = scheduled.front();
             output.emplace_back(node);
             scheduled.pop();
-            
+
             // Update in degree of neighbors.
             for (auto& neighbor : node->neighbors) {
                 --ancestors[neighbor];
@@ -66,23 +66,23 @@ private:
         }
     }
 public:
-    
+
     // @param graph: A list of Directed graph node
     // @return: Any topological order for the given graph.
     //
     vector<DirectedGraphNode *> topSort(vector<DirectedGraphNode*> graph) {
         vector<DirectedGraphNode *> output;
-        
+
         // Find ancestors of each node by DFS
         unordered_set<DirectedGraphNode *> nodes;
         unordered_map<DirectedGraphNode *, int> ancestors;
         for (auto& node :graph) {
             findDependencyBFS(node, nodes, ancestors);
         }
-        
+
         // Output topological order by BFS
         topSortBFS(graph, ancestors, output);
-        
+
         return output;
     }
 };
@@ -106,7 +106,7 @@ private:
             }
         }
     }
-    
+
     void topSortDFS(
                     DirectedGraphNode *node,
                     unordered_map<DirectedGraphNode *, vector<DirectedGraphNode *>> &ancestors,
@@ -120,26 +120,26 @@ private:
         }
     }
 public:
-    
+
     // @param graph: A list of Directed graph node
     // @return: Any topological order for the given graph.
     //
     vector<DirectedGraphNode *> topSort(vector<DirectedGraphNode*> graph) {
         vector<DirectedGraphNode *> output;
-        
+
         // Find ancestors of each node by DFS
         unordered_set<DirectedGraphNode *> nodes;
         unordered_map<DirectedGraphNode *, vector<DirectedGraphNode *>> ancestors;
         for (auto& node :graph) {
             findDependencyDFS(node, nodes, ancestors);
         }
-        
+
         // Output topological order by DFS
         unordered_set<DirectedGraphNode *> scheduled;
         for (auto& node : graph) {
             topSortDFS(node, ancestors, scheduled, output);
         }
-        
+
         return output;
     }
 };

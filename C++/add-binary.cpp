@@ -11,7 +11,7 @@ public:
     string addBinary(string& a, string& b) {
         string result;
         int result_length = max(a.length(), b.length()) ;
-        
+
         int carry = 0;
         for (int i = 0; i < result_length; ++i) {
             int a_bit_i = i < a.length() ? a[a.length() - 1 - i] - '0' : 0;
@@ -25,7 +25,7 @@ public:
             result.push_back('0' + carry);
         }
         reverse(result.begin(), result.end());
-        
+
         return result;
     }
 };

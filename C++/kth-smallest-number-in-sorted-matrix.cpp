@@ -16,7 +16,7 @@ public:
             return vertical_search(matrix, k);
         }
     }
-    
+
     int horizontal_search(const vector<vector<int> > &matrix, int k) {
         multimap<int, pair<int, int>> min_bst;
 
@@ -24,7 +24,7 @@ public:
         for (int i = 0; i < min(static_cast<int>(matrix.size()), k); ++i) {
             min_bst.emplace(move(pair<int, pair<int, int>>{matrix[i][0], {i, 0}}));
         }
-        
+
         int kth_smallest = INT_MAX;
         while (!min_bst.empty() && k--) {
             // Pop the min of BST.
@@ -35,7 +35,7 @@ public:
             int i = min_bst.cbegin()->second.first;
             int j = min_bst.cbegin()->second.second;
             min_bst.erase(min_bst.cbegin());
-            
+
             // Insert the next possible element.
             if (j + 1 < matrix[i].size()) {
                 min_bst.emplace(move(pair<int, pair<int, int>>{matrix[i][j + 1], {i, j + 1}}));
@@ -44,7 +44,7 @@ public:
 
         return kth_smallest;
     }
-    
+
     int vertical_search(const vector<vector<int> > &matrix, int k) {
         multimap<int, pair<int, int>> min_bst;
 
@@ -52,7 +52,7 @@ public:
         for (int j = 0; j < min(static_cast<int>(matrix[0].size()), k); ++j) {
             min_bst.emplace(move(pair<int, pair<int, int>>{matrix[0][j], {0, j}}));
         }
-        
+
         int kth_smallest = INT_MAX;
         while (!min_bst.empty() && k--) {
             // Pop the min of Heap.
@@ -63,7 +63,7 @@ public:
             int i = min_bst.cbegin()->second.first;
             int j = min_bst.cbegin()->second.second;
             min_bst.erase(min_bst.cbegin());
-                
+
             // Insert the next possible element.
             if (i + 1 < matrix.size()) {
                 min_bst.emplace(move(pair<int, pair<int, int>>{matrix[i + 1][j], {i + 1, j}}));
@@ -96,7 +96,7 @@ public:
             return vertical_search(matrix, k);
         }
     }
-    
+
     int horizontal_search(const vector<vector<int> > &matrix, int k) {
         priority_queue<pair<int, pair<int, int>>, vector<pair<int, pair<int, int>>>, Compare> min_heap;
 
@@ -104,7 +104,7 @@ public:
         for (int i = 0; i < min(static_cast<int>(matrix.size()), k); ++i) {
             min_heap.emplace(move(pair<int, pair<int, int>>{matrix[i][0], {i, 0}}));
         }
-        
+
         int kth_smallest = INT_MAX;
         while (!min_heap.empty() && k--) {
             // Pop the min of Heap.
@@ -115,7 +115,7 @@ public:
             int i = min_heap.top().second.first;
             int j = min_heap.top().second.second;
             min_heap.pop();
-            
+
             // Insert the next possible element.
             if (j + 1 < matrix[i].size()) {
                 min_heap.emplace(move(pair<int, pair<int, int>>{matrix[i][j + 1], {i, j + 1}}));
@@ -124,7 +124,7 @@ public:
 
         return kth_smallest;
     }
-    
+
     int vertical_search(const vector<vector<int> > &matrix, int k) {
         priority_queue<pair<int, pair<int, int>>, vector<pair<int, pair<int, int>>>, Compare> min_heap;
 
@@ -132,7 +132,7 @@ public:
         for (int j = 0; j < min(static_cast<int>(matrix[0].size()), k); ++j) {
             min_heap.emplace(move(pair<int, pair<int, int>>{matrix[0][j], {0, j}}));
         }
-        
+
         int kth_smallest = INT_MAX;
         while (!min_heap.empty() && k--) {
             // Pop the min of Heap.
@@ -142,7 +142,7 @@ public:
             int i = min_heap.top().second.first;
             int j = min_heap.top().second.second;
             min_heap.pop();
-            
+
             // Insert the next possible element.
             if (i + 1 < matrix.size()) {
                 min_heap.emplace(move(pair<int, pair<int, int>>{matrix[i + 1][j], {i + 1, j}}));

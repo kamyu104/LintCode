@@ -12,12 +12,12 @@ public:
         if (digits.empty()) {
             return {};
         }
-        
+
         vector<string> result = {""};
         vector<string> lookup = {"", "", "abc", "def",
                                  "ghi", "jkl", "mno",
                                  "pqrs", "tuv", "wxyz"};
-        
+
         for (int i = digits.size() - 1; i >= 0; --i) {
             const string& choices = lookup[digits[i] - '0'];
             const int n = result.size(), m = choices.length();
@@ -31,7 +31,7 @@ public:
         for (auto& s : result) {
             reverse(s.begin(), s.end());
         }
-        
+
         return result;
     }
 };
@@ -49,7 +49,7 @@ public:
         if (digits.empty()) {
             return {};
         }
-        
+
         vector<string> result = {};
         vector<string> lookup = {"", "", "abc", "def",
                                  "ghi", "jkl", "mno",
@@ -59,7 +59,7 @@ public:
         letterCombinationsRecu(digits, lookup, &combination, &len, &result);
         return result;
     }
-    
+
     void letterCombinationsRecu(const string& digits, vector<string>& lookup, 
                                 string *combination, 
                                 int *len, vector<string> *result) {

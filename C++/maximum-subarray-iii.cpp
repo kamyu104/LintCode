@@ -10,14 +10,14 @@ public:
      */
     int maxSubArray(vector<int> nums, int k) {
         const int n = nums.size();
-        
+
         // sums[x][y] means the max sum in range [0, x - 1] with k non-overlapping subarrays
         vector<vector<int>> sums(n + 1, vector<int>(k + 1, INT_MIN));
-        
+
         for (int i = 0; i <= n; ++i) {
             sums[i][0] = 0;
         }
-        
+
         for (int i = 1; i <= n; ++i) {
             for (int j = 1; j <= min(i, k); ++j) {
                 sums[i][j] = sums[i - 1][j];
@@ -31,7 +31,7 @@ public:
                 }
             }
         }
-        
+
         return sums[n][k];
     }
 };
@@ -48,14 +48,14 @@ public:
      */
     int maxSubArray(vector<int> nums, int k) {
         const int n = nums.size();
-        
+
         // sums[x][y] means the max sum in range [0, x - 1] with k non-overlapping subarrays
         vector<vector<int>> sums(n + 1, vector<int>(k + 1, INT_MIN));
-        
+
         for (int i = 0; i <= n; ++i) {
             sums[i][0] = 0;
         }
-        
+
         for (int i = 1; i <= n; ++i) {
             for (int j = 1; j <= min(i, k); ++j) {
                 sums[i][j] = sums[i - 1][j];
@@ -71,7 +71,7 @@ public:
                 }
             }
         }
-        
+
         return sums[n][k];
     }
 };

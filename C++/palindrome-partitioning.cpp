@@ -13,7 +13,7 @@ public:
         PalindromePartitioningHelper(s, 0, &partition, &result);
         return result;
     }
-    
+
     void PalindromePartitioningHelper(const string& s, size_t begin,
                                       vector<string>* partition,
                                       vector<vector<string>>* result) {
@@ -21,7 +21,7 @@ public:
             result->emplace_back(*partition);
             return;
         }
-        
+
         for (size_t i = begin + 1; i <= s.size(); ++i) {
             string prefix = s.substr(begin, i - begin);
             if (IsPalindrome(prefix)) {
@@ -31,7 +31,7 @@ public:
             }
         }
     }
-    
+
     bool IsPalindrome(const string& s) {
         for (int i = 0, j = s.size() - 1; i < j; ++i, --j) {
             if (s[i] != s[j]) {

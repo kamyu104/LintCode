@@ -29,7 +29,7 @@ public:
             -1,  8, -1,  7, -1, -1,     // next states for state 7
             -1,  8, -1, -1, -1, -1,     // next states for state 8
         };
-    
+
         int state = 0;
         for (const auto& c: s) {
             InputType inputType = INVALID;
@@ -46,7 +46,7 @@ public:
             }
             // Get next state from current state and input symbol
             state = transitionTable[state][inputType];
-        
+
             // Invalid input
             if (state == -1) {
                 return false;

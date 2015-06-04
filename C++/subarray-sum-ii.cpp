@@ -14,7 +14,7 @@ public:
         // sum_from_start[i] denotes sum for 0 ~ i - 1.
         vector<int> sum_from_start(A.size() + 1);
         partial_sum(A.cbegin(), A.cend(), sum_from_start.begin() + 1);
-        
+
         int result = 0;
         for (int j = 0; j < A.size(); ++j) {
             const auto left = lower_bound(sum_from_start.cbegin(),
@@ -26,7 +26,7 @@ public:
             result += (right - sum_from_start.cbegin()) - 
                       (left - sum_from_start.cbegin());
         }
-        
+
         return result;
     }
 };
@@ -45,7 +45,7 @@ public:
         // sum_from_start[i] denotes sum for 0 ~ i - 1.
         vector<int> sum_from_start(A.size() + 1);
         partial_sum(A.cbegin(), A.cend(), sum_from_start.begin() + 1);
-        
+
         int result = 0;
         for (int i = 0, j = 0; j < A.size(); ++j) {
             int k = i;
@@ -57,7 +57,7 @@ public:
                 ++k;
             }
         }
-        
+
         return result;
     }
 };

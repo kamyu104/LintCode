@@ -29,20 +29,20 @@ public:
                    isSubtree(T1->left, T2) || 
                    isSubtree(T1->right, T2);
         }
-        
+
     }
-    
+
     bool isSameTree(TreeNode *T1, TreeNode *T2) {
         if (!T1 && !T2) {
             return true;
         }
-        
+
         if (T1 && T2) {
             return T1->val == T2->val &&
                    isSameTree(T1->left, T2->left) &&
                    isSameTree(T1->right, T2->right);
         }
-        
+
         return false;
     }
 };

@@ -11,11 +11,11 @@ public:
      */
     vector<vector<string>> findLadders(string start, string end, unordered_set<string> &dict) {
         unordered_map<string, unordered_set<string>> trace;
-        
+
         // BFS, each round is a level
         unordered_set<string> levels[2];
         int cur_level = 0;
-        
+
         levels[cur_level].insert(start);
         while (dict.size() > 0 && levels[cur_level % 2].size() > 0) {
             // end is in current level, stop
@@ -23,12 +23,12 @@ public:
                 ++cur_level;
                 break;
             }
-            
+
             // clear words from the dictionary to avoid it' apear in future level again
             for (auto& word : levels[cur_level % 2]) {
                 dict.erase(word);
             }
-            
+
             levels[(cur_level + 1) % 2].clear();
             for (auto& from : levels[cur_level % 2]) {
                 string new_word = from;
@@ -44,16 +44,16 @@ public:
                     new_word[i] = orig_c;
                 }
             }
-            
+
             ++cur_level;
         }
-        
+
         vector<vector<string>> result;
         vector<string> temp;
         traceBack(trace, temp, end, result);
         return result;
     }
-    
+
     void traceBack(
                    unordered_map<string, unordered_set<string>> &trace,
                    vector<string> &temp,

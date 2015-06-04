@@ -11,11 +11,11 @@ public:
         if (A.length() < B.length()) {
             return longestCommonSubsequence(B, A);
         }
-        
+
         // table[i][j] means the longest length of common subsequence
         // of A[0 : i] and B[0 : j].
         vector<vector<int>> table(2, vector<int>(A.length() + 1, 0));
-        
+
         // if A[i - 1] != B[j - 1]:
         //     table[i][j] = max(table[i - 1][j], table[i][j - 1])
         // if A[i - 1] == B[j - 1]:
@@ -30,7 +30,7 @@ public:
                 }
             }
         }
-        
+
         return table[A.length() % 2][B.length()];
     }
 };

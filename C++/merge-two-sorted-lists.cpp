@@ -24,11 +24,11 @@ public:
         // Creates a dummy head.
         ListNode * dummy_head = new ListNode(INT_MIN);
         auto tail = dummy_head;
-        
+
         while (l1 && l2) {
             AppendNode(l1->val < l2->val ? &l1 : &l2, &tail);
         }
-        
+
         if (l1) {
             // Appends the remaining nodes of l1.
             AppendNode(&l1, &tail);
@@ -38,7 +38,7 @@ public:
         }
         return dummy_head->next;
     }
-    
+
     void AppendNode(ListNode ** node,
                     ListNode ** tail) {
         (*tail)->next = *node;

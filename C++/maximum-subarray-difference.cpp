@@ -12,7 +12,7 @@ public:
         int n = nums.size();
         vector<int> max_LR(n), min_LR(n);
         vector<int> max_RL(n), min_RL(n);
-        
+
         // Compute the max sum of subarray from left to right.
         int max_LR_sum = INT_MIN, LR_sum = 0;
         for (int i = 0; i < n; ++i) {
@@ -23,7 +23,7 @@ public:
                 LR_sum = 0;
             }
         }
-        
+
         // Compute the min sum of subarray from left to right.
         int min_LR_sum = INT_MAX;
         LR_sum = 0;
@@ -35,7 +35,7 @@ public:
                 LR_sum = 0;
             }
         }
-        
+
         // Compute the max sum of subarray from right to left.
         int max_RL_sum = INT_MIN, RL_sum = 0;
         for (int i = n - 1; i >= 0; --i) {
@@ -46,7 +46,7 @@ public:
                 RL_sum = 0;
             }
         }
-        
+
         // Compute the min sum of subarray from right to left.
         int min_RL_sum = INT_MAX;
         RL_sum = 0;
@@ -58,14 +58,14 @@ public:
                 RL_sum = 0;
             }
         }
-        
+
         // Compute the max diff of two non-overlapping subarrays.
         int max_diff = 0;
         for (int i = 0; i < n - 1; ++i) {
             max_diff = max(max_diff, abs(max_LR[i] - min_RL[i+1]));
             max_diff = max(max_diff, abs(min_LR[i] - max_RL[i+1]));
         }
-        
+
         return max_diff;
     }
 };

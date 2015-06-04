@@ -14,13 +14,13 @@ public:
                 candies[i] = candies[i - 1] + 1;
             }
         }
-        
+
         for (int i = ratings.size(); i >= 0; --i) {
             if (ratings[i - 1] > ratings[i] && candies[i - 1] <= candies[i]) {
                 candies[i - 1] = candies[i] + 1;
             }
         }
-        
+
         return accumulate(candies.cbegin(), candies.cend(), 0);
     }
 };

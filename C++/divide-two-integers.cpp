@@ -18,7 +18,7 @@ public:
         } else if (divisor == 1) {
             return dividend;
         }
-        
+
         bool negative = (dividend > 0) ^ (divisor > 0);
         if (dividend > 0) {
             dividend = -dividend;
@@ -26,7 +26,7 @@ public:
         if (divisor > 0) {
             divisor = -divisor;
         }
-        
+
         int product = divisor;
         int idx = 1;
         while (product < 0 && idx < 32) {
@@ -36,7 +36,7 @@ public:
         idx -= 2; // Skip value of INT_MIN
         product = divisor << idx;
         int multiplier = 1 << idx;
-        
+
         int res = 0;
         while (dividend <= divisor) {
             if (dividend <= product) {
@@ -63,7 +63,7 @@ public:
      */
     int divide(int dividend, int divisor) {
         long long result = 0, dvd = llabs(dividend), dvs = llabs(divisor);
-        
+
         long long inc = dvs;
         long long multiplier = 1; 
         int i = 0;
@@ -72,7 +72,7 @@ public:
                 multiplier <<= 1;
                 ++i;
         }
-        
+
         while (inc && i >= 0) {
                 while (dvd >= inc) {
                     dvd -= inc;
@@ -82,7 +82,7 @@ public:
                 multiplier >>= 1;
                 --i;
         }
-            
+
         if ((dividend > 0 && divisor < 0) || (dividend < 0 && divisor > 0)) {
             return -result;
         } else {
@@ -108,9 +108,9 @@ public:
         if (divisor == 0) {
             return INT_MAX;
         }
-        
+
         long long res = exp(log(fabs(dividend)) - log(fabs(divisor)));
-        
+
         if ((dividend < 0) ^ (divisor < 0)) {
             res = -res;
         }

@@ -15,7 +15,7 @@ public:
         multiset<int, less<int>> min_bst;
         // max_bst stores the smaller half seen so far.
         multiset<int, greater<int>> max_bst;
-        
+
         vector<int> ans;
         for (int i = 0; i < nums.size(); ++i) {
             if (i >= k) {
@@ -26,7 +26,7 @@ public:
                     min_bst.erase(min_bst.find(nums[i - k]));
                 }
             }
-            
+
             // Balance smaller half and larger half.
             if (max_bst.empty() || nums[i] > *max_bst.cbegin()) {
                 min_bst.insert(nums[i]);
@@ -42,14 +42,14 @@ public:
                     max_bst.erase(max_bst.cbegin());
                 }
             }
-            
+
             // If window is full, get the median from 2 BST.
             if (i >= k - 1) {
                 ans.emplace_back(min_bst.size() == max_bst.size() ?
                                  *max_bst.cbegin() : *min_bst.cbegin());
             }
         }
-        
+
         return ans;
     }
 };

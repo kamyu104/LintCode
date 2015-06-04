@@ -10,7 +10,7 @@ public:
     int fastPower(int a, int b, int n) {
         return longFastPower(a % b, b, n);
     }
-    
+
     long long longFastPower(long long a, int b, int n) {
         if (n == 0) {
             return 1 % b;

@@ -30,7 +30,7 @@ public:
         return ReconstructPreInOrdersHelper(pre, 0, pre.size(), in, 0, in.size(),
                                             in_entry_idx_map);
     }
-    
+
     // Reconstructs the binary tree from pre[pre_s : pre_e - 1] and
     // in[in_s : in_e - 1].
     TreeNode *ReconstructPreInOrdersHelper(const vector<int>& pre, size_t pre_s, size_t pre_e,
@@ -39,7 +39,7 @@ public:
         if (pre_e > pre_s && in_e > in_s) {
             auto idx = in_entry_idx_map.at(pre[pre_s]);
             auto left_tree_size = idx - in_s;
-            
+
             TreeNode *node = new TreeNode(pre[pre_s]);
             // Recursively builds the left subtree.
             node->left = ReconstructPreInOrdersHelper(pre, pre_s + 1, pre_s + 1 + left_tree_size,

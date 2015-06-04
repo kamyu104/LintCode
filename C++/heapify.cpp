@@ -12,7 +12,7 @@ public:
             minHeapify(A, i);
         }
     }
-    
+
     void minHeapify(vector<int>& A, int index) {
         while ((index - 1) / 2 >= 0) {
             int parent = (index - 1) / 2;

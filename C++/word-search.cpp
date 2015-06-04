@@ -12,7 +12,7 @@ public:
         unordered_set<string> ret;
         vector<vector<bool>> visited(board.size(), vector<bool>(board[0].size(), false));
         int curr = 0;
-        
+
         for (int i = 0; i < board.size(); ++i) {
             for (int j = 0; j < board[0].size(); ++j) {
                 if (wordSearchDFS(board, visited, word, i, j, curr)) {
@@ -20,10 +20,10 @@ public:
                 }
             }
         }
-        
+
         return false;
     }
-    
+
     bool wordSearchDFS(vector<vector<char>> &grid,
                        vector<vector<bool>> &visited,
                        string word,
@@ -34,23 +34,23 @@ public:
         if (i < 0 || i >= grid.size() || j < 0 || j >= grid[0].size()) {
             return false;
         }
-        
+
         // Not mathced or visited.
         if (grid[i][j] != word[curr] || visited[i][j] ) {
             return false;
         }
-        
+
         // Update current string.
         ++curr;
-        
+
         // Find the string, add to the answers.
         if (curr == word.length()) {
             return true;
         }
-        
+
         // Marked as visited.
         visited[i][j] = true;
-        
+
         // Try each direction.
         vector<pair<int, int>> direction{{0, -1}, {0, 1}, {-1, 0}, {1, 0}};
         for (int k = 0; k < 4; ++k) {
@@ -59,9 +59,9 @@ public:
                 return true;
             }
         }
-        
+
         visited[i][j] = false;
-        
+
         return false;
     }
 };

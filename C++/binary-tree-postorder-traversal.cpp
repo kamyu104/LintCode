@@ -46,7 +46,7 @@ public:
         }
         return res;
     }
-    
+
     vector<int> trace_back(TreeNode *frm, TreeNode *to) {
         vector<int> res;
         TreeNode *curr = frm;
@@ -73,12 +73,12 @@ public:
         if (root == nullptr) {  // Empty tree.
             return {};
         }
-        
+
         stack<TreeNode *> path_stack;
         TreeNode * prev = nullptr;
         path_stack.emplace(root);
         vector<int> postorder_sequence;
-        
+
         while (!path_stack.empty()) {
             auto curr = path_stack.top();
             if (prev == nullptr || prev->left == curr ||

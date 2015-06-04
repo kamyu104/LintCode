@@ -14,7 +14,7 @@ public:
         }
         return seq;
     }
-    
+
     string getNext(const string& seq) {
         stringstream  next_seq;
         for (int i = 0; i < seq.length(); ++i) {

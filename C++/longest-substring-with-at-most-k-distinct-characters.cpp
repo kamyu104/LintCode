@@ -10,7 +10,7 @@ public:
      */
     int lengthOfLongestSubstringKDistinct(string s, int k) {
         unordered_map<char, int> distinct;
-        
+
         int start = 0;
         int max_len = 0;
         for (int i = 0; i < s.length(); ++i) {
@@ -27,7 +27,7 @@ public:
                 }
             }
         }
-        
+
         return max_len;
     }
 };

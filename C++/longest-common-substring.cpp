@@ -11,12 +11,12 @@ public:
         if (A.length() < B.length()) {
             return longestCommonSubstring(B, A);
         }
-        
+
         // table[i][j] means the longest length of common substring
         // of A which ends with A[i - 1] and B which ends with B[j - 1].
         vector<vector<int>> table(2, vector<int>(A.length() + 1, 0));
         int longest = 0;
-        
+
         // if A[i - 1] != B[j - 1]:
         //     table[i][j] = 0
         // if A[i - 1] == B[j - 1]:
@@ -31,7 +31,7 @@ public:
                 }
             }
         }
-        
+
         return longest;
     }
 };

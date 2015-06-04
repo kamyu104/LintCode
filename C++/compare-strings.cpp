@@ -15,7 +15,7 @@ public:
         for (const auto& c: B) {
             ++h[c];
         }
-        
+
         size_t cnt = B.length();
         for (const auto& c: A) {
             if (h[c] > 0) {
@@ -26,11 +26,11 @@ public:
                 return true;
             }
         }
-        
+
         if (cnt > 0) {
             return false;
         }
-        
+
         return true;
     }
 };
@@ -48,13 +48,13 @@ public:
         for (const auto& c: A) {
             ++h[c];
         }
-        
+
         for (const auto& c: B) {
             if (--h[c] < 0) {
                 return false;
             }
         }
-        
+
         return true;
     }
 };

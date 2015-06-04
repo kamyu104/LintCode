@@ -15,13 +15,13 @@ public:
                 return true;
             }
         }
-        
+
         // Count total.
         int sum = 0;
         for (int i = 0; i < values.size(); ++i) {
             sum += values[i];
         }
-        
+
         // P[i][n] = max(values[i] + min(P[i + 2][n - 2], P[i + 1][n - 2]),
         //               values[i + n - 1] + min(P[i + 1][n - 2], P[i][n - 2]))
         vector<vector<int>> P(values.size(), vector<int>(3, 0));
@@ -37,7 +37,7 @@ public:
         }
         return P[0][values.size() % 3] > sum - P[0][values.size() % 3];
     }
-    
+
     // Time: O(n), Space: O(1)
     // Odd / even numbered strategy for even numbered coins
     bool firstWinEvenCoins(const vector<int>& values) {
@@ -52,7 +52,7 @@ public:
                 even_sum += values[i];
             }
         }
-        
+
         return odd_sum != even_sum;
     }
 };
@@ -72,13 +72,13 @@ public:
                 return true;
             }
         }
-        
+
         // Count total.
         int sum = 0;
         for (int i = 0; i < values.size(); ++i) {
             sum += values[i];
         }
-        
+
         // P[i][n] = max(values[i] + min(P[i + 2][n - 2], P[i + 1][n - 2]),
         //               values[i + n - 1] + min(P[i + 1][n - 2], P[i][n - 2]))
         vector<vector<int>> P(values.size(), vector<int>(values.size() + 1, 0));
@@ -94,7 +94,7 @@ public:
         }
         return P[0][values.size()] > sum - P[0][values.size()];
     }
-    
+
     // Time: O(n), Space: O(1)
     // Odd / even numbered strategy for even numbered coins
     bool firstWinEvenCoins(const vector<int>& values) {
@@ -109,7 +109,7 @@ public:
                 even_sum += values[i];
             }
         }
-        
+
         return odd_sum != even_sum;
     }
 };
@@ -129,7 +129,7 @@ public:
                 return true;
             }
         }
-        
+
         // P[i][j] = max(values[i] + min(P[i + 2][j], P[i + 1][j - 1]),
         //               values[j] + min(P[i + 1][j - 1], P[i][j - 2]))
         vector<vector<int>> P(values.size(), vector<int>(values.size(), 0));
@@ -146,7 +146,7 @@ public:
         }
         return P[0][values.size() - 1] > sum - P[0][values.size() - 1];
     }
-    
+
     // Time: O(n), Space: O(1)
     // Odd / even numbered strategy for even numbered coins
     bool firstWinEvenCoins(const vector<int>& values) {
@@ -161,7 +161,7 @@ public:
                 even_sum += values[i];
             }
         }
-        
+
         return odd_sum != even_sum;
     }
 };

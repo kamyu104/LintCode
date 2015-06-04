@@ -23,7 +23,7 @@ public:
         dummy->next = head;
         ListNode *slow = dummy;
         ListNode *fast = dummy;
-        
+
         // Slow and fast pointer only meet when there is a cycle.
         while (fast != nullptr && fast->next != nullptr) {
             slow = slow->next;
@@ -35,25 +35,25 @@ public:
                     slow = slow->next;
                     ++L;
                 }
-                
+
                 // Fast pointer walks L steps ahead.
                 fast = dummy;
                 while (L > 0) {
                     fast = fast->next;
                     --L;
                 }
-                
+
                 // The start of the cycle is the node they meet.
                 slow = dummy;
                 while (slow != fast) {
                     slow = slow->next;
                     fast = fast->next;
                 }
-                
+
                 return slow;
             }
         }
-        
+
         return nullptr;
     }
 };

@@ -15,7 +15,7 @@ public:
         NQueensHelper(n, 0, &placement, &result);
         return result;
     }
-    
+
     void NQueensHelper(int n, int row, vector<int>* col_placement,
                        vector<vector<string>>* result) {
         if (row == n) {
@@ -29,7 +29,7 @@ public:
             }
         }
     }
-    
+
     vector<string> CreateOutput(const vector<int>& col_placement) {
         vector<string> sol;
         for (int row : col_placement) {
@@ -39,7 +39,7 @@ public:
         }
         return sol;
     }
-    
+
     bool IsFeasible(const vector<int>& col_placement, int row) {
         for (int i = 0; i < row; ++i) {
             int diff = abs(col_placement[i] - col_placement[row]);

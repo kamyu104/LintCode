@@ -20,9 +20,9 @@ public:
      */
     vector<int> countOfSmallerNumberII(vector<int> &A) {
         vector<int> res;
-        
+
         BSTreeNode *root = nullptr;
-        
+
         // Insert into BST and get left count.
         for (int i = 0; i < A.size(); ++i) {
             int count = 0;
@@ -31,10 +31,10 @@ public:
             count = query(root, A[i]);
             res.emplace_back(count);
         }
-        
+
         return res;
     }
-    
+
     // Insert node into BST.
     BSTreeNode* insertNode(BSTreeNode* root, BSTreeNode* node) {
         if (root == nullptr) {
@@ -62,7 +62,7 @@ public:
         }
         return root;
     }
-    
+
     // Query the smaller count of the value.
     int query(BSTreeNode* root, int val) {
         if (root == nullptr) {

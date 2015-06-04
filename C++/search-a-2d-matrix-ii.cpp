@@ -18,7 +18,7 @@ public:
             return 0;
         }
         int count = 0;
-        
+
         int i = 0, j = n - 1;
         while (i < m && j >= 0) {
             if (matrix[i][j] == target) {
@@ -32,7 +32,7 @@ public:
                 ++i;
             }
         }
-        
+
         return count;
     }
 };

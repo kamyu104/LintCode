@@ -25,7 +25,7 @@ public:
             }
         }
     }
-    
+
     // Partition nums[left : right] around pivot_idx, returns the new index of the
     // pivot, new_pivot_idx, after partition. After partitioning,
     // nums[left : new_pivot_idx - 1] contains elements that are greater than the

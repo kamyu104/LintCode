@@ -11,7 +11,7 @@ public:
         stack<int> increasing_height;
         int max_area = 0;
         int i = 0;
-        
+
         while (i <= height.size()) { // "i == height.size()" is to handle remaning heights in stack.
             if (increasing_height.empty() ||
                 (i < height.size() && height[i] > height[increasing_height.top()])) {
@@ -35,7 +35,7 @@ public:
                 }
             }
         }
-        
+
         return max_area;
     }
 };

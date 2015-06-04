@@ -10,7 +10,7 @@ public:
     vector<int> printZMatrix(vector<vector<int> > &matrix) {
         vector<int> zigzag;
         const int m = matrix.size(), n = matrix[0].size();
-        
+
         for (int i = 0; i < m + n - 1; ++i) {
             if (i % 2) {
                 for (int y = min(i, n - 1);  y >= max(0, i - m + 1); --y) {
@@ -22,7 +22,7 @@ public:
                 }
             }
         }
-        
+
         return zigzag;
     }
 };
@@ -39,7 +39,7 @@ public:
     vector<int> printZMatrix(vector<vector<int> > &matrix) {
         vector<int> zigzag;
         const size_t m = matrix.size(), n = matrix[0].size();
-        
+
         for (int i = 0; i < m + n - 1; ++i) {
             if (i % 2 == 0) {
                 for (int y = 0;  y < n; ++y) {
@@ -55,7 +55,7 @@ public:
                 }
             }
         }
-        
+
         return zigzag;
     }
 };

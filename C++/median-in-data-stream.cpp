@@ -12,10 +12,10 @@ public:
         multiset<int, less<int>> min_bst;
         // max_bst stores the smaller half seen so far.
         multiset<int, greater<int>> max_bst;
-        
+
         vector<int> ans;
         for (int i = 0; i < nums.size(); ++i) {
-            
+
             // Balance smaller half and larger half.
             if (max_bst.empty() || nums[i] > *max_bst.cbegin()) {
                 min_bst.insert(nums[i]);
@@ -31,11 +31,11 @@ public:
                     max_bst.erase(max_bst.cbegin());
                 }
             }
-            
+
             ans.emplace_back(min_bst.size() == max_bst.size() ?
                              *max_bst.cbegin() : *min_bst.cbegin());
         }
-        
+
         return ans;
     }
 };
@@ -52,7 +52,7 @@ public:
         priority_queue<int, vector<int>, greater<int>> min_heap;
         // max_heap stores the smaller half seen so far.
         priority_queue<int, vector<int>, less<int>> max_heap;
-        
+
         vector<int> ans;
         int x;
         for (auto& x : nums) {
@@ -70,11 +70,11 @@ public:
                     max_heap.pop();
                 }
             }
-            
+
             ans.emplace_back(min_heap.size() == max_heap.size() ?
                              max_heap.top() : min_heap.top());
         }
-        
+
         return ans;
     }
 };

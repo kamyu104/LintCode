@@ -11,7 +11,7 @@ public:
         if (str.length() > 256) {
             return false;
         }
-        
+
         // At most 256 entires, const space.
         unordered_map<char, int> cnt;
         for (const auto& c : str) {
@@ -20,7 +20,7 @@ public:
                 return false;
             }
         }
-        
+
         return true;
     }
 };

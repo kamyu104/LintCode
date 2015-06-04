@@ -10,7 +10,7 @@ public:
     int longestIncreasingContinuousSubsequence(vector<int>& A) {
         int max_inc_len = 0, cur_inc_len = 0;
         int max_dec_len = 0, cur_dec_len = 0;
-        
+
         for (int i = 0; i < A.size(); ++i) {
             if (i == 0 || A[i] == A[i - 1]) {
                 max_inc_len = max(max_inc_len, ++cur_inc_len);
@@ -23,7 +23,7 @@ public:
                 cur_inc_len = 1;
             }
         }
-        
+
         return max(max_inc_len, max_dec_len);
     }
 };

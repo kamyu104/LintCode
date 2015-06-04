@@ -24,7 +24,7 @@ public:
                 }
             }
         }
-        
+
         for (int i = colors.size() - 1, pos = k - 1; pos >= 0; --pos) {
             while (colors[pos] < 0) { // Reorder the color by count of each bucket.
                 ++colors[pos];

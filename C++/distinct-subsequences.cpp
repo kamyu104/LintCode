@@ -18,7 +18,7 @@ public:
                 ways[(i + 1) % 2][j + 1] = S[i] == T[j]?
                                                 ways[i % 2][j + 1] + ways[i % 2][j] :
                                                 ways[i % 2][j + 1];
-                
+
             }
         }
         return ways[S.length() % 2][T.length()];
@@ -44,7 +44,7 @@ public:
                 ways[i + 1][j + 1] = S[i] == T[j]?
                                           ways[i][j + 1] + ways[i][j] :
                                           ways[i][j + 1];
-                
+
             }
         }
         return ways[S.length()][T.length()];

@@ -22,7 +22,7 @@ public:
                 start = i + 1;
             }
         }
-        
+
         // Check if solution exists, i.e. sum(gas) >= sum(cost).
         if (total_sum >= 0) {
             // 1. route of [start, len(gas) - 1] must be positive
@@ -31,7 +31,7 @@ public:
             // According to the above, start is the gas station we want.
             return start;
         }
-        
+
         return -1;
     }
 };

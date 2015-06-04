@@ -12,18 +12,18 @@ public:
     bool isMatch(const char *s, const char *p) {
         const size_t s_len = strlen(s);
         const size_t p_len = strlen(p);
-        
+
         // match[i][j] denotes as:
         // s[0, i - 1] matches p[0, j - 1] or not.
         vector<vector<bool>> match(s_len + 1, vector<bool>(p_len + 1));
-        
+
         match[0][0] = true;
         for (int i = 2; i <= p_len; ++i) {
             if (p[i - 1] == '*') {
                 match[0 % 2][i] = match[0 % 2][i - 2];
             }
         }
-        
+
         for (int i = 1; i <= s_len; ++i) {
             match[i % 2][0] = false;
             for (int j = 1; j <= p_len; ++j) {
@@ -51,18 +51,18 @@ public:
     bool isMatch(const char *s, const char *p) {
         const size_t s_len = strlen(s);
         const size_t p_len = strlen(p);
-        
+
         // match[i][j] denotes as:
         // s[0, i - 1] matches p[0, j - 1] or not.
         vector<vector<bool>> match(s_len + 1, vector<bool>(p_len + 1));
-        
+
         match[0][0] = true;
         for (int i = 2; i <= p_len; ++i) {
             if (p[i - 1] == '*') {
                 match[0][i] = match[0][i - 2];
             }
         }
-        
+
         for (int i = 1; i <= s_len; ++i) {
             match[i][0] = false;
             for (int j = 1; j <= p_len; ++j) {
@@ -91,7 +91,7 @@ public:
         if (*s == 0 || *p == 0) {
             return *s == 0 && *p == 0;
         }
-        
+
         if (*(p + 1) == 0 || p[1] != '*') {
             if (*s != 0 && (p[0] == s[0] || p[0] == '.')) {
                 // Matched a char.
@@ -160,12 +160,12 @@ public:
                 return false;
             }
         }
-        
+
         // Skip '*' in p.
         while (p_pos < p_len - 1 && p[p_pos] == '.' && p[p_pos + 1] == '*') {
             p_pos += 2;
         }
-        
+
         // Check if pattern is all matched.
         return p_pos == p_len;
     }

@@ -9,13 +9,13 @@ public:
         int j;
         int height;
     };
-    
+
     struct Compare {
         bool operator()(const Cell& a, const Cell& b) {
             return a.height > b.height;
         }
     };
-    
+
     /**
      * @param heights: a matrix of integers
      * @return: an integer
@@ -25,9 +25,9 @@ public:
         m_ = heights.size();
         n_ = heights[0].size();
         is_visited_ = vector<vector<bool>>(m_, vector<bool>(n_, false));
-        
+
         int trap = 0;
-        
+
         // Put the cells on the border into min heap.
         for (int i = 0; i < m_; ++i) {
             heap_.emplace(Cell{i, 0, heights[i][0]});
@@ -37,38 +37,38 @@ public:
             heap_.emplace(Cell{0, j, heights[0][j]});
             heap_.emplace(Cell{m_ - 1, j, heights[m_ - 1][j]});
         }
-        
+
         // BFS with priority queue (min heap)
         while (!heap_.empty()) {
             Cell c = heap_.top();
             heap_.pop();
             is_visited_[c.i][c.j] = true;
-            
+
             trap += fill(heights, c.i + 1, c.j, c.height); // Up
             trap += fill(heights, c.i - 1, c.j, c.height); // Down
             trap += fill(heights, c.i, c.j + 1, c.height); // Right
             trap += fill(heights, c.i, c.j - 1, c.height); // Left
         }
-        
+
         return trap;
     }
-    
+
     int fill(vector<vector<int>>& heights, int i, int j, int height) {
         // Out of border.
         if ( i < 0 || i >= m_ || j < 0 || j >= n_) {
             return 0;
         }
-        
+
         // Fill unvisited cell.
         if (!is_visited_[i][j]) {
             is_visited_[i][j] = true; // Marked as visited.
             heap_.emplace(Cell{i, j, max(height, heights[i][j])});
             return max(0, height - heights[i][j]); // Fill in the gap.
         }
-        
+
         return 0;
     }
-    
+
 private:
     int m_;
     int n_;
@@ -86,7 +86,7 @@ public:
         int j;
         int height;
     };
-    
+
     /**
      * @param heights: a matrix of integers
      * @return: an integer
@@ -96,11 +96,11 @@ public:
         const int n = heights[0].size();
         int trap = 0;
         vector<vector<bool>> is_visited(m, vector<bool>(n, false));
-        
+
         // Use min heap to get the lowerest Cell.
         auto comp = [](const Cell& a, const Cell& b ) { return a.height > b.height; };
         priority_queue<Cell , vector<Cell>, decltype(comp)> heap(comp);
-        
+
         // Put the Cells on the border into min heap.
         for (int i = 0; i < m; ++i) {
             heap.emplace(Cell{i, 0, heights[i][0]});
@@ -110,14 +110,14 @@ public:
             heap.emplace(Cell{0, j, heights[0][j]});
             heap.emplace(Cell{m - 1, j, heights[m - 1][j]});
         }
-        
+
         // BFS with priority queue (min heap)
         while (!heap.empty()) {
             // Get the lowest Cell.
             Cell c = heap.top();
             heap.pop();
             is_visited[c.i][c.j] = true;
-            
+
             // Up
             if (c.i + 1 < m && !is_visited[c.i + 1][c.j]) {
                 is_visited[c.i + 1][c.j] = true;
@@ -147,7 +147,7 @@ public:
                                                     heights[c.i][c.j - 1])});
             }
         }
-        
+
         return trap;
     }
 };

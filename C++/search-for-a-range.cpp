@@ -28,13 +28,13 @@ public:
     vector<int> searchRange(vector<int> &A, int target) {
         const int begin = lower_bound(A, target);
         const int end = upper_bound(A, target);
-        
+
         if (begin < A.size() && A[begin] == target)
             return {begin, end - 1};
-        
+
         return {-1, -1};
     }
-    
+
 private:
     int lower_bound(vector<int> &A, int target) {
         int left = 0;
@@ -50,7 +50,7 @@ private:
         }
         return left;
     }
-    
+
     int upper_bound(vector<int> &A, int target) {
         int left = 0;
         int right = A.size();

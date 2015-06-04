@@ -25,7 +25,7 @@ public:
         ListNode *dummy_larger = new ListNode(INT_MIN);
         ListNode *smaller = dummy_smaller;
         ListNode *larger = dummy_larger;
-        
+
         while (head) {
             if (head->val < x) {
                 smaller->next = head;
@@ -38,7 +38,7 @@ public:
         }
         smaller->next = dummy_larger->next;
         larger->next = nullptr;
-        
+
         return dummy_smaller->next;
     }
 };

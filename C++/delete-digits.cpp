@@ -22,12 +22,12 @@ public:
      */
     string DeleteDigits(string A, int k) {
         const auto len = A.size();
-        
+
         // Handle boundary case
         if (len == k) {
             return "0";
         }
-        
+
         // If a digit is greater than next one, delete it.
         stack<char> s;
         for (auto i = 0; i < len; ++i) {
@@ -37,13 +37,13 @@ public:
             }
             s.emplace(A[i]);
         }
-        
+
         // If all digits are increasingly sorted, delete last.
         while (k > 0) {
             s.pop();
             --k;
         }
-        
+
         // Assemble the answer in reverse order
         string ans;
         while (!s.empty()) {
@@ -51,17 +51,17 @@ public:
             s.pop();
         }
         reverse(ans.begin(), ans.end());
-        
+
         // Strip all leading '0'
         auto i = 0;
         for (; i < ans.length() && ans[i] == '0'; ++i);
         ans = ans.substr(i);
-        
+
         // Handle boundary case
         if (ans.length() == 0) {
             return "0";
         }
-        
+
         return ans;
     }
 };
@@ -78,12 +78,12 @@ public:
      */
     string DeleteDigits(string A, int k) {
         const auto len = A.size();
-        
+
         // Handle boundary case
         if (len == k) {
             return "0";
         }
-        
+
         // If a digit is greater than next one, delete it.
         int i = 0;
         while (i + 1 <= len && k > 0) {
@@ -95,12 +95,12 @@ public:
                 ++i;
             }
         }
-        
+
         // If all digits are increasingly sorted, delete last.
         if (k > 0) {
             A = A.substr(0, A.length() - k);
         }
-        
+
         // Strip all leading '0'
         if (A.length() > 0 && A[0] == '0') {
             size_t pos = A.find_first_not_of("0");
@@ -108,12 +108,12 @@ public:
                 A = A.substr(A.find_first_not_of("0"));
             }
         }
-        
+
         // Handle boundary case
         if (A.length() == 0) {
             return "0";
         }
-        
+
         return A;
     }
 };

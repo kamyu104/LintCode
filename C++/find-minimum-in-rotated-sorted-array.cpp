@@ -10,7 +10,7 @@ public:
     int findMin(vector<int> &num) {
         int left = 0;
         int right = num.size() - 1;
-        
+
         // Find min left s.t. num[left] < num[left'].
         while (left < right && num[left] >= num[right]) {
             int mid = left + (right - left) / 2;
@@ -20,7 +20,7 @@ public:
                 left = mid + 1;
             }
         }
-        
+
         return num[left];
     }
 };

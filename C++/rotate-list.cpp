@@ -19,7 +19,7 @@ public:
     ListNode *rotateRight(ListNode *head, int k) {
         ListNode *dummy_head = new ListNode(INT_MIN);
         dummy_head->next = head;
-        
+
         // Get length of the list.
         ListNode *cur = dummy_head;
         int len = 0;
@@ -34,7 +34,7 @@ public:
         if (k == 0) {
             return head;
         }
-        
+
         // Find the position to split.
         ListNode *slow = dummy_head;
         ListNode *fast = dummy_head;
@@ -46,11 +46,11 @@ public:
             fast = fast->next;
             slow = slow->next;
         }
-        
+
         dummy_head->next = slow->next; // New head.
         slow->next = nullptr; // Split
         fast->next = head; // Link.
-        
+
         return dummy_head->next;
     }
 };

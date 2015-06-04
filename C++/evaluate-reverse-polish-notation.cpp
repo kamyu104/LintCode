@@ -34,7 +34,7 @@ public:
         }
         return stoi(s.top());
     }
-    
+
     bool is_operator(const string &op) {
         return op.length() == 1 && string("+-*/").find(op) != string::npos;
     }

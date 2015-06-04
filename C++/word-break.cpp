@@ -12,7 +12,7 @@ public:
         if (n < 1) {
             return true;
         }
-        
+
         // Filter out impossible string which alphabet set is not covered by dict.
         unordered_set<char> chrs;
         for (const auto& word : dict) {
@@ -24,7 +24,7 @@ public:
             if (chrs.find(c) == chrs.end())
                 return false;
         }
-        
+
         // DP
         vector<bool> canBreak(n, false);
         for (int i = 0; i < n; ++i) {
@@ -35,7 +35,7 @@ public:
                 }
             }
         }
-        
+
         return canBreak[n - 1];
     }
 };

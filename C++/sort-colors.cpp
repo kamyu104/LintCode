@@ -11,7 +11,7 @@ public:
         int i = 0;
         int last_zero = -1;
         int first_two = nums.size();
-        
+
         while (i < first_two) {
             if (nums[i] == 2) {
                 swap(nums[i], nums[--first_two]);

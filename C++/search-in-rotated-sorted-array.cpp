@@ -11,7 +11,7 @@ public:
     int search(vector<int> &A, int target) {
         int left = 0;
         int right = A.size() - 1;
-        
+
         while (left <= right) {
             int mid = left + (right - left) / 2;
             if (A[mid] == target) {
@@ -31,7 +31,7 @@ public:
                 }
             }
         }
-        
+
         return -1;
     }
 };
@@ -46,7 +46,7 @@ public:
     int search(vector<int> &A, int target) {
         int left = 0;
         int right = A.size();
-        
+
         while (left < right) {
             int mid = left + (right - left) / 2;
             if (A[mid] == target) {
@@ -66,7 +66,7 @@ public:
                 }
             }
         }
-        
+
         return -1;
     }
 };

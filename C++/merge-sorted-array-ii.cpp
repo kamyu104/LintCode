@@ -11,10 +11,10 @@ public:
      */
     vector<int> mergeSortedArray(vector<int> &A, vector<int> &B) {
         vector<int> C(A.size() + B.size());
-        
+
         int i = 0;
         int j = 0;
-        
+
         // Stop comparing while one of array ends.
         // Smaller one has high possibility to end first.
         while (i < A.size() && j < B.size()) {
@@ -26,14 +26,14 @@ public:
                 ++i;
             }
         }
-        
+
         // Copy the remaining elements to the new array.
         if (i < A.size()) {
             copy(A.cbegin() + i, A.cend(), C.begin() + i + j);
         } else if (j < B.size()) {
             copy(B.cbegin() + j, B.cend(), C.begin() + i + j);
         }
-        
+
         return C;
     }
 };

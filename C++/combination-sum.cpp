@@ -15,14 +15,14 @@ public:
         combinationSumHelper(num, target, 0, v, ans);
         return ans;
     }
-    
+
 private:
     void combinationSumHelper(vector<int>& num, int gap, int begin, vector<int>& v,vector<vector<int> > &ans) {
         if (gap == 0) {
             ans.emplace_back(v);
             return;
         }
-        
+
         for (size_t i = begin; i < num.size(); i++) {
             if (gap < num[i]) {
                 return;

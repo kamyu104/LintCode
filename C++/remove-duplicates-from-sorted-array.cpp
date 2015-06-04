@@ -11,10 +11,10 @@ public:
         if (nums.empty()) {
             return 0;
         }
-        
+
         int left = 0;
         int right = 1;
-        
+
         while (right < nums.size()) {
             if (nums[left] != nums[right]) {
                 ++left;
@@ -22,7 +22,7 @@ public:
             }
             ++right;
         }
-        
+
         return left + 1;
     }
 };

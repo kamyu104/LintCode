@@ -20,16 +20,16 @@ private:
             start += 2;
             return false;
         }
-        
+
         num = 0;
         while (data[start] != ' ') {
             num = num * 10 + data[start++] - '0';
         }
-        
+
         start++;
         return true;
     }
-    
+
     void deserializeHelper(string data, int &start,  TreeNode *&root) {
         int num;
         if (!getNumber(data, start, num)) {
@@ -42,7 +42,7 @@ private:
             deserializeHelper(data, start, root->right);
         }
     }
-    
+
     void serializeHelper(TreeNode *root, string &prev) {
         if (!root)  {
             prev += "# ";
@@ -54,9 +54,9 @@ private:
             serializeHelper(root->right, prev);
         }
     }
-    
+
 public:
-    
+
     /**
      * This method will be invoked first, you should design your own algorithm
      * to serialize a binary tree which denote by a root node to a string which
@@ -67,7 +67,7 @@ public:
         serializeHelper(root, output);
         return output;
     }
-    
+
     /**
      * This method will be invoked second, the argument data is what exactly
      * you serialized at method "serialize", that means the data is not given by

@@ -24,18 +24,18 @@
 class Solution {
 public:
     typedef enum {START, END} Endpoint;
-    
+
     struct Point {
         Endpoint type;
         int time;
     };
-    
+
     struct Compare {
         bool operator() (const Point&a, const Point&b) {
             return a.time != b.time ? a.time < b.time : a.type > b.type;
         }
     };
-    
+
     /**
      * @param intervals: An interval array
      * @return: Count of airplanes are in the sky.
@@ -43,14 +43,14 @@ public:
     int countOfAirplanes(vector<Interval> &airplanes) {
         int max_planes = 0;
         int planes = 0;
-        
+
         vector<Point> points;
         for (const auto& i : airplanes) {
             points.emplace_back(Point{START, i.start});
             points.emplace_back(Point{END, i.end});
         }
         sort(points.begin(), points.end(), Compare());
-        
+
         for (const auto& i : points) {
             if (i.type == START) {
                 ++planes;
@@ -79,7 +79,7 @@ public:
         int max_planes = 0;
         multiset<int> bst;
         sort(airplanes.begin(), airplanes.end(), Compare());
-        
+
         for (const auto& i : airplanes) {
             bst.insert(i.end);
             while (*bst.begin() <= i.start) {
@@ -109,7 +109,7 @@ public:
         int max_planes = 0;
         priority_queue<int, vector<int>, greater<int>> min_heap;
         sort(airplanes.begin(), airplanes.end(), Compare());
-        
+
         for (const auto& i : airplanes) {
             min_heap.emplace(i.end);
             while (min_heap.top() <= i.start) {

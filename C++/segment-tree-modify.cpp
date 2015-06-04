@@ -27,19 +27,19 @@ public:
         if (root == nullptr || root->start > index || root->end < index) {
             return;
         }
-        
+
         // Change the node's value with [index, index] to the new given value.
         if (root->start == index && root->end == index) {
             root->max = value;
             return;
         }
-        
+
         modify(root->left, index, value);
         modify(root->right, index, value);
-        
+
         int left_max = root->left != nullptr? root->left->max : INT_MIN;
         int right_max = root->right != nullptr? root->right->max : INT_MIN;
-        
+
         // Update max.
         root->max = max(left_max, right_max);
     }

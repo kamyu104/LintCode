@@ -12,13 +12,13 @@ public:
         numbersByRecursionHelper(0, n, result);
         return result;
     }
-    
+
     // Construct the numbers by the current digit count.
     void numbersByRecursionHelper(int depth, int n, vector<int>& result) {
         if (depth == n) {
             return;
         }
-        
+
         if (depth == 0) { // Initiate the result.
             for (size_t d = 1; d <= 9; ++d) {
                 result.emplace_back(d);
@@ -35,5 +35,5 @@ public:
         // Construct the numbers in the next depth.
         numbersByRecursionHelper(depth + 1, n, result);
     }
-    
+
 };

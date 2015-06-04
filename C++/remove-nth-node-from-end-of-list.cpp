@@ -25,23 +25,23 @@ public:
         dummy->next = head;
         ListNode *slow = dummy;
         ListNode *fast = dummy;
-        
+
         // fast is n-step ahead.
         while (n > 0) {
             fast = fast->next;
             --n;
         }
-        
+
         // When fast reaches the end, slow must be nth to last node.
         while (fast->next != nullptr) {
             slow = slow->next;
             fast = fast->next;
         }
-        
+
         ListNode *node_to_delete = slow->next;
         slow->next = slow->next->next;
         delete node_to_delete;
-        
+
         return dummy->next;
     }
 };

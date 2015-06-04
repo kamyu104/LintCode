@@ -8,7 +8,7 @@ public:
      */
     void sortLetters(string &letters) {
         int left = 0, right = letters.size() - 1;
-        
+
         while (left < right) {
             if (isupper(letters[left])) {
                 swap(letters[left], letters[right]);

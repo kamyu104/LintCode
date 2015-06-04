@@ -23,7 +23,7 @@ public:
             }
             reachable = max(reachable, i + A[i]);
         }
-        
+
         return jump_count;
     }
 };

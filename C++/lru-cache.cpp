@@ -7,7 +7,7 @@ class LRUCache {
 public:
     LRUCache(int capacity) : capa_(capacity) {
     }
-    
+
     int get(int key) {
         auto it = map_.find(key);
         if (it != map_.end()) {
@@ -20,7 +20,7 @@ public:
             return -1;
         }
     }
-    
+
     void set(int key, int value) {
         auto it = map_.find(key);
         // It key exists, update it.
@@ -36,12 +36,12 @@ public:
             map_[key]=list_.begin();
         }
     }
-    
+
 private:
     list<pair<int, int>> list_; // key, value
     unordered_map<int, list< pair<int, int>>::iterator> map_; // key, list iterator
     int capa_;
-    
+
     // Update (key, iterator of (key, value)) pair
     void update(unordered_map<int, list<pair<int, int>>::iterator>::iterator it, int value) {
         auto l_it = it->second;

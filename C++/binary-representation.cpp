@@ -12,18 +12,18 @@ public:
         double dec_part = stod(n.substr(n.find('.')));
         string int_str = "";
         string dec_str = "";
-        
+
         if (int_part == 0) {
             int_str.push_back('0');
         }
-        
+
         while (int_part > 0) {
             int c = int_part % 2;
             int_str.push_back('0' + c);
             int_part = int_part >> 1;
         }
         reverse(int_str.begin(), int_str.end());
-        
+
         while (dec_part > 0.0) {
             if (dec_str.length() > 32) {
                 return "ERROR";

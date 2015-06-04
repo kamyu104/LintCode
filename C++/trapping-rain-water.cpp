@@ -12,12 +12,12 @@ public:
         if (heights.empty()) {
             return 0;
         }
-        
+
         int i = 0, j = heights.size() - 1;
         int left_height = heights[0];
         int right_height = heights[heights.size() - 1];
         int trap = 0;
-        
+
         while (i < j) {
             if (left_height < right_height) {
                 ++i;
@@ -34,7 +34,7 @@ public:
                 right_height = max(right_height, heights[j]);
             }
         }
-        
+
         return trap;
     }
 };
@@ -48,7 +48,7 @@ public:
      */
     int trapRainWater(vector<int> &heights) {
         int trap = 0;
-        
+
         // Find the top.
         int top = 0;
         for (int i = 0; i < heights.size(); ++i) {
@@ -56,7 +56,7 @@ public:
                 top = i;
             }
         }
-        
+
         // Count trapped water in the left of top.
         int left_second_top = 0;
         for (int i = 0; i < top; ++i) {
@@ -65,7 +65,7 @@ public:
             }
             trap += heights[left_second_top] - heights[i];
         }
-        
+
         // Count trapped water in the right of top.
         int right_second_top = heights.size() - 1;
         for (int i = heights.size() - 1; i > top; --i) {
@@ -74,7 +74,7 @@ public:
             }
             trap += heights[right_second_top] - heights[i];
         }
-        
+
         return trap;
     }
 };

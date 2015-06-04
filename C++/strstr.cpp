@@ -15,13 +15,13 @@ public:
             if (tgt.empty()) {
                 return 0;
             }
-            
+
             return KMP(src, tgt);
         }
         return -1;
     }
-    
-    
+
+
     int KMP(const string& text, const string& pattern) {
         const vector<int> prefix = getPrefix(pattern);
         int j = -1;
@@ -38,7 +38,7 @@ public:
         }
         return -1;
     }
-    
+
     vector<int> getPrefix(const string& pattern) {
         vector<int> prefix(pattern.length(), -1);
         int j = -1;

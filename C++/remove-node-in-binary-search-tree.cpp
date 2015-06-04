@@ -43,7 +43,7 @@ public:
         }
         return root;
     }
-    
+
     // Find the min node of the binary search tree.
     TreeNode* findMin(TreeNode* node) {
         while (node != nullptr && node->left != nullptr) {
@@ -51,27 +51,27 @@ public:
         }
         return node;
     }
-    
+
     // Delete the min node of the binary search tree.
     TreeNode* deleteMin(TreeNode* node) {
         // No left child.
         if (node->left == nullptr) {
             return node->right;
         }
-        
+
         TreeNode *root = node;
-        
+
         // Find the parent of the min.
         TreeNode* parent;
         while (node != nullptr && node->left != nullptr) {
             parent = node;
             node = node->left;
         }
-        
+
         // Cut the parent relationship to the min,
         // and take the right child of the min.
         parent->left = node->right;
-        
+
         return root;
     }
 };

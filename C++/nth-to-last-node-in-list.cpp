@@ -23,19 +23,19 @@ public:
     ListNode *nthToLast(ListNode *head, int n) {
         ListNode *slow = head;
         ListNode *fast = head;
-        
+
         // fast is n-step ahead.
         while (n > 0) {
             fast = fast->next;
             --n;
         }
-        
+
         // When fast reaches the end, slow must be nth to last node.
         while (fast != nullptr) {
             slow = slow->next;
             fast = fast->next;
         }
-        
+
         return slow;
     }
 };

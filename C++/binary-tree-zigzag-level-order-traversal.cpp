@@ -27,11 +27,11 @@ public:
         vector<vector<int>> output;
         queue<TreeNode *> q;
         vector<int> cur_level;
-        
+
         if (root == nullptr) {
             return output;
         }
-        
+
         q.emplace(root);
         int cur_level_size = 1;
         while (!q.empty()) {
@@ -39,17 +39,17 @@ public:
             TreeNode *n = q.front();
             q.pop();
             --cur_level_size;
-            
+
             // Append to the current level.
             cur_level.emplace_back(n->val);
-            
+
             if (n->left) {
                 q.emplace(n->left);
             }
             if (n->right) {
                 q.emplace(n->right);
             }
-            
+
             // Current level comes to the end.
             // Goes to the next level.
             if (cur_level_size == 0) {

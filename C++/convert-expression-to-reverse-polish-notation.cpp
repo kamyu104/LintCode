@@ -12,7 +12,7 @@ public:
         infixToPostfix(expression, output);
         return output;
     }
-    
+
     // Convert Infix to Postfix Expression.
     void infixToPostfix(vector<string>& infix, vector<string>& postfix) {
         stack<string> s;
@@ -43,7 +43,7 @@ public:
             s.pop();
         }
     }
-    
+
     int precedence(string x) {
         if (x == "(") {
             return 0;

@@ -14,14 +14,14 @@ public:
         }
         return combination(2 * n, n) - combination(2 * n, n - 1);
     }
-    
+
     int combination(int  n, int k) {
         long long count = 1;
         // C(n, k) = (n) / 1 * (n - 1) / 2 ... * (n - k + 1) / k
         for (int i = 1; i <= k; ++i, --n) {
             count = count * n / i;
         }
-        
+
         return count;
     }
 };

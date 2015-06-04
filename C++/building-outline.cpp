@@ -5,12 +5,12 @@
 class Solution {
 public:
     enum {start, end, height} ;
-    
+
     struct Endpoint {
         int height;
         bool isStart;
     };
-    
+
     /**
      * @param buildings: A list of lists of integers
      * @return: Find the outline of those buildings
@@ -41,7 +41,7 @@ public:
                     }
                 }
             }
- 
+
             if (height_to_count.empty() || curr_max != height_to_count.crbegin()->first) {
                 if (curr_max > 0) {
                     res.emplace_back(move(vector<int>{curr_start, point, curr_max}));
@@ -67,7 +67,7 @@ public:
     vector<vector<int> > buildingOutline(vector<vector<int> > &buildings) {
         return ComputeSkylineInInterval(buildings, 0, buildings.size());
     }
-    
+
     // Divide and Conquer.
     vector<vector<int>> ComputeSkylineInInterval(const vector<vector<int>>& buildings,
                                                  int left_endpoint, int right_endpoint) {
@@ -80,12 +80,12 @@ public:
         auto right_skyline = move(ComputeSkylineInInterval(buildings, mid, right_endpoint));
         return MergeSkylines(left_skyline, right_skyline);
     }
-    
+
     // Merge Sort
     vector<vector<int>> MergeSkylines(vector<vector<int>>& left_skyline, vector<vector<int>>& right_skyline) {
         int i = 0, j = 0;
         vector<vector<int>> merged;
-        
+
         while (i < left_skyline.size() && j < right_skyline.size()) {
             if (left_skyline[i][end] < right_skyline[j][start]) {
                 merged.emplace_back(move(left_skyline[i++]));
@@ -99,13 +99,13 @@ public:
                                        left_skyline[i], i);
             }
         }
-        
+
         // Insert the remaining skylines.
         merged.insert(merged.end(), left_skyline.begin() + i, left_skyline.end());
         merged.insert(merged.end(), right_skyline.begin() + j, right_skyline.end());
         return merged;
     }
-    
+
     // a[start] <= b[start]
     void MergeIntersectSkylines(vector<vector<int>>& merged, vector<int>& a, int& a_idx,
                                 vector<int>& b, int& b_idx) {

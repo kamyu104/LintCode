@@ -11,7 +11,7 @@ public:
     int searchInsert(vector<int> &A, int target) {
         int left = 0;
         int right = A.size() - 1;
-        
+
         // First min of left s.t. A[left] >= target
         while (left <= right) {
             int mid = left + (right -left) / 2;
@@ -21,7 +21,7 @@ public:
                 left = mid + 1;
             }
         }
-        
+
         return left;
     }
 };
@@ -36,7 +36,7 @@ public:
     int searchInsert(vector<int> &A, int target) {
         int left = 0;
         int right = A.size();
-        
+
         // First min of left s.t. A[left] >= target
         while (left < right) {
             int mid = left + (right -left) / 2;
@@ -46,7 +46,7 @@ public:
                 left = mid + 1;
             }
         }
-        
+
         return left;
     }
 };
@@ -61,7 +61,7 @@ public:
     int searchInsert(vector<int> &A, int target) {
         int left = -1;
         int right = A.size();
-        
+
         // First min of right s.t. A[right] >= target
         while (right - left > 1) {
             int mid = left + (right -left) / 2;
@@ -71,7 +71,7 @@ public:
                 left = mid;
             }
         }
-        
+
         return right;
     }
 };

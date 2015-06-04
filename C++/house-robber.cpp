@@ -14,11 +14,11 @@ public:
         if (nums.size() == 1) {
             return nums[0];
         }
-        
+
         return robRange(nums, 0, nums.size());
-        
+
     }
-    
+
     long long robRange(const vector<int>& nums, const int start, const int end) {
         long long num_i = nums[start], num_i_1 = 0, num_i_2 = 0;
         for (int i = start + 1; i < end; ++i) {

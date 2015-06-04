@@ -22,7 +22,7 @@ public:
     ListNode *mergeKLists(vector<ListNode *> &lists) {
         ListNode dummy(INT_MIN);
         ListNode *cur = &dummy;
-        
+
         // Use min heap to keep the smallest node of each list
         priority_queue<ListNode *, vector<ListNode *>, Compare> min_heap;
         for (const auto& n : lists) {
@@ -30,7 +30,7 @@ public:
                 min_heap.emplace(n);
             }
         }
-        
+
         while (!min_heap.empty()) {
             // Get min of k lists.
             ListNode *node = min_heap.top();
@@ -41,10 +41,10 @@ public:
                 min_heap.emplace(node->next);
             }
         }
-        
+
         return dummy.next;
     }
-    
+
     struct Compare {
         bool operator() (const ListNode *a, const ListNode *b) {
             return a->val > b->val;

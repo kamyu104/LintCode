@@ -64,7 +64,7 @@ public:
         if (!root) {
             return {};
         }
-        
+
         stack<TreeNode *> s;
         s.emplace(root);
         vector<int> res;

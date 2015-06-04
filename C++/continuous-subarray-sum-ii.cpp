@@ -12,7 +12,7 @@ public:
         if (A.empty()) {
             return {-1, -1};
         }
-        
+
         // Calculates the circular / non-circular solution.
         vector<int> circular(2), non_circular(2);
         if (findMaxSubarray(A, &non_circular) >= 
@@ -22,7 +22,7 @@ public:
             return circular;
         }
     }
-    
+
     // Calculates the non-circular solution.
     int findMaxSubarray(const vector<int>& A, vector<int> *max_i_j) {
         int curr_sum = A[0];
@@ -32,17 +32,17 @@ public:
                 i = j;
                 curr_sum = 0;
             }
-            
+
             curr_sum += A[j];
             if (curr_sum > max_sum) {
                 max_sum = curr_sum;
                 (*max_i_j)[0] = i, (*max_i_j)[1] = j;
             }
         }
-        
+
         return max_sum;
     }
-    
+
     // Calculates the solution which is circular.
     int findCircularMaxSubarray(const vector<int>& A, vector<int> *max_i_j) {
         // Max subarray sum starts at index 0 and ends at or before index i.
@@ -61,7 +61,7 @@ public:
                 max_j[j] = max_j[j - 1];
             }
         }
-        
+
         // Max subarray sum starts at index i + 1 and ends at the last element.
         vector<int> max_sum_to_end(A.size());
         vector<int> max_i(A.size());
@@ -78,7 +78,7 @@ public:
                 max_i[i] = max_i[i + 1];
             }
         }
-        
+
         // Calculates the max subarray which is circular.
         int circular_max = INT_MIN;
         for (int i = 0; i < A.size(); ++i) {
@@ -87,7 +87,7 @@ public:
                 (*max_i_j)[0] = max_i[i], (*max_i_j)[1] = max_j[i];
             }
         }
-        
+
         return circular_max;
     }
 };

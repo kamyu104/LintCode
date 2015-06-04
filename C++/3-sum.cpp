@@ -10,10 +10,10 @@ public:
     vector<vector<int> > threeSum(vector<int> &nums) {
         vector<vector<int>> ans;
         const int target = 0;
-        
+
         // Make nums in increasing order. Time: O(nlogn)
         sort(nums.begin(), nums.end());
-        
+
         for (int i = 0; i < nums.size() - 2; ++i) {
             // Skip duplicated.
             if (i > 0 && nums[i] == nums[i - 1]) {
@@ -21,7 +21,7 @@ public:
             }
             int j = i + 1;
             int k = nums.size() - 1;
-            
+
             while (j < k) { // Time: O(n) for each i.
                 if (j - 1 > i  && nums[j] == nums[j - 1]) { // Skip duplicated.
                     ++j;
@@ -29,7 +29,7 @@ public:
                     --k;
                 } else {
                     const auto sum = nums[i] + nums[j] + nums[k];
-                    
+
                     if (sum > target) { // Should decrease sum.
                         --k;
                     } else if (sum < target) { // Should increase sum.
@@ -42,7 +42,7 @@ public:
                 }
             }
         }
-        
+
         return ans;
     }
 };

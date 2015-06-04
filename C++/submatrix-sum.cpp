@@ -14,7 +14,7 @@ public:
             return vertical_search(matrix);
         }
     }
-    
+
     vector<vector<int>> horizontal_search(const vector<vector<int>>& matrix) {
         for (int up = 0; up < matrix.size(); ++up) {
             vector<int> temp_row(matrix[0].size());
@@ -24,7 +24,7 @@ public:
                 for (int j = 0; j < matrix[0].size(); ++j) {
                     temp_row[j] += matrix[down][j];
                 }
- 
+
                 // Find the subarray which equals to zero in temp_row[].
                 const auto& left_right = subarraySum(temp_row);
                 if (!left_right.empty()) {
@@ -34,7 +34,7 @@ public:
         }
         return {{-1, -1}, {-1, -1}};
     }
-    
+
     vector<vector<int>> vertical_search(const vector<vector<int>>& matrix) {
         for (int left = 0; left < matrix[0].size(); ++left) {
             vector<int> temp_col(matrix.size());
@@ -44,7 +44,7 @@ public:
                 for (int i = 0; i < matrix.size(); ++i) {
                     temp_col[i] += matrix[i][right];
                 }
- 
+
                 // Find the subarray which equals to zero in temp_col[].
                 const auto& up_down = subarraySum(temp_col);
                 if (!up_down.empty()) {
@@ -54,7 +54,7 @@ public:
         }
         return {{-1, -1}, {-1, -1}};
     }
-    
+
     vector<int> subarraySum(const vector<int>& A) {
         unordered_map<int, int> lookup;
         lookup[0] = -1;

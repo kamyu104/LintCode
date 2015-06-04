@@ -24,12 +24,12 @@ public:
     Solution(TreeNode *root) {
         curr = root;
     }
-    
+
     //@return: True if there has next node, or false
     bool hasNext() {
         return !s.empty() || curr != nullptr;
     }
-    
+
     //@return: return next node
     TreeNode* next() {
         // Go to left most descendant.
@@ -39,10 +39,10 @@ public:
         }
         curr = s.top(); // Left most node.
         s.pop();
-        
+
         TreeNode *node = curr;
         curr = curr->right; // Visit right child.
-        
+
         return node;
     }
 private:

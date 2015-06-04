@@ -22,15 +22,15 @@ public:
     bool isBalanced(TreeNode *root) {
         return isBalancedRecu(root).first;
     }
-    
+
     pair<bool, int> isBalancedRecu(TreeNode *root) {
         if (root == nullptr) {
             return {true, 0};
         }
-        
+
         pair<bool, int> left = isBalancedRecu(root->left);
         pair<bool, int> right =  isBalancedRecu(root->right);
-        
+
         if (left.first && right.first && abs(left.second - right.second) <= 1) {
             return {true, max(left.second, right.second) + 1};
         }

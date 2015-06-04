@@ -19,7 +19,7 @@ public:
         }
         return string("/").append(move(join(names, '/')));
     }
-    
+
     // Split string by delimitor.
     vector<string> split(const string& s, const char delim) {
         vector<string> tokens;
@@ -30,7 +30,7 @@ public:
         }
         return tokens;
     }
-    
+
     // Join strings with delimitor.
     string join(const vector<string>& names, const char& delim) {
         string s;

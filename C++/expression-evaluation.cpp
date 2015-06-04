@@ -15,7 +15,7 @@ public:
         infixToPostfix(expression, postfix);
         return evaluatePostfixExpression(postfix);
     }
-    
+
     // Evaluate Postfix Expression.
     int evaluatePostfixExpression(vector<string> &postfix) {
         if (postfix.empty()) {
@@ -44,11 +44,11 @@ public:
         }
         return stoi(s.top());
     }
-    
+
     bool is_operator(const string &op) {
         return op.length() == 1 && string("+-*/").find(op) != string::npos;
     }
-    
+
     // Convert Infix to Postfix Expression.
     void infixToPostfix(vector<string>& infix, vector<string>& postfix) {
         stack<string> s;
@@ -84,7 +84,7 @@ public:
             s.pop();
         }
     }
-    
+
     int precedence(string x) {
         if (x == "(") { // The least precedence.
             return 0;

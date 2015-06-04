@@ -15,7 +15,7 @@ public:
             }
             reachable = max(reachable, i + A[i]);
         }
-        
+
         return true;
     }
 };

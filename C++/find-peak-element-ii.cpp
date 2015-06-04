@@ -14,7 +14,7 @@ public:
         while (upper < down && left < right) {
             int height = down - upper + 1;
             int width = right - left + 1;
-            
+
             // T(m, n) = T(m, n / 2) + O(m) = T(m / 2, n / 2) + O(m) + O(n / 2) = ... = O(2m) + O(2n) = O(max(m, n))
             if (width > height) { // Vertical split.
                 int mid_j = left + (right - left) / 2;
@@ -55,7 +55,7 @@ public:
                     return {max_i, max_j};
                 }
             } 
-            
+
         }
         return {-1, -1}; // Not found.
     }
@@ -77,11 +77,11 @@ public:
         if (i < 1 || i >= A.size() - 1 || j < 1 || j >= A[0].size() - 1) {
             return false;
         }
-        
+
         return A[i][j] > A[i][j - 1] && A[i][j] > A[i - 1][j] &&
                A[i][j] > A[i][j + 1] && A[i][j] > A[i + 1][j];
     }
-    
+
     vector<int> findPeakII(vector<vector<int> > A) {
         int i = 1, j = 1;
         while (i < A.size() - 1 && j < A[0].size() - 1) {

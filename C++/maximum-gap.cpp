@@ -11,7 +11,7 @@ public:
         if (nums.size() < 2) {
             return 0;
         }
-        
+
         // Init bucket.
         int max_val = *max_element(nums.cbegin(), nums.cend());
         int min_val = *min_element(nums.cbegin(), nums.cend());
@@ -32,7 +32,7 @@ public:
             bucket[i][MAX] = max(!bucket[i][MAX] ? INT_MIN :
                                                    bucket[i][MAX], n);
         }
-        
+
         // Count each bucket gap between the first and the last bucket.
         int max_gap = 0, pre_bucket_max = min_val;
         for (auto& kvp : bucket) {
@@ -41,7 +41,7 @@ public:
         }
         // Count the last bucket.
         max_gap = max(max_gap, max_val - pre_bucket_max); 
-        
+
         return max_gap;
     }
 };

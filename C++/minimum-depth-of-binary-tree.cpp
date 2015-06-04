@@ -23,7 +23,7 @@ public:
         if (root == nullptr) {
             return 0;
         }
-        
+
         // Both children exist.
         if (root->left != nullptr && root->right != nullptr) {
             return 1 + min(minDepth(root->left), minDepth(root->right));
