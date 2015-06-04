@@ -36,7 +36,7 @@ public:
                 }
             }
             if (cnt == target.size()) {  // If window meets the requirement.
-                while (expCnt[S[start]] == 0 ||    // Adjust left bound of window.
+                while (expCnt[S[start]] == 0 ||  // Adjust left bound of window.
                        curCnt[S[start]] > expCnt[S[start]]) {
                     --curCnt[S[start]];
                     ++start;
