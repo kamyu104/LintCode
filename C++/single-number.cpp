@@ -12,7 +12,7 @@ public:
         for (const auto& i : A) {
             single ^= i;
         }
-        
+
         return single;
     }
 };
