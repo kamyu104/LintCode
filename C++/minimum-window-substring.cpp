@@ -35,13 +35,14 @@ public:
                     ++cnt;
                 }
             }
-            if (cnt == target.size()) {  // If window meets the requirement
-                while (expCnt[S[start]] == 0 || curCnt[S[start]] > expCnt[S[start]]) {  // Adjust left bound of window
+            if (cnt == target.size()) {  // If window meets the requirement.
+                while (expCnt[S[start]] == 0 ||    // Adjust left bound of window.
+                       curCnt[S[start]] > expCnt[S[start]]) {
                     --curCnt[S[start]];
                     ++start;
                 }
 
-                if (min_width > i - start + 1) {  // Update minimum window
+                if (min_width > i - start + 1) {  // Update minimum window.
                     min_width = i - start + 1;
                     min_start = start;
                 }
