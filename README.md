@@ -1,9 +1,9 @@
 LintCode
 ======== 
 
-Up to date (2015-06-04), there are `237` problems on [LintCode Online Judge](https://lintcode.com/).
+Up to date (2015-06-05), there are `238` problems on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `237` problems.
+Here is the classification of all `238` problems.
 For extra problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -103,6 +103,7 @@ Algorithms
 |157|[Unique Characters](http://lintcode.com/en/problem/unique-characters/)|[C++](./C++/unique-characters.cpp)| _O(n)_ | _O(1)_ | Easy | CTCI | |
 |158|[Two Strings Are Anagrams](http://lintcode.com/en/problem/two-strings-are-anagrams/)|[C++](./C++/two-strings-are-anagrams.cpp)| _O(n)_ | _O(1)_ | Easy | | |
 |171|[Anagrams](http://lintcode.com/en/problem/anagrams/)|[C++](./C++/anagrams.cpp)| _O(n * klogk)_ | _O(m)_ | Easy | LeetCode, EPI | |
+|212|[Space Replacement](http://lintcode.com/en/problem/space-replacement/)|[C++](./C++/space-replacement.cpp)| _O(n)_ | _O(1)_ | Easy | | |
 |407|[Plus One](http://lintcode.com/en/problem/plus-one.cpp/)|[C++](./C++/plus-one.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
 |408|[Add Binary](http://lintcode.com/en/problem/add-binary/)|[C++](./C++/add-binary.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
 |415|[Valid Palindrome](http://lintcode.com/en/problem/valid-palindrome/)|[C++](./C++/valid-palindrome.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
