@@ -13,8 +13,7 @@ public:
             if (isupper(letters[left])) {
                 swap(letters[left], letters[right]);
                 --right;
-            }
-            else {
+            } else {
                 ++left;
             }
         }
