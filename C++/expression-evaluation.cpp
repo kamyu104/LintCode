@@ -46,7 +46,6 @@ public:
         operands.pop();
         const string op = operators.top();
         operators.pop();
-
         if (op == "+") {
             operands.push(left + right);
         } else if (op == "-") {
