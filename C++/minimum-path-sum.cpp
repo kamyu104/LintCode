@@ -21,7 +21,7 @@ public:
             sum[i % 2][0] = sum[(i - 1) % 2][0] + grid[i][0];
             for (int j = 1; j < n; ++j) {
                 sum[i % 2][j] = min(sum[(i - 1) % 2][j], sum[i % 2][j - 1])
-                + grid[i][j];
+                                + grid[i][j];
             }
         }
 
