@@ -25,8 +25,7 @@ public:
                 ++count;
                 ++i;
                 --j;
-            }
-            else if (matrix[i][j] > target) {
+            } else if (matrix[i][j] > target) {
                 --j;
             } else {
                 ++i;
