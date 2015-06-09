@@ -27,12 +27,7 @@ public:
                 operators.emplace(expression[i]);
             } else if (expression[i] == "(") {
                 // operators at least one element, i.e. ")".
-                while (operators.top() == "*" ||
-                       operators.top() == "/") {
-                     compute(operands, operators);
-                }
-                while (operators.top() == "+" ||
-                       operators.top() == "-") {
+                while (operators.top() != ")") {
                     compute(operands, operators);
                 }
                 operators.pop();
