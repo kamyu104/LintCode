@@ -33,10 +33,6 @@ public:
                 operators.pop();
             }
         }
-        while (!operators.empty() && (operators.top() == "*" ||
-            operators.top() == "/")) {
-            compute(operands, operators);
-        }
         while (!operators.empty()) {
             compute(operands, operators);
         }
