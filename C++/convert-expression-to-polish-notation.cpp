@@ -17,8 +17,8 @@ public:
     void infixToPrefix(vector<string>& infix, vector<string>& prefix) {
         reverse(infix.begin(), infix.end());
         stack<string> s;
-        for (const auto& tok : infix) {
-            if (stoi(tok)) {
+        for (auto& tok : infix) {
+            if (atoi(tok.c_str())) {
                 prefix.emplace_back(tok);
             } else if (tok == ")") {
                 s.emplace(tok);
