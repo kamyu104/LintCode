@@ -17,7 +17,7 @@ public:
     }
 
     // Evaluate Postfix Expression.
-    int evaluatePostfixExpression(vector<string> &postfix) {
+    int evaluatePostfixExpression(const vector<string> &postfix) {
         if (postfix.empty()) {
             return 0;
         }
@@ -54,7 +54,7 @@ public:
         stack<string> s;
         for (auto tok : infix) {
             // Any number would be pushed into stack.
-            if (stoi(tok)) {
+            if (atoi(tok.c_str())) {
                 postfix.emplace_back(tok);
             } else if (tok == "(") {
                 s.emplace(tok);
