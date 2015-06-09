@@ -14,10 +14,10 @@ public:
     }
 
     // Convert Infix to Postfix Expression.
-    void infixToPostfix(vector<string>& infix, vector<string>& postfix) {
+    void infixToPostfix(const vector<string>& infix, vector<string>& postfix) {
         stack<string> s;
-        for (const auto& tok : infix) {
-            if (stoi(tok)) {
+        for (auto tok : infix) {
+            if (atoi(tok.c_str())) {
                 postfix.emplace_back(tok);
             } else if (tok == "(") {
                 s.emplace(tok);
