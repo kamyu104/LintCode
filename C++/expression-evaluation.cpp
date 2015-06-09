@@ -21,60 +21,52 @@ public:
             } else if (expression[i] == "+" || expression[i] == "-") {
                 while (!operators.empty() && (operators.top() == "*" ||
                        operators.top() == "/")) {
-                     multiplyDivide(operands, operators);
+                     compute(operands, operators);
                 }
                 operators.emplace(expression[i]);
             } else if (expression[i] == "(") {
                 // operators at least one element, i.e. ")".
                 while (operators.top() == "*" ||
                        operators.top() == "/") {
-                     multiplyDivide(operands, operators);
+                     compute(operands, operators);
                 }
                 while (operators.top() == "+" ||
                        operators.top() == "-") {
-                    plusMinus(operands, operators);
+                    compute(operands, operators);
                 }
                 operators.pop();
             }
         }
         while (!operators.empty() && (operators.top() == "*" ||
             operators.top() == "/")) {
-            multiplyDivide(operands, operators);
+            compute(operands, operators);
         }
         while (!operators.empty()) {
-            plusMinus(operands, operators);
+            compute(operands, operators);
         }
         return operands.top();
     }
 
-    void multiplyDivide(stack<int>& operands, stack<string>& operators) {
+    void compute(stack<int>& operands, stack<string>& operators) {
         const int left = operands.top();
         operands.pop();
         const int right = operands.top();
         operands.pop();
         const string op = operators.top();
         operators.pop();
-        if (op == "*") {
+
+        if (op == "+") {
+            operands.push(left + right);
+        } else if (op == "-") {
+            operands.push(left - right);
+        } else if (op == "*") {
             operands.push(left * right);
         } else if (op == "/") {
             operands.push(left / right);
         }
     }
-
-    void plusMinus(stack<int>& operands, stack<string>& operators) {
-        const int left = operands.top();
-        operands.pop();
-        const int right = operands.top();
-        operands.pop();
-        const string op = operators.top();
-        operators.pop();
-        if (op == "+") {
-            operands.push(left + right);
-        } else if (op == "-") {
-            operands.push(left - right);
-        }
-    }
 };
+
 
 // Time:  O(n)
 // Space: O(n)
