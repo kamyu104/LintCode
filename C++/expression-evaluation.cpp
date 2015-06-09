@@ -8,6 +8,83 @@ public:
      * @return: an integer
      */
     int evaluateExpression(vector<string> &expression) {
+        stack<int> operands;
+        stack<string> operators;
+        if (expression.empty()) {
+            return 0;
+        }
+        for (int i = expression.size() - 1; i >= 0; --i) {
+            if (isdigit(expression[i][0])) {
+                operands.emplace(stoi(expression[i]));
+            } else if (expression[i] == ")" || expression[i] == "*" || expression[i] == "/") {
+                operators.emplace(expression[i]);
+            } else if (expression[i] == "+" || expression[i] == "-") {
+                while (!operators.empty() && (operators.top() == "*" ||
+                       operators.top() == "/")) {
+                     multiplyDivide(operands, operators);
+                }
+                operators.emplace(expression[i]);
+            } else if (expression[i] == "(") {
+                // operators at least one element, i.e. ")".
+                while (operators.top() == "*" ||
+                       operators.top() == "/") {
+                     multiplyDivide(operands, operators);
+                }
+                while (operators.top() == "+" ||
+                       operators.top() == "-") {
+                    plusMinus(operands, operators);
+                }
+                operators.pop();
+            }
+        }
+        while (!operators.empty() && (operators.top() == "*" ||
+            operators.top() == "/")) {
+            multiplyDivide(operands, operators);
+        }
+        while (!operators.empty()) {
+            plusMinus(operands, operators);
+        }
+        return operands.top();
+    }
+
+    void multiplyDivide(stack<int>& operands, stack<string>& operators) {
+        const int left = operands.top();
+        operands.pop();
+        const int right = operands.top();
+        operands.pop();
+        const string op = operators.top();
+        operators.pop();
+        if (op == "*") {
+            operands.push(left * right);
+        } else if (op == "/") {
+            operands.push(left / right);
+        }
+    }
+
+    void plusMinus(stack<int>& operands, stack<string>& operators) {
+        const int left = operands.top();
+        operands.pop();
+        const int right = operands.top();
+        operands.pop();
+        const string op = operators.top();
+        operators.pop();
+        if (op == "+") {
+            operands.push(left + right);
+        } else if (op == "-") {
+            operands.push(left - right);
+        }
+    }
+};
+
+// Time:  O(n)
+// Space: O(n)
+class Solution2 {
+public:
+    /**
+     * @param expression: a vector of strings;
+     * @return: an integer
+     */
+    int evaluateExpression(vector<string> &expression) {
         if (expression.empty()) {
             return 0;
         }
