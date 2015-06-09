@@ -16,7 +16,8 @@ public:
         for (int i = expression.size() - 1; i >= 0; --i) {
             if (isdigit(expression[i][0])) {
                 operands.emplace(stoi(expression[i]));
-            } else if (expression[i] == ")" || expression[i] == "*" || expression[i] == "/") {
+            } else if (expression[i] == ")" || expression[i] == "*" ||
+                       expression[i] == "/") {
                 operators.emplace(expression[i]);
             } else if (expression[i] == "+" || expression[i] == "-") {
                 while (!operators.empty() && (operators.top() == "*" ||
