@@ -4,7 +4,7 @@
 // BST solution.
 class Solution {
 public:
-    enum {start, end, height} ;
+    enum {start, end, height};
 
     struct Endpoint {
         int height;
@@ -16,14 +16,14 @@ public:
      * @return: Find the outline of those buildings
      */
     vector<vector<int>> buildingOutline(vector<vector<int>> &buildings) {
-        map<int, vector<Endpoint>> point_to_height; // Ordered, no duplicates.
+        map<int, vector<Endpoint>> point_to_height;  // Ordered, no duplicates.
         for (const auto& building : buildings) {
             point_to_height[building[start]].emplace_back(Endpoint{building[height], true});
             point_to_height[building[end]].emplace_back(Endpoint{building[height], false});
         }
 
         vector<vector<int>> res;
-        map<int, int> height_to_count; // BST.
+        map<int, int> height_to_count;  // BST.
         int curr_start = -1;
         int curr_max = 0;
         // Enumerate each point in increasing order.
@@ -42,12 +42,14 @@ public:
                 }
             }
 
-            if (height_to_count.empty() || curr_max != height_to_count.crbegin()->first) {
+            if (height_to_count.empty() ||
+                curr_max != height_to_count.crbegin()->first) {
                 if (curr_max > 0) {
                     res.emplace_back(move(vector<int>{curr_start, point, curr_max}));
                 }
                 curr_start = point;
-                curr_max = height_to_count.empty() ? 0 : height_to_count.crbegin()->first;
+                curr_max = height_to_count.empty() ?
+                           0 : height_to_count.crbegin()->first;
             }
         }
         return res;
