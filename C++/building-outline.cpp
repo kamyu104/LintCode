@@ -27,9 +27,9 @@ public:
         int curr_start = -1;
         int curr_max = 0;
         // Enumerate each point in increasing order.
-        for (auto& kvp : point_to_height) {
-            auto& point = kvp.first;
-            auto& heights = kvp.second;
+        for (const auto& kvp : point_to_height) {
+            const auto& point = kvp.first;
+            const auto& heights = kvp.second;
 
             for (const auto& h : heights) {
                 if (h.isStart) {
