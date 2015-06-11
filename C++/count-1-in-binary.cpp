@@ -9,7 +9,7 @@ public:
      */
     int countOnes(int num) {
         int count = 0;
-        for(; num; num &= num - 1) {
+        for (; num; num &= num - 1) {
             ++count;
         }
         return count;
