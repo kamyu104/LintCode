@@ -1,9 +1,9 @@
 LintCode
 ======== 
 
-Up to date (2015-06-05), there are `238` problems on [LintCode Online Judge](https://lintcode.com/).
+Up to date (2015-06-12), there are `239` problems on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `238` problems.
+Here is the classification of all `239` problems.
 For extra problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -193,6 +193,7 @@ Algorithms
 |128|[Hash Function](http://lintcode.com/en/problem/hash-function/)| [C++](./C++/hash-function.cpp)| _O(n)_ | _O(1)_ | Easy | | |
 |129|[Rehashing](http://lintcode.com/en/problem/rehashing/)| [C++](./C++/rehashing.cpp)| _O(n)_ | _O(n)_ | Medium | | |
 |138|[Subarray Sum](http://lintcode.com/en/problem/subarray-sum/)| [C++](./C++/subarray-sum.cpp)| _O(n)_ | _O(n)_ | Easy | | |
+|186|[Max Points on a Line](http://lintcode.com/en/problem/max-points-on-a-line/)| [C++](./C++/max-points-on-a-line.cpp)| _O(n^2)_ | _O(n)_ | Medium | LeetCode | |
 |384|[Longest Substring Without Repeating Characters](http://lintcode.com/en/problem/longest-substring-without-repeating-characters/)| [C++](./C++/longest-substring-without-repeating-characters.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode, EPI | |
 |386|[Longest Substring with At Most K Distinct Characters](http://lintcode.com/en/problem/longest-substring-with-at-most-k-distinct-characters/)| [C++](./C++/longest-substring-with-at-most-k-distinct-characters.cpp)| _O(n)_ | _O(n)_ | Medium | | |
 
