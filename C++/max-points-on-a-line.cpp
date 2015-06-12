@@ -24,7 +24,7 @@ public:
             const auto& start = points[i];
             int same = 1;
 
-            for (int j = i + 1;  j < points.size(); ++j) {
+            for (int j = i + 1; j < points.size(); ++j) {
                 const auto& end = points[j];
                 if (start.x == end.x && start.y == end.y) {
                     ++same;
