@@ -81,9 +81,9 @@ public:
      */
     void invertBinaryTree(TreeNode *root) {
         if (root != nullptr) {
+            swap(root->left, root->right);
             invertBinaryTree(root->left);
             invertBinaryTree(root->right);
-            swap(root->left, root->right);
         }
     }
 };
