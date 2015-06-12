@@ -17,8 +17,7 @@ public:
         }
         if (n % 2 == 1) {
             return (a * longFastPower((a * a) % b, b, n / 2)) % b;
-        }
-        else {
+        } else {
             return longFastPower((a * a) % b, b, n / 2);
         }
     }
