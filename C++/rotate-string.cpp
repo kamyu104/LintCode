@@ -9,13 +9,12 @@ public:
      * return: Rotated string.
      */
     string rotateString(string A, int offset) {
-        if (A.empty()) {
-            return A;
+        if (!A.empty()) {
+            offset %= A.length();
+            reverse(A.begin(), A.begin() + A.length() - offset);
+            reverse(A.begin() + A.length() - offset, A.end());
+            reverse(A.begin(), A.end());
         }
-        offset %= A.length();
-        reverse(A.begin(), A.begin() + A.length() - offset);
-        reverse(A.begin() + A.length() - offset, A.end());
-        reverse(A.begin(), A.end());
         return A;
     }
 };
