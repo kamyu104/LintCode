@@ -10,9 +10,14 @@ public:
     static Solution* getInstance() {
         // C++ 11 thread-safe local-static-initialization.
         static Solution *instance = new Solution();
-        
+
         return instance;
     }
+
+    // Noncopyable
+    Solution(const Solution&) = delete;
+    Solution& operator=(const Solution&) = delete;
+
 private:
     Solution() {}
 };
