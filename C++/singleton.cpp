@@ -14,10 +14,11 @@ public:
         return instance;
     }
 
-    // Noncopyable
+    // Noncopyable.
     Solution(const Solution&) = delete;
     Solution& operator=(const Solution&) = delete;
 
 private:
     Solution() {}
+    ~Solution() {}
 };
