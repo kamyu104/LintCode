@@ -63,7 +63,7 @@ public:
         if (trace.count(end) != 1) {
             vector<string> path = temp;
             reverse(path.begin(), path.end());
-            result.emplace_back(move(path));
+            result.emplace_back(path);
         }
         else {
             for (auto& word: trace[end]) {
