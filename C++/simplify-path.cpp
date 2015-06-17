@@ -17,7 +17,7 @@ public:
                 names.emplace_back(token);
             }
         }
-        return string("/").append(move(join(names, '/')));
+        return string("/").append(join(names, '/'));
     }
 
     // Split string by delimitor.
