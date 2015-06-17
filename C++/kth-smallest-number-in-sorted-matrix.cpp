@@ -22,7 +22,7 @@ public:
 
         // Init BST by the first element of the first kth row.
         for (int i = 0; i < min(static_cast<int>(matrix.size()), k); ++i) {
-            min_bst.emplace(move(pair<int, pair<int, int>>{matrix[i][0], {i, 0}}));
+            min_bst.emplace(pair<int, pair<int, int>>{matrix[i][0], {i, 0}});
         }
 
         int kth_smallest = INT_MAX;
@@ -38,7 +38,7 @@ public:
 
             // Insert the next possible element.
             if (j + 1 < matrix[i].size()) {
-                min_bst.emplace(move(pair<int, pair<int, int>>{matrix[i][j + 1], {i, j + 1}}));
+                min_bst.emplace(pair<int, pair<int, int>>{matrix[i][j + 1], {i, j + 1}});
             }
         }
 
@@ -50,7 +50,7 @@ public:
 
         // Init BST by the first element of the first kth column.
         for (int j = 0; j < min(static_cast<int>(matrix[0].size()), k); ++j) {
-            min_bst.emplace(move(pair<int, pair<int, int>>{matrix[0][j], {0, j}}));
+            min_bst.emplace(pair<int, pair<int, int>>{matrix[0][j], {0, j}});
         }
 
         int kth_smallest = INT_MAX;
@@ -66,7 +66,7 @@ public:
 
             // Insert the next possible element.
             if (i + 1 < matrix.size()) {
-                min_bst.emplace(move(pair<int, pair<int, int>>{matrix[i + 1][j], {i + 1, j}}));
+                min_bst.emplace(pair<int, pair<int, int>>{matrix[i + 1][j], {i + 1, j}});
             }
         }
 
@@ -102,7 +102,7 @@ public:
 
         // Init Heap by the first element of the first kth row.
         for (int i = 0; i < min(static_cast<int>(matrix.size()), k); ++i) {
-            min_heap.emplace(move(pair<int, pair<int, int>>{matrix[i][0], {i, 0}}));
+            min_heap.emplace(pair<int, pair<int, int>>{matrix[i][0], {i, 0}});
         }
 
         int kth_smallest = INT_MAX;
@@ -118,7 +118,7 @@ public:
 
             // Insert the next possible element.
             if (j + 1 < matrix[i].size()) {
-                min_heap.emplace(move(pair<int, pair<int, int>>{matrix[i][j + 1], {i, j + 1}}));
+                min_heap.emplace(pair<int, pair<int, int>>{matrix[i][j + 1], {i, j + 1}});
             }
         }
 
@@ -130,7 +130,7 @@ public:
 
         // Init Heap by the first element of the first kth column.
         for (int j = 0; j < min(static_cast<int>(matrix[0].size()), k); ++j) {
-            min_heap.emplace(move(pair<int, pair<int, int>>{matrix[0][j], {0, j}}));
+            min_heap.emplace(pair<int, pair<int, int>>{matrix[0][j], {0, j}});
         }
 
         int kth_smallest = INT_MAX;
@@ -145,7 +145,7 @@ public:
 
             // Insert the next possible element.
             if (i + 1 < matrix.size()) {
-                min_heap.emplace(move(pair<int, pair<int, int>>{matrix[i + 1][j], {i + 1, j}}));
+                min_heap.emplace(pair<int, pair<int, int>>{matrix[i + 1][j], {i + 1, j}});
             }
         }
 
