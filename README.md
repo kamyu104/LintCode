@@ -1,9 +1,9 @@
 LintCode
 ======== 
 
-Up to date (2015-06-12), there are `240` problems on [LintCode Online Judge](https://lintcode.com/).
+Up to date (2015-06-22), there are `241` problems on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `240` problems.
+Here is the classification of all `241` problems.
 For extra problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -44,6 +44,7 @@ Algorithms
 |142|[O(1) Check Power of 2](http://lintcode.com/en/problem/o1-check-power-of-2/)| [C++](./C++/o1-check-power-of-2.cpp)| _O(1)_ | _O(1)_ | Easy | | |
 |179|[Update Bits](http://lintcode.com/en/problem/update-bits/)| [C++](./C++/update-bits.cpp)| _O(1)_ | _O(1)_ | Medium | CTCI | |
 |181|[Flip Bits](http://lintcode.com/en/problem/flip-bits/)| [C++](./C++/flip-bits.cpp)| _O(1)_ | _O(1)_ | Easy | CTCI | |
+|196|[Find the Missing Number](http://lintcode.com/en/problem/find-the-missing-number/)| [C++](./C++/find-the-missing-number.cpp)| _O(n)_ | _O(1)_ | Medium | | |
 |365|[Count 1 in Binary](http://lintcode.com/en/problem/count-1-in-binary/)| [C++](./C++/count-1-in-binary.cpp)| _O(m)_ | _O(1)_ | Easy | CTCI | |
 
 ---
