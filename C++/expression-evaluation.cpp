@@ -47,13 +47,13 @@ public:
         const string op = operators.top();
         operators.pop();
         if (op == "+") {
-            operands.push(left + right);
+            operands.emplace(left + right);
         } else if (op == "-") {
-            operands.push(left - right);
+            operands.emplace(left - right);
         } else if (op == "*") {
-            operands.push(left * right);
+            operands.emplace(left * right);
         } else if (op == "/") {
-            operands.push(left / right);
+            operands.emplace(left / right);
         }
     }
 };
