@@ -1,5 +1,5 @@
-// Time:  O(n)
-// Space: O(n)
+// Time:  O(p), p is number of operators.
+// Space: O(p)
 
 /**
  * Definition for a point.
