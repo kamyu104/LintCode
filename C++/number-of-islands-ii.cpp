@@ -43,7 +43,8 @@ public:
 
             // For each direction, find and union.
             for (const auto& d : directions) {
-                const auto& neighbor = make_pair(oper.x + d.first, oper.y + d.second);
+                const auto& neighbor = make_pair(oper.x + d.first,
+                                                 oper.y + d.second);
                 if (neighbor.first >= 0 && neighbor.first < n &&
                     neighbor.second >= 0 && neighbor.second < m &&
                     set.find(node_id(neighbor, m)) != set.end()) {
