@@ -308,6 +308,7 @@ Algorithms
 |136|[Palindrome Partitioning](http://lintcode.com/en/problem/palindrome-partitioning/)| [C++](./C++/palindrome-partitioning.cpp)| _O(2^n)_ | _O(n)_ | Easy | LeetCode, EPI | |
 |152|[Combinations](http://lintcode.com/en/problem/combinations/)| [C++](./C++/combinations.cpp)| _O(k * n^k)_ | _O(k)_ | Medium | LeetCode, EPI | |
 |153|[Combination Sum II](http://lintcode.com/en/problem/combination-sum-ii/)| [C++](./C++/combination-sum-ii.cpp)| _O(k * C(n, k))_ | _O(k)_ | Medium | LeetCode | DFS |
+|433|[Number of Islands](http://lintcode.com/en/problem/number-of-islands/)| [C++](./C++/number-of-islands.cpp)| _O(m * n)_ | _O(m * n)_ | Easy | | DFS |
 
 ---
 
