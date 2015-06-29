@@ -322,7 +322,7 @@ Algorithms
 |127|[Topological Sorting](http://lintcode.com/en/problem/topological-sorting/)| [C++](./C++/topological-sorting.cpp)| _O(\|V\|+\|E\|)_ | _O(\|E\|)_ | Medium | | DFS, BFS |
 |137|[Clone Graph](http://lintcode.com/en/problem/clone-graph/)| [C++](./C++/clone-graph.cpp)| _O(\|V\|+\|E\|)_ | _O(\|V\|)_ | Medium | | BFS |
 |176|[Route Between Two Nodes in Graph](http://lintcode.com/en/problem/route-between-two-nodes-in-graph/)| [C++](./C++/route-between-two-nodes-in-graph.cpp)| _O(n)_ | _O(n)_ | Medium | | DFS, BFS |
-|431|[Find the Connected Component in the Undirected Graph](http://lintcode.com/en/problem/find-the-connected-component-in-the-undirected-graph/)| [C++](./C++/find-the-connected-component-in-the-undirected-graph.cpp)| _O(n)_ | _O(n)_ | Medium | | BFS |
+|431|[Find the Connected Component in the Undirected Graph](http://lintcode.com/en/problem/find-the-connected-component-in-the-undirected-graph/)| [C++](./C++/find-the-connected-component-in-the-undirected-graph.cpp)| _O(n)_ | _O(n)_ | Easy | | BFS |
 
 ---
 
