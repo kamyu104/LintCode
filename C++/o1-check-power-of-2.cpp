@@ -8,6 +8,6 @@ public:
      * @return: True or false
      */
     bool checkPowerOf2(int n) {
-        return n != 0 && n != INT_MIN && (n & (n - 1)) == 0;
+        return n > 0 && (n & (n - 1)) == 0;
     }
 };
