@@ -30,7 +30,7 @@ public:
         vector<vector<int>> sum(k + 1, vector<int>(A.size() + 1, INT_MAX));
         sum[0][0] = 0;
         for (int i = 1; i <= k; ++i) {
-            for (int j = 0; j <= n; ++j) {
+            for (int j = 0; j < n; ++j) {
                 if (sum[i - 1][j] != INT_MAX) {
                     for (int r = 1; j + r <= n; ++r) {
                        sum[i][j + r] = min(sum[i][j + r],
