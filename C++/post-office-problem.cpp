@@ -45,8 +45,9 @@ public:
     void computeMinCost(const vector<int>& A, vector<vector<int>> *cost) {
         // Min cost of building a post office between house (i, j).
         // This post office must be in median position.
-        for (int i = 0; i < A.size(); ++i) {
-            for (int j = i; j < A.size(); ++j) {
+        const int n = A.size();
+        for (int i = 0; i < n; ++i) {
+            for (int j = i; j < n; ++j) {
                 int mid = (i + j) / 2;
                 for (int r = i; r <= mid; ++r) {
                     (*cost)[i + 1][j + 1] += A[mid] - A[r];
