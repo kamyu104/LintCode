@@ -374,7 +374,7 @@ Algorithms
 |398|[Longest Increasing Continuous subsequence II](http://lintcode.com/en/problem/longest-increasing-continuous-subsequence-ii/)| [C++](./C++/longest-increasing-continuous-subsequence-ii.cpp)| _O(m * n)_ | _O(m * n)_ | Hard | | |
 |403|[Continuous Subarray Sum II](http://lintcode.com/en/problem/continuous-subarray-sum-ii/)| [C++](./C++/continuous-subarray-sum-ii.cpp)| _O(n)_ | _O(n)_ | Medium | EPI | |
 |430|[Scramble String](http://lintcode.com/en/problem/scramble-string/)| [C++](./C++/scramble-string.cpp)| _O(n^4)_ | _O(n^3)_ | Hard | LeetCode | |
-|435|[Post Office Problem](http://lintcode.com/en/problem/post-office-problem/)| [C++](./C++/post-office-problem.cpp)| _O(k * n^2)_ | _O(k * n)_ | Hard | | |
+|435|[Post Office Problem](http://lintcode.com/en/problem/post-office-problem/)| [C++](./C++/post-office-problem.cpp)| _O(n^3)_ | _O(n^2)_ | Hard | | |
 |436|[Maximal Square](http://lintcode.com/en/problem/maximal-square/)| [C++](./C++/maximal-square.cpp)| _O(m * n)_ | _O(n)_ | Medium | LeetCode | |
 
 ---
