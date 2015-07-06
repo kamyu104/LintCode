@@ -1,9 +1,9 @@
 LintCode
 ======== 
 
-Up to date (2015-06-29), there are `245` problems on [LintCode Online Judge](https://lintcode.com/).
+Up to date (2015-07-06), there are `247` problems on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `245` problems.
+Here is the classification of all `247` problems.
 For extra problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -374,6 +374,7 @@ Algorithms
 |398|[Longest Increasing Continuous subsequence II](http://lintcode.com/en/problem/longest-increasing-continuous-subsequence-ii/)| [C++](./C++/longest-increasing-continuous-subsequence-ii.cpp)| _O(m * n)_ | _O(m * n)_ | Hard | | |
 |403|[Continuous Subarray Sum II](http://lintcode.com/en/problem/continuous-subarray-sum-ii/)| [C++](./C++/continuous-subarray-sum-ii.cpp)| _O(n)_ | _O(n)_ | Medium | EPI | |
 |430|[Scramble String](http://lintcode.com/en/problem/scramble-string/)| [C++](./C++/scramble-string.cpp)| _O(n^4)_ | _O(n^3)_ | Hard | LeetCode | |
+|436|[Maximal Square](http://lintcode.com/en/problem/maximal-square/)| [C++](./C++/maximal-square.cpp)| _O(m * n)_ | _O(n)_ | Medium | LeetCode | |
 
 ---
 
