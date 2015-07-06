@@ -1,5 +1,5 @@
-// Time:  O(k * n^2)
-// Space: O(k * n)
+// Time:  O(n^3)
+// Space: O(n^2)
 
 class Solution {
 public:
@@ -14,13 +14,17 @@ public:
             return 0;
         }
 
-        sort(A.begin(), A.end());
+        sort(A.begin(), A.end());  // Time:  O(nlogn)
 
         // Precompute cost.
+        // Time:  O(n^3)
+        // Space: O(n^2)
         vector<vector<int>> cost(A.size() + 1, vector<int>(A.size() + 1, 0));
         computeMinCost(A, &cost);
 
         // DP of sum.
+        // Time:  O(k * n^2)
+        // Space: O(k * n)
         // sum[i][j] denotes the smallest sum of
         // picking i post offices for the first j houses.
         vector<vector<int>> sum(k + 1, vector<int>(A.size() + 1, INT_MAX));
