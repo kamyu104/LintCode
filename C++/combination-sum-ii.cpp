@@ -24,7 +24,7 @@ private:
             return;
         }
 
-        for (size_t i = begin; i < num.size() && num[i] <= gap; i++) {
+        for (size_t i = begin; i < num.size() && num[i] <= gap; ++i) {
             if ( i == begin || num[i] != num[i - 1]) {  // Skip duplicates.
                 // Each same element could be chosen only once
                 // with the same previous nums.
