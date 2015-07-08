@@ -23,10 +23,7 @@ private:
             return;
         }
 
-        for (size_t i = begin; i < num.size(); i++) {
-            if (gap < num[i]) {
-                return;
-            }
+        for (size_t i = begin; i < num.size() && num[i] <= gap; ++i) {
             v.emplace_back(num[i]);
             combinationSumHelper(num, gap - num[i], i, v, ans);
             v.pop_back();
