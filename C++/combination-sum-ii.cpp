@@ -26,7 +26,8 @@ private:
         for (size_t i = begin; i < num.size() && num[i] <= gap; i++) {
             if ( i == begin || num[i] != num[i - 1]) {  // Skip duplicates.
                 v.emplace_back(num[i]);
-                // Each same element could be chosen only once with the same previous nums.
+                // Each same element could be chosen only once
+                // with the same previous nums.
                 combinationSum2Helper(num, gap - num[i], i + 1, v, ans);
                 v.pop_back();
             }
