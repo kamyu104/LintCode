@@ -17,7 +17,8 @@ public:
     }
 
 private:
-    void combinationSumHelper(vector<int>& num, int gap, int begin, vector<int>& v,vector<vector<int>> &ans) {
+    void combinationSumHelper(vector<int>& num, int gap, int begin,
+                              vector<int>& v,vector<vector<int>> &ans) {
         if (gap == 0) {
             ans.emplace_back(v);
             return;
