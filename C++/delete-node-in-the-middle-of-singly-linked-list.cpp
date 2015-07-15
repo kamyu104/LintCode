@@ -26,7 +26,7 @@ public:
             node->next = node->next->next;
             delete node_to_delete;
         } else {
-            node = None;
+            node = nullptr;
         }
     }
 };
