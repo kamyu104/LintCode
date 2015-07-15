@@ -20,9 +20,13 @@ public:
      * @return: nothing
      */
     void deleteNode(ListNode *node) {
-        ListNode* node_to_delete = node->next;
-        node->val = node->next->val;
-        node->next = node->next->next;
-        delete node_to_delete;
+        if (node->next) {
+            auto node_to_delete = node->next;
+            node->val = node->next->val;
+            node->next = node->next->next;
+            delete node_to_delete;
+        } else {
+            node = None;
+        }
     }
 };
