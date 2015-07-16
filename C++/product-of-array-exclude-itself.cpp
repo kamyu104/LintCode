@@ -19,7 +19,7 @@ public:
             left_product[i] = left_product[i - 1] * nums[i - 1];
         }
 
-        int right_product = 1;
+        long long right_product = 1;
         for (int i = nums.size() - 2; i >= 0; --i) {
             right_product *= nums[i + 1];
             left_product[i] = left_product[i] * right_product;
