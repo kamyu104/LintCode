@@ -20,7 +20,7 @@ public:
         }
 
         long long right_product = 1;
-        for (int i = nums.size() - 2; i >= 0; --i) {
+        for (int i = static_cast<int>(nums.size()) - 2; i >= 0; --i) {
             right_product *= nums[i + 1];
             left_product[i] = left_product[i] * right_product;
         }
@@ -52,7 +52,7 @@ public:
         }
 
         right_product[nums.size() - 1] = 1;
-        for (int j = nums.size() - 2; j >= 0; --j) {
+        for (int j = static_cast<int>(nums.size()) - 2; j >= 0; --j) {
             right_product[j] = right_product[j + 1] * nums[j + 1];
         }
 
