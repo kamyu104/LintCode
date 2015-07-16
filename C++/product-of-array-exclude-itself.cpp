@@ -1,7 +1,33 @@
 // Time:  O(n)
-// Space: O(n)
+// Space: O(1)
 
 class Solution {
+public:
+    vector<long long> productExceptSelf(vector<int>& nums) {
+        if (nums.size() < 2) {
+            return {};
+        }
+
+        vector<long long> left_product(nums.size());
+
+        left_product[0] = 1;
+        for (int i = 1; i < nums.size(); ++i) {
+            left_product[i] = left_product[i - 1] * nums[i - 1];
+        }
+
+        int right_product = 1;
+        for (int j = nums.size() - 2; j >= 0; --j) {
+            right_product *= nums[j + 1];
+            left_product[j] = left_product[j] * right_product;
+        }
+
+        return left_product;
+    }
+};
+
+// Time:  O(n)
+// Space: O(n)
+class Solution2 {
 public:
     /**
      * @param A: Given an integers array A
@@ -9,7 +35,7 @@ public:
      */
     vector<long long> productExcludeItself(vector<int> &nums) {
         if (nums.size() < 2) {
-            return vector<long long>();
+            return {}};
         }
 
         vector<long long> left_product(nums.size());
