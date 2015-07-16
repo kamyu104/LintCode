@@ -2,9 +2,13 @@
 // Space: O(1)
 
 class Solution {
+    /**
+     * @param A: Given an integers array A
+     * @return: A long long array B and B[i]= A[0] * ... * A[i-1] * A[i+1] * ... * A[n-1]
+     */
 public:
-    vector<long long> productExceptSelf(vector<int>& nums) {
-        if (nums.size() < 2) {
+    vector<long long> productExcludeItself(vector<int> &nums) {
+        if (nums.empty()) {
             return {};
         }
 
@@ -34,8 +38,8 @@ public:
      * @return: A long long array B and B[i]= A[0] * ... * A[i-1] * A[i+1] * ... * A[n-1]
      */
     vector<long long> productExcludeItself(vector<int> &nums) {
-        if (nums.size() < 2) {
-            return {}};
+        if (nums.empty()) {
+            return {};
         }
 
         vector<long long> left_product(nums.size());
