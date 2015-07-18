@@ -1,9 +1,9 @@
 LintCode
 ======== 
 
-Up to date (2015-07-06), there are `247` problems on [LintCode Online Judge](https://lintcode.com/).
+Up to date (2015-07-18), there are `248` problems on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `247` problems.
+Here is the classification of all `248` problems.
 For extra problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -293,6 +293,7 @@ Algorithms
 |183|[Wood Cut](http://lintcode.com/en/problem/wood-cut/)| [C++](./C++/wood-cut.cpp)| _O(nlogL)_ | _O(1)_ | Medium | | |
 |249|[Count of Smaller Number before itself](http://lintcode.com/en/problem/count-of-smaller-number-before-itself/)| [C++](./C++/count-of-smaller-number-before-itself.cpp)| _O(nlogn)_ | _O(h)_ | Hard | | |
 |390|[Find Peak Element II](http://lintcode.com/en/problem/find-peak-element-ii/)| [C++](./C++/find-peak-element-ii.cpp) [Java](./Java/find-peak-element-ii.java) [Python](./Python/find-peak-element-ii.py)| _O(m + n)_ | _O(1)_ | Hard | | |
+|437|[Copy Books](http://lintcode.com/en/problem/copy-books/)| [C++](./C++/copy-books.cpp) | _O(nlogp)_ | _O(1)_ | Hard | UVa 714 | |
 
 ---
 
