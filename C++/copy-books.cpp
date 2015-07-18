@@ -18,10 +18,10 @@ public:
             sum += page;
         }
         int average = sum / k;   // Lower bound.
-        return binary_search(pages, k, average, sum);
+        return binarySearch(pages, k, average, sum);
     }
 
-    int binary_search(const vector<int> &pages,
+    int binarySearch(const vector<int> &pages,
                       const int k, int left, int right) {
         while (left <= right) {
             int mid = left + (right - left) / 2;
