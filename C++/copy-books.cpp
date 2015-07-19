@@ -22,7 +22,7 @@ public:
     }
 
     int binarySearch(const vector<int> &pages,
-                      const int k, int left, int right) {
+                     const int k, int left, int right) {
         while (left <= right) {
             int mid = left + (right - left) / 2;
             if (valid(pages, k, mid)) {
