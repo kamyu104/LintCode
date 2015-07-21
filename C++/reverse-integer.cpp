@@ -16,7 +16,7 @@ public:
             temp /= 10;
         }
         result = (n >= 0)? result : -result;
-        result = (result > INT_MAX || result < INT_MIN)? 0 : result;
+        result = (result > INT_MAX || result < INT_MIN) ? 0 : result;
         return result;
     }
 };
