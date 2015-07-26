@@ -1,9 +1,9 @@
 LintCode
 ======== 
 
-Up to date (2015-07-24), there are `249` problems on [LintCode Online Judge](https://lintcode.com/).
+Up to date (2015-07-26), there are `251` problems on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `249` problems.
+Here is the classification of all `251` problems.
 For extra problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -218,6 +218,8 @@ Algorithms
 |114|[Unique Paths](http://lintcode.com/en/problem/unique-paths/)| [C++](./C++/unique-paths.cpp)| _O(min(m, n))_ | _O(1)_ | Easy | LeetCode, CTCI | DP, Math |
 |163|[Unique Binary Search Trees](http://lintcode.com/en/problem/unique-binary-search-trees/)| [C++](./C++/unique-binary-search-trees.cpp)| _O(n)_ | _O(1)_ | Medium | CTCI | DP, Math, `Catalan Number` |
 |180|[Binary Represention](http://lintcode.com/en/problem/delete-digits/)| [C++](./C++/binary-representation.cpp)| _O(1)_ | _O(1)_ | Hard | CTCI | |
+|197|[Permutation Index](http://lintcode.com/en/problem/permutation-index/)| [C++](./C++/permutation-index.cpp)| _O(N^2)_ | _O(1)_ | Easy | | |
+|198|[Permutation Index II](http://lintcode.com/en/problem/permutation-index-ii/)| [C++](./C++/permutation-index-ii.cpp)| _O(N^3)_ | _O(N)_ | Medium | | |
 |394|[Coins in a Line](http://lintcode.com/en/problem/coins-in-a-line/)| [C++](./C++/coins-in-a-line.cpp)| _O(1)_ | _O(1)_ | Easy | | |
 |411|[Gray Code](http://lintcode.com/en/problem/gray-code/)| [C++](./C++/gray-code.cpp)| _O(2^n)_ | _O(1)_ | Medium | LeetCode | |
 |413|[Reverse Integer](http://lintcode.com/en/problem/reverse-integer/)| [C++](./C++/reverse-integer.cpp)| _O(logn)_ | _O(1)_ | Medium | LeetCode | |
