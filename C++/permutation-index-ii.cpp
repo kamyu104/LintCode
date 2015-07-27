@@ -1,5 +1,5 @@
-// Time:  O(N^2)
-// Space: O(N)
+// Time:  O(n^2)
+// Space: O(n)
 
 class Solution {
 public:
@@ -29,8 +29,8 @@ public:
     }
 };
 
-// Time:  O(N^2)
-// Space: O(N)
+// Time:  O(n^2)
+// Space: O(n)
 class Solution2 {
 public:
     /**
@@ -62,8 +62,8 @@ public:
     }
 };
 
-// Time:  O(N^3)
-// Space: O(N)
+// Time:  O(n^3)
+// Space: O(n)
 class Solution3 {
 public:
     /**
