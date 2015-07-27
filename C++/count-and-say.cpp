@@ -10,7 +10,7 @@ public:
     string countAndSay(int n) {
         string seq{"1"};
         for (int i = 0; i < n - 1; ++i) {
-            seq = move(getNext(seq));
+            seq = getNext(seq);
         }
         return seq;
     }
