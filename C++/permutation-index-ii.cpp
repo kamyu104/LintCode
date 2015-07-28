@@ -103,7 +103,6 @@ public:
                  count = count * n / i;
             }
         }
-
         return count;
     }
 };
