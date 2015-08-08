@@ -340,7 +340,7 @@ Algorithms
 |86|[Binary Search Tree Iterator](http://lintcode.com/en/problem/binary-search-tree-iterator/)| [C++](./C++/binary-search-tree-iterator.cpp)| _O(1)_ | _O(h)_ | Hard | LeetCode | |
 |87|[Remove Node in Binary Search Tree](http://lintcode.com/en/problem/remove-node-in-binary-search-tree/)| [C++](./C++/remove-node-in-binary-search-tree.cpp)| _O(h)_ | _O(h)_ | Hard | | |
 |360|[Sliding Window Median](http://lintcode.com/en/problem/sliding-window-median/)| [C++](./C++/sliding-window-median.cpp)| _O(nlogw)_ | _O(w)_ | Hard | | BST, Tricky |
-|391|[Number of Airplanes in the Sky](http://lintcode.com/en/problem/number-of-airplanes-in-the-sky/)| [C++](./C++/number-of-airplanes-in-the-sky.cpp)| _O(nlogn)_ | _O(1)_ | Easy | | BST, Heap |
+|391|[Number of Airplanes in the Sky](http://lintcode.com/en/problem/number-of-airplanes-in-the-sky/)| [C++](./C++/number-of-airplanes-in-the-sky.cpp)| _O(nlogn)_ | _O(n)_ | Easy | | BST, Heap |
 |401|[Kth Smallest Number in Sorted Matrix](http://lintcode.com/en/problem/kth-smallest-number-in-sorted-matrix/)| [C++](./C++/kth-smallest-number-in-sorted-matrix.cpp)| _O(klog(min(m, n, k)))_ | _O(min(m, n, k))_ | Medium | | BST, Heap |
 
 ---
