@@ -119,7 +119,7 @@ public:
 };
 
 // Heap solution.
-class Solution3 {
+class Solution4 {
 public:
     struct Compare {
         bool operator() (const Interval&a, const Interval&b) {
