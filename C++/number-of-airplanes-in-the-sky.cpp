@@ -10,18 +10,43 @@
  *         this->end = end;
  *     }
  */
-
-/**
- * Definition of Interval:
- * classs Interval {
- *     int start, end;
- *     Interval(int start, int end) {
- *         this->start = start;
- *         this->end = end;
- *     }
- */
-
 class Solution {
+public:
+    /**
+     * @param intervals: An interval array
+     * @return: Count of airplanes are in the sky.
+     */
+    int countOfAirplanes(vector<Interval> &airplanes) {
+        int max_planes = 0;
+        int planes = 0;
+
+        vector<int> starts, ends;
+        for (const auto& i : airplanes) {
+            starts.emplace_back(i.start);
+            ends.emplace_back(i.end);
+        }
+
+
+        sort(starts.begin(), starts.end());
+        sort(ends.begin(), ends.end());
+
+        int s = 0, e = 0;
+        while (s < starts.size()) {
+            if (starts[s] < ends[e]) {
+                ++planes;
+                max_planes = max(max_planes, planes);
+                ++s;
+            } else {
+                --planes;
+                ++e;
+            }
+        }
+
+        return max_planes;
+    }
+};
+
+class Solution2 {
 public:
     typedef enum {START, END} Endpoint;
 
@@ -64,7 +89,7 @@ public:
 };
 
 // BST solution.
-class Solution2 {
+class Solution3 {
 public:
     struct Compare {
         bool operator() (const Interval&a, const Interval&b) {
