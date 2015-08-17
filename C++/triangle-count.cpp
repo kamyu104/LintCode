@@ -13,7 +13,7 @@ public:
         const int n = S.size();
 
         int count = 0;
-        for (int k = n - 1; k > 1; --k) {
+        for (int k = 2; k < n; ++k) {
             int i = 0, j = k - 1;
             while (i < j) {  // Two Pointers, linear time.
                 if (S[i] + S[j] <= S[k]) {
