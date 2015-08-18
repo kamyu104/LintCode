@@ -66,7 +66,7 @@ public:
         visited_node.insert(s);
         return DFS(s, t, visited_node);
     }
-    bool DFS( DirectedGraphNode* s, DirectedGraphNode* t,
+    bool DFS(DirectedGraphNode* s, DirectedGraphNode* t,
              unordered_set<DirectedGraphNode *> &visited_node) {
         if (s == t) {
             return true;
