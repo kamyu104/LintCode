@@ -25,7 +25,7 @@ public:
         visited_node.insert(s);
         return BFS(s, t, visited_node);
     }
-    bool BFS(DirectedGraphNode* s, DirectedGraphNode* t,
+    bool BFS(DirectedGraphNode* s, const DirectedGraphNode* t,
              unordered_set<DirectedGraphNode *> &visited_node) {
         queue<DirectedGraphNode *> q;
         q.emplace(s);
@@ -38,7 +38,7 @@ public:
             }
 
             // Add neighbors which are not visited into the queue
-            for (auto& node: s->neighbors) {
+            for (const auto& node: s->neighbors) {
                 if (visited_node.insert(node).second) {
                     q.emplace(node);
                 }
@@ -47,7 +47,6 @@ public:
 
         return false;
     }
-
 };
 
 
@@ -66,14 +65,14 @@ public:
         visited_node.insert(s);
         return DFS(s, t, visited_node);
     }
-    bool DFS(DirectedGraphNode* s, DirectedGraphNode* t,
+    bool DFS(DirectedGraphNode* s, const DirectedGraphNode* t,
              unordered_set<DirectedGraphNode *> &visited_node) {
         if (s == t) {
             return true;
         }
 
         // Search neighbors which are not visted
-        for (auto& node: s->neighbors) {
+        for (const auto& node: s->neighbors) {
             if (visited_node.insert(node).second) {
                 if (DFS(node, t, visited_node)) {
                     return true;
@@ -83,7 +82,6 @@ public:
         }
         return false;
     }
-
 };
 
 
