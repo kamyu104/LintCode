@@ -25,7 +25,7 @@ public:
         visited_node.insert(s);
         return BFS(s, t, visited_node);
     }
-    bool BFS( DirectedGraphNode* s, DirectedGraphNode* t,
+    bool BFS(DirectedGraphNode* s, DirectedGraphNode* t,
              unordered_set<DirectedGraphNode *> &visited_node) {
         queue<DirectedGraphNode *> q;
         q.emplace(s);
