@@ -14,7 +14,7 @@ public:
      */
     long long kthPrimeNumber(int k) {
         long long ugly_number = 0;
-        priority_queue<long long , vector<long long >, greater<long long >> heap;
+        priority_queue<long long, vector<long long>, greater<long long>> heap;
 
         heap.emplace(3);
         heap.emplace(5);
