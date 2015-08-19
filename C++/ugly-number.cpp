@@ -18,12 +18,10 @@ public:
             heap.pop();
             if (ugly_number % 3 == 0) {
                 heap.emplace(ugly_number * 3);
-            }
-            else if (ugly_number % 5 == 0) {
+            } else if (ugly_number % 5 == 0) {
                 heap.emplace(ugly_number * 3);
                 heap.emplace(ugly_number * 5);
-            }
-            else {
+            } else {
                 heap.emplace(ugly_number * 3);
                 heap.emplace(ugly_number * 5);
                 heap.emplace(ugly_number * 7);
@@ -50,12 +48,10 @@ public:
             bst.erase(bst.cbegin());
             if (ugly_number % 3 == 0) {
                 bst.emplace(ugly_number * 3);
-            }
-            else if (ugly_number % 5 == 0) {
+            } else if (ugly_number % 5 == 0) {
                 bst.emplace(ugly_number * 3);
                 bst.emplace(ugly_number * 5);
-            }
-            else {
+            } else {
                 bst.emplace(ugly_number * 3);
                 bst.emplace(ugly_number * 5);
                 bst.emplace(ugly_number * 7);
