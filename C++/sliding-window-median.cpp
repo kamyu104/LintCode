@@ -29,16 +29,16 @@ public:
 
             // Balance smaller half and larger half.
             if (max_bst.empty() || nums[i] > *max_bst.cbegin()) {
-                min_bst.insert(nums[i]);
+                min_bst.emplace(nums[i]);
                 if (min_bst.size() > max_bst.size() + 1) {
-                    max_bst.insert(*min_bst.cbegin());
+                    max_bst.emplace(*min_bst.cbegin());
                     min_bst.erase(min_bst.cbegin());
                 }
             }
             else {
-                max_bst.insert(nums[i]);
+                max_bst.emplace(nums[i]);
                 if (max_bst.size() > min_bst.size()) {
-                    min_bst.insert(*max_bst.cbegin());
+                    min_bst.emplace(*max_bst.cbegin());
                     max_bst.erase(max_bst.cbegin());
                 }
             }
