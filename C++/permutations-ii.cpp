@@ -13,11 +13,11 @@ public:
         vector<int> ans;
 
         sort(nums.begin(), nums.end());
-        permutations_unique_helper(nums, &used, &ans, &result);
+        permuteUniqueRecu(nums, &used, &ans, &result);
         return result;
     }
 
-    void permutations_unique_helper(const vector<int> &A, deque<bool> *used,
+    void permuteUniqueRecu(const vector<int> &A, deque<bool> *used,
                                     vector<int> *ans, vector<vector<int>> *result) {
         if (ans->size() == A.size()) {
             result->emplace_back(*ans);
@@ -31,7 +31,7 @@ public:
 
             (*used)[i] = true;
             ans->emplace_back(A[i]);
-            permutations_unique_helper(A, used, ans, result);
+            permuteUniqueRecu(A, used, ans, result);
             ans->pop_back();
             (*used)[i] = false;
         }
