@@ -18,7 +18,7 @@ public:
     }
 
     void permuteUniqueRecu(const vector<int> &A, deque<bool> *used,
-                                    vector<int> *ans, vector<vector<int>> *result) {
+                           vector<int> *ans, vector<vector<int>> *result) {
         if (ans->size() == A.size()) {
             result->emplace_back(*ans);
             return;
