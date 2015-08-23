@@ -25,15 +25,13 @@ public:
         }
 
         for (size_t i = 0; i < A.size(); ++i) {
-            if ((*used)[i] || (i != 0 && A[i - 1] == A[i] && (*used)[i - 1])) {
-                continue;
+            if (!(*used)[i] && !(i != 0 && A[i - 1] == A[i] && (*used)[i - 1])) {
+                (*used)[i] = true;
+                ans->emplace_back(A[i]);
+                permuteUniqueRecu(A, used, ans, result);
+                ans->pop_back();
+                (*used)[i] = false;
             }
-
-            (*used)[i] = true;
-            ans->emplace_back(A[i]);
-            permuteUniqueRecu(A, used, ans, result);
-            ans->pop_back();
-            (*used)[i] = false;
         }
     }
 };
