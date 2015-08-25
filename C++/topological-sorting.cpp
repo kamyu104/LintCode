@@ -12,9 +12,10 @@
 // BFS
 class Solution {
 public:
-    // @param graph: A list of Directed graph node
-    // @return: Any topological order for the given graph.
-    //
+    /**
+     * @param graph: A list of Directed graph node
+     * @return: Any topological order for the given graph.
+     */
     vector<DirectedGraphNode *> topSort(vector<DirectedGraphNode*> graph) {
         vector<DirectedGraphNode *> output;
 
@@ -81,11 +82,12 @@ private:
 };
 
 // DFS
-class Solution {
+class Solution2 {
 public:
-    // @param graph: A list of Directed graph node
-    // @return: Any topological order for the given graph.
-    //
+    /**
+     * @param graph: A list of Directed graph node
+     * @return: Any topological order for the given graph.
+     */
     vector<DirectedGraphNode *> topSort(vector<DirectedGraphNode*> graph) {
         vector<DirectedGraphNode *> output;
 
