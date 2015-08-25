@@ -17,8 +17,7 @@ public:
      * @return: Any topological order for the given graph.
      */
 private:
-    void findDependencyBFS(
-                           DirectedGraphNode* node,
+    void findDependencyBFS(DirectedGraphNode* node,
                            unordered_set<DirectedGraphNode *> &nodes,
                            unordered_map<DirectedGraphNode *, int> &ancestors) {
         if (nodes.insert(node).second) {
@@ -95,8 +94,7 @@ public:
      * @return: Any topological order for the given graph.
      */
 private:
-    void findDependencyDFS(
-                           DirectedGraphNode* node,
+    void findDependencyDFS(DirectedGraphNode* node,
                            unordered_set<DirectedGraphNode *> &nodes,
                            unordered_map<DirectedGraphNode *, vector<DirectedGraphNode *>> &ancestors) {
         if (nodes.insert(node).second) {
