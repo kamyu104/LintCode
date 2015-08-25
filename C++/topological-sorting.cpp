@@ -38,8 +38,7 @@ private:
         }
     }
 
-    void topSortBFS(
-                    vector<DirectedGraphNode*>& graph,
+    void topSortBFS(vector<DirectedGraphNode*>& graph,
                     unordered_map<DirectedGraphNode *, int> &ancestors,
                     vector<DirectedGraphNode *> &output) {
         // Find the nodes with 0 in degree.
@@ -105,8 +104,7 @@ private:
         }
     }
 
-    void topSortDFS(
-                    DirectedGraphNode *node,
+    void topSortDFS(DirectedGraphNode *node,
                     unordered_map<DirectedGraphNode *, vector<DirectedGraphNode *>> &ancestors,
                     unordered_set<DirectedGraphNode *> &scheduled,
                     vector<DirectedGraphNode *> &output) {
