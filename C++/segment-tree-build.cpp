@@ -1,5 +1,5 @@
 // Time:  O(n)
-// Space: O(logn)
+// Space: O(h) = O(logn)
 
 /**
  * Definition of SegmentTreeNode:
