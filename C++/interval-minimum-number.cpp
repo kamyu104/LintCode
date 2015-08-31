@@ -86,8 +86,8 @@ public:
             return root->min;
         }
 
-        int left = query(root->left, start, end);
-        int right = query(root->right, start, end);
+        const int left = query(root->left, start, end);
+        const int right = query(root->right, start, end);
 
         // Find min in the children.
         return min(left, right);
