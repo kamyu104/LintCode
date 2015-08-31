@@ -45,8 +45,8 @@ public:
         // Right child: start=(A.left + A.right) / 2 + 1, end=A.right.
         root->right = buildRecu(A, (start + end) / 2 + 1, end);
 
-        int left_max = root->left != nullptr? root->left->max : INT_MAX;
-        int right_max = root->right != nullptr? root->right->max : INT_MAX;
+        int left_max = root->left != nullptr ? root->left->max : INT_MAX;
+        int right_max = root->right != nullptr ? root->right->max : INT_MAX;
 
         // Update max.
         root->max = max(left_max, right_max);
