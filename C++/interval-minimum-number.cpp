@@ -65,8 +65,8 @@ public:
         // Right child: start=(A.left + A.right) / 2 + 1, end=A.right.
         root->right = build(A, (start + end) / 2 + 1, end);
 
-        int left_min = root->left != nullptr? root->left->min : INT_MAX;
-        int right_min = root->right != nullptr? root->right->min : INT_MAX;
+        int left_min = root->left != nullptr ? root->left->min : INT_MAX;
+        int right_min = root->right != nullptr ? root->right->min : INT_MAX;
 
         // Update min.
         root->min = min(left_min, right_min);
