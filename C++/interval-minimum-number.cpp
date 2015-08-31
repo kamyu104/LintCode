@@ -77,7 +77,7 @@ public:
     // Query min in given range.
     int query(SegmentTreeMinNode *root, int start, int end) {
         // Out of range.
-        if (root == nullptr || root->start > end || root->end <  start) {
+        if (root == nullptr || root->start > end || root->end < start) {
             return INT_MAX;
         }
 
