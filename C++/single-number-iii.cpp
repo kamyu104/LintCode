@@ -16,7 +16,7 @@ public:
 
         // Get the subset of A where the number has the bit.
         // The subset only contains one of the two integers, call it x.
-        // Xor all the elemets in the subset to get x.
+        // Xor all the elements in the subset to get x.
         vector<int> result(2, 0);
         for (const auto& i : A) {
             result[static_cast<bool>(i & bit)] ^= i;
