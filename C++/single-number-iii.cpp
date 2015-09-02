@@ -9,7 +9,7 @@ public:
      */
     vector<int> singleNumberIII(vector<int> &A) {
         // Xor all the elements to get x ^ y.
-        int x_xor_y = accumulate(A.cbegin(), A.cend(), 0, bit_xor<int>());
+        const auto x_xor_y = accumulate(A.cbegin(), A.cend(), 0, bit_xor<int>());
 
         // Get the last bit where 1 occurs.
         const auto bit = x_xor_y & -x_xor_y;
