@@ -16,8 +16,7 @@ public:
             int mid = left + (right - left) / 2;
             if (array[mid] >= target) {
                 right = mid - 1;
-            }
-            else {
+            } else {
                 left = mid + 1;
             }
         }
@@ -46,8 +45,7 @@ public:
             int mid = left + (right - left) / 2;
             if (array[mid] >= target) {
                 right = mid;
-            }
-            else {
+            } else {
                 left = mid + 1;
             }
         }
@@ -75,8 +73,7 @@ public:
             int mid = left + (right - left) / 2;
             if (array[mid] >= target) {
                 right = mid;
-            }
-            else {
+            } else {
                 left = mid;
             }
         }
