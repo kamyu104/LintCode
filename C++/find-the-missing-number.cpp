@@ -21,3 +21,15 @@ public:
         return missing_num;
     }
 };
+
+// Time:  O(n)
+// Space: O(n)
+class Solution2 {
+public:
+    int findMissing(vector<int> &nums) {
+        vector<int> expected(nums.size()); 
+        iota(expected.begin(), expected.end(), 1);  // Costs extra space O(n)
+        return accumulate (nums.cbegin(), nums.cend(), 0, bit_xor<int>()) ^
+               accumulate (expected.cbegin(), expected.cend(), 0, bit_xor<int>());
+    }
+};
