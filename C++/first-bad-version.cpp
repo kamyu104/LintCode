@@ -18,8 +18,7 @@ public:
             // Is target
             if (vc.isBadVersion(mid)) {
                 right = mid;
-            }
-            else {
+            } else {
                 left = mid;
             }
         }
@@ -44,8 +43,7 @@ public:
             // Is target
             if (vc.isBadVersion(mid)) {
                 right = mid;
-            }
-            else {
+            } else {
                 left = mid + 1;
             }
         }
@@ -70,8 +68,7 @@ public:
             // Is target
             if (vc.isBadVersion(mid)) {
                 right = mid - 1;
-            }
-            else {
+            } else {
                 left = mid + 1;
             }
         }
