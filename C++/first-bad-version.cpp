@@ -10,13 +10,11 @@ public:
     int findFirstBadVersion(int n) {
         int left = 1 - 1, right = n + 1;
 
-        VersionControl vc;
-
         // At the last, left is not target, right is target.
         while (right - left > 1) {
             int mid = left + (right - left) / 2;
             // Is target
-            if (vc.isBadVersion(mid)) {
+            if (VersionControl::isBadVersion(mid)) {
                 right = mid;
             } else {
                 left = mid;
@@ -35,13 +33,11 @@ public:
     int findFirstBadVersion(int n) {
         int left = 1, right = n + 1;
 
-        VersionControl vc;
-
         // At the last, left is not sure for target, right is target.
         while (left < right) {
             int mid = left + (right - left) / 2;
             // Is target
-            if (vc.isBadVersion(mid)) {
+            if (VersionControl::isBadVersion(mid)) {
                 right = mid;
             } else {
                 left = mid + 1;
@@ -60,13 +56,11 @@ public:
     int findFirstBadVersion(int n) {
         int left = 1, right = n;
 
-        VersionControl vc;
-
         // At the last, left is not sure for target, right is not sure for target.
         while (left <= right) {
             int mid = left + (right - left) / 2;
             // Is target
-            if (vc.isBadVersion(mid)) {
+            if (VersionControl::isBadVersion(mid)) {
                 right = mid - 1;
             } else {
                 left = mid + 1;
