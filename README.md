@@ -45,7 +45,7 @@ Algorithms
 |179|[Update Bits](http://lintcode.com/en/problem/update-bits/)| [C++](./C++/update-bits.cpp)| _O(1)_ | _O(1)_ | Medium | CTCI | |
 |181|[Flip Bits](http://lintcode.com/en/problem/flip-bits/)| [C++](./C++/flip-bits.cpp)| _O(1)_ | _O(1)_ | Easy | CTCI | |
 |196|[Find the Missing Number](http://lintcode.com/en/problem/find-the-missing-number/)| [C++](./C++/find-the-missing-number.cpp)| _O(n)_ | _O(1)_ | Medium | | |
-|365|[Count 1 in Binary](http://lintcode.com/en/problem/count-1-in-binary/)| [C++](./C++/count-1-in-binary.cpp)| _O(m)_ | _O(1)_ | Easy | CTCI | |
+|365|[Count 1 in Binary](http://lintcode.com/en/problem/count-1-in-binary/)| [C++](./C++/count-1-in-binary.cpp)| _O(1)_ | _O(1)_ | Easy | CTCI | |
 
 ---
 
