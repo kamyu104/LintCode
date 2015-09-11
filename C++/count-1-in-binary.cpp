@@ -1,4 +1,4 @@
-// Time:  O(m)
+// Time:  O(logn) = O(32)
 // Space: O(1)
 
 class Solution {
