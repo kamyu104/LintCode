@@ -15,48 +15,46 @@
  */
 class Solution {
 private:
-    bool getNumber(const string &data, int &start, int &num) {
-        if (data[start] == '#') {
-            start += 2;
+    bool getNumber(const string &data, int *start, int *num) {
+        if (data[*start] == '#') {
+            *start += 2;  // Skip "# ".
             return false;
         }
 
-        num = 0;
-        while (data[start] != ' ') {
-            num = num * 10 + data[start++] - '0';
+        for (*num = 0; isdigit(data[*start]); ++(*start)) {
+            *num = *num * 10 + data[*start] - '0';
         }
+        ++(*start);  // Skip " ".
 
-        start++;
         return true;
     }
 
-    void deserializeHelper(string data, int &start,  TreeNode *&root) {
+    void deserializeHelper(const string& data,
+                           int *start,  TreeNode **root) {
         int num;
-        if (!getNumber(data, start, num)) {
-            root = nullptr;
+        if (!getNumber(data, start, &num)) {
+            *root = nullptr;
             return;
-        }
-        else {
-            root = new TreeNode(num);
-            deserializeHelper(data, start, root->left);
-            deserializeHelper(data, start, root->right);
+        } else {
+            *root = new TreeNode(num);
+            deserializeHelper(data, start, &((*root)->left));
+            deserializeHelper(data, start, &((*root)->right));
         }
     }
 
-    void serializeHelper(TreeNode *root, string &prev) {
+    void serializeHelper(const TreeNode *root, string *prev) {
         if (!root)  {
-            prev += "# ";
+            prev->append("# ");
         } else {
             stringstream buffer;
             buffer << root->val << " ";
-            prev.append(buffer.str());
+            prev->append(buffer.str());
             serializeHelper(root->left, prev);
             serializeHelper(root->right, prev);
         }
     }
 
 public:
-
     /**
      * This method will be invoked first, you should design your own algorithm
      * to serialize a binary tree which denote by a root node to a string which
@@ -64,7 +62,7 @@ public:
      */
     string serialize(TreeNode *root) {
         string output;
-        serializeHelper(root, output);
+        serializeHelper(root, &output);
         return output;
     }
 
@@ -78,7 +76,7 @@ public:
     TreeNode *deserialize(string data) {
         TreeNode *root = nullptr;
         int start = 0;
-        deserializeHelper(data, start, root);
+        deserializeHelper(data, &start, &root);
         return root;
     }
 };
