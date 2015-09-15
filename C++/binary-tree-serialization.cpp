@@ -45,7 +45,7 @@ private:
         if (!root)  {
             prev->append("# ");
         } else {
-            prev->append(to_string(root->val) + " ");
+            prev->append(to_string(root->val).append(" "));
             serializeHelper(root->left, prev);
             serializeHelper(root->right, prev);
         }
