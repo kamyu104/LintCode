@@ -45,9 +45,7 @@ private:
         if (!root)  {
             prev->append("# ");
         } else {
-            stringstream buffer;
-            buffer << root->val << " ";
-            prev->append(buffer.str());
+            prev->append(to_string(root->val) + " ");
             serializeHelper(root->left, prev);
             serializeHelper(root->right, prev);
         }
