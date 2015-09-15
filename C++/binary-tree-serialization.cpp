@@ -49,7 +49,7 @@ private:
         } else {
             stringstream buffer;
             buffer << root->val << " ";
-            prev += buffer.str();
+            prev.append(buffer.str());
             serializeHelper(root->left, prev);
             serializeHelper(root->right, prev);
         }
