@@ -34,7 +34,6 @@ private:
         int num;
         if (!getNumber(data, start, &num)) {
             *root = nullptr;
-            return;
         } else {
             *root = new TreeNode(num);
             deserializeHelper(data, start, &((*root)->left));
