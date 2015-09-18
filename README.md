@@ -25,8 +25,8 @@ Algorithms
 * [Sort](https://github.com/kamyu104/LintCode#sort)
 * [Divide and Conquer](https://github.com/kamyu104/LintCode#divide-and-conquer)
 * [Binary Search](https://github.com/kamyu104/LintCode#binary-search)
-* [Depth First Search](https://github.com/kamyu104/LintCode#depth-first-search)
-* [Breadth First Search](https://github.com/kamyu104/LintCode#breath-first-search)
+* [Depth-First Search](https://github.com/kamyu104/LintCode#depth-first-search)
+* [Breadth-First Search](https://github.com/kamyu104/LintCode#breath-first-search)
 * [Binary Search Trees](https://github.com/kamyu104/LintCode#binary-search-trees)
 * [Dynamic Programming](https://github.com/kamyu104/LintCode#dynamic-programming)
 * [Greedy](https://github.com/kamyu104/LintCode#greedy)
@@ -300,7 +300,7 @@ Algorithms
 
 ---
 
-##Depth First Search
+##Depth-First Search
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |15|[Permutations](http://lintcode.com/en/problem/permutations/)| [C++](./C++/permutations.cpp)| _O(n * n!)_ | _O(n)_ | Medium | LeetCode, EPI | |
@@ -318,7 +318,7 @@ Algorithms
 
 ---
 
-##Breadth First Search
+##Breadth-First Search
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |69|[Binary Tree Level Order Traversal](http://lintcode.com/en/problem/binary-tree-level-order-traversal/)| [C++](./C++/binary-tree-level-order-traversal.cpp)| _O(n)_ | _O(n)_ | Medium | LeetCode | BFS |
