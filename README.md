@@ -26,7 +26,7 @@ Algorithms
 * [Divide and Conquer](https://github.com/kamyu104/LintCode#divide-and-conquer)
 * [Binary Search](https://github.com/kamyu104/LintCode#binary-search)
 * [Depth-First Search](https://github.com/kamyu104/LintCode#depth-first-search)
-* [Breadth-First Search](https://github.com/kamyu104/LintCode#breath-first-search)
+* [Breadth-First Search](https://github.com/kamyu104/LintCode#breadth-first-search)
 * [Binary Search Trees](https://github.com/kamyu104/LintCode#binary-search-trees)
 * [Dynamic Programming](https://github.com/kamyu104/LintCode#dynamic-programming)
 * [Greedy](https://github.com/kamyu104/LintCode#greedy)
