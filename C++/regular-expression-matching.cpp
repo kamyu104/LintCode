@@ -140,10 +140,10 @@ public:
             } else if (!last_pos.empty()) {
                 // Rollback to the last position of '*' plus 2.
                 // And try next position of last matched one.
-                tie<int, int>(last_s_pos, last_p_pos) = last_pos.top();
+                tie(last_s_pos, last_p_pos) = last_pos.top();
                 last_pos.pop();
                 while (!last_pos.empty() && p[last_p_pos - 2] != s[last_s_pos] && p[last_p_pos - 2] != '.') {
-                    tie<int, int>(last_s_pos, last_p_pos) = last_pos.top();
+                    tie(last_s_pos, last_p_pos) = last_pos.top();
                     last_pos.pop();
                 }
                 if (p[last_p_pos - 2] == s[last_s_pos] || p[last_p_pos - 2] == '.') {
