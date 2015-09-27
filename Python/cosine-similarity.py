@@ -10,7 +10,7 @@ class Solution:
     @return: Cosine similarity.
     """
     def cosineSimilarity(self, A, B):
-        invalid = 2
+        invalid = 2.0
         if len(A) != len(B):
             return invalid
         A_dot_B, A_dot_A, B_dot_B = 0.0, 0.0, 0.0
