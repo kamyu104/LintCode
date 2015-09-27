@@ -226,7 +226,6 @@ Algorithms
 |414|[Divide Two Integer](http://lintcode.com/en/problem/divide-two-integers/)| [C++](./C++/divide-two-integers.cpp)| _O(logn)_ | _O(1)_ | Medium | LeetCode | |
 |445|[Cosine Similarity](http://lintcode.com/en/problem/cosine-similarity/)| [C++](./C++/cosine-similarity.cpp)| _O(n)_ | _O(1)_ | Easy | | |
 
-
 ---
 
 ##Sort
