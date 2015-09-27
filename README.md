@@ -1,9 +1,9 @@
 LintCode
 ======== 
 
-Up to date (2015-08-31), there are `252` problems on [LintCode Online Judge](https://lintcode.com/).
+Up to date (2015-09-27), there are `253` problems on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `252` problems.
+Here is the classification of all `253` problems.
 For more problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -224,6 +224,8 @@ Algorithms
 |411|[Gray Code](http://lintcode.com/en/problem/gray-code/)| [C++](./C++/gray-code.cpp)| _O(2^n)_ | _O(1)_ | Medium | LeetCode | |
 |413|[Reverse Integer](http://lintcode.com/en/problem/reverse-integer/)| [C++](./C++/reverse-integer.cpp)| _O(logn)_ | _O(1)_ | Medium | LeetCode | |
 |414|[Divide Two Integer](http://lintcode.com/en/problem/divide-two-integers/)| [C++](./C++/divide-two-integers.cpp)| _O(logn)_ | _O(1)_ | Medium | LeetCode | |
+|445|[Cosine Similarity](http://lintcode.com/en/problem/cosine-similarity/)| [C++](./C++/cosine-similarity.cpp)| _O(n)_ | _O(1)_ | Easy | | |
+
 
 ---
 
