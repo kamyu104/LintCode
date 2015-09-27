@@ -224,7 +224,7 @@ Algorithms
 |411|[Gray Code](http://lintcode.com/en/problem/gray-code/)| [C++](./C++/gray-code.cpp)| _O(2^n)_ | _O(1)_ | Medium | LeetCode | |
 |413|[Reverse Integer](http://lintcode.com/en/problem/reverse-integer/)| [C++](./C++/reverse-integer.cpp)| _O(logn)_ | _O(1)_ | Medium | LeetCode | |
 |414|[Divide Two Integer](http://lintcode.com/en/problem/divide-two-integers/)| [C++](./C++/divide-two-integers.cpp)| _O(logn)_ | _O(1)_ | Medium | LeetCode | |
-|445|[Cosine Similarity](http://lintcode.com/en/problem/cosine-similarity/)| [C++](./C++/cosine-similarity.cpp)| _O(n)_ | _O(1)_ | Easy | | |
+|445|[Cosine Similarity](http://lintcode.com/en/problem/cosine-similarity/)| [C++](./C++/cosine-similarity.cpp) [Python](./Python/cosine-similarity.py) | _O(n)_ | _O(1)_ | Easy | | |
 
 ---
 
