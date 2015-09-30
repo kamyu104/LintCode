@@ -53,9 +53,8 @@ public:
 
                 // Fast pointer walks L steps ahead.
                 fast = head;
-                while (L > 0) {
+                while (L--) {
                     fast = fast->next;
-                    --L;
                 }
 
                 // The start of the cycle is the node they meet.
