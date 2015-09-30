@@ -18,33 +18,48 @@ public:
      *           if there is no cycle, return null
      */
     ListNode *detectCycle(ListNode *head) {
-        int L = 1;
-        ListNode *dummy = new ListNode(INT_MIN);
-        dummy->next = head;
-        ListNode *slow = dummy;
-        ListNode *fast = dummy;
+        ListNode *slow = head, *fast = head;
+
+        while (fast && fast->next) {
+            slow = slow->next, fast = fast->next->next;
+            if (slow == fast) {  // There is a cycle.
+                slow = head;
+                // Both pointers advance at the same time.
+                while (slow != fast) {
+                    slow = slow->next, fast = fast->next;
+                }
+                return slow;  // slow is the begin of cycle.
+        }
+        return nullptr;  // No cycle.
+    }
+};
+
+class Solution2 {
+public:
+    ListNode *detectCycle(ListNode *head) {
+        ListNode *slow = head, *fast = head;
 
         // Slow and fast pointer only meet when there is a cycle.
-        while (fast != nullptr && fast->next != nullptr) {
+        while (fast && fast->next) {
             slow = slow->next;
             fast = fast->next->next;
             if (slow == fast) {
                 // Count length of the cycle.
-                slow = slow->next;
-                while (slow != fast) {
+                int L = 0;
+                do {
                     slow = slow->next;
                     ++L;
-                }
+                } while (slow != fast);
 
                 // Fast pointer walks L steps ahead.
-                fast = dummy;
+                fast = head;
                 while (L > 0) {
                     fast = fast->next;
                     --L;
                 }
 
                 // The start of the cycle is the node they meet.
-                slow = dummy;
+                slow = head;
                 while (slow != fast) {
                     slow = slow->next;
                     fast = fast->next;
@@ -53,10 +68,7 @@ public:
                 return slow;
             }
         }
-
         return nullptr;
     }
 };
-
-
 
