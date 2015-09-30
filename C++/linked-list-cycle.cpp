@@ -20,21 +20,15 @@ public:
      * @return: True if it has a cycle, or false
      */
     bool hasCycle(ListNode *head) {
-        ListNode *dummy = new ListNode(INT_MIN);
-        dummy->next = head;
-        ListNode *slow = dummy;
-        ListNode *fast = dummy;
+        ListNode *slow = head, *fast = head;
 
-        // Slow and fast pointer only meet when there is a cycle.
-        while (fast != nullptr && fast->next != nullptr) {
-            slow = slow->next;
-            fast = fast->next->next;
-            if (slow == fast) {
+        while (fast && fast->next) {
+            slow = slow->next, fast = fast->next->next;
+            if (slow == fast) {  // There is a cycle.
                 return true;
             }
         }
-
-        return false;
+        return false;  // No cycle.
     }
 };
 
