@@ -1,7 +1,7 @@
 # LintCode
 
 ![Language](https://img.shields.io/badge/language-C++%20-orange.svg)
-![License](https://img.shields.io/github/license/lexrus/ios-dev-playbook.svg?style=flat)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Progress](https://img.shields.io/badge/progress-%20253%20%2F%20253%20%20-ff69b4.svg)
 
 Up to date (2015-09-27), there are `253` problems on [LintCode Online Judge](https://lintcode.com/).
