@@ -1,6 +1,6 @@
 # LintCode
 
-![Language](https://img.shields.io/badge/language-C++%20-orange.svg)
+![Language](https://img.shields.io/badge/language-C++%2011%20-orange.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Progress](https://img.shields.io/badge/progress-253%20%2F%20253%20-ff69b4.svg)
 
