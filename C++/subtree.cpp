@@ -13,6 +13,8 @@
  *     }
  * }
  */
+ 
+ // Morris Traversal (Preorder) if the data of the tree nodes could be modified.
 class Solution {
 public:
     /**
