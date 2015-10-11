@@ -28,7 +28,7 @@ public:
         TreeNode *curr = T1;
         while (curr) {
             if (!curr->left) {
-                if (isSameTree(curr, curr, T2)) {
+                if (!found && isSameTree(curr, curr, T2)) {
                     found = true;
                 }
                 prev = curr;
@@ -38,7 +38,8 @@ public:
                 while (node->right && node->right != curr) {
                     node = node->right;
                 }
-                if (!node->right) {
+                // Traverse the left child if only if the subtree is not found.
+                if (!found && !node->right) {
                     if (isSameTree(curr, curr, T2)) {
                         found = true;
                     }
