@@ -47,6 +47,7 @@ public:
                     node->right = curr;
                     curr = curr->left;
                 } else {
+                    // Rollback the modification.
                     node->right = nullptr;
                     curr = curr->right;
                 }
