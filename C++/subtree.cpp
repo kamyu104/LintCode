@@ -52,7 +52,7 @@ public:
                 }
             }
         }
-        // Do full traversal to rollback the modification due to Morris Traversal.
+        // Complete the traversal to rollback the modification due to Morris Traversal.
         return found;
     }
 
