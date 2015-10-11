@@ -13,8 +13,6 @@
  *     }
  * }
  */
- 
- // Morris Traversal (Preorder).
 class Solution {
 public:
     /**
@@ -25,12 +23,13 @@ public:
         if (!T2) {
             return true;
         }
+        bool found = false;
         TreeNode *prev = nullptr;
         TreeNode *curr = T1;
         while (curr) {
             if (!curr->left) {
                 if (isSameTree(curr, curr, T2)) {
-                    return true;
+                    found = true;
                 }
                 prev = curr;
                 curr = curr->right;
@@ -41,7 +40,7 @@ public:
                 }
                 if (!node->right) {
                     if (isSameTree(curr, curr, T2)) {
-                        return true;
+                        found = true;
                     }
                     prev = curr;
                     node->right = curr;
@@ -52,7 +51,8 @@ public:
                 }
             }
         }
-        return false;
+        // Do full traversal to rollback the modification due to Morris Traversal.
+        return found;
     }
 
     bool isSameTree(const TreeNode *T1_root,
@@ -61,6 +61,7 @@ public:
         if (!T1 && !T2) {
             return true;
         }
+
 
         if (T1 && T2) {
             return T1->val == T2->val &&
