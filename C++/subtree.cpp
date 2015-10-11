@@ -14,7 +14,7 @@
  * }
  */
  
- // Morris Traversal.
+ // Morris Traversal (Preorder).
 class Solution {
 public:
     /**
