@@ -1,4 +1,4 @@
-// Time:  O(m * n)
+// Time:  O(m * n), n is number of the nodes in larger tree, m is number of the nodes in smaller one.
 // Space: O(1)
 
 /**
