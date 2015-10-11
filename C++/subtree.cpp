@@ -24,14 +24,12 @@ public:
             return true;
         }
         bool found = false;
-        TreeNode *prev = nullptr;
         TreeNode *curr = T1;
         while (curr) {
             if (!curr->left) {
                 if (!found && isSameTree(curr, curr, T2)) {
                     found = true;
                 }
-                prev = curr;
                 curr = curr->right;
             } else {
                 TreeNode *node = curr->left;
@@ -43,7 +41,6 @@ public:
                     if (isSameTree(curr, curr, T2)) {
                         found = true;
                     }
-                    prev = curr;
                     node->right = curr;
                     curr = curr->left;
                 } else {
@@ -64,7 +61,6 @@ public:
             return true;
         }
 
-
         if (T1 && T2) {
             return T1->val == T2->val &&
                    isSameTree(T1_root, T1->left, T2->left) &&
@@ -78,15 +74,13 @@ public:
     // Morris Traversal.
     TreeNode *realRightChild(const TreeNode *curr) {
         TreeNode* curr_right = curr ? curr->right : nullptr;
-        if (curr_right) {
-            if (curr_right->left) {
-                TreeNode *node = curr_right->left;
-                while (node->right && node->right != curr_right) {
-                    node = node->right;
-                }
-                if (node->right) {
-                    curr_right = nullptr;
-                }
+        if (curr_right && curr_right->left) {
+            TreeNode *node = curr_right->left;
+            while (node->right && node->right != curr_right) {
+                node = node->right;
+            }
+            if (node->right) {
+                curr_right = nullptr;
             }
         }
         return curr_right;
