@@ -24,8 +24,6 @@ public:
     bool isSubtree(TreeNode *T1, TreeNode *T2) {
         if (!T2) {
             return true;
-        } else if (!T1) {
-            return false;
         }
         TreeNode *prev = nullptr;
         TreeNode *curr = T1;
