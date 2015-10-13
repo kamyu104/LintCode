@@ -1,8 +1,4 @@
-# LintCode
-
-![Language](https://img.shields.io/badge/language-C++%2011%20-orange.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Progress](https://img.shields.io/badge/progress-255%20%2F%20255%20-ff69b4.svg)
+# [LintCode](http://www.lintcode.com/en/problem/) ![Language](https://img.shields.io/badge/language-C++%2011%20-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/kamyu104/LintCode/blob/master/LICENSE.md) ![Progress](https://img.shields.io/badge/progress-255%20%2F%20255%20-ff69b4.svg)
 
 Up to date (2015-10-13), there are `255` problems on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
