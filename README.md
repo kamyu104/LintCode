@@ -6,10 +6,7 @@ Here is the classification of all `255` problems.
 For more problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
---- 
-Algorithms
-====
-
+## Algorithms
 * [Bit Manipulation](https://github.com/kamyu104/LintCode#bit-manipulation)
 * [Array](https://github.com/kamyu104/LintCode#array)
 * [String](https://github.com/kamyu104/LintCode#string)
@@ -31,9 +28,7 @@ Algorithms
 * [Greedy](https://github.com/kamyu104/LintCode#greedy)
 * [OO Design](https://github.com/kamyu104/LintCode#oo-design)
 
----
-
-##Bit Manipulation
+## Bit Manipulation
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |1|[A + B Problem](http://lintcode.com/en/problem/a-b-problem/)| [C++](./C++/a-b-problem.cpp)| _O(1)_ | _O(1)_ | Medium | | |
@@ -46,9 +41,7 @@ Algorithms
 |196|[Find the Missing Number](http://lintcode.com/en/problem/find-the-missing-number/)| [C++](./C++/find-the-missing-number.cpp)| _O(n)_ | _O(1)_ | Medium | | |
 |365|[Count 1 in Binary](http://lintcode.com/en/problem/count-1-in-binary/)| [C++](./C++/count-1-in-binary.cpp)| _O(1)_ | _O(1)_ | Easy | CTCI | |
 
----
-
-##Array
+## Array
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |6|[Merge Sorted Array](http://lintcode.com/en/problem/merge-sorted-array/)| [C++](./C++/merge-sorted-array.cpp)| _O(m + n)_ | _O(1)_ | Easy | LeetCode | Two Pointers |
@@ -90,9 +83,7 @@ Algorithms
 |405|[Submatrix Sum](http://lintcode.com/en/problem/submatrix-sum/)| [C++](./C++/submatrix-sum.cpp)| _O(m * n^2)_ | _O(m)_ | Hard | | Hash |
 |406|[Minimum Size Subarray Sum](http://lintcode.com/en/problem/minimum-size-subarray-sum/)| [C++](./C++/minimum-size-subarray-sum.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | Two Pointers, Binary Search |
 
----
-
-##String
+## String
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |13|[strStr](http://lintcode.com/en/problem/strstr/)|[C++](./C++/strstr.cpp)| _O(n)_ | _O(k)_ | Easy | LeetCode | `KMP Algorithm` |
@@ -110,10 +101,7 @@ Algorithms
 |417|[Valid Number](http://lintcode.com/en/problem/valid-number/)|[C++](./C++/valid-number.cpp)| _O(n)_ | _O(1)_ | Hard | LeetCode | Automata |
 |420|[Count and Say](http://lintcode.com/en/problem/count-and-say/)|[C++](./C++/count-and-say.cpp)| _O(n * 2^n)_ | _O(2^n)_ | Easy | LeetCode | |
 
-
----
-
-##Linked List
+## Linked List
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |16|[Merge Two Sorted Lists](http://lintcode.com/en/problem/merge-two-sorted-lists/)|[C++](./C++/merge-two-sorted-lists.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode, EPI | |
@@ -137,9 +125,7 @@ Algorithms
 |422|[Length of Last Word](http://lintcode.com/en/problem/length-of-last-word/)|[C++](./C++/length-of-last-word.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
 |450|[Reverse Nodes in k-Group](http://lintcode.com/en/problem/reverse-nodes-in-k-group/)|[C++](./C++/reverse-nodes-in-k-group.cpp)| _O(n)_ | _O(1)_ | Hard | LeetCode | |
 
----
-
-##Tree
+## Tree
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |85|[Insert Node in a Binary Search Tree](http://lintcode.com/en/problem/insert-node-in-a-binary-search-tree/)| [C++](./C++/insert-node-in-a-binary-search-tree.cpp)| _O(h)_ | _O(1)_ | Easy | | |
@@ -148,10 +134,7 @@ Algorithms
 |175|[Invert Binary Tree](http://lintcode.com/en/problem/invert-binary-tree/)| [C++](./C++/invert-binary-tree.cpp)| _O(n)_ | _O(h)_ | Easy | LeetCode | |
 |442|[Implement Trie](http://lintcode.com/en/problem/implement-trie/)| [C++](./C++/implement-trie.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | Trie |
 
-
----
-
-##Stack
+## Stack
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |12|[Min Stack](http://lintcode.com/en/problem/min-stack/)| [C++](./C++/min-stack.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode, EPI | |
@@ -168,16 +151,12 @@ Algorithms
 |423|[Valid Parentheses](http://lintcode.com/en/problem/valid-parentheses.cpp/)| [C++](./C++/valid-parentheses.cpp.cpp)| _O(n)_ | _O(n)_ | Easy | LeetCode | |
 |424|[Evaluate Reverse Polish Notation](http://lintcode.com/en/problem/evaluate-reverse-polish-notation/)| [C++](./C++/evaluate-reverse-polish-notation.cpp)| _O(n)_ | _O(n)_ | Medium | LeetCode | |
 
----
-
-##Queue
+## Queue
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |362|[Sliding Window Maximum](http://lintcode.com/en/problem/sliding-window-maximum/)| [C++](./C++/sliding-window-maximum.cpp)| _O(n)_ | _O(k)_ | Hard | EPI | Deque, Tricky |
 
----
-
-##Heap
+## Heap
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |4|[Ugly Number](http://lintcode.com/en/problem/ugly-number/)| [C++](./C++/ugly-number.cpp)| _O(k)_ | _O(1)_ | Medium | CTCI | BST, Heap |
@@ -186,9 +165,7 @@ Algorithms
 |130|[Heapify](http://lintcode.com/en/problem/heapify/)| [C++](./C++/heapify.cpp)| _O(n)_ | _O(1)_ | Medium | | |
 |364|[Trapping Rain Water II](http://lintcode.com/en/problem/trapping-rain-water-ii/)| [C++](./C++/trapping-rain-water-ii.cpp)| _O(m * n * (logm + logn))_ | _O(m * n)_ | Hard | | BFS, Heap, Tricky |
 
----
-
-##Hash Tables
+## Hash Tables
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |56|[2 Sum](http://lintcode.com/en/problem/2-sum/)| [C++](./C++/2-sum.cpp)| _O(n)_ | _O(n)_ | Medium | LeetCode | |
@@ -203,16 +180,12 @@ Algorithms
 |432|[Find the Weak Connected Component in the Directed Graph](http://lintcode.com/en/problem/find-the-weak-connected-component-in-the-directed-graph/)| [C++](./C++/find-the-weak-connected-component-in-the-directed-graph.cpp)| _O(nlogn)_ | _O(n)_ | Medium | | Union Find |
 |434|[Number of Islands II](http://lintcode.com/en/problem/number-of-islands-ii/)| [C++](./C++/number-of-islands-ii.cpp)| _O(p)_ | _O(p)_ | Hard | | Union Find |
 
----
-
-##Data Structure
+## Data Structure
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |134|[LRU Cache](http://lintcode.com/en/problem/lru-cache/)| [C++](./C++/lru-cache.cpp)| _O(1)_ | _O(c)_ | Hard | LeetCode, EPI | List, Hash |
 
----
-
-##Math
+## Math
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |2|[Trailing Zeros](http://lintcode.com/en/problem/trailing-zeros/)| [C++](./C++/trailing-zeros.cpp)| _O(logn)_ | _O(1)_ | Easy | LeetCode | |
@@ -228,9 +201,7 @@ Algorithms
 |414|[Divide Two Integer](http://lintcode.com/en/problem/divide-two-integers/)| [C++](./C++/divide-two-integers.cpp)| _O(logn)_ | _O(1)_ | Medium | LeetCode | |
 |445|[Cosine Similarity](http://lintcode.com/en/problem/cosine-similarity/)| [C++](./C++/cosine-similarity.cpp) [Python](./Python/cosine-similarity.py) | _O(n)_ | _O(1)_ | Easy | | |
 
----
-
-##Sort
+## Sort
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |5|[Kth Largest Element](http://lintcode.com/en/problem/kth-largest-element/)| [C++](./C++/kth-largest-element.cpp)| _O(n)_ | _O(1)_ | Medium | EPI | Two Pointers, Quick Sort |
@@ -247,9 +218,7 @@ Algorithms
 |418|[Integer to Roman](http://lintcode.com/en/problem/integer-to-roman/)| [C++](./C++/integer-to-roman.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 |419|[Roman to Integer](http://lintcode.com/en/problem/roman-to-integer/)| [C++](./C++/roman-to-integer.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 
----
-
-##Divide and Conquer
+## Divide and Conquer
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |17|[Subsets](http://lintcode.com/en/problem/subsets/)| [C++](./C++/subsets.cpp)| _O(n * 2^n)_ | _O(1)_ | Medium | LeetCode | |
@@ -278,9 +247,7 @@ Algorithms
 |425|[Letter Combinations of a Phone Number](http://lintcode.com/en/problem/letter-combinations-of-a-phone-number/) (invalid link now) | [C++](./C++/letter-combinations-of-a-phone-number.cpp)| _O(n * 4^n)_ | _O(n)_ | Medium | LeetCode | |
 |439|[Segment Tree Build II](http://lintcode.com/en/problem/segmemt-tree-build-ii/)| [C++](./C++/segment-tree-build-ii.cpp)| _O(n)_ | _O(h)_ | Medium | | Segment Tree, BST |
 
----
-
-##Binary Search
+## Binary Search
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |14|[Binary Search](http://lintcode.com/en/problem/binary-search/)| [C++](./C++/binary-search.cpp)| _O(logn)_ | _O(1)_ | Easy | | |
@@ -301,9 +268,7 @@ Algorithms
 |390|[Find Peak Element II](http://lintcode.com/en/problem/find-peak-element-ii/)| [C++](./C++/find-peak-element-ii.cpp) [Java](./Java/find-peak-element-ii.java) [Python](./Python/find-peak-element-ii.py)| _O(m + n)_ | _O(1)_ | Hard | | |
 |437|[Copy Books](http://lintcode.com/en/problem/copy-books/)| [C++](./C++/copy-books.cpp) | _O(nlogp)_ | _O(1)_ | Hard | UVa 714 | |
 
----
-
-##Depth-First Search
+## Depth-First Search
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |15|[Permutations](http://lintcode.com/en/problem/permutations/)| [C++](./C++/permutations.cpp)| _O(n * n!)_ | _O(n)_ | Medium | LeetCode, EPI | |
@@ -319,9 +284,7 @@ Algorithms
 |153|[Combination Sum II](http://lintcode.com/en/problem/combination-sum-ii/)| [C++](./C++/combination-sum-ii.cpp)| _O(k * C(n, k))_ | _O(k)_ | Medium | LeetCode | DFS |
 |433|[Number of Islands](http://lintcode.com/en/problem/number-of-islands/)| [C++](./C++/number-of-islands.cpp)| _O(m * n)_ | _O(m * n)_ | Easy | LeetCode | DFS |
 
----
-
-##Breadth-First Search
+## Breadth-First Search
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |69|[Binary Tree Level Order Traversal](http://lintcode.com/en/problem/binary-tree-level-order-traversal/)| [C++](./C++/binary-tree-level-order-traversal.cpp)| _O(n)_ | _O(n)_ | Medium | LeetCode | BFS |
@@ -334,9 +297,7 @@ Algorithms
 |176|[Route Between Two Nodes in Graph](http://lintcode.com/en/problem/route-between-two-nodes-in-graph/)| [C++](./C++/route-between-two-nodes-in-graph.cpp)| _O(n)_ | _O(n)_ | Medium | | DFS, BFS |
 |431|[Find the Connected Component in the Undirected Graph](http://lintcode.com/en/problem/find-the-connected-component-in-the-undirected-graph/)| [C++](./C++/find-the-connected-component-in-the-undirected-graph.cpp)| _O(n)_ | _O(n)_ | Easy | | BFS |
 
----
-
-##Binary Search Trees
+## Binary Search Trees
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |7|[Binary Tree Serialization](http://lintcode.com/en/problem/binary-tree-serialization/)| [C++](./C++/binary-tree-serialization.cpp)| _O(n)_ | _O(h)_ | Medium | LeetCode | |
@@ -347,9 +308,7 @@ Algorithms
 |391|[Number of Airplanes in the Sky](http://lintcode.com/en/problem/number-of-airplanes-in-the-sky/)| [C++](./C++/number-of-airplanes-in-the-sky.cpp)| _O(nlogn)_ | _O(n)_ | Easy | | BST, Heap |
 |401|[Kth Smallest Number in Sorted Matrix](http://lintcode.com/en/problem/kth-smallest-number-in-sorted-matrix/)| [C++](./C++/kth-smallest-number-in-sorted-matrix.cpp)| _O(klog(min(m, n, k)))_ | _O(min(m, n, k))_ | Medium | | BST, Heap |
 
----
-
-##Dynamic Programming
+## Dynamic Programming
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |29|[Interleaving String](http://lintcode.com/en/problem/interleaving-string/)| [C++](./C++/interleaving-string.cpp)| _O(m * b)_ | _O(min(m, n))_ | Medium | EPI | |
@@ -384,9 +343,7 @@ Algorithms
 |435|[Post Office Problem](http://lintcode.com/en/problem/post-office-problem/)| [C++](./C++/post-office-problem.cpp)| _O(n^3)_ | _O(n^2)_ | Hard | PKU 1160 | |
 |436|[Maximal Square](http://lintcode.com/en/problem/maximal-square/)| [C++](./C++/maximal-square.cpp)| _O(m * n)_ | _O(n)_ | Medium | LeetCode | |
 
----
-
-##Greedy
+## Greedy
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |41|[Maximum Subarray](http://lintcode.com/en/problem/maximum-subarray/)| [C++](./C++/maximum-subarray.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
@@ -401,9 +358,7 @@ Algorithms
 |402|[Continuous Subarray Sum](http://lintcode.com/en/problem/continuous-subarray-sum/)| [C++](./C++/continuous-subarray-sum.cpp)| _O(n)_ | _O(1)_ | Medium | EPI | |
 |412|[Candy](http://lintcode.com/en/problem/candy/)| [C++](./C++/candy.cpp)| _O(n)_ | _O(n)_ | Hard | LeetCode | Greedy |
 
----
-
-##OO Design
+## OO Design
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |204|[Singleton](http://lintcode.com/en/problem/singleton/)| [C++](./C++/singleton.cpp)| _O(1)_ | _O(1)_ | Easy | | |
