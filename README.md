@@ -1,8 +1,8 @@
-# [LintCode](http://www.lintcode.com/en/problem/) ![Language](https://img.shields.io/badge/language-C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-256%20%2F%20256-ff69b4.svg)
+# [LintCode](http://www.lintcode.com/en/problem/) ![Language](https://img.shields.io/badge/language-C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-261%20%2F%20261-ff69b4.svg)
 
-Up to date (2015-10-15), there are `256` problems on [LintCode Online Judge](https://lintcode.com/).
+Up to date (2015-10-15), there are `261` problems on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `256` problems.
+Here is the classification of all `261` problems.
 For more problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -121,9 +121,14 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |170|[Rotate List](http://lintcode.com/en/problem/rotate-list/)|[C++](./C++/rotate-list.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 |173|[Insertion Sort List](http://lintcode.com/en/problem/insertion-sort-list/)|[C++](./C++/insertion-sort-list.cpp)| _O(n^2)_ | _O(1)_ | Easy | LeetCode | |
 |174|[Remove Nth Node From End of List](http://lintcode.com/en/problem/remove-nth-node-from-end-of-list/)|[C++](./C++/remove-nth-node-from-end-of-list.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
+|223|[Palindrome Linked List](http://lintcode.com/en/problem/palindrome-linked-list/)|[C++](./C++/palindrome-linked-list.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 |372|[Delete Node in the Middle of Singly Linked List](http://lintcode.com/en/problem/delete-node-in-the-middle-of-singly-linked-list/)|[C++](./C++/delete-node-in-the-middle-of-singly-linked-list.cpp)| _O(1)_ | _O(1)_ | Easy | CTCI | |
+|380|[Intersection of Two Linked Lists](http://lintcode.com/en/problem/intersection-of-two-linked-lists/)|[C++](./C++/intersection-of-two-linked-lists.cpp)| _O(m + n)_ | _O(1)_ | Easy | LeetCode | |
 |422|[Length of Last Word](http://lintcode.com/en/problem/length-of-last-word/)|[C++](./C++/length-of-last-word.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
 |450|[Reverse Nodes in k-Group](http://lintcode.com/en/problem/reverse-nodes-in-k-group/)|[C++](./C++/reverse-nodes-in-k-group.cpp)| _O(n)_ | _O(1)_ | Hard | LeetCode | |
+|451|[Swap Nodes in Pairs](http://lintcode.com/en/problem/swap-nodes-in-pairs/)|[C++](./C++/swap-nodes-in-pairs.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
+|452|[Remove Linked List Elements](http://lintcode.com/en/problem/remove-linked-list-elements/)|[C++](./C++/remove-linked-list-elements.cpp)| _O(n)_ | _O(1)_ | Naive | LeetCode | |
+|453|[Flatten Binary Tree to Linked List](http://lintcode.com/en/problem/flatten-binary-tree-to-linked-list/)|[C++](./C++/flatten-binary-tree-to-linked-list.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
 
 ## Tree
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
