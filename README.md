@@ -164,7 +164,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |4|[Ugly Number](http://lintcode.com/en/problem/ugly-number/)| [C++](./C++/ugly-number.cpp)| _O(k)_ | _O(1)_ | Medium | CTCI | BST, Heap |
-|81|[Median in Data Stream](http://lintcode.com/en/problem/median-in-data-stream/)| [C++](./C++/median-in-data-stream.cpp)| _O(nlogn)_ | _O(n)_ | Hard | EPI | BST, Heap |
+|81|[Data Stream Median](http://lintcode.com/en/problem/data-stream-median/)| [C++](./C++/data-stream-median.cpp)| _O(nlogn)_ | _O(n)_ | Hard | EPI | BST, Heap |
 |104|[Merge k Sorted Lists](http://lintcode.com/en/problem/merge-k-sorted-lists/)| [C++](./C++/merge-k-sorted-lists.cpp)| _O(n * logk)_ | _O(k)_ | Medium | LeetCode | |
 |130|[Heapify](http://lintcode.com/en/problem/heapify/)| [C++](./C++/heapify.cpp)| _O(n)_ | _O(1)_ | Medium | | |
 |364|[Trapping Rain Water II](http://lintcode.com/en/problem/trapping-rain-water-ii/)| [C++](./C++/trapping-rain-water-ii.cpp)| _O(m * n * (logm + logn))_ | _O(m * n)_ | Hard | | BFS, Heap, Tricky |
