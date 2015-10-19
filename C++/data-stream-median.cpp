@@ -14,17 +14,16 @@ public:
         multiset<int, greater<int>> max_bst;
 
         vector<int> ans;
-        for (int i = 0; i < nums.size(); ++i) {
-
+        for (const auto& num : nums) {
             // Balance smaller half and larger half.
-            if (max_bst.empty() || nums[i] > *max_bst.cbegin()) {
-                min_bst.insert(nums[i]);
+            if (max_bst.empty() || num > *max_bst.cbegin()) {
+                min_bst.insert(num);
                 if (min_bst.size() > max_bst.size() + 1) {
                     max_bst.insert(*min_bst.cbegin());
                     min_bst.erase(min_bst.cbegin());
                 }
             } else {
-                max_bst.insert(nums[i]);
+                max_bst.insert(num);
                 if (max_bst.size() > min_bst.size()) {
                     min_bst.insert(*max_bst.cbegin());
                     max_bst.erase(max_bst.cbegin());
@@ -53,16 +52,15 @@ public:
         priority_queue<int, vector<int>, less<int>> max_heap;
 
         vector<int> ans;
-        int x;
-        for (auto& x : nums) {
-            if (max_heap.empty() || x > max_heap.top()) {
-                min_heap.emplace(x);
+        for (const auto& num : nums) {
+            if (max_heap.empty() || num > max_heap.top()) {
+                min_heap.emplace(num);
                 if (min_heap.size() > max_heap.size() + 1) {
                     max_heap.emplace(min_heap.top());
                     min_heap.pop();
                 }
             } else {
-                max_heap.emplace(x);
+                max_heap.emplace(num);
                 if (max_heap.size() > min_heap.size()) {
                     min_heap.emplace(max_heap.top());
                     max_heap.pop();
