@@ -23,8 +23,7 @@ public:
                     max_bst.insert(*min_bst.cbegin());
                     min_bst.erase(min_bst.cbegin());
                 }
-            }
-            else {
+            } else {
                 max_bst.insert(nums[i]);
                 if (max_bst.size() > min_bst.size()) {
                     min_bst.insert(*max_bst.cbegin());
@@ -62,8 +61,7 @@ public:
                     max_heap.emplace(min_heap.top());
                     min_heap.pop();
                 }
-            }
-            else {
+            } else {
                 max_heap.emplace(x);
                 if (max_heap.size() > min_heap.size()) {
                     min_heap.emplace(max_heap.top());
