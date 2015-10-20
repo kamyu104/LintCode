@@ -16,7 +16,7 @@ public:
         unordered_set<string> levels[2];
         int cur_level = 0;
 
-        levels[cur_level].insert(start);
+        levels[cur_level].emplace(start);
         while (dict.size() > 0 && levels[cur_level % 2].size() > 0) {
             // end is in current level, stop
             if (trace.count(end) == 1) {
@@ -37,8 +37,8 @@ public:
                     for (char c = 'a'; c <= 'z'; c++) {
                         new_word[i] = c;
                         if (dict.count(new_word) == 1) {
-                            trace[new_word].insert(from);
-                            levels[(cur_level + 1) % 2].insert(new_word);
+                            trace[new_word].emplace(from);
+                            levels[(cur_level + 1) % 2].emplace(new_word);
                         }
                     }
                     new_word[i] = orig_c;
@@ -79,7 +79,7 @@ public:
                         candidate[i] = j; // Change one character.
                         if (visited.count(candidate) == 0 && dict.count(candidate) == 1) {
                             level[(rounds + 1) % 2].emplace_back(candidate);
-                            visited.insert(candidate); // Marked as visited
+                            visited.emplace(candidate); // Marked as visited
                         }
                     }
                 }
@@ -123,7 +123,7 @@ public:
                         w[i] = j; // Change one character.
                         if (j != c && visited.count(w) == 0 && dict.count(w) == 1) {
                             que.emplace(w);
-                            visited.insert(w); // Marked as visited.
+                            visited.emplace(w); // Marked as visited.
                         }
                     }
                     w[i] = c; // Rollback.
