@@ -16,7 +16,7 @@ public:
         unordered_set<string> levels[2];
         int cur_level = 0;
 
-        levels[cur_level].insert(start);
+        levels[cur_level].emplace(start);
         while (dict.size() > 0 && levels[cur_level % 2].size() > 0) {
             // end is in current level, stop
             if (trace.count(end) == 1) {
@@ -37,8 +37,8 @@ public:
                     for (char c = 'a'; c <= 'z'; ++c) {
                         new_word[i] = c;
                         if (dict.count(new_word) == 1) {
-                            trace[new_word].insert(from);
-                            levels[(cur_level + 1) % 2].insert(new_word);
+                            trace[new_word].emplace(from);
+                            levels[(cur_level + 1) % 2].emplace(new_word);
                         }
                     }
                     new_word[i] = orig_c;
