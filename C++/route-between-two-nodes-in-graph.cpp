@@ -22,7 +22,7 @@ public:
     bool hasRoute(vector<DirectedGraphNode*> graph,
                   DirectedGraphNode* s, DirectedGraphNode* t) {
         unordered_set<DirectedGraphNode *> visited_node;
-        visited_node.insert(s);
+        visited_node.emplace(s);
         return BFS(s, t, visited_node);
     }
     bool BFS(DirectedGraphNode* s, const DirectedGraphNode* t,
@@ -39,7 +39,7 @@ public:
 
             // Add neighbors which are not visited into the queue
             for (const auto& node: s->neighbors) {
-                if (visited_node.insert(node).second) {
+                if (visited_node.emplace(node).second) {
                     q.emplace(node);
                 }
             }
@@ -61,7 +61,7 @@ public:
     bool hasRoute(vector<DirectedGraphNode*> graph,
                   DirectedGraphNode* s, DirectedGraphNode* t) {
         unordered_set<DirectedGraphNode *> visited_node;
-        visited_node.insert(s);
+        visited_node.emplace(s);
         return DFS(s, t, visited_node);
     }
     bool DFS(DirectedGraphNode* s, const DirectedGraphNode* t,
@@ -72,7 +72,7 @@ public:
 
         // Search neighbors which are not visted
         for (const auto& node: s->neighbors) {
-            if (visited_node.insert(node).second) {
+            if (visited_node.emplace(node).second) {
                 if (DFS(node, t, visited_node)) {
                     return true;
                 }
