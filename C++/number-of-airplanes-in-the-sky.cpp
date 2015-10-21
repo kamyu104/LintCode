@@ -106,7 +106,7 @@ public:
         sort(airplanes.begin(), airplanes.end(), Compare());
 
         for (const auto& i : airplanes) {
-            bst.insert(i.end);
+            bst.emplace(i.end);
             while (*bst.begin() <= i.start) {
                 bst.erase((bst.begin()));
             }
