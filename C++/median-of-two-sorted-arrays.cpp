@@ -1,4 +1,4 @@
-// Time:  O(logn(min(m, n)))
+// Time:  O(log(min(m, n)))
 // Space: O(1)
 
 class Solution {
