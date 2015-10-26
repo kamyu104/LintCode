@@ -42,14 +42,19 @@ public:
 
 private:
     bool getNumber(const string &data, int *start, int *num) {
+        int sign = 1;
         if (data[*start] == '#') {
             *start += 2;  // Skip "# ".
             return false;
+        } else if (data[*start] == '-') {
+            sign = -1;
+            ++(*start);
         }
 
         for (*num = 0; isdigit(data[*start]); ++(*start)) {
             *num = *num * 10 + data[*start] - '0';
         }
+        *num *= sign;
         ++(*start);  // Skip " ".
 
         return true;
