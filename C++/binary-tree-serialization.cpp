@@ -21,6 +21,79 @@ public:
      * can be easily deserialized by your own "deserialize" method later.
      */
     string serialize(TreeNode *root) {
+        string output;
+        serializeHelper(root, &output);
+        return output;
+    }
+
+    /**
+     * This method will be invoked second, the argument data is what exactly
+     * you serialized at method "serialize", that means the data is not given by
+     * system, it's given by your own serialize method. So the format of data is
+     * designed by yourself, and deserialize it here as you serialize it in
+     * "serialize" method.
+     */
+    TreeNode *deserialize(string data) {
+        TreeNode *root = nullptr;
+        int start = 0;
+        deserializeHelper(data, &start, &root);
+        return root;
+    }
+
+private:
+    bool getNumber(const string &data, int *start, int *num) {
+        int sign = 1;
+        if (data[*start] == '#') {
+            *start += 2;  // Skip "# ".
+            return false;
+        } else if (data[*start] == '-') {
+            sign = -1;
+            ++(*start);
+        }
+
+        for (*num = 0; isdigit(data[*start]); ++(*start)) {
+            *num = *num * 10 + data[*start] - '0';
+        }
+        *num *= sign;
+        ++(*start);  // Skip " ".
+
+        return true;
+    }
+
+    void serializeHelper(const TreeNode *root, string *prev) {
+        if (!root)  {
+            prev->append("# ");
+        } else {
+            prev->append(to_string(root->val).append(" "));
+            serializeHelper(root->left, prev);
+            serializeHelper(root->right, prev);
+        }
+    }
+
+    void deserializeHelper(const string& data,
+                           int *start,  TreeNode **root) {
+        int num;
+        if (!getNumber(data, start, &num)) {
+            *root = nullptr;
+        } else {
+            *root = new TreeNode(num);
+            deserializeHelper(data, start, &((*root)->left));
+            deserializeHelper(data, start, &((*root)->right));
+        }
+    }
+};
+
+
+// Time:  O(n)
+// Space: O(n)
+class Solution2 {
+public:
+    /**
+     * This method will be invoked first, you should design your own algorithm
+     * to serialize a binary tree which denote by a root node to a string which
+     * can be easily deserialized by your own "deserialize" method later.
+     */
+    string serialize(TreeNode *root) {
         ostringstream out;
         serializeHelper(root, out);
         return out.str();
@@ -34,7 +107,7 @@ public:
      * "serialize" method.
      */
     TreeNode *deserialize(string data) {
-        istringstream in(data);
+        istringstream in(data);  // Space: O(n)
         return deserializeHelper(in);
     }
 
