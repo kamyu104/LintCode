@@ -31,6 +31,7 @@ public:
         sum[0][0] = 0;
         for (int i = 1; i <= k; ++i) {
             for (int j = 0; j <= n; ++j) {
+                // We can skip this line due to sum[i][j] <= sum[i - 2][j]
                 // sum[i % 2][j] = INT_MAX;
                 for (int r = 1; r <= j; ++r) {
                     if (sum[(i - 1) % 2][j - r] != INT_MAX) {
