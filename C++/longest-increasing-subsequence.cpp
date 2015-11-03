@@ -24,10 +24,10 @@ private:
         auto it = upper_bound(LIS->begin(), LIS->end(), target);
 
         // If not found, append the target.
-        if (it != LIS->end()) {
-            *it = target;
-        } else {
+        if (it == LIS->end()) {
             LIS->emplace_back(target);
+        } else {
+            *it = target;
         }
     }
 };
