@@ -34,7 +34,7 @@ public:
     int longestIncreasingSubsequence(vector<int> nums) {
         vector<int> LIS;
 
-        for (auto& i : nums) {
+        for (const auto& i : nums) {
             insert(LIS, i);
         }
 
