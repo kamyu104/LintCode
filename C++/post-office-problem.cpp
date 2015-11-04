@@ -61,7 +61,7 @@ public:
                             (n - 1 - i) * (A[i + 1] - A[i]);
         }
     }
-    
+
     int minCost(const vector<int>& A,
                 const vector<int> &before_cost, const vector<int> &after_cost,
                 const int i, const int j) {
