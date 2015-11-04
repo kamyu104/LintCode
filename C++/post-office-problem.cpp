@@ -58,7 +58,7 @@ public:
         for (int i = n - 2; i >= 0; --i) {
             // after_cost[i] = Sum(A[k] - A[i]) for k > i
             (*after_cost)[i] = (*after_cost)[i + 1] +
-                            (n - 1 - i) * (A[i + 1] - A[i]);
+                               (n - 1 - i) * (A[i + 1] - A[i]);
         }
     }
 
