@@ -51,9 +51,11 @@ public:
         const int n = A.size();
         vector<int> before_diff(n), after_diff(n);
         for (int i = 1; i < n; ++i) {
+            // before_diff[i] = Sum(A[i] - A[k]) for k < i
             before_diff[i] = before_diff[i - 1] + i * (A[i] - A[i - 1]);
         }
         for (int i = n - 2; i >= 0; --i) {
+            // after_diff[i] = Sum(A[k] - A[i]) for k > i
             after_diff[i] = after_diff[i + 1] + (n - 1 - i) * (A[i + 1] - A[i]);
         }
         
@@ -61,9 +63,9 @@ public:
             for (int j = i; j < n; ++j) {
                 int mid = i + (j - i) / 2;
                 int before_mid = before_diff[mid] -
-                             (before_diff[i] + i * (A[mid] - A[i]));
+                                 (before_diff[i] + i * (A[mid] - A[i]));
                 int after_mid = after_diff[mid] -
-                            (after_diff[j] + (n - 1 - j) * (A[j] - A[mid]));
+                                (after_diff[j] + (n - 1 - j) * (A[j] - A[mid]));
                 (*cost)[i + 1][j + 1] +=  before_mid + after_mid;
             }
         }
