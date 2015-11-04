@@ -17,7 +17,7 @@ public:
         sort(A.begin(), A.end());  // Time:  O(nlogn)
 
         // Precompute cost.
-        // Time:  O(n^2)
+        // Time:  O(n)
         // Space: O(n)
         vector<int> before_cost(n), after_cost(n);
         computeCost(A, &before_cost, &after_cost);
