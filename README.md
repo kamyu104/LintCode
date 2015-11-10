@@ -155,7 +155,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |421|[Simplify Path](http://lintcode.com/en/problem/simplify-path/)| [C++](./C++/simplify-path.cpp)| _O(n)_ | _O(n)_ | Medium | LeetCode | |
 |423|[Valid Parentheses](http://lintcode.com/en/problem/valid-parentheses.cpp/)| [C++](./C++/valid-parentheses.cpp.cpp)| _O(n)_ | _O(n)_ | Easy | LeetCode | |
 |424|[Evaluate Reverse Polish Notation](http://lintcode.com/en/problem/evaluate-reverse-polish-notation/)| [C++](./C++/evaluate-reverse-polish-notation.cpp)| _O(n)_ | _O(n)_ | Medium | LeetCode | |
-||[Add and Search Word](http://lintcode.com/en/problem/add-and-search-word/)| [C++](./C++/add-and-search-word.cpp)| _O(min(n, h))_ | _O(min(n, h)_ | Medium | LeetCode | |
+||[Add and Search Word](http://lintcode.com/en/problem/add-and-search-word/)| [C++](./C++/add-and-search-word.cpp)| _O(min(n, h))_ | _O(min(n, h)_ | Medium | LeetCode | Trie |
 
 ## Queue
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
