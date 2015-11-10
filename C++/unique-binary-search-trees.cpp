@@ -15,11 +15,11 @@ public:
         return combination(2 * n, n) - combination(2 * n, n - 1);
     }
 
-    int combination(int  n, int k) {
+    int combination(const int  n, const int k) {
         long long count = 1;
         // C(n, k) = (n) / 1 * (n - 1) / 2 ... * (n - k + 1) / k
-        for (int i = 1; i <= k; ++i, --n) {
-            count = count * n / i;
+        for (int i = 1; i <= k; ++i) {
+            count = count * (n - i + 1) / i;
         }
 
         return count;
