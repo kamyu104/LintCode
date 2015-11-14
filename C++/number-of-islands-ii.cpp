@@ -28,33 +28,26 @@ public:
         for (const auto& oper : operators) {
             const auto& node = make_pair(oper.x, oper.y);
             set[node_id(node, m)] = node_id(node, m);
+            ++number;
 
-            // For each direction, count distinct islands.
-            unordered_set<int> neighbors;
             for (const auto& d : directions) {
                 const auto& neighbor = make_pair(oper.x + d.first,
                                                  oper.y + d.second);
                 if (neighbor.first >= 0 && neighbor.first < n &&
                     neighbor.second >= 0 && neighbor.second < m &&
                     set.find(node_id(neighbor, m)) != set.end()) {
-                    neighbors.emplace(find_set(node_id(neighbor, m), &set));
+                    if (find_set(node_id(node, m), &set) != 
+                        find_set(node_id(neighbor, m), &set)) {
+                        // Merge different islands.
+                        union_set(&set, node_id(node, m), node_id(neighbor, m));
+                        --number;
+                    }
                 }
             }
 
-            number += 1 - neighbors.size();  // Merge neighbors into one island.
             numbers.emplace_back(number);
-
-            // For each direction, find and union.
-            for (const auto& d : directions) {
-                const auto& neighbor = make_pair(oper.x + d.first,
-                                                 oper.y + d.second);
-                if (neighbor.first >= 0 && neighbor.first < n &&
-                    neighbor.second >= 0 && neighbor.second < m &&
-                    set.find(node_id(neighbor, m)) != set.end()) {
-                    union_set(&set, node_id(node, m), node_id(neighbor, m));
-                }
-            }
         }
+
         return numbers;
     }
 
