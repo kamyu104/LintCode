@@ -41,6 +41,9 @@ public:
                 }
             }
 
+            number += 1 - neighbors.size();  // Merge neighbors into one island.
+            numbers.emplace_back(number);
+
             // For each direction, find and union.
             for (const auto& d : directions) {
                 const auto& neighbor = make_pair(oper.x + d.first,
@@ -51,9 +54,6 @@ public:
                     union_set(&set, node_id(node, m), node_id(neighbor, m));
                 }
             }
-
-            number += 1 - neighbors.size();
-            numbers.emplace_back(number);
         }
         return numbers;
     }
