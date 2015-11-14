@@ -44,7 +44,6 @@ public:
                     }
                 }
             }
-
             numbers.emplace_back(number);
         }
 
