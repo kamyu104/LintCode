@@ -1,4 +1,4 @@
-// Time:  O(k * log(m * n)), k is the length of the operators.
+// Time:  O(k), k is the length of the operators.
 // Space: O(k)
 
 /**
