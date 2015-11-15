@@ -184,7 +184,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |384|[Longest Substring Without Repeating Characters](http://lintcode.com/en/problem/longest-substring-without-repeating-characters/)| [C++](./C++/longest-substring-without-repeating-characters.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode, EPI | |
 |386|[Longest Substring with At Most K Distinct Characters](http://lintcode.com/en/problem/longest-substring-with-at-most-k-distinct-characters/)| [C++](./C++/longest-substring-with-at-most-k-distinct-characters.cpp)| _O(n)_ | _O(n)_ | Medium | | |
 |432|[Find the Weak Connected Component in the Directed Graph](http://lintcode.com/en/problem/find-the-weak-connected-component-in-the-directed-graph/)| [C++](./C++/find-the-weak-connected-component-in-the-directed-graph.cpp)| _O(nlogn)_ | _O(n)_ | Medium | | Union Find |
-|434|[Number of Islands II](http://lintcode.com/en/problem/number-of-islands-ii/)| [C++](./C++/number-of-islands-ii.cpp)| _O(p)_ | _O(p)_ | Hard | | Union Find |
+|434|[Number of Islands II](http://lintcode.com/en/problem/number-of-islands-ii/)| [C++](./C++/number-of-islands-ii.cpp)| _O(k * log(m * n))_ | _O(k)_ | Hard | | Union Find |
 
 ## Data Structure
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
