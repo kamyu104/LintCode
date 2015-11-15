@@ -1,5 +1,5 @@
-// Time:  O(p), p is number of operators.
-// Space: O(p)
+// Time:  O(k * log(m * n)), k is the length of the operators.
+// Space: O(k)
 
 /**
  * Definition for a point.
