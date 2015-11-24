@@ -96,3 +96,62 @@ public:
         return left + right;
     }
 };
+
+// Time:  ctor:   O(nlogn),
+//        query:  O(logn)
+// Space: O(n)
+// Binary Indexed Tree (BIT) solution.
+class Solution2 { 
+public:
+    /**
+     *@param A, queries: Given an integer array and an query list
+     *@return: The result list
+     */
+    vector<long long> intervalSum(vector<int> &A, vector<Interval> &queries) {
+        nums_ = A;
+
+        vector<long long> res;
+
+        bit_ = vector<long long>(nums_.size() + 1);
+        for (int i = 0; i < nums_.size(); ++i) {
+            add(i, nums_[i]);
+        }
+        for (const auto& q : queries) {
+            res.emplace_back(query(q.start, q.end));
+        }
+
+        return res;
+    }
+
+private:
+    vector<int> nums_;
+    vector<long long> bit_;
+
+    long long query(int start, int end) {
+        long long sum = sumRegion_bit(end);
+        if (start > 0) {
+            sum -= sumRegion_bit(start - 1);
+        }
+        return sum;
+    }
+
+    long long sumRegion_bit(long long i) {
+        ++i;
+        long long sum = 0;
+        for (; i > 0; i -= lower_bit(i)) {
+            sum += bit_[i];
+        }
+        return sum;
+    }
+
+    void add(int i, int val) {
+        ++i;
+        for (; i <= nums_.size(); i += lower_bit(i)) {
+            bit_[i] += val;
+        }
+    }
+
+    int lower_bit(int i) {
+        return i & -i;
+    }
+};
