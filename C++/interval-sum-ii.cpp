@@ -1,5 +1,5 @@
-// Time:  ctor: O(n),
-//        query: O(logn),
+// Time:  ctor:   O(n),
+//        query:  O(logn),
 //        modify: O(logn)
 // Space: O(n)
 
@@ -126,8 +126,8 @@ public:
     }
 };
 
-// Time:  ctor: O(nlogn),
-//        query: O(logn),
+// Time:  ctor:   O(nlogn),
+//        query:  O(logn),
 //        modify: O(logn)
 // Space: O(n)
 // Binary Indexed Tree (BIT) solution.
