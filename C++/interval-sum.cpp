@@ -1,5 +1,6 @@
-// Time:  build tree: O(n), query: O(h)
-// Space: O(h)
+// Time:  ctor:   O(n),
+//        query:  O(logn)
+// Space: O(n)
 
 /**
  * Definition of Interval:
@@ -11,6 +12,7 @@
  *     }
  */
 
+// Segment Tree solution.
 class SegmentTreeSumNode {
 public:
     int start, end;
