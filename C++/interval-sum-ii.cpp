@@ -1,5 +1,7 @@
-// Time:  build tree: O(n), query: O(h), modify: O(h)
-// Space: O(h)
+// Time:  ctor: O(n),
+//        query: O(logn),
+//        modify: O(logn)
+// Space: O(n)
 
 /**
  * Definition of Interval:
@@ -11,6 +13,7 @@
  *     }
  */
 
+// Segment Tree solution.
 class SegmentTreeSumNode {
 public:
     int start, end;
@@ -120,6 +123,73 @@ public:
         // Update sum.
         root->sum = left_sum + right_sum;
         return root;
+    }
+};
+
+// Time:  ctor: O(nlogn),
+//        query: O(logn),
+//        modify: O(logn)
+// Space: O(n)
+// Binary Indexed Tree (BIT) solution.
+class Solution2 {
+public:
+    /* you may need to use some attributes here */
+    
+
+    /**
+     * @param A: An integer vector
+     */
+    Solution(vector<int> A) : nums_(A) {
+        bit_ = vector<int>(nums_.size() + 1);
+        for (int i = 0; i < nums_.size(); ++i) {
+            add(i, nums_[i]);
+        }
+    }
+    
+    /**
+     * @param start, end: Indices
+     * @return: The sum from start to end
+     */
+    long long query(int start, int end) {
+        int sum = sumRegion_bit(end);
+        if (start > 0) {
+            sum -= sumRegion_bit(start - 1);
+        }
+        return sum;
+    }
+    
+    /**
+     * @param index, value: modify A[index] to value.
+     */
+    void modify(int index, int value) {
+        if (value - nums_[index]) {
+            add(index, value - nums_[index]);
+            nums_[index] = value;
+        }
+    }
+
+private:
+    vector<int> nums_;
+    vector<int> bit_;
+
+    int sumRegion_bit(int i) {
+        ++i;
+        int sum = 0;
+        for (; i > 0; i -= lower_bit(i)) {
+            sum += bit_[i];
+        }
+        return sum;
+    }
+
+    void add(int i, int val) {
+        ++i;
+        for (; i <= nums_.size(); i += lower_bit(i)) {
+            bit_[i] += val;
+        }
+    }
+
+    int lower_bit(int i) {
+        return i & -i;
     }
 };
 
