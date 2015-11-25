@@ -11,11 +11,11 @@ public:
     bool exist(vector<vector<char>> &board, string word) {
         unordered_set<string> ret;
         vector<vector<bool>> visited(board.size(), vector<bool>(board[0].size(), false));
-        int curr = 0;
+        int cur = 0;
 
         for (int i = 0; i < board.size(); ++i) {
             for (int j = 0; j < board[0].size(); ++j) {
-                if (wordSearchDFS(board, visited, word, i, j, curr)) {
+                if (wordSearchDFS(board, visited, word, i, j, cur)) {
                     return true;
                 }
             }
@@ -29,22 +29,22 @@ public:
                        string word,
                        int i,
                        int j,
-                       int curr) {
+                       int cur) {
         // Invalid state.
         if (i < 0 || i >= grid.size() || j < 0 || j >= grid[0].size()) {
             return false;
         }
 
         // Not mathced or visited.
-        if (grid[i][j] != word[curr] || visited[i][j] ) {
+        if (grid[i][j] != word[cur] || visited[i][j]) {
             return false;
         }
 
         // Update current string.
-        ++curr;
+        ++cur;
 
         // Find the string, add to the answers.
-        if (curr == word.length()) {
+        if (cur == word.length()) {
             return true;
         }
 
@@ -52,10 +52,11 @@ public:
         visited[i][j] = true;
 
         // Try each direction.
-        vector<pair<int, int>> direction{{0, -1}, {0, 1}, {-1, 0}, {1, 0}};
-        for (int k = 0; k < 4; ++k) {
+        const vector<pair<int, int>> directions{{0, -1}, {0, 1},
+                                                {-1, 0}, {1, 0}};
+        for (const auto& d : directions) {
             if (wordSearchDFS(grid, visited, word,
-                              i + direction[k].first, j + direction[k].second, curr)) {
+                              i + d.first, j + d.second, cur)) {
                 return true;
             }
         }
