@@ -13,10 +13,11 @@ public:
             return result;
         }
 
-        int left = 0, right = matrix[0].size() - 1,
-            top = 0, bottom = matrix.size() - 1;
+        for (int left = 0, right = matrix[0].size() - 1,
+                 top = 0, bottom = matrix.size() - 1;
+             left <= right && top <= bottom;
+             ++left, --right, ++top, --bottom) {
 
-        while (left <= right && top <= bottom) {
             for (int j = left; j <= right; ++j) {
                 result.emplace_back(matrix[top][j]);
             }
@@ -29,7 +30,6 @@ public:
             for (int i = bottom - 1; left < right && i > top; --i) {
                 result.emplace_back(matrix[i][left]);
             }
-            ++left, --right, ++top, --bottom;
         }
 
         return result;
