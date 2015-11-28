@@ -10,11 +10,9 @@ public:
     vector<vector<int>> generateMatrix(int n) {
        vector<vector<int>> matrix(n, vector<int>(n));
 
-        int left = 0, right = n - 1,
-            top = 0, bottom = n - 1,
-            num = 0;
-
-        while (left <= right && top <= bottom) {
+       for (int num = 0, left = 0, right = n - 1, top = 0, bottom = n - 1;
+            left <= right && top <= bottom;
+            ++left, --right, ++top, --bottom) {
             for (int j = left; j <= right; ++j) {
                 matrix[top][j] = ++num;
             }
@@ -27,7 +25,6 @@ public:
             for (int i = bottom - 1; left < right && i >= top + 1; --i) {
                 matrix[i][left] = ++num;
             }
-            ++left, --right, ++top, --bottom;
         }
 
         return matrix;
