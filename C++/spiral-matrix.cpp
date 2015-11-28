@@ -23,18 +23,15 @@ public:
             for (int i = top + 1; i < bottom; ++i) {
                 result.emplace_back(matrix[i][right]);
             }
-            for (int j = right; j >= left; --j) {
-                if (top < bottom) {
-                    result.emplace_back(matrix[bottom][j]);
-                }
+            for (int j = right; top < bottom && j >= left; --j) {
+                result.emplace_back(matrix[bottom][j]);
             }
-            for (int i = bottom - 1; i > top; --i) {
-                if (left < right) {
-                    result.emplace_back(matrix[i][left]);
-                }
+            for (int i = bottom - 1; left < right && i > top; --i) {
+                result.emplace_back(matrix[i][left]);
             }
             ++left, --right, ++top, --bottom;
         }
+
         return result;
     }
 };
