@@ -12,10 +12,10 @@ public:
         if (matrix.empty()) {
             return result;
         }
-        
+
         int left = 0, right = matrix[0].size() - 1,
             top = 0, bottom = matrix.size() - 1;
-        
+
         while (left <= right && top <= bottom) {
             for (int j = left; j <= right; ++j) {
                 result.emplace_back(matrix[top][j]);
