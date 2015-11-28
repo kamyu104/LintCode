@@ -1,0 +1,35 @@
+// Time:  O(n^2)
+// Space: O(1)
+
+class Solution {
+public:
+    /**
+     * @param n an integer
+     * @return a square matrix
+     */
+    vector<vector<int>> generateMatrix(int n) {
+       vector<vector<int>> matrix(n, vector<int>(n));
+
+        int left = 0, right = n - 1,
+            top = 0, bottom = n - 1,
+            num = 0;
+
+        while (left <= right && top <= bottom) {
+            for (int j = left; j <= right; ++j) {
+                matrix[top][j] = ++num;
+            }
+            for (int i = top + 1; i < bottom; ++i) {
+                matrix[i][right] = ++num;
+            }
+            for (int j = right; top < bottom && j >= left; --j) {
+                matrix[bottom][j] = ++num;
+            }
+            for (int i = bottom - 1; left < right && i >= top + 1; --i) {
+                matrix[i][left] = ++num;
+            }
+            ++left, --right, ++top, --bottom;
+        }
+
+        return matrix;
+    }
+};
