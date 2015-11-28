@@ -82,6 +82,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |404|[Subarray Sum II](http://lintcode.com/en/problem/subarray-sum-ii/)| [C++](./C++/subarray-sum-ii.cpp)| _O(nlogn)_ | _O(n)_ | Hard | | Two Pointers, Binary Search |
 |405|[Submatrix Sum](http://lintcode.com/en/problem/submatrix-sum/)| [C++](./C++/submatrix-sum.cpp)| _O(m * n^2)_ | _O(m)_ | Hard | | Hash |
 |406|[Minimum Size Subarray Sum](http://lintcode.com/en/problem/minimum-size-subarray-sum/)| [C++](./C++/minimum-size-subarray-sum.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | Two Pointers, Binary Search |
+|| [Spiral Matrix](http://lintcode.com/en/problem/spiral-matrix/) | [C++](./C++/spiral-matrix.cpp) | _O(m * n)_    | _O(1)_         | Medium         | LeetCode | |
+|| [Spiral Matrix II](http://lintcode.com/en/problem/spiral-matrix-ii/) | [C++](./C++/spiral-matrix-ii.cpp) | _O(n^2)_ | _O(1)_      | Medium         | LeetCode | |
 
 ## String
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
