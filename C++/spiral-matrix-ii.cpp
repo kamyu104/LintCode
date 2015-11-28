@@ -13,6 +13,7 @@ public:
        for (int num = 0, left = 0, right = n - 1, top = 0, bottom = n - 1;
             left <= right && top <= bottom;
             ++left, --right, ++top, --bottom) {
+
             for (int j = left; j <= right; ++j) {
                 matrix[top][j] = ++num;
             }
