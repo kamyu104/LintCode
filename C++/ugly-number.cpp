@@ -71,14 +71,15 @@ public:
      * @return: The kth prime number as description.
      */
     long long kthPrimeNumber(int k) {
-        vector<long long> uglies{1};
+        vector<long long> uglies(k + 1);
+        uglies[0] = 1;
     
         long long f3 = 3, f5 = 5, f7 = 7;
         int idx3 = 0, idx5 = 0, idx7 = 0;
     
-        while (uglies.size() <= k) {
+        for (int i = 1; i < k; ++i) {
             long long min_val = min(min(f3, f5), f7);
-            uglies.emplace_back(min_val);
+            uglies[i] = min_val;
     
             if (min_val == f3) {
                 f3 = 3 * uglies[++idx3];
