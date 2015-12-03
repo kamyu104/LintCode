@@ -60,3 +60,37 @@ public:
         return ugly_number;
     }
 };
+
+// Time:  O(k)
+// Space: O(k)
+// DP solution.
+class Solution3 {
+public:
+    /*
+     * @param k: The number k.
+     * @return: The kth prime number as description.
+     */
+    long long kthPrimeNumber(int k) {
+        vector<long long> uglies{1};
+    
+        long long f3 = 3, f5 = 5, f7 = 7;
+        int idx3 = 0, idx5 = 0, idx7 = 0;
+    
+        while (uglies.size() <= k) {
+            long long min_val = min(min(f3, f5), f7);
+            uglies.emplace_back(min_val);
+    
+            if (min_val == f3) {
+                f3 = 3 * uglies[++idx3];
+            }
+            if (min_val == f5) {
+                f5 = 5 * uglies[++idx5];
+            }
+            if (min_val == f7) {
+                f7 = 7 * uglies[++idx7];
+            }
+        }
+
+        return uglies[k];
+    }
+};
