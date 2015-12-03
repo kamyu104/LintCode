@@ -77,7 +77,7 @@ public:
         long long f3 = 3, f5 = 5, f7 = 7;
         int idx3 = 0, idx5 = 0, idx7 = 0;
     
-        for (int i = 1; i < k; ++i) {
+        for (int i = 1; i <= k; ++i) {
             long long min_val = min(min(f3, f5), f7);
             uglies[i] = min_val;
     
