@@ -1,8 +1,8 @@
-# [LintCode](http://www.lintcode.com/en/problem/) ![Language](https://img.shields.io/badge/language-C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-262%20%2F%20262-ff69b4.svg)
+# [LintCode](http://www.lintcode.com/en/problem/) ![Language](https://img.shields.io/badge/language-C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-265%20%2F%20265-ff69b4.svg)
 
-Up to date (2015-11-27), there are `262` problems on [LintCode Online Judge](https://lintcode.com/).
+Up to date (2015-12-03), there are `263` problems on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `262` problems.
+Here is the classification of all `263` problems.
 For more problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -255,6 +255,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |425|[Letter Combinations of a Phone Number](http://lintcode.com/en/problem/letter-combinations-of-a-phone-number/) | [C++](./C++/letter-combinations-of-a-phone-number.cpp)| _O(n * 4^n)_ | _O(n)_ | Medium | LeetCode | |
 |439|[Segment Tree Build II](http://lintcode.com/en/problem/segmemt-tree-build-ii/)| [C++](./C++/segment-tree-build-ii.cpp)| _O(n)_ | _O(h)_ | Medium | | Segment Tree, BST |
 |453|[Flatten Binary Tree to Linked List](http://lintcode.com/en/problem/flatten-binary-tree-to-linked-list/)|[C++](./C++/flatten-binary-tree-to-linked-list.cpp)| _O(n)_ | _O(h)_ | Easy | LeetCode | |
+|| [Pow(x, n)](http://lintcode.com/en/problem/problems/powx-n/)     | [C++](./C++/powx-n.cpp)     | _O(logn)_       | _O(logn)_       | Medium         | LeetCode ||
 
 ## Binary Search
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
@@ -293,6 +294,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |153|[Combination Sum II](http://lintcode.com/en/problem/combination-sum-ii/)| [C++](./C++/combination-sum-ii.cpp)| _O(k * C(n, k))_ | _O(k)_ | Medium | LeetCode | DFS |
 |433|[Number of Islands](http://lintcode.com/en/problem/number-of-islands/)| [C++](./C++/number-of-islands.cpp)| _O(m * n)_ | _O(m * n)_ | Easy | LeetCode | DFS |
 || [Binary Tree Paths](http://lintcode.com/en/problem/binary-tree-paths/) | [C++](./C++/binary-tree-paths.cpp) | _O(n * h)_ | _O(h)_ | Easy         | LeetCode ||
+|| [Generate Parentheses](http://lintcode.com/en/problem/generate-parentheses/)| [C++](./C++/generate-parentheses.cpp)| _O(4^n / n^(3/2))_ | _O(n)_   | Medium         | LeetCode ||
 
 ## Breadth-First Search
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
@@ -307,6 +309,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |176|[Route Between Two Nodes in Graph](http://lintcode.com/en/problem/route-between-two-nodes-in-graph/)| [C++](./C++/route-between-two-nodes-in-graph.cpp)| _O(n)_ | _O(n)_ | Medium | | DFS, BFS |
 |431|[Find the Connected Component in the Undirected Graph](http://lintcode.com/en/problem/find-the-connected-component-in-the-undirected-graph/)| [C++](./C++/find-the-connected-component-in-the-undirected-graph.cpp)| _O(n)_ | _O(n)_ | Easy | | BFS |
 ||[Surrounded Regions](http://lintcode.com/en/problem/surrounded-regions/)|[C++](./C++/surrounded-regions.cpp)| _O(m * n)_ | _O(m + n)_ | Medium         | LeetCode ||
+|| [Graph Valid Tree](http://lintcode.com/en/problem/graph-valid-tree/)| [C++](./C++/graph-valid-tree.cpp) | _O(\|V\| + \|E\|)_          | _O(\|V\| + \|E\|)_          | Medium         | LeetCode ||
 
 ## Binary Search Trees
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
