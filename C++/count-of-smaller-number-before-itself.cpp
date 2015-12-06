@@ -10,17 +10,17 @@ public:
      *          smaller than it and return count number array
      */
     vector<int> countOfSmallerNumberII(vector<int> &A) {
-        vector<int> sorted_A(A), nth_smallest(A.size());
+        vector<int> sorted_A(A), orderings(A.size());
         sort(sorted_A.begin(), sorted_A.end());
         for (int i = 0; i < A.size(); ++i) {
-            nth_smallest[i] = 
+            orderings[i] = 
                 lower_bound(sorted_A.begin(), sorted_A.end(), A[i]) -
                 sorted_A.begin();
         }
         vector<int> bit(A.size() + 1), ans(A.size());
-        for (int i = 0; i < nth_smallest.size(); ++i) {
-            ans[i] = query(bit, nth_smallest[i]);
-            add(bit, nth_smallest[i] + 1, 1);
+        for (int i = 0; i < A.size(); ++i) {
+            ans[i] = query(bit, orderings[i]);
+            add(bit, orderings[i] + 1, 1);
         }
         return ans;
     }
