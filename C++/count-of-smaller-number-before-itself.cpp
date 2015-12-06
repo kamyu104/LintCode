@@ -1,7 +1,54 @@
 // Time:  O(nlogn)
 // Space: O(n)
 
+// BIT solution. (281ms)
 class Solution {
+public:
+   /**
+     * @param A: An integer array
+     * @return: Count the number of element before this element 'ai' is 
+     *          smaller than it and return count number array
+     */
+    vector<int> countOfSmallerNumberII(vector<int> &A) {
+        vector<int> sorted_A(A), orderings(A.size());
+        sort(sorted_A.begin(), sorted_A.end());
+        for (int i = 0; i < A.size(); ++i) {
+            orderings[i] = 
+                lower_bound(sorted_A.begin(), sorted_A.end(), A[i]) -
+                sorted_A.begin();
+        }
+        vector<int> bit(A.size() + 1), ans(A.size());
+        for (int i = 0; i < orderings.size(); ++i) {
+            ans[i] = query(bit, orderings[i]);
+            add(bit, orderings[i] + 1, 1);
+        }
+        return ans;
+    }
+
+private:
+    void add(vector<int>& bit, int i, int val) {
+        for (; i < bit.size(); i += lower_bit(i)) {
+            bit[i] += val;
+        }
+    }
+
+    int query(const vector<int>& bit, int i) {
+        int sum = 0;
+        for (; i > 0; i -= lower_bit(i)) {
+            sum += bit[i];
+        }
+        return sum;
+    }
+
+    int lower_bit(int i) {
+        return i & -i;
+    }
+};
+
+// Time:  O(nlogn)
+// Space: O(n)
+// BST solution. (743ms)
+class Solution2 {
 public:
     class BSTreeNode {
     public:
