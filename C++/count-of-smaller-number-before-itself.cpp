@@ -10,17 +10,19 @@ public:
      *          smaller than it and return count number array
      */
     vector<int> countOfSmallerNumberII(vector<int> &A) {
-        vector<int> sorted_A(A), orderings(A.size());
+        // Get the place (position in the ascending order) of each number.
+        vector<int> sorted_A(A), places(A.size());
         sort(sorted_A.begin(), sorted_A.end());
         for (int i = 0; i < A.size(); ++i) {
-            orderings[i] = 
+            places[i] = 
                 lower_bound(sorted_A.begin(), sorted_A.end(), A[i]) -
                 sorted_A.begin();
         }
+        // Count the smaller elements before the number.
         vector<int> bit(A.size() + 1), ans(A.size());
         for (int i = 0; i < A.size(); ++i) {
-            ans[i] = query(bit, orderings[i]);
-            add(bit, orderings[i] + 1, 1);
+            ans[i] = query(bit, places[i]);
+            add(bit, places[i] + 1, 1);
         }
         return ans;
     }
