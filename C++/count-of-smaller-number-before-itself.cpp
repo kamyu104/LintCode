@@ -74,11 +74,9 @@ public:
 
         // Insert into BST and get left count.
         for (int i = 0; i < A.size(); ++i) {
-            int count = 0;
             BSTreeNode *node = new BSTreeNode(A[i], 0);
             root = insertNode(root, node);
-            count = query(root, A[i]);
-            res.emplace_back(count);
+            res.emplace_back(query(root, A[i]));
         }
 
         return res;
