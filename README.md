@@ -1,8 +1,8 @@
-# [LintCode](http://www.lintcode.com/en/problem/) ![Language](https://img.shields.io/badge/language-C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-266%20%2F%20266-ff69b4.svg)
+# [LintCode](http://www.lintcode.com/en/problem/) ![Language](https://img.shields.io/badge/language-C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-267%20%2F%20267-ff69b4.svg)
 
-Up to date (2015-12-11), there are `266` problems on [LintCode Online Judge](https://lintcode.com/).
+Up to date (2015-12-12), there are `267` problems on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `266` problems.
+Here is the classification of all `267` problems.
 For more problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -187,6 +187,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |386|[Longest Substring with At Most K Distinct Characters](http://lintcode.com/en/problem/longest-substring-with-at-most-k-distinct-characters/)| [C++](./C++/longest-substring-with-at-most-k-distinct-characters.cpp)| _O(n)_ | _O(n)_ | Medium | | |
 |432|[Find the Weak Connected Component in the Directed Graph](http://lintcode.com/en/problem/find-the-weak-connected-component-in-the-directed-graph/)| [C++](./C++/find-the-weak-connected-component-in-the-directed-graph.cpp)| _O(nlogn)_ | _O(n)_ | Medium | | Union Find |
 |434|[Number of Islands II](http://lintcode.com/en/problem/number-of-islands-ii/)| [C++](./C++/number-of-islands-ii.cpp)| _O(k)_ | _O(k)_ | Hard | | Union Find |
+|| [Happy Number](http://lintcode.com/en/problem/happy-number/)      | [C++](./C++/happy-number.cpp)   | _O(k)_  | _O(k)_          | Easy          | LeetCode |
 
 ## Data Structure
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
