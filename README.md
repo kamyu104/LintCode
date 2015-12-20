@@ -1,8 +1,8 @@
-# [LintCode](http://www.lintcode.com/en/problem/) ![Language](https://img.shields.io/badge/language-C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-267%20%2F%20267-ff69b4.svg)
+# [LintCode](http://www.lintcode.com/en/problem/) ![Language](http://img.shields.io/badge/language-C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-257%20%2F%20257-ff69b4.svg)
 
-Up to date (2015-12-12), there are `267` problems on [LintCode Online Judge](https://lintcode.com/).
+Up to date (2015-12-21), there are `257` problems on [LintCode Online Judge](https://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `267` problems.
+Here is the classification of all `257` problems.
 For more problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
