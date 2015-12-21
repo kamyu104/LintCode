@@ -13,17 +13,17 @@ public:
         restoreIpAddressesHelper(s, 0, 0, &cur, &result);
         return result;
     }
-        
+
     void restoreIpAddressesHelper(const string& s,
                                   int start, int dots,
                                   string *cur,
                                   vector<string> *result) {
-        // pruning to improve performance
+        // Pruning to improve performance.
         if (((4 - dots) * 3 < s.length() - start) ||
             ((4 - dots) > s.length() - start)) {
             return;
         }
-        
+
         if (start == s.length() && dots == 4) {
             result->emplace_back(cur->begin(), prev(cur->end()));
         } else {
@@ -38,7 +38,7 @@ public:
             }
         }
     }
-        
+
     bool isValid(const string &s) {
         if (s.empty() || (s[0] == '0' && s != "0")) {
             return false;
