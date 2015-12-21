@@ -75,6 +75,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |200|[Longest Palindromic Substring](http://lintcode.com/en/problem/longest-palindromic-substring/)| [C++](./C++/longest-palindromic-substring.cpp)| _O(n)_ | _O(n)_ | Medium | LeetCode | `Manacher's Algorithm` |
 |363|[Trapping Rain Water](http://lintcode.com/en/problem/trapping-rain-water/)| [C++](./C++/trapping-rain-water.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | Two Pointers, Tricky |
 |373|[Partition Array by Odd and Even](http://lintcode.com/en/problem/partition-array-by-odd-and-even/)| [C++](./C++/partition-array-by-odd-and-even.cpp)| _O(n)_ | _O(1)_ | Easy | | Two Pointers |
+|374| [Spiral Matrix](http://lintcode.com/en/problem/spiral-matrix/) | [C++](./C++/spiral-matrix.cpp) | _O(m * n)_    | _O(1)_         | Medium         | LeetCode | |
+|381| [Spiral Matrix II](http://lintcode.com/en/problem/spiral-matrix-ii/) | [C++](./C++/spiral-matrix-ii.cpp) | _O(n^2)_ | _O(1)_      | Medium         | LeetCode | |
 |382|[Triangle Count](http://lintcode.com/en/problem/triangle-count/)| [C++](./C++/triangle-count.cpp)| _O(n^2)_ | _O(1)_ | Medium | | Two Pointers |
 |383|[Container With Most Water](http://lintcode.com/en/problem/container-with-most-water/)| [C++](./C++/container-with-most-water.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode, EPI | Two Pointers |
 |388|[Permutation Sequence](http://lintcode.com/en/problem/permutation-sequence/)| [C++](./C++/permutation-sequence.cpp)| _O(n^2)_ | _O(n)_ | Medium | LeetCode | |
@@ -82,8 +84,6 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |404|[Subarray Sum II](http://lintcode.com/en/problem/subarray-sum-ii/)| [C++](./C++/subarray-sum-ii.cpp)| _O(nlogn)_ | _O(n)_ | Hard | | Two Pointers, Binary Search |
 |405|[Submatrix Sum](http://lintcode.com/en/problem/submatrix-sum/)| [C++](./C++/submatrix-sum.cpp)| _O(m * n^2)_ | _O(m)_ | Hard | | Hash |
 |406|[Minimum Size Subarray Sum](http://lintcode.com/en/problem/minimum-size-subarray-sum/)| [C++](./C++/minimum-size-subarray-sum.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | Two Pointers, Binary Search |
-|374| [Spiral Matrix](http://lintcode.com/en/problem/spiral-matrix/) | [C++](./C++/spiral-matrix.cpp) | _O(m * n)_    | _O(1)_         | Medium         | LeetCode | |
-|381| [Spiral Matrix II](http://lintcode.com/en/problem/spiral-matrix-ii/) | [C++](./C++/spiral-matrix-ii.cpp) | _O(n^2)_ | _O(1)_      | Medium         | LeetCode | |
 
 ## String
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
@@ -254,9 +254,9 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |248|[Count of Smaller Number](http://lintcode.com/en/problem/count-of-smaller-number/)| [C++](./C++/count-of-smaller-number.cpp)| build tree: _O(n)_, query: _O(logn)_ | _O(h)_ | Medium | | Segment Tree, BST |
 |371|[Print Numbers by Recursion](http://lintcode.com/en/problem/print-numbers-by-recursion/)| [C++](./C++/print-numbers-by-recursion.cpp)| _O(n)_ | _O(n)_ | Medium | | |
 |425|[Letter Combinations of a Phone Number](http://lintcode.com/en/problem/letter-combinations-of-a-phone-number/) | [C++](./C++/letter-combinations-of-a-phone-number.cpp)| _O(n * 4^n)_ | _O(n)_ | Medium | LeetCode | |
+|428| [Pow(x, n)](http://lintcode.com/en/problem/problems/powx-n/)     | [C++](./C++/powx-n.cpp)     | _O(logn)_       | _O(logn)_       | Medium         | LeetCode ||
 |439|[Segment Tree Build II](http://lintcode.com/en/problem/segmemt-tree-build-ii/)| [C++](./C++/segment-tree-build-ii.cpp)| _O(n)_ | _O(h)_ | Medium | | Segment Tree, BST |
 |453|[Flatten Binary Tree to Linked List](http://lintcode.com/en/problem/flatten-binary-tree-to-linked-list/)|[C++](./C++/flatten-binary-tree-to-linked-list.cpp)| _O(n)_ | _O(h)_ | Easy | LeetCode | |
-|428| [Pow(x, n)](http://lintcode.com/en/problem/problems/powx-n/)     | [C++](./C++/powx-n.cpp)     | _O(logn)_       | _O(logn)_       | Medium         | LeetCode ||
 |469| [Identical Binary Tree](http://lintcode.com/en/problem/problems/identical-binary-tree/)     | [C++](./C++/identical-binary-tree.cpp)     | _O(n)_       | _O(h)_       | Easy         |||
 
 ## Binary Search
@@ -294,9 +294,10 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |136|[Palindrome Partitioning](http://lintcode.com/en/problem/palindrome-partitioning/)| [C++](./C++/palindrome-partitioning.cpp)| _O(2^n)_ | _O(n)_ | Easy | LeetCode, EPI | |
 |152|[Combinations](http://lintcode.com/en/problem/combinations/)| [C++](./C++/combinations.cpp)| _O(k * n^k)_ | _O(k)_ | Medium | LeetCode, EPI | |
 |153|[Combination Sum II](http://lintcode.com/en/problem/combination-sum-ii/)| [C++](./C++/combination-sum-ii.cpp)| _O(k * C(n, k))_ | _O(k)_ | Medium | LeetCode | DFS |
+|426| [Restore IP Addresses](http://lintcode.com/en/problem/restore-ip-addresses/) | [C++](./C++/restore-ip-addresses.cpp) | _O(n^m)_ ~ _O(3^4)_ | _O(n * m)_ ~ _O(3 * 4)_ | Medium         | LeetCode ||
+|427| [Generate Parentheses](http://lintcode.com/en/problem/generate-parentheses/)| [C++](./C++/generate-parentheses.cpp)| _O(4^n / n^(3/2))_ | _O(n)_   | Medium         | LeetCode ||
 |433|[Number of Islands](http://lintcode.com/en/problem/number-of-islands/)| [C++](./C++/number-of-islands.cpp)| _O(m * n)_ | _O(m * n)_ | Easy | LeetCode | DFS |
 |480| [Binary Tree Paths](http://lintcode.com/en/problem/binary-tree-paths/) | [C++](./C++/binary-tree-paths.cpp) | _O(n * h)_ | _O(h)_ | Easy         | LeetCode ||
-|427| [Generate Parentheses](http://lintcode.com/en/problem/generate-parentheses/)| [C++](./C++/generate-parentheses.cpp)| _O(4^n / n^(3/2))_ | _O(n)_   | Medium         | LeetCode ||
 
 ## Breadth-First Search
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
