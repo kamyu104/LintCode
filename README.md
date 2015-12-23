@@ -21,8 +21,9 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 * [Sort](https://github.com/kamyu104/LintCode#sort)
 * [Divide and Conquer](https://github.com/kamyu104/LintCode#divide-and-conquer)
 * [Binary Search](https://github.com/kamyu104/LintCode#binary-search)
-* [Depth-First Search](https://github.com/kamyu104/LintCode#depth-first-search)
 * [Breadth-First Search](https://github.com/kamyu104/LintCode#breadth-first-search)
+* [Depth-First Search](https://github.com/kamyu104/LintCode#depth-first-search)
+* [Backtracking](https://github.com/kamyu104/LintCode#backtracking)
 * [Binary Search Trees](https://github.com/kamyu104/LintCode#binary-search-trees)
 * [Dynamic Programming](https://github.com/kamyu104/LintCode#dynamic-programming)
 * [Greedy](https://github.com/kamyu104/LintCode#greedy)
@@ -230,8 +231,6 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 ## Divide and Conquer
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
-|17|[Subsets](http://lintcode.com/en/problem/subsets/)| [C++](./C++/subsets.cpp)| _O(n * 2^n)_ | _O(1)_ | Medium | LeetCode | |
-|18|[Subsets II](http://lintcode.com/en/problem/subsets-ii/)| [C++](./C++/subsets-ii.cpp)| _O(n * 2^n)_ | _O(1)_ | Medium | LeetCode | |
 |72|[Construct Binary Tree from Inorder and Postorder Traversal](http://lintcode.com/en/problem/construct-binary-tree-from-inorder-and-postorder-traversal/)| [C++](./C++/construct-binary-tree-from-inorder-and-postorder-traversal.cpp)| _O(n)_ | _O(h)_ | Medium | LeetCode, EPI | |
 |73|[Construct Binary Tree from Preorder and Inorder Traversal](http://lintcode.com/en/problem/construct-binary-tree-from-preorder-and-inorder-traversal/)| [C++](./C++/construct-binary-tree-from-preorder-and-inorder-traversal.cpp)| _O(n)_ | _O(h)_ | Medium | LeetCode, EPI | |
 |93|[Balanced Binary Tree](http://lintcode.com/en/problem/balanced-binary-tree/)| [C++](./C++/balanced-binary-tree.cpp)| _O(n)_ | _O(h)_ | Easy | LeetCode | |
@@ -253,7 +252,6 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |247|[Segment Tree Query II](http://lintcode.com/en/problem/segment-tree-query-ii/)| [C++](./C++/segment-tree-query-ii.cpp)| _O(h)_ | _O(h)_ | Hard | | Segment Tree, BST |
 |248|[Count of Smaller Number](http://lintcode.com/en/problem/count-of-smaller-number/)| [C++](./C++/count-of-smaller-number.cpp)| build tree: _O(n)_, query: _O(logn)_ | _O(h)_ | Medium | | Segment Tree, BST |
 |371|[Print Numbers by Recursion](http://lintcode.com/en/problem/print-numbers-by-recursion/)| [C++](./C++/print-numbers-by-recursion.cpp)| _O(n)_ | _O(n)_ | Medium | | |
-|425|[Letter Combinations of a Phone Number](http://lintcode.com/en/problem/letter-combinations-of-a-phone-number/) | [C++](./C++/letter-combinations-of-a-phone-number.cpp)| _O(n * 4^n)_ | _O(n)_ | Medium | LeetCode | |
 |428| [Pow(x, n)](http://lintcode.com/en/problem/problems/powx-n/)     | [C++](./C++/powx-n.cpp)     | _O(logn)_       | _O(logn)_       | Medium         | LeetCode ||
 |439|[Segment Tree Build II](http://lintcode.com/en/problem/segmemt-tree-build-ii/)| [C++](./C++/segment-tree-build-ii.cpp)| _O(n)_ | _O(h)_ | Medium | | Segment Tree, BST |
 |453|[Flatten Binary Tree to Linked List](http://lintcode.com/en/problem/flatten-binary-tree-to-linked-list/)|[C++](./C++/flatten-binary-tree-to-linked-list.cpp)| _O(n)_ | _O(h)_ | Easy | LeetCode | |
@@ -280,25 +278,6 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |390|[Find Peak Element II](http://lintcode.com/en/problem/find-peak-element-ii/)| [C++](./C++/find-peak-element-ii.cpp) [Java](./Java/find-peak-element-ii.java) [Python](./Python/find-peak-element-ii.py)| _O(m + n)_ | _O(1)_ | Hard | | |
 |437|[Copy Books](http://lintcode.com/en/problem/copy-books/)| [C++](./C++/copy-books.cpp) | _O(nlogp)_ | _O(1)_ | Hard | UVa 714 | |
 
-## Depth-First Search
-| # | Title | Solution | Time | Space | Difficulty | Tag | Note |
-|---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
-|15|[Permutations](http://lintcode.com/en/problem/permutations/)| [C++](./C++/permutations.cpp)| _O(n * n!)_ | _O(n)_ | Medium | LeetCode, EPI | |
-|16|[Permutations II](http://lintcode.com/en/problem/permutations-ii/)| [C++](./C++/permutations-ii.cpp)| _O(n * n!)_ | _O(n)_ | Medium | LeetCode, EPI | |
-|33|[N-Queens](http://lintcode.com/en/problem/n-queens/)| [C++](./C++/n-queens.cpp)| _O(n * n!)_ | _O(n)_ | Medium | LeetCode, EPI | |
-|34|[N-Queens II](http://lintcode.com/en/problem/n-queens-ii/)| [C++](./C++/n-queens-ii.cpp)| _O(n * n!)_ | _O(n)_ | Medium | LeetCode, EPI | |
-|90|[K Sum II](http://lintcode.com/en/problem/k-sum-ii/)| [C++](./C++/k-sum-ii.cpp)| _O(k * C(n, k))_ | _O(k)_ | Medium | | |
-|123|[Word Search](http://lintcode.com/en/problem/word-search/)| [C++](./C++/word-search.cpp)| _O(m * n * l)_ | _O(l)_ | Medium | LeetCode | |
-|132|[Word Search II](http://lintcode.com/en/problem/word-search-ii/)| [C++](./C++/word-search-ii.cpp)| _O(m * n * l)_ | _O(l)_ | Hard | | Trie, DFS |
-|135|[Combination Sum](http://lintcode.com/en/problem/combination-sum/)| [C++](./C++/combination-sum.cpp)| _O(k * n^k)_ | _O(k)_ | Medium | LeetCode | DFS |
-|136|[Palindrome Partitioning](http://lintcode.com/en/problem/palindrome-partitioning/)| [C++](./C++/palindrome-partitioning.cpp)| _O(2^n)_ | _O(n)_ | Easy | LeetCode, EPI | |
-|152|[Combinations](http://lintcode.com/en/problem/combinations/)| [C++](./C++/combinations.cpp)| _O(k * n^k)_ | _O(k)_ | Medium | LeetCode, EPI | |
-|153|[Combination Sum II](http://lintcode.com/en/problem/combination-sum-ii/)| [C++](./C++/combination-sum-ii.cpp)| _O(k * C(n, k))_ | _O(k)_ | Medium | LeetCode | DFS |
-|426| [Restore IP Addresses](http://lintcode.com/en/problem/restore-ip-addresses/) | [C++](./C++/restore-ip-addresses.cpp) | _O(1)_ | _O(1)_ | Medium         | LeetCode ||
-|427| [Generate Parentheses](http://lintcode.com/en/problem/generate-parentheses/)| [C++](./C++/generate-parentheses.cpp)| _O(4^n / n^(3/2))_ | _O(n)_   | Medium         | LeetCode ||
-|433|[Number of Islands](http://lintcode.com/en/problem/number-of-islands/)| [C++](./C++/number-of-islands.cpp)| _O(m * n)_ | _O(m * n)_ | Easy | LeetCode | DFS |
-|480| [Binary Tree Paths](http://lintcode.com/en/problem/binary-tree-paths/) | [C++](./C++/binary-tree-paths.cpp) | _O(n * h)_ | _O(h)_ | Easy         | LeetCode ||
-
 ## Breadth-First Search
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
@@ -313,6 +292,32 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |178| [Graph Valid Tree](http://lintcode.com/en/problem/graph-valid-tree/)| [C++](./C++/graph-valid-tree.cpp) | _O(\|V\| + \|E\|)_          | _O(\|V\| + \|E\|)_          | Medium         | LeetCode ||
 |431|[Find the Connected Component in the Undirected Graph](http://lintcode.com/en/problem/find-the-connected-component-in-the-undirected-graph/)| [C++](./C++/find-the-connected-component-in-the-undirected-graph.cpp)| _O(n)_ | _O(n)_ | Easy | | BFS |
 |477|[Surrounded Regions](http://lintcode.com/en/problem/surrounded-regions/)|[C++](./C++/surrounded-regions.cpp)| _O(m * n)_ | _O(m + n)_ | Medium         | LeetCode ||
+
+## Depth-First Search
+| # | Title | Solution | Time | Space | Difficulty | Tag | Note |
+|---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|90|[K Sum II](http://lintcode.com/en/problem/k-sum-ii/)| [C++](./C++/k-sum-ii.cpp)| _O(k * C(n, k))_ | _O(k)_ | Medium | | |
+|433|[Number of Islands](http://lintcode.com/en/problem/number-of-islands/)| [C++](./C++/number-of-islands.cpp)| _O(m * n)_ | _O(m * n)_ | Easy | LeetCode | DFS |
+|480| [Binary Tree Paths](http://lintcode.com/en/problem/binary-tree-paths/) | [C++](./C++/binary-tree-paths.cpp) | _O(n * h)_ | _O(h)_ | Easy         | LeetCode ||
+
+## Backtracking
+| # | Title | Solution | Time | Space | Difficulty | Tag | Note |
+|---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|15|[Permutations](http://lintcode.com/en/problem/permutations/)| [C++](./C++/permutations.cpp)| _O(n * n!)_ | _O(n)_ | Medium | LeetCode, EPI | |
+|16|[Permutations II](http://lintcode.com/en/problem/permutations-ii/)| [C++](./C++/permutations-ii.cpp)| _O(n * n!)_ | _O(n)_ | Medium | LeetCode, EPI | |
+|17|[Subsets](http://lintcode.com/en/problem/subsets/)| [C++](./C++/subsets.cpp)| _O(n * 2^n)_ | _O(1)_ | Medium | LeetCode | |
+|18|[Subsets II](http://lintcode.com/en/problem/subsets-ii/)| [C++](./C++/subsets-ii.cpp)| _O(n * 2^n)_ | _O(1)_ | Medium | LeetCode | |
+|33|[N-Queens](http://lintcode.com/en/problem/n-queens/)| [C++](./C++/n-queens.cpp)| _O(n * n!)_ | _O(n)_ | Medium | LeetCode, EPI | |
+|34|[N-Queens II](http://lintcode.com/en/problem/n-queens-ii/)| [C++](./C++/n-queens-ii.cpp)| _O(n * n!)_ | _O(n)_ | Medium | LeetCode, EPI | |
+|123|[Word Search](http://lintcode.com/en/problem/word-search/)| [C++](./C++/word-search.cpp)| _O(m * n * l)_ | _O(l)_ | Medium | LeetCode | |
+|132|[Word Search II](http://lintcode.com/en/problem/word-search-ii/)| [C++](./C++/word-search-ii.cpp)| _O(m * n * l)_ | _O(l)_ | Hard | | Trie, DFS |
+|135|[Combination Sum](http://lintcode.com/en/problem/combination-sum/)| [C++](./C++/combination-sum.cpp)| _O(k * n^k)_ | _O(k)_ | Medium | LeetCode | DFS |
+|136|[Palindrome Partitioning](http://lintcode.com/en/problem/palindrome-partitioning/)| [C++](./C++/palindrome-partitioning.cpp)| _O(2^n)_ | _O(n)_ | Easy | LeetCode, EPI | |
+|152|[Combinations](http://lintcode.com/en/problem/combinations/)| [C++](./C++/combinations.cpp)| _O(k * n^k)_ | _O(k)_ | Medium | LeetCode, EPI | |
+|153|[Combination Sum II](http://lintcode.com/en/problem/combination-sum-ii/)| [C++](./C++/combination-sum-ii.cpp)| _O(k * C(n, k))_ | _O(k)_ | Medium | LeetCode | DFS |
+|425|[Letter Combinations of a Phone Number](http://lintcode.com/en/problem/letter-combinations-of-a-phone-number/) |
+|426| [Restore IP Addresses](http://lintcode.com/en/problem/restore-ip-addresses/) | [C++](./C++/restore-ip-addresses.cpp) | _O(1)_ | _O(1)_ | Medium         | LeetCode ||[C++](./C++/letter-combinations-of-a-phone-number.cpp)| _O(n * 4^n)_ | _O(n)_ | Medium | LeetCode | |
+|427| [Generate Parentheses](http://lintcode.com/en/problem/generate-parentheses/)| [C++](./C++/generate-parentheses.cpp)| _O(4^n / n^(3/2))_ | _O(n)_   | Medium         | LeetCode ||
 
 ## Binary Search Trees
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
