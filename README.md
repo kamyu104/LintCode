@@ -315,7 +315,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |136|[Palindrome Partitioning](http://lintcode.com/en/problem/palindrome-partitioning/)| [C++](./C++/palindrome-partitioning.cpp)| _O(2^n)_ | _O(n)_ | Easy | LeetCode, EPI | |
 |152|[Combinations](http://lintcode.com/en/problem/combinations/)| [C++](./C++/combinations.cpp)| _O(k * n^k)_ | _O(k)_ | Medium | LeetCode, EPI | |
 |153|[Combination Sum II](http://lintcode.com/en/problem/combination-sum-ii/)| [C++](./C++/combination-sum-ii.cpp)| _O(k * C(n, k))_ | _O(k)_ | Medium | LeetCode | DFS |
-|425|[Letter Combinations of a Phone Number](http://lintcode.com/en/problem/letter-combinations-of-a-phone-number/) |
+|425|[Letter Combinations of a Phone Number](http://lintcode.com/en/problem/letter-combinations-of-a-phone-number/) | [C++](./C++/letter-combinations-of-a-phone-number.cpp)| _O(n * 4^n)_ | _O(n)_ | Medium | LeetCode | |
 |426| [Restore IP Addresses](http://lintcode.com/en/problem/restore-ip-addresses/) | [C++](./C++/restore-ip-addresses.cpp) | _O(1)_ | _O(1)_ | Medium         | LeetCode ||[C++](./C++/letter-combinations-of-a-phone-number.cpp)| _O(n * 4^n)_ | _O(n)_ | Medium | LeetCode | |
 |427| [Generate Parentheses](http://lintcode.com/en/problem/generate-parentheses/)| [C++](./C++/generate-parentheses.cpp)| _O(4^n / n^(3/2))_ | _O(n)_   | Medium         | LeetCode ||
 
