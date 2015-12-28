@@ -33,10 +33,7 @@ public:
         }
 
         // If all digits are increasingly sorted, delete last.
-        while (k > 0) {
-            s.pop_back();
-            --k;
-        }
+        s.resize(s.length() - k);
 
         // Strip all leading '0'
         return s.empty() ? "0" : s.substr(s.find_first_not_of("0"));
