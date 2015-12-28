@@ -24,19 +24,19 @@ public:
     string DeleteDigits(string A, int k) {
         // If a digit is greater than next one, delete it.
         string s;
-        for (int i = 0; i < A.size(); ++i) {
-            while (k > 0 && !s.empty() && s.back() > A[i]) {
+        for (const auto c : A) {
+            while (k > 0 && !s.empty() && s.back() > c) {
                 s.pop_back();
                 --k;
             }
-            s.push_back(A[i]);
+            s.push_back(c);
         }
 
         // If all digits are increasingly sorted, delete last.
         s.resize(s.length() - k);
 
         // Strip all leading '0'
-        return s.empty() ? "0" : s.substr(s.find_first_not_of("0"));
+        return s.empty() ? "0" : s.substr(s.find_first_not_of('0'));
     }
 };
 
@@ -66,7 +66,7 @@ public:
         A.resize(A.length() - k);
 
         // Strip all leading '0'
-        return A.empty() ? "0" : A.substr(A.find_first_not_of("0"));
+        return A.empty() ? "0" : A.substr(A.find_first_not_of('0'));
     }
 };
 
