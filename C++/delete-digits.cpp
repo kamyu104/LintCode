@@ -24,7 +24,7 @@ public:
     string DeleteDigits(string A, int k) {
         // If a digit is greater than next one, delete it.
         string s;
-        for (auto i = 0; i < A.size(); ++i) {
+        for (int i = 0; i < A.size(); ++i) {
             while (k > 0 && !s.empty() && s.back() > A[i]) {
                 s.pop_back();
                 --k;
