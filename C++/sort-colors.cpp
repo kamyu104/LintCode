@@ -1,6 +1,7 @@
 // Time:  O(n)
 // Space: O(1)
 
+// Tri-Partition solution.
 class Solution{
 public:
     /**
@@ -8,17 +9,14 @@ public:
      * @return: nothing
      */
     void sortColors(vector<int> &nums) {
-        int i = 0;
-        int last_zero = -1;
-        int first_two = nums.size();
-
-        while (i < first_two) {
-            if (nums[i] == 2) {
-                swap(nums[i], nums[--first_two]);
-            } else if (nums[i] == 0) {
-                swap(nums[i++], nums[++last_zero]);
-            } else {  // case 1
-                ++i;
+        const int target = 1;
+        for (int i = 0, j = 0, n = nums.size() - 1; j <= n;) {
+            if (nums[j] < target) {
+                swap(nums[i++], nums[j++]);
+            } else if (nums[j] > target) {
+                swap(nums[j], nums[n--]);
+            } else {
+                ++j;
             }
         }
     }
