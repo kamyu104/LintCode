@@ -28,9 +28,8 @@ public:
                         } else if (sum < target) {  // Should increase sum.
                             ++j;
                         } else {
-                            ans.emplace_back(vector<int>{nums[i], nums[j], nums[k]});
-                            ++j;
-                            --k;
+                            ans.push_back({nums[i], nums[j], nums[k]});
+                            ++j, --k;
                         }
                     }
                 }
