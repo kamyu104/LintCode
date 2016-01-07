@@ -15,28 +15,26 @@ public:
         // Make nums in increasing order. Time: O(nlogn)
         sort(nums.begin(), nums.end());
 
-        for (int i = 0; i < nums.size() - 2; ++i) {
-            // Skip duplicated.
-            if (i > 0 && nums[i] == nums[i - 1]) {
-                continue;
-            }
-            int j = i + 1;
-            int k = nums.size() - 1;
-
-            while (j < k) {  // Time: O(n) for each i.
-                const auto sum = nums[i] + nums[j] + nums[k];
-
-                if (sum > target) {  // Should decrease sum.
-                    --k;
-                } else if (sum < target) {  // Should increase sum.
-                    ++j;
-                } else {
-                    return target;
-                }
-
-                if (abs(sum - target) < min_diff) {
-                    min_diff = abs(sum - target);
-                    ans = sum;
+        for (int i = 0; i < static_cast<int>(nums.size()) - 2; ++i) {
+            if (i == 0 || nums[i] != nums[i - 1]) {  // Skip duplicated.
+                int j = i + 1;
+                int k = nums.size() - 1;
+    
+                while (j < k) {  // Time: O(n) for each i.
+                    const auto sum = nums[i] + nums[j] + nums[k];
+    
+                    if (sum > target) {  // Should decrease sum.
+                        --k;
+                    } else if (sum < target) {  // Should increase sum.
+                        ++j;
+                    } else {
+                        return target;
+                    }
+    
+                    if (abs(sum - target) < min_diff) {
+                        min_diff = abs(sum - target);
+                        ans = sum;
+                    }
                 }
             }
         }
