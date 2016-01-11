@@ -49,8 +49,54 @@ private:
 
 // Time:  O(nlogn)
 // Space: O(n)
-// BST solution. (743ms)
+// Divide and Conqure solution. (653ms)
 class Solution2 {
+public:
+   /**
+     * @param A: An integer array
+     * @return: Count the number of element before this element 'ai' is 
+     *          smaller than it and return count number array
+     */
+    vector<int> countOfSmallerNumberII(vector<int> &A) {
+        vector<int> counts(A.size());
+        vector<pair<int, int>> num_idxs;
+        for (int i = 0; i < A.size(); ++i) {
+            num_idxs.emplace_back(A[i], i);
+        }
+        countAndMergeSort(&num_idxs, 0, num_idxs.size() - 1, &counts);
+        return counts;
+    }
+
+    void countAndMergeSort(vector<pair<int, int>> *num_idxs, int start, int end, vector<int> *counts) {
+        if (end - start <= 0) {  // The number of range [start, end] of which size is less than 2 doesn't need sort.
+            return;
+        }
+        int mid = start + (end - start) / 2;
+        countAndMergeSort(num_idxs, start, mid, counts);
+        countAndMergeSort(num_idxs, mid + 1, end, counts);
+
+        int l = start;
+        vector<pair<int, int>> tmp;
+        for (int i = mid + 1; i <= end; ++i) {
+            // Merge the two sorted arrays into tmp.
+            while (l <= mid && (*num_idxs)[l].first < (*num_idxs)[i].first) {
+                tmp.emplace_back((*num_idxs)[l++]);
+            }
+            tmp.emplace_back((*num_idxs)[i]);
+            (*counts)[(*num_idxs)[i].second] += l - start;
+        }
+        while (l <= mid) {
+            tmp.emplace_back((*num_idxs)[l++]);
+        }
+        // Copy tmp back to num_idxs.
+        copy(tmp.begin(), tmp.end(), num_idxs->begin() + start);
+    }
+};
+
+// Time:  O(nlogn)
+// Space: O(n)
+// BST solution. (743ms)
+class Solution3 {
 public:
     class BSTreeNode {
     public:
