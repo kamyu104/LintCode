@@ -274,7 +274,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |159|[Find Minimum in Rotated Sorted Array](http://lintcode.com/en/problem/find-minimum-in-rotated-sorted-array/)| [C++](./C++/find-minimum-in-rotated-sorted-array.cpp)| _O(logn)_ | _O(1)_ | Medium | LeetCode | |
 |160|[Find Minimum in Rotated Sorted Array II](http://lintcode.com/en/problem/find-minimum-in-rotated-sorted-array-ii/)| [C++](./C++/find-minimum-in-rotated-sorted-array-ii.cpp)| _O(logn)_ | _O(1)_ | Medium | LeetCode | |
 |183|[Wood Cut](http://lintcode.com/en/problem/wood-cut/)| [C++](./C++/wood-cut.cpp)| _O(nlogL)_ | _O(1)_ | Medium | | |
-|249|[Count of Smaller Number before itself](http://lintcode.com/en/problem/count-of-smaller-number-before-itself/)| [C++](./C++/count-of-smaller-number-before-itself.cpp)| _O(nlogn)_ | _O(n)_ | Hard | | BST, BIT |
+|249|[Count of Smaller Number before itself](http://lintcode.com/en/problem/count-of-smaller-number-before-itself/)| [C++](./C++/count-of-smaller-number-before-itself.cpp)| _O(nlogn)_ | _O(n)_ | Hard | | BST, BIT, Divide and Conquer |
 |390|[Find Peak Element II](http://lintcode.com/en/problem/find-peak-element-ii/)| [C++](./C++/find-peak-element-ii.cpp) [Java](./Java/find-peak-element-ii.java) [Python](./Python/find-peak-element-ii.py)| _O(m + n)_ | _O(1)_ | Hard | | |
 |437|[Copy Books](http://lintcode.com/en/problem/copy-books/)| [C++](./C++/copy-books.cpp) | _O(nlogp)_ | _O(1)_ | Hard | UVa 714 | |
 
