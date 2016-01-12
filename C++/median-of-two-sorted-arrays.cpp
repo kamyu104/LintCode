@@ -40,8 +40,8 @@ public:
             }
         }
 
-        int Ai_minus_1 = left - 1 >= 0 ? A[left - 1] : INT_MIN;
-        int Bj = k - 1 - left >= 0 ? B[k - 1 - left] : INT_MIN;
+        int Ai_minus_1 = left - 1 >= 0 ? A[left - 1] : numeric_limits<int>::min();
+        int Bj = k - 1 - left >= 0 ? B[k - 1 - left] : numeric_limits<int>::min();
 
         // kth element would be A[left - 1] or B[k - 1 - left].
         return max(Ai_minus_1, Bj);
