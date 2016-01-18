@@ -16,7 +16,7 @@ public:
             *it %= 10;
         }
         if (carry == 1) {
-            result.insert(result.begin(), carry);
+            result.emplace(result.begin(), carry);
         }
         return result;
     }
