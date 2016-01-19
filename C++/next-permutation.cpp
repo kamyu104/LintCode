@@ -20,7 +20,7 @@ public:
         if (k >= 0) {
             // Find the smallest number which is larger than the value of the index k,
             // and swap the values.
-            for (int i = 0; i < nums.size(); ++i) {
+            for (int i = k + 1; i < nums.size(); ++i) {
                 if (nums[i] > nums[k]) {
                     l = i;
                 }
