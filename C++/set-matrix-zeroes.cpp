@@ -11,9 +11,9 @@ public:
         if (matrix.empty()) {
             return;
         }
+
         bool has_zero = false;
-        int zero_i = -1;
-        int zero_j = -1;
+        int zero_i = -1, zero_j = -1;
 
         for (int i = 0; i < matrix.size(); ++i) {
             for (int j = 0; j < matrix[0].size(); ++j) {
@@ -50,6 +50,5 @@ public:
                 matrix[zero_i][j] = 0;
             }
         }
-
     }
 };
