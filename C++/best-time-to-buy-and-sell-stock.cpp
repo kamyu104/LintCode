@@ -13,8 +13,8 @@ public:
             return 0;
         }
 
-        int hold1 = INT_MIN;
-        int release1 = INT_MIN;
+        int hold1 = numeric_limits<int>::min();
+        int release1 = numeric_limits<int>::min();
 
         for (const auto& p : prices) {
             hold1 = max(hold1, -p);
