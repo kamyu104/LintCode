@@ -8,7 +8,7 @@ public:
      * @return an integer
      */
     int longestConsecutive(vector<int> &num) {
-        // unprocessed_entries records the existence of each entry in A.
+        // unprocessed_entries records the existence of each entry in num.
         unordered_set<int> unprocessed_entries;
         for (const auto& a : num) {
             unprocessed_entries.emplace(a);
