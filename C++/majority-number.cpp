@@ -12,8 +12,7 @@ public:
         for (const auto& i : nums) {
             if (i == ans) {
                 ++cnt;
-            }
-            else {
+            } else {
                 --cnt;
                 if (cnt == 0) {
                     ans = i;
