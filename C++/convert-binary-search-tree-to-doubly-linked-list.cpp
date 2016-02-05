@@ -30,8 +30,7 @@ public:
      * @return: the head of doubly list node
      */
     DoublyListNode* bstToDoublyList(TreeNode* root) {
-        DoublyListNode *prev = nullptr;
-        DoublyListNode *head = nullptr;
+        DoublyListNode *prev = nullptr, *head = nullptr;
         treeToDoublyList(root, &prev, &head);
         return head;
     }
