@@ -184,6 +184,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |129|[Rehashing](http://lintcode.com/en/problem/rehashing/)| [C++](./C++/rehashing.cpp)| _O(n)_ | _O(n)_ | Medium | | |
 |138|[Subarray Sum](http://lintcode.com/en/problem/subarray-sum/)| [C++](./C++/subarray-sum.cpp)| _O(n)_ | _O(n)_ | Easy | | |
 |186|[Max Points on a Line](http://lintcode.com/en/problem/max-points-on-a-line/)| [C++](./C++/max-points-on-a-line.cpp)| _O(n^2)_ | _O(n)_ | Medium | LeetCode | |
+|211|[String Permutation](http://lintcode.com/en/problem/string-permutation/)| [C++](./C++/string-permutation.cpp)| _O(n)_ | _O(1)_ | Easy | | |
 |384|[Longest Substring Without Repeating Characters](http://lintcode.com/en/problem/longest-substring-without-repeating-characters/)| [C++](./C++/longest-substring-without-repeating-characters.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode, EPI | |
 |386|[Longest Substring with At Most K Distinct Characters](http://lintcode.com/en/problem/longest-substring-with-at-most-k-distinct-characters/)| [C++](./C++/longest-substring-with-at-most-k-distinct-characters.cpp)| _O(n)_ | _O(n)_ | Medium | | |
 |432|[Find the Weak Connected Component in the Directed Graph](http://lintcode.com/en/problem/find-the-weak-connected-component-in-the-directed-graph/)| [C++](./C++/find-the-weak-connected-component-in-the-directed-graph.cpp)| _O(nlogn)_ | _O(n)_ | Medium | | Union Find |
@@ -252,6 +253,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |247|[Segment Tree Query II](http://lintcode.com/en/problem/segment-tree-query-ii/)| [C++](./C++/segment-tree-query-ii.cpp)| _O(h)_ | _O(h)_ | Hard | | Segment Tree, BST |
 |248|[Count of Smaller Number](http://lintcode.com/en/problem/count-of-smaller-number/)| [C++](./C++/count-of-smaller-number.cpp)| build tree: _O(n)_, query: _O(logn)_ | _O(h)_ | Medium | | Segment Tree, BST |
 |371|[Print Numbers by Recursion](http://lintcode.com/en/problem/print-numbers-by-recursion/)| [C++](./C++/print-numbers-by-recursion.cpp)| _O(n)_ | _O(n)_ | Medium | | |
+|378|[Convert Binary Search Tree to Doubly Linked List](http://lintcode.com/en/problem/convert-binary-search-tree-to-doubly-linked-list/)| [C++](./C++/convert-binary-search-tree-to-doubly-linked-list.cpp)| _O(n)_ | _O(h)_ | Medium | | |
 |428| [Pow(x, n)](http://lintcode.com/en/problem/problems/powx-n/)     | [C++](./C++/powx-n.cpp)     | _O(logn)_       | _O(logn)_       | Medium         | LeetCode ||
 |439|[Segment Tree Build II](http://lintcode.com/en/problem/segmemt-tree-build-ii/)| [C++](./C++/segment-tree-build-ii.cpp)| _O(n)_ | _O(h)_ | Medium | | Segment Tree, BST |
 |453|[Flatten Binary Tree to Linked List](http://lintcode.com/en/problem/flatten-binary-tree-to-linked-list/)|[C++](./C++/flatten-binary-tree-to-linked-list.cpp)| _O(n)_ | _O(h)_ | Easy | LeetCode | |
@@ -297,6 +299,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |90|[K Sum II](http://lintcode.com/en/problem/k-sum-ii/)| [C++](./C++/k-sum-ii.cpp)| _O(k * C(n, k))_ | _O(k)_ | Medium | | |
+|376|[Binary Tree Path Sum](http://lintcode.com/en/problem/binary-tree-path-sum/)| [C++](./C++/binary-tree-path-sum.cpp)| _O(n)_ | _O(h)_ | Easy | LeetCode | |
 |433|[Number of Islands](http://lintcode.com/en/problem/number-of-islands/)| [C++](./C++/number-of-islands.cpp)| _O(m * n)_ | _O(m * n)_ | Easy | LeetCode | DFS |
 |480| [Binary Tree Paths](http://lintcode.com/en/problem/binary-tree-paths/) | [C++](./C++/binary-tree-paths.cpp) | _O(n * h)_ | _O(h)_ | Easy         | LeetCode ||
 
