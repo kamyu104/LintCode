@@ -10,7 +10,7 @@ public:
      * @return: an integer representing the minimum size of subarray
      */
     int minimumSize(vector<int> &nums, int s) {
-        int start = -1, sum = 0, min_size = INT_MAX;
+        int start = -1, sum = 0, min_size = numeric_limits<int>::max();
         for (int i = 0; i < nums.size(); ++i) {
             sum += nums[i];
             while (sum >= s) {
@@ -18,7 +18,7 @@ public:
                 sum -= nums[++start];
             }
         }
-        if (min_size == INT_MAX) {
+        if (min_size == numeric_limits<int>::max()) {
             return 0;
         }
         return min_size;
@@ -36,7 +36,7 @@ public:
      * @return: an integer representing the minimum size of subarray
      */
     int minimumSize(vector<int> &nums, int s) {
-        int min_size = INT_MAX;
+        int min_size = numeric_limits<int>::max();
         vector<int> sum_from_start(nums.size() + 1);
         partial_sum(nums.cbegin(), nums.cend(), sum_from_start.begin() + 1);
         for (int i = 0; i < nums.size(); ++i) {
@@ -48,7 +48,7 @@ public:
                 min_size = min(min_size, end - i);
             }
         }
-        if (min_size == INT_MAX) {
+        if (min_size == numeric_limits<int>::max()) {
             return 0;
         }
         return min_size;
