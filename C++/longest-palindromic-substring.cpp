@@ -42,14 +42,14 @@ public:
             return s.substr((center_index - 1 - max_len) / 2, max_len);
         }
     private:
-        string preProcess(string s) {
-            int n = s.length();
-            if (n == 0) {
+        string preProcess(const string& s) {
+            if (s.empty()) {
                 return "^$";
             }
             string ret = "^";
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < s.length(); ++i) {
                 ret += "#" + s.substr(i, 1);
+            }
 
             ret += "#$";
             return ret;
