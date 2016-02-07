@@ -9,7 +9,7 @@ public:
      */
     string longestPalindrome(string& s) {
         string T = preProcess(s);
-        int n = T.length();
+        const int n = T.length();
         vector<int> P(n);
         int C = 0, R = 0;
         for (int i = 1; i < n - 1; ++i) {
@@ -41,7 +41,8 @@ public:
     
         return s.substr((center_index - 1 - max_len) / 2, max_len);
     }
-    private:
+
+private:
     string preProcess(const string& s) {
         if (s.empty()) {
             return "^$";
@@ -50,7 +51,6 @@ public:
         for (int i = 0; i < s.length(); ++i) {
             ret += "#" + s.substr(i, 1);
         }
-    
         ret += "#$";
         return ret;
     }
