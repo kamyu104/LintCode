@@ -31,9 +31,8 @@ public:
 
         // Compute integer.
         for (; i < str.length() && isdigit(str[i]); ++i) {
-            if (ans > (INT_MAX - (str[i] - '0')) / 10 ||
-                ((str[i] - '0') == INT_MAX / 10 && (str[i] - '0') > INT_MAX % 10)) { 
-                    return sign > 0 ? INT_MAX : INT_MIN;
+            if (ans > (numeric_limits<int>::max() - (str[i] - '0')) / 10) { 
+                return sign > 0 ? numeric_limits<int>::max() : numeric_limits<int>::min();
             }
             ans *= 10;
             ans += str[i] - '0';
