@@ -1,4 +1,4 @@
-// Time:  O(n * k), k is length of the common prefix
+// Time:  O(n * k), k is the length of the common prefix
 // Space: O(1)
 
 // BFS
