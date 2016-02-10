@@ -9,7 +9,7 @@ public:
      * @return: The longest common prefix
      */
     string longestCommonPrefix(vector<string> &strs) {
-        if (strs.size() == 0) {
+        if (strs.empty()) {
             return "";
         }
 
@@ -38,7 +38,7 @@ public:
      * @return: The longest common prefix
      */
     string longestCommonPrefix(vector<string> &strs) {
-        if (strs.size() == 0) {
+        if (strs.empty()) {
             return "";
         }
 
