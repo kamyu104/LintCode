@@ -13,17 +13,14 @@ public:
             return "";
         }
 
-        auto prefix_len = strs[0].length();
-        for (int i = 0; i < prefix_len; ++i) {
+        for (int i = 0; i < strs[0].length(); ++i) {
             for (const auto& str : strs) {
                 if (str[i] != strs[0][i]) {
-                    prefix_len = i;
-                    break;
+                    return strs[0].substr(0, i);
                 }
             }
         }
-
-        return strs[0].substr(0, prefix_len);
+        return strs[0];
     }
 };
 
@@ -50,7 +47,6 @@ public:
                 prefix_len = i;
             }
         }
-
         return strs[0].substr(0, prefix_len);
     }
 };
