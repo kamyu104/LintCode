@@ -1,6 +1,8 @@
 // Time:  O(n + k)
 // Space: O(k)
-// KMP Algorithm
+
+// Wiki of KMP algorithm:
+//http://en.wikipedia.org/wiki/Knuth-Morris-Pratt_algorithm
 class Solution {
 public:
     /**
