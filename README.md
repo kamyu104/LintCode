@@ -89,7 +89,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 ## String
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
-|13|[strStr](http://lintcode.com/en/problem/strstr/)|[C++](./C++/strstr.cpp)| _O(n)_ | _O(k)_ | Easy | LeetCode | `KMP Algorithm` |
+|13|[strStr](http://lintcode.com/en/problem/strstr/)|[C++](./C++/strstr.cpp)| _O(n + k)_ | _O(k)_ | Easy | LeetCode | `KMP Algorithm` |
 |53|[Reverse Words in a String](http://lintcode.com/en/problem/reverse-words-in-a-string/)|[C++](./C++/reverse-words-in-a-string.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode, EPI | |
 |54|[String to Integer(atoi)](http://lintcode.com/en/problem/string-to-integeratoi/)|[C++](./C++/string-to-integeratoi.cpp)| _O(n)_ | _O(1)_ | Hard | LeetCode | |
 |55|[Compare Strings](http://lintcode.com/en/problem/compare-strings/)|[C++](./C++/compare-strings.cpp)| _O(n)_ | _O(c)_ | Easy | | |
