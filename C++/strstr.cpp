@@ -1,4 +1,4 @@
-// Time:  O(n * k)
+// Time:  O(n + k)
 // Space: O(k)
 // KMP Algorithm
 class Solution {
@@ -20,7 +20,6 @@ public:
         }
         return -1;
     }
-
 
     int KMP(const string& text, const string& pattern) {
         const vector<int> prefix = getPrefix(pattern);
@@ -56,7 +55,7 @@ public:
 };
 
 
-// Time:  O(k * n)
+// Time:  O(n * k)
 // Space: O(k)
 class Solution2 {
 public:
