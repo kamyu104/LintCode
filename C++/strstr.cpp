@@ -2,7 +2,7 @@
 // Space: O(k)
 
 // Wiki of KMP algorithm:
-//http://en.wikipedia.org/wiki/Knuth-Morris-Pratt_algorithm
+// http://en.wikipedia.org/wiki/Knuth-Morris-Pratt_algorithm
 class Solution {
 public:
     /**
