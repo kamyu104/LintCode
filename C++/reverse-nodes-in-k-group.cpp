@@ -37,14 +37,14 @@ public:
     }
 
     void reverse(ListNode **begin, const ListNode *end) {
-            ListNode *first = (*begin)->next;
-            ListNode *cur = first->next;
+        ListNode *first = (*begin)->next;
+        ListNode *cur = first->next;
 
-            while (cur != end) {
-                first->next = cur->next;
-                cur->next = (*begin)->next;
-                (*begin)->next = cur;
-                cur = first->next;
-            }
+        while (cur != end) {
+            first->next = cur->next;
+            cur->next = (*begin)->next;
+            (*begin)->next = cur;
+            cur = first->next;
+        }
     }
 };
