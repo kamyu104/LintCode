@@ -17,40 +17,25 @@ public:
      * @return: the list after rotation
      */
     ListNode *rotateRight(ListNode *head, int k) {
-        ListNode *dummy_head = new ListNode(INT_MIN);
-        dummy_head->next = head;
-
-        // Get length of the list.
-        ListNode *cur = dummy_head;
-        int len = 0;
-        while (cur->next) {
-            ++len;
-            cur = cur->next;
-        }
-        if (len == 0) {
-            return nullptr;
-        }
-        k %= len;
-        if (k == 0) {
+        if (head == nullptr || head->next == nullptr) {
             return head;
         }
 
-        // Find the position to split.
-        ListNode *slow = dummy_head;
-        ListNode *fast = dummy_head;
-        while (k) {
-            fast = fast->next;
-            --k;
+        int n = 1;
+        ListNode *cur = head;
+        for (; cur->next; cur = cur->next) {
+            ++n;
         }
-        while (fast && fast->next) {
-            fast = fast->next;
-            slow = slow->next;
+        cur->next = head;
+
+        ListNode *tail = cur;
+        k = n - k % n;
+        cur = head;
+        for (int i = 0; i < k; cur = cur->next, ++i) {
+            tail = cur;
         }
 
-        dummy_head->next = slow->next; // New head.
-        slow->next = nullptr; // Split
-        fast->next = head; // Link.
-
-        return dummy_head->next;
+        tail->next = nullptr;
+        return cur; 
     }
 };
