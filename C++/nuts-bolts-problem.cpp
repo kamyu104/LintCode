@@ -14,8 +14,8 @@
 
 class Solution {
 public:
-    typedef enum { SMALLER = -1, EQUAL = 0,
-                   BIGGER = 1, REVERSE = 2 } CompareResult;
+    using CompareResult = enum { SMALLER = -1, EQUAL = 0,
+                                 BIGGER = 1, REVERSE = 2 };
     /**
      * @param nuts: a vector of integers
      * @param bolts: a vector of integers
