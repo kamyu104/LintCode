@@ -48,7 +48,7 @@ public:
 
 class Solution2 {
 public:
-    typedef enum {START, END} Endpoint;
+    using Endpoint = enum {START, END};
 
     struct Point {
         Endpoint type;
