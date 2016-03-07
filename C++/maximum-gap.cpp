@@ -71,7 +71,7 @@ public:
         int gap = max(1, static_cast<int>((max_val - min_val) /
                                           (nums.size() - 1)));
         map<int, array<int, 2>> bucket;
-        typedef enum {MIN, MAX} ValueType;
+        using ValueType = enum {MIN, MAX};
 
         // Find the bucket where the n should be put.
         for (const auto& n : nums) {
