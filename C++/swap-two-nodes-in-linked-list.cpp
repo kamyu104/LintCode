@@ -18,7 +18,7 @@ public:
      * @return a new head of singly-linked list
      */
     ListNode* swapNodes(ListNode* head, int v1, int v2) {
-        ListNode dummy(0);
+        ListNode dummy{0};
         dummy.next = head;
         ListNode *cur = &dummy;
         ListNode *pre_node1{nullptr}, *pre_node2{nullptr};
