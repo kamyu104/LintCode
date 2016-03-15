@@ -2,16 +2,27 @@
 // Space: O(1)
 
 /**
- * Definition for singly-linked list.
- * struct ListNode {
+ * Definition of singly-linked-list:
+ * 
+ * class ListNode {
+ * public:
  *     int val;
  *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
+ *     ListNode(int val) {
+ *        this->val = val;
+ *        this->next = NULL;
+ *     }
+ * }
  */
 class Solution {
 public:
-    ListNode* reverseBetween(ListNode* head, int m, int n) {
+    /**
+     * @param head: The head of linked list.
+     * @param m: The start position need to reverse.
+     * @param n: The end position need to reverse.
+     * @return: The new head of partial reversed linked list.
+     */
+    ListNode *reverseBetween(ListNode *head, int m, int n) {
         ListNode dummy{0};
         dummy.next = head;
 
