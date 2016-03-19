@@ -1,8 +1,8 @@
-# [LintCode](http://www.lintcode.com/en/problem/) ![Language](https://img.shields.io/badge/language-C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-263%20%2F%20263-ff69b4.svg)
+# [LintCode](http://www.lintcode.com/en/problem/) ![Language](https://img.shields.io/badge/language-C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-267%20%2F%20267-ff69b4.svg)
 
-Up to date (2016-03-14), there are `263` problems on [LintCode Online Judge](http://lintcode.com/).
+Up to date (2016-03-18), there are `267` problems on [LintCode Online Judge](http://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `263` problems.
+Here is the classification of all `267` problems.
 For more problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -372,6 +372,10 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |436|[Maximal Square](http://lintcode.com/en/problem/maximal-square/)| [C++](./C++/maximal-square.cpp)| _O(m * n)_ | _O(n)_ | Medium | LeetCode | |
 |510|[Maximal Rectangle](http://lintcode.com/en/problem/maximal-rectangle/)| [C++](./C++/maximal-rectangle.cpp)| _O(m * n)_ | _O(n)_ | Hard | LeetCode | |
 |512|[Decode Ways](http://lintcode.com/en/problem/decode-ways/)| [C++](./C++/decode-ways.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
+|513|[Perfect Squares](http://lintcode.com/en/problem/perfect-squares/)| [C++](./C++/perfect-squares.cpp)| _O(n * sqrt(n))_ | _O(n)_ | Medium | LeetCode | |
+|514|[Paint Fence](http://lintcode.com/en/problem/paint-fence/)| [C++](./C++/paint-fence.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
+|515|[Paint House](http://lintcode.com/en/problem/paint-house/)| [C++](./C++/paint-house.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
+|516|[Paint House II](http://lintcode.com/en/problem/paint-house-ii/)| [C++](./C++/paint-house-ii.cpp)| _O(n * k)_ | _O(k)_ | Hard | LeetCode | |
 
 ## Greedy
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
