@@ -8,7 +8,7 @@ public:
      * @return: The same instance of this class every time
      */
     static Solution* getInstance() {
-        // C++ 11 thread-safe local-static-initialization.
+        // C++ 11 thread-safe local-static-initialization. (lazy initialization)
         static Solution *instance = new Solution();
 
         return instance;
