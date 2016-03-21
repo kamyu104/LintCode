@@ -9,7 +9,7 @@ public:
      * @param n: The number n.
      * @return: The nth prime number as description.
      */
-    long long nthPrimeNumber(int n) {
+    long long nthUglyNumber(int n) {
         long long ugly_number = 0;
         priority_queue<long long, vector<long long>, greater<long long>> heap;
 
@@ -39,7 +39,7 @@ public:
      * @param n: The number n.
      * @return: The nth prime number as description.
      */
-    long long nthPrimeNumber(int n) {
+    long long nthUglyNumber(int n) {
         long long ugly_number = 0;
         set<long long> bst;
 
@@ -71,7 +71,7 @@ public:
      * @param n: The number n.
      * @return: The nth prime number as description.
      */
-    long long nthPrimeNumber(int n) {
+    long long nthUglyNumber(int n) {
         vector<long long> uglies(n + 1);
         uglies[0] = 1;
     
