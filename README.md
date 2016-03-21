@@ -169,7 +169,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 ## Heap
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
-|4|[Ugly Number II](http://lintcode.com/en/problem/ugly-number-ii/)| [C++](./C++/ugly-number-ii.cpp)| _O(k)_ | _O(1)_ | Medium | CTCI | BST, Heap |
+|4|[Ugly Number II](http://lintcode.com/en/problem/ugly-number-ii/)| [C++](./C++/ugly-number-ii.cpp)| _O(n)_ | _O(1)_ | Medium | CTCI | BST, Heap |
 |81|[Data Stream Median](http://lintcode.com/en/problem/data-stream-median/)| [C++](./C++/data-stream-median.cpp)| _O(nlogn)_ | _O(n)_ | Hard | EPI | BST, Heap |
 |104|[Merge k Sorted Lists](http://lintcode.com/en/problem/merge-k-sorted-lists/)| [C++](./C++/merge-k-sorted-lists.cpp)| _O(n * logk)_ | _O(k)_ | Medium | LeetCode | |
 |130|[Heapify](http://lintcode.com/en/problem/heapify/)| [C++](./C++/heapify.cpp)| _O(n)_ | _O(1)_ | Medium | | |
