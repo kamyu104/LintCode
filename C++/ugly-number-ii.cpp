@@ -1,20 +1,20 @@
 
-// Time:  O(k)
+// Time:  O(n)
 // Space: O(1)
 
 // Heap solution.
 class Solution {
 public:
     /*
-     * @param k: The number k.
-     * @return: The kth prime number as description.
+     * @param n: The number n.
+     * @return: The nth prime number as description.
      */
-    long long kthPrimeNumber(int k) {
+    long long nthPrimeNumber(int n) {
         long long ugly_number = 0;
         priority_queue<long long, vector<long long>, greater<long long>> heap;
 
         heap.emplace(1);
-        for (int i = 0; i <= k; ++i) {
+        for (int i = 0; i <= n; ++i) {
             ugly_number = heap.top();
             heap.pop();
             if (ugly_number % 3 == 0) {
@@ -36,15 +36,15 @@ public:
 class Solution2 {
 public:
     /*
-     * @param k: The number k.
-     * @return: The kth prime number as description.
+     * @param n: The number n.
+     * @return: The nth prime number as description.
      */
-    long long kthPrimeNumber(int k) {
+    long long nthPrimeNumber(int n) {
         long long ugly_number = 0;
         set<long long> bst;
 
         bst.emplace(1);
-        for (int i = 0; i <= k; ++i) {
+        for (int i = 0; i <= n; ++i) {
             ugly_number = *bst.cbegin();
             bst.erase(bst.cbegin());
             if (ugly_number % 3 == 0) {
@@ -62,23 +62,23 @@ public:
     }
 };
 
-// Time:  O(k)
-// Space: O(k)
+// Time:  O(n)
+// Space: O(n)
 // DP solution.
 class Solution3 {
 public:
     /*
-     * @param k: The number k.
-     * @return: The kth prime number as description.
+     * @param n: The number n.
+     * @return: The nth prime number as description.
      */
-    long long kthPrimeNumber(int k) {
-        vector<long long> uglies(k + 1);
+    long long nthPrimeNumber(int n) {
+        vector<long long> uglies(n + 1);
         uglies[0] = 1;
     
         long long f3 = 3, f5 = 5, f7 = 7;
         int idx3 = 0, idx5 = 0, idx7 = 0;
     
-        for (int i = 1; i <= k; ++i) {
+        for (int i = 1; i <= n; ++i) {
             long long min_val = min(min(f3, f5), f7);
             uglies[i] = min_val;
     
@@ -93,6 +93,6 @@ public:
             }
         }
 
-        return uglies[k];
+        return uglies[n];
     }
 };
