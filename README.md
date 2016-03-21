@@ -174,7 +174,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |104|[Merge k Sorted Lists](http://lintcode.com/en/problem/merge-k-sorted-lists/)| [C++](./C++/merge-k-sorted-lists.cpp)| _O(n * logk)_ | _O(k)_ | Medium | LeetCode | |
 |130|[Heapify](http://lintcode.com/en/problem/heapify/)| [C++](./C++/heapify.cpp)| _O(n)_ | _O(1)_ | Medium | | |
 |364|[Trapping Rain Water II](http://lintcode.com/en/problem/trapping-rain-water-ii/)| [C++](./C++/trapping-rain-water-ii.cpp)| _O(m * n * (logm + logn))_ | _O(m * n)_ | Hard | | BFS, Heap, Tricky |
-|518|[Super Ugly Number](http://lintcode.com/en/problem/super-ugly-number/)| [C++](./C++/super-ugly-number.cpp)| _O(n * k)_ | _O(n + k)_ | Medium | LeetCode |  |
+|518|[Super Ugly Number](http://lintcode.com/en/problem/super-ugly-number/)| [C++](./C++/super-ugly-number.cpp)| _O(n * k)_ | _O(n + k)_ | Medium | LeetCode | BST, Heap |
 
 ## Hash Tables
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
