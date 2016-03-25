@@ -34,8 +34,7 @@ public:
                     max_bst.emplace(*min_bst.cbegin());
                     min_bst.erase(min_bst.cbegin());
                 }
-            }
-            else {
+            } else {
                 max_bst.emplace(nums[i]);
                 if (max_bst.size() > min_bst.size()) {
                     min_bst.emplace(*max_bst.cbegin());
