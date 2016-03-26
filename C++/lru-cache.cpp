@@ -39,7 +39,7 @@ public:
 
 private:
     list<pair<int, int>> list_; // key, value
-    unordered_map<int, list< pair<int, int>>::iterator> map_; // key, list iterator
+    unordered_map<int, list<pair<int, int>>::iterator> map_; // key, list iterator
     int capa_;
 
     // Update (key, iterator of (key, value)) pair
