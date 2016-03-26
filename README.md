@@ -196,7 +196,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 ## Data Structure
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
-|134|[LRU Cache](http://lintcode.com/en/problem/lru-cache/)| [C++](./C++/lru-cache.cpp)| _O(1)_ | _O(c)_ | Hard | LeetCode, EPI | List, Hash |
+|134|[LRU Cache](http://lintcode.com/en/problem/lru-cache/)| [C++](./C++/lru-cache.cpp)| _O(1)_ | _O(k)_ | Hard | LeetCode, EPI | List, Hash |
 
 ## Math
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
