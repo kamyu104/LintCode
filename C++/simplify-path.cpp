@@ -32,17 +32,14 @@ public:
     }
 
     // Join strings with delimitor.
-    string join(const vector<string>& names, const char& delim) {
-        string s;
+    string join(const vector<string>& names, const char delim) {
+        ostringstream ss;
         if (!names.empty()) {
-            ostringstream ss;
-            string delim_str;
-            delim_str.insert(delim_str.begin(), delim);
+            const string delim_str(1, delim);
             copy(names.cbegin(), prev(names.cend()),
                  ostream_iterator<string>(ss, delim_str.c_str()));
             ss << names.back();
-            s = ss.str();
         }
-        return s;
+        return ss.str();
     }
 };
