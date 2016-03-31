@@ -12,7 +12,7 @@ public:
             elements_.emplace(0);
             stack_min_ = number;
         } else {
-            elements_.emplace(number - stack_min_);
+            elements_.emplace(static_cast<int64_t>(number) - stack_min_);
             if (number < stack_min_) {
                 stack_min_ = number; // Update min.
             }
@@ -20,7 +20,7 @@ public:
     }
 
     int pop() {
-        int diff = elements_.top();
+        auto diff = elements_.top();
         elements_.pop();
         if (diff < 0) {
             stack_min_ -= diff; // Restore previous min.
@@ -31,8 +31,9 @@ public:
     int min() {
         return stack_min_;
     }
+
 private:
-    stack<int> elements_;
+    stack<int64_t> elements_;
     int stack_min_;
 };
 
