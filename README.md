@@ -1,8 +1,8 @@
-# [LintCode](http://www.lintcode.com/en/problem/) ![Language](https://img.shields.io/badge/language-C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-269%20%2F%20269-ff69b4.svg)
+# [LintCode](http://www.lintcode.com/en/problem/) ![Language](https://img.shields.io/badge/language-C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-271%20%2F%20271-ff69b4.svg)
 
-Up to date (2016-03-20), there are `269` problems on [LintCode Online Judge](http://lintcode.com/).
+Up to date (2016-04-16), there are `271` problems on [LintCode Online Judge](http://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `269` problems.
+Here is the classification of all `271` problems.
 For more problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -103,6 +103,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |415|[Valid Palindrome](http://lintcode.com/en/problem/valid-palindrome/)|[C++](./C++/valid-palindrome.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
 |417|[Valid Number](http://lintcode.com/en/problem/valid-number/)|[C++](./C++/valid-number.cpp)| _O(n)_ | _O(1)_ | Hard | LeetCode | Automata |
 |420|[Count and Say](http://lintcode.com/en/problem/count-and-say/)|[C++](./C++/count-and-say.cpp)| _O(n * 2^n)_ | _O(2^n)_ | Easy | LeetCode | |
+|524|[Left Pad](http://lintcode.com/en/problem/left-pad/)|[C++](./C++/left-pad.cpp)| _O(p + n)_ | _O(1)_ | Easy | LeetCode | |
 
 ## Linked List
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
@@ -160,6 +161,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |423|[Valid Parentheses](http://lintcode.com/en/problem/valid-parentheses.cpp/)| [C++](./C++/valid-parentheses.cpp.cpp)| _O(n)_ | _O(n)_ | Easy | LeetCode | |
 |424|[Evaluate Reverse Polish Notation](http://lintcode.com/en/problem/evaluate-reverse-polish-notation/)| [C++](./C++/evaluate-reverse-polish-notation.cpp)| _O(n)_ | _O(n)_ | Medium | LeetCode | |
 |473|[Add and Search Word](http://lintcode.com/en/problem/add-and-search-word/)| [C++](./C++/add-and-search-word.cpp)| _O(min(n, h))_ | _O(min(n, h)_ | Medium | LeetCode | Trie |
+|528|[Flatten Nested List Iterator](http://lintcode.com/en/problem/flatten-nested-list-iterator/)| [C++](./C++/flatten-nested-list-iterator.cpp)| _O(n)_ | _O(h)_ | Medium | LeetCode | |
 
 ## Queue
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
