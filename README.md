@@ -1,8 +1,8 @@
-# [LintCode](http://www.lintcode.com/en/problem/) ![Language](https://img.shields.io/badge/language-C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-271%20%2F%20271-ff69b4.svg)
+# [LintCode](http://www.lintcode.com/en/problem/) ![Language](https://img.shields.io/badge/language-C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-275%20%2F%20275-ff69b4.svg)
 
-Up to date (2016-04-16), there are `271` problems on [LintCode Online Judge](http://lintcode.com/).
+Up to date (2016-04-17), there are `275` problems on [LintCode Online Judge](http://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `271` problems.
+Here is the classification of all `275` problems.
 For more problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -401,4 +401,6 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |204|[Singleton](http://lintcode.com/en/problem/singleton/)| [C++](./C++/singleton.cpp)| _O(1)_ | _O(1)_ | Easy | | |
 |208|[Assignment Operator Overloading (C++ Only)](http://lintcode.com/en/problem/assignment-operator-overloading-c-only/)| [C++](./C++/assignment-operator-overloading-c-only.cpp)| _O(n)_ | _O(1)_ | Medium | | |
-
+|496|[Toy Factory](http://www.lintcode.com/en/problem/toy-factory/)| [C++](./C++/toy-factory.cpp)| _O(1)_ | _O(1)_ | Easy | | |
+|497|[Shape Factory](http://www.lintcode.com/en/problem/shape-factory/)| [C++](./C++/shape-factory.cpp)| _O(1)_ | _O(1)_ | Easy | | |
+|498|[Parking Lot](http://www.lintcode.com/en/problem/parking-lot/)| [C++](./C++/parking-lot-shared-ptr.cpp)| _O(n * m * k)_ | _O(n * m * k)_ | Hard | CTCI | OO Design, Smart Pointer |
