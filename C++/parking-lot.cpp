@@ -314,7 +314,7 @@ public:
         for (int i = 0; i < n; ++i) {
             auto&& ptr = make_shared<Level>(i, num_rows, spots_per_row);
             ptr->init();
-            levels_.push_back(ptr);
+            levels_.emplace_back(ptr);
         }
     }
 
