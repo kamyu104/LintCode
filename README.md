@@ -403,4 +403,4 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |208|[Assignment Operator Overloading (C++ Only)](http://lintcode.com/en/problem/assignment-operator-overloading-c-only/)| [C++](./C++/assignment-operator-overloading-c-only.cpp)| _O(n)_ | _O(1)_ | Medium | | |
 |496|[Toy Factory](http://www.lintcode.com/en/problem/toy-factory/)| [C++](./C++/toy-factory.cpp)| _O(1)_ | _O(1)_ | Easy | | |
 |497|[Shape Factory](http://www.lintcode.com/en/problem/shape-factory/)| [C++](./C++/shape-factory.cpp)| _O(1)_ | _O(1)_ | Easy | | |
-|498|[Parking Lot](http://www.lintcode.com/en/problem/parking-lot/)| [C++](./C++/parking-lot.cpp)| _O(n * m * k)_ | _O(n * m * k)_ | Hard | CTCI | OO Design, Smart Pointer |
+|498|[Parking Lot](http://www.lintcode.com/en/problem/parking-lot/)| [C++](./C++/parking-lot.cpp)| _O(n * m * k)_ | _O(n * m * k)_ | Hard | CTCI | OO Design, pImpl Idiom, Smart Pointer |
