@@ -53,7 +53,8 @@ public:
         return trap;
     }
 
-    int fill(vector<vector<int>>& heights, int i, int j, int height) {
+private:
+    int fill(const vector<vector<int>>& heights, int i, int j, int height) {
         // Out of border.
         if ( i < 0 || i >= m_ || j < 0 || j >= n_) {
             return 0;
@@ -69,7 +70,6 @@ public:
         return 0;
     }
 
-private:
     int m_;
     int n_;
     vector<vector<bool>> is_visited_;
