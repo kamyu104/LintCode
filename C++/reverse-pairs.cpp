@@ -49,6 +49,7 @@ private:
 
 // Time:  O(nlogn)
 // Space: O(n)
+// Merge sort solution.
 class Solution2 {
 public:
     /**
