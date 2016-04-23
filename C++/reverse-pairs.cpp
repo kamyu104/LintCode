@@ -8,7 +8,7 @@ public:
      * @return total of reverse pairs
      */
     long long reversePairs(vector<int>& A) {
-        int count = 0;
+        long long count = 0;
         vector<pair<int, int>> num_idxs;
         for (int i = 0; i < A.size(); ++i) {
             num_idxs.emplace_back(A[i], i);
@@ -17,7 +17,8 @@ public:
         return count;
     }
 
-    void countAndMergeSort(vector<pair<int, int>> *num_idxs, int start, int end, int *count) {
+private:
+    void countAndMergeSort(vector<pair<int, int>> *num_idxs, int start, int end, long long *count) {
         if (end - start <= 0) {  // The number of range [start, end] of which size is less than 2 doesn't need sort.
             return;
         }
