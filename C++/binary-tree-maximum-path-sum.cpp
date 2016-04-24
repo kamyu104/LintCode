@@ -20,20 +20,20 @@ public:
      * @return: An integer
      */
     int maxPathSum(TreeNode *root) {
-        maxPathSumRecu(root);
+        maxPathSumHelper(root);
         return max_sum_;
     }
 
     // Return max height and update max path sum for each node.
-    int maxPathSumRecu(TreeNode *root) {
+    int maxPathSumHelper(TreeNode *root) {
         if (root == nullptr) {
             return 0;
         }
 
         // Get max descendant sum of children.
         // If the sum is less than zero, it can't be the path with max sum.
-        int left = max(0, maxPathSumRecu(root->left));
-        int right = max(0, maxPathSumRecu(root->right));
+        const auto left = max(0, maxPathSumHelper(root->left));
+        const auto right = max(0, maxPathSumHelper(root->right));
 
         // "max path sum" equals to:
         // "max left descendant sum" -> root -> "max right descendant sum".
@@ -42,6 +42,7 @@ public:
         // Return max descendant sum.
         return root->val + max(left, right);
     }
+
 private:
-    int max_sum_ = INT_MIN;
+    int max_sum_ = numeric_limits<int>::min();
 };
