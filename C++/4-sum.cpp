@@ -1,7 +1,50 @@
-// Time:  O(n^2 * p), p is max number of the same two sum pairs.
-// Space: O(n^2 * p)
+// Time:  O(n^3)
+// Space: O(1)
 
 class Solution {
+public:
+    vector<vector<int> > fourSum(vector<int> &nums, int target) {
+        int len = nums.size();
+        int left, right, sum;
+        sort(nums.begin(), nums.end());
+        vector<vector<int>> res;
+        for (int i = 0; i < len - 3; ++i) {
+            if (i && nums[i] == nums[i - 1]) {
+                continue;
+            }
+            for (int j = i + 1; j < len - 2; ++j) {
+                if (j != i + 1 && nums[j] == nums[j - 1]) {
+                    continue;
+                }
+                sum = target - nums[i] - nums[j];
+                left = j + 1, right = len - 1;
+                while (left < right) {
+                    if (nums[left] + nums[right] == sum) {
+                        res.emplace_back(move(vector<int>{nums[i], nums[j], nums[left], nums[right]}));
+                        ++left, --right;
+                        while (left < right && nums[left] == nums[left - 1]) {
+                            ++left;
+                        }
+                        while (left < right && nums[right] == nums[right + 1]) {
+                            --right;
+                        }
+                    } else {
+                        if (nums[left] + nums[right] > sum) {
+                            --right;
+                        } else {
+                            ++left;
+                        }
+                    }
+                }
+            }
+        }
+        return res;
+    }
+};
+
+// Time:  O(n^2 * p), p is max number of the same two sum pairs.
+// Space: O(n^2 * p)
+class Solution2 {
 public:
     /**
      * @param numbers: Give an array numbersbers of n integer
