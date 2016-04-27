@@ -1,8 +1,8 @@
-# [LintCode](http://www.lintcode.com/en/problem/) ![Language](https://img.shields.io/badge/language-C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-276%20%2F%20276-ff69b4.svg)
+# [LintCode](http://www.lintcode.com/en/problem/) ![Language](https://img.shields.io/badge/language-C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-278%20%2F%20278-ff69b4.svg)
 
-Up to date (2016-04-23), there are `276` problems on [LintCode Online Judge](http://lintcode.com/).
+Up to date (2016-04-27), there are `278` problems on [LintCode Online Judge](http://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `276` problems.
+Here is the classification of all `278` problems.
 For more problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -266,6 +266,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |453|[Flatten Binary Tree to Linked List](http://lintcode.com/en/problem/flatten-binary-tree-to-linked-list/)|[C++](./C++/flatten-binary-tree-to-linked-list.cpp)| _O(n)_ | _O(h)_ | Easy | LeetCode | |
 |469| [Identical Binary Tree](http://lintcode.com/en/problem/problems/identical-binary-tree/)     | [C++](./C++/identical-binary-tree.cpp)     | _O(n)_       | _O(h)_       | Easy         |||
 |532|[Reverse Pairs](http://lintcode.com/en/problem/reverse-pairs/)| [C++](./C++/reverse-pairs.cpp)| _O(nlogn)_ | _O(n)_ | Medium | variant of [Count of Smaller Number before itself](http://lintcode.com/en/problem/count-of-smaller-number-before-itself/) | BIT, Merge Sort |
+|535|[House Robber III](http://lintcode.com/en/problem/house-robber-iii/)| [C++](./C++/house-robber-iii.cpp)| _O(n)_ | _O(h)_ | Medium | LeetCode | |
 
 ## Binary Search
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
@@ -381,6 +382,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |514|[Paint Fence](http://lintcode.com/en/problem/paint-fence/)| [C++](./C++/paint-fence.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
 |515|[Paint House](http://lintcode.com/en/problem/paint-house/)| [C++](./C++/paint-house.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 |516|[Paint House II](http://lintcode.com/en/problem/paint-house-ii/)| [C++](./C++/paint-house-ii.cpp)| _O(n * k)_ | _O(k)_ | Hard | LeetCode | |
+|534|[House Robber II](http://lintcode.com/en/problem/house-robber-ii/)| [C++](./C++/house-robber-ii.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 
 ## Greedy
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
