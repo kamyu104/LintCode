@@ -31,7 +31,7 @@ public:
 
 // Time:  O(n * 2^n)
 // Space: O(1)
-class Solution {
+class Solution2 {
 public:
     /**
      * @param S: A set of numbers.
