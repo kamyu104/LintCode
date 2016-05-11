@@ -54,29 +54,29 @@ public:
 // Time:  O(n)
 // Space: O(h)
 // Stack solution.
-class Solution {
+class Solution2 {
 public:
     /**
      * @param root: The root of binary tree.
      * @return: Preorder in vector which contains node values.
      */
     vector<int> preorderTraversal(TreeNode *root) {
-        if (!root) {
-            return {};
-        }
-
-        stack<TreeNode *> s;
-        s.emplace(root);
         vector<int> res;
+        stack<pair<TreeNode *, bool>> s;
+        s.emplace(root, false);
+        bool visited;
         while (!s.empty()) {
-            auto curr = s.top();
+            tie(root, visited) = s.top();
             s.pop();
-            res.emplace_back(curr->val);
-            if (curr->right) {
-                s.emplace(curr->right);
+            if (root == nullptr) {
+                continue;
             }
-            if (curr->left) {
-                s.emplace(curr->left);
+            if (visited) {
+                res.emplace_back(root->val);
+            } else {
+                s.emplace(root->right, false);
+                s.emplace(root->left, false);
+                s.emplace(root, true);
             }
         }
         return res;
