@@ -47,6 +47,7 @@ public:
         return res;
     }
 
+private:
     vector<int> trace_back(TreeNode *frm, TreeNode *to) {
         vector<int> res;
         TreeNode *curr = frm;
@@ -70,43 +71,24 @@ class Solution2 {
      */
 public:
     vector<int> postorderTraversal(TreeNode *root) {
-        if (root == nullptr) {  // Empty tree.
-            return {};
-        }
-
-        stack<TreeNode *> path_stack;
-        TreeNode * prev = nullptr;
-        path_stack.emplace(root);
-        vector<int> postorder_sequence;
-
-        while (!path_stack.empty()) {
-            auto curr = path_stack.top();
-            if (prev == nullptr || prev->left == curr ||
-                prev->right == curr) {
-                // We came down to curr from prev.
-                if (curr->left != nullptr) {  // Traverse left.
-                    path_stack.emplace(curr->left);
-                } else if (curr->right != nullptr) {  // Traverse right.
-                    path_stack.emplace(curr->right);
-                } else {  // Leaf node, so visit current node.
-                    postorder_sequence.emplace_back(curr->val);
-                    path_stack.pop();
-                }
-            } else if (curr->left == prev) {
-                // Done with left, so now traverse right.
-                if (curr->right != nullptr) {
-                    path_stack.emplace(curr->right);
-                } else {  // No right child, so visit curr.
-                    postorder_sequence.emplace_back(curr->val);
-                    path_stack.pop();
-                }
-            } else {
-                // Finished traversing left and right, so visit curr.
-                postorder_sequence.emplace_back(curr->val);
-                path_stack.pop();
+        vector<int> res;
+        stack<pair<TreeNode *, bool>> s;
+        s.emplace(root, false);
+        bool visited;
+        while (!s.empty()) {
+            tie(root, visited) = s.top();
+            s.pop();
+            if (root == nullptr) {
+                continue;
             }
-            prev = curr;
+            if (visited) {
+                res.emplace_back(root->val);
+            } else {
+                s.emplace(root, true);
+                s.emplace(root->right, false);
+                s.emplace(root->left, false);
+            }
         }
-        return postorder_sequence;
+        return res;
     }
 };
