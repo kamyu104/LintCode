@@ -59,18 +59,22 @@ class Solution2 {
      */
 public:
     vector<int> inorderTraversal(TreeNode *root) {
-        stack<TreeNode *> s;
         vector<int> res;
-        TreeNode *cur = root;
-        while (!s.empty() || cur) {
-            if (cur) {
-                s.emplace(cur);
-                cur = cur->left;
+        stack<pair<TreeNode *, bool>> s;
+        s.emplace(root, false);
+        bool visited;
+        while (!s.empty()) {
+            tie(root, visited) = s.top();
+            s.pop();
+            if (root == nullptr) {
+                continue;
+            }
+            if (visited) {
+                res.emplace_back(root->val);
             } else {
-                cur = s.top();
-                s.pop();
-                res.emplace_back(cur->val);
-                cur = cur->right;
+                s.emplace(root->right, false);
+                s.emplace(root, true);
+                s.emplace(root->left, false);
             }
         }
         return res;
