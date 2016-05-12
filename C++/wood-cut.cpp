@@ -21,8 +21,7 @@ public:
             // Find the smallest x,  s.t. pieceCount(x) < k <= pieceCound(x - 1)
             if (pieceCount(L, mid) < k) {
                 right = mid - 1;
-            }
-            else {
+            } else {
                 left = mid + 1;
             }
         }
