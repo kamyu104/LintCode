@@ -1,5 +1,5 @@
 // Time:  O(logn)
-// Space: O(logn)
+// Space: O(1)
 
 class Solution {
 public:
@@ -9,21 +9,15 @@ public:
      * @return the result
      */
     double myPow(double x, int n) {
-        if (n < 0) {
-            return 1 / myPow(x, -n);
+        double res = 1;
+        long abs_n = abs(static_cast<long>(n));
+        while (abs_n > 0) {
+            if (abs_n & 1) {
+                res *= x;
+            }
+            abs_n >>= 1;
+            x *= x;
         }
-        return myPowRecu(x, n);
-    }
-
-    double myPowRecu(double x, int n) {
-        if (n == 0) {
-            return 1.0;
-        }
-
-        if (n % 2 == 0) {
-            return myPowRecu(x * x, n / 2);
-        } else {
-            return x * myPowRecu(x * x, n / 2);
-        }
+        return n < 0 ?  1 / res : res;
     }
 };
