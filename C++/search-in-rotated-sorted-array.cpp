@@ -16,7 +16,7 @@ public:
             if (A[mid] == target) {
                 return mid;
             } else if ((A[mid] >= A[left] && A[left] <= target && target < A[mid]) ||
-                        (A[mid] < A[left] && !(A[mid] < target && target <= A[right]))) {
+                       (A[mid] < A[left] && !(A[mid] < target && target <= A[right]))) {
                 right = mid - 1;
             } else {
                 left = mid + 1;
