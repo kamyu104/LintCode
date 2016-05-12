@@ -16,7 +16,7 @@ public:
 
         int left = 1, right = *max_element(L.cbegin(), L.cend());
         while (left <= right) {
-            int mid = left + (right - left) / 2;
+            const auto mid = left + (right - left) / 2;
 
             // Find the smallest x,  s.t. pieceCount(x) < k <= pieceCound(x - 1)
             if (pieceCount(L, mid) < k) {
@@ -30,6 +30,7 @@ public:
         return left - 1;
     }
 
+private:
     int pieceCount(vector<int>& L, int x) {
         int cnt = 0;
         for (const auto& len : L) {
