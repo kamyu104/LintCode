@@ -271,7 +271,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 ## Binary Search
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
-|14|[Binary Search](http://lintcode.com/en/problem/binary-search/)| [C++](./C++/binary-search.cpp)| _O(logn)_ | _O(1)_ | Easy | | |
+|14|[First Position of Target](http://lintcode.com/en/problem/first-position-of-target/)| [C++](./C++/first-position-of-target.cpp)| _O(logn)_ | _O(1)_ | Easy | | |
 |28|[Search a 2D Matrix](http://lintcode.com/en/problem/search-a-2d-matrix/)| [C++](./C++/search-a-2d-matrix.cpp)| _O(logm + logn)_ | _O(1)_ | Easy | LeetCode | |
 |60|[Search Insert Position](http://lintcode.com/en/problem/search-insert-position/)| [C++](./C++/search-insert-position.cpp)| _O(logn)_ | _O(1)_ | Easy | LeetCode | |
 |61|[Search for a Range](http://lintcode.com/en/problem/search-for-a-range/)| [C++](./C++/search-for-a-range.cpp)| _O(logn)_ | _O(1)_ | Medium | LeetCode | |
