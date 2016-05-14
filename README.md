@@ -369,7 +369,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |392|[House Robber](http://lintcode.com/en/problem/house-robber/)| [C++](./C++/house-robber.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 |393|[Best Time to Buy and Sell Stock IV](http://lintcode.com/en/problem/best-time-to-buy-and-sell-stock-iv/)| [C++](./C++/best-time-to-buy-and-sell-stock-iv.cpp)| _O(k * n)_ | _O(k)_ | Hard | LeetCode, EPI | |
 |395|[Coins in a Line II](http://lintcode.com/en/problem/coins-in-a-line-ii/)| [C++](./C++/coins-in-a-line-ii.cpp)| _O(n)_ | _O(1)_ | Medium | | |
-|396|[Coins in a Line III](http://lintcode.com/en/problem/coins-in-a-line-iii/)| [C++](./C++/coins-in-a-line-iii.cpp)| _O(n^2)_ | _O(n)_ | Medium | | |
+|396|[Coins in a Line III](http://lintcode.com/en/problem/coins-in-a-line-iii/)| [C++](./C++/coins-in-a-line-iii.cpp)| _O(n^2)_ | _O(n)_ | Hard | | |
 |397|[Longest Increasing Continuous subsequence](http://lintcode.com/en/problem/longest-increasing-continuous-subsequence/)| [C++](./C++/longest-increasing-continuous-subsequence.cpp)| _O(n)_ | _O(1)_ | Easy | | |
 |398|[Longest Increasing Continuous subsequence II](http://lintcode.com/en/problem/longest-increasing-continuous-subsequence-ii/)| [C++](./C++/longest-increasing-continuous-subsequence-ii.cpp)| _O(m * n)_ | _O(m * n)_ | Hard | | |
 |403|[Continuous Subarray Sum II](http://lintcode.com/en/problem/continuous-subarray-sum-ii/)| [C++](./C++/continuous-subarray-sum-ii.cpp)| _O(n)_ | _O(n)_ | Medium | EPI | |
