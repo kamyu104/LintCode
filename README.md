@@ -141,7 +141,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |7|[Binary Tree Serialization](http://lintcode.com/en/problem/binary-tree-serialization/)| [C++](./C++/binary-tree-serialization.cpp)| _O(n)_ | _O(h)_ | Medium | | |
 |85|[Insert Node in a Binary Search Tree](http://lintcode.com/en/problem/insert-node-in-a-binary-search-tree/)| [C++](./C++/insert-node-in-a-binary-search-tree.cpp)| _O(h)_ | _O(1)_ | Easy | | |
 |88|[Lowest Common Ancestor](http://lintcode.com/en/problem/lowest-common-ancestor/)| [C++](./C++/lowest-common-ancestor.cpp)| _O(n)_ | _O(h)_ | Medium | EPI | |
-|127|[Max Tree](http://lintcode.com/en/problem/max-tree/)| [C++](./C++/max-tree.cpp)| _O(n)_ | _O(n)_ | Hard | | |
+|126|[Max Tree](http://lintcode.com/en/problem/max-tree/)| [C++](./C++/max-tree.cpp)| _O(n)_ | _O(n)_ | Hard | | |
 |175|[Invert Binary Tree](http://lintcode.com/en/problem/invert-binary-tree/)| [C++](./C++/invert-binary-tree.cpp)| _O(n)_ | _O(h)_ | Easy | LeetCode | |
 |442|[Implement Trie](http://lintcode.com/en/problem/implement-trie/)| [C++](./C++/implement-trie.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | Trie |
 
