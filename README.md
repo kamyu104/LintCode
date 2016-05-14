@@ -28,6 +28,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 * [Dynamic Programming](https://github.com/kamyu104/LintCode#dynamic-programming)
 * [Greedy](https://github.com/kamyu104/LintCode#greedy)
 * [OO Design](https://github.com/kamyu104/LintCode#oo-design)
+* [System Design](https://github.com/kamyu104/LintCode#system-design)
 
 ## Bit Manipulation
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
@@ -407,3 +408,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |496|[Toy Factory](http://www.lintcode.com/en/problem/toy-factory/)| [C++](./C++/toy-factory.cpp)| _O(1)_ | _O(1)_ | Easy | | |
 |497|[Shape Factory](http://www.lintcode.com/en/problem/shape-factory/)| [C++](./C++/shape-factory.cpp)| _O(1)_ | _O(1)_ | Easy | | |
 |498|[Parking Lot](http://www.lintcode.com/en/problem/parking-lot/)| [C++](./C++/parking-lot.cpp)| _O(n * m * k)_ | _O(n * m * k)_ | Hard | CTCI | OO Design, Pimpl Idiom, Smart Pointer |
+
+## System Design
+| # | Title | Solution | Time | Space | Difficulty | Tag | Note |
+|---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|501|[Mini Twitter](http://www.lintcode.com/en/problem/mini-twitter/)| [C++](./ch1/mini-tweeter.cpp)| _O(nlogf)_ | _O(u + t + r)_ | Medium | | |
