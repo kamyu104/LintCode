@@ -1,5 +1,5 @@
 // Time:  O(n)
-// Space: O(n)
+// Space: O(h)
 
 /**
  * Definition of TreeNode:
