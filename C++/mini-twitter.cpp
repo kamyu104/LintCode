@@ -45,7 +45,7 @@ public:
                                     messages_[user_id].rbegin(),
                                     messages_[user_id].rend()));
         }
-        for (const auto& id : following_[user_id]) {
+        for (const auto& id : followings_[user_id]) {
             if (messages_[id].size()) {
                 heap.emplace(make_tuple(messages_[id].rbegin()->first,
                                         messages_[id].rbegin(),
@@ -87,8 +87,8 @@ public:
     // @param to_user_id an integer
     // from user_id follows to_user_id
     void follow(int from_user_id, int to_user_id) {
-        if (!following_[from_user_id].count(to_user_id)) {
-            following_[from_user_id].emplace(to_user_id);
+        if (!followings_[from_user_id].count(to_user_id)) {
+            followings_[from_user_id].emplace(to_user_id);
         }
     }
 
@@ -96,13 +96,13 @@ public:
     // @param to_user_id an integer
     // from user_id unfollows to_user_id
     void unfollow(int from_user_id, int to_user_id) {
-        if (following_[from_user_id].count(to_user_id)) {
-            following_[from_user_id].erase(to_user_id);
+        if (followings_[from_user_id].count(to_user_id)) {
+            followings_[from_user_id].erase(to_user_id);
         }
     }
 
 private:
-    unordered_map<int, unordered_set<int>> following_;
+    unordered_map<int, unordered_set<int>> followings_;
     unordered_map<int, deque<pair<size_t, Tweet>>> messages_;
     size_t time_;
 };
