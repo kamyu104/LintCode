@@ -26,7 +26,7 @@ public:
         queue<TreeNode *> que;
         vector<int> cur_level;
 
-        if (root) {
+        if (root != nullptr) {
             que.emplace(root);
         }
 
