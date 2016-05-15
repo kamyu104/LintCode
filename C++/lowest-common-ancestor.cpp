@@ -21,31 +21,17 @@ public:
      * @return: Return the least common ancestor(LCA) of the two nodes.
      */
     TreeNode *lowestCommonAncestor(TreeNode *root, TreeNode *A, TreeNode *B) {
-        return LCAHelper(root, A, B).second;
-    }
-
-    // Returns a pair of int and node pointer; int field is 0, 1, or 2 depending
-    // on how many of node0 and node1 are present in tree. If both are present in
-    // tree, the node pointer is a common ancestor. It may not be the LCA
-    // initially, but it will be LCA when the algorithm terminates.
-    pair<int, TreeNode*> LCAHelper(TreeNode *tree, TreeNode *A, TreeNode *B) {
-        if (tree == nullptr) {
-            return {0, nullptr};
+        if (root == nullptr || root == A || root == B) {
+            return root;
         }
-
-        auto left_result = LCAHelper(tree->left, A, B);
-        if (left_result.first == 2) {  // Found both nodes in the left subtree.
-            return left_result;
-        }
-
-        auto right_result = LCAHelper(tree->right, A, B);
-        if (right_result.first == 2) {  // Found both nodes in the right subtree.
-            return right_result;
-        }
-
-        int num_target_nodes = left_result.first + right_result.first +
-                               (tree == A) + (tree == B);
-
-        return {num_target_nodes, num_target_nodes == 2 ? tree : nullptr};
+        TreeNode *left = lowestCommonAncestor(root->left, A, B);
+        TreeNode *right = lowestCommonAncestor(root->right, A, B);
+         // 1. If the current subtree contains both A and B,
+         //    return their LCA.
+         // 2. If only one of them is in that subtree,
+         //    return that one of them.
+         // 3. If neither of them is in that subtree,
+         //    return the node of that subtree.
+        return left ? (right ? root : left) : right;
     }
 };
