@@ -24,7 +24,6 @@ public:
     vector<vector<int>> levelOrder(TreeNode *root) {
         vector<vector<int>> result;
         queue<TreeNode *> que;
-        vector<int> cur_level;
 
         if (root != nullptr) {
             que.emplace(root);
@@ -46,6 +45,7 @@ public:
             }
             result.emplace_back(move(level));
         }
+
         return result;
     }
 };
