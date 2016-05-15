@@ -13,8 +13,8 @@
  *     }
  * }
  */
-
-
+ 
+ 
 class Solution {
     /**
      * @param root: The root of binary tree.
@@ -22,38 +22,30 @@ class Solution {
      */
 public:
     vector<vector<int>> levelOrder(TreeNode *root) {
-        vector<vector<int>> output;
+        vector<vector<int>> result;
         queue<TreeNode *> que;
         vector<int> cur_level;
 
-        // Enqueue when node is not nullptr.
         if (root) {
             que.emplace(root);
         }
 
-        int cur_level_cnt = que.size();
         while (!que.empty()) {
-            TreeNode *node = que.front();
-            que.pop();
-            --cur_level_cnt;
-
-            cur_level.emplace_back(node->val);
-
-            // Enqueue the next level.
-            if (node->left) {
-                que.emplace(node->left);
+            vector<int> level;
+            int size = que.size();
+            for (int i = 0; i < size; i++) {
+                auto *front = que.front();
+                que.pop();
+                level.emplace_back(front->val);
+                if (front->left != nullptr) {
+                    que.emplace(front->left);
+                }
+                if (front->right != nullptr) {
+                    que.emplace(front->right);
+                }
             }
-            if (node->right) {
-                que.emplace(node->right);
-            }
-
-            // Current level has been all visited.
-            if (cur_level_cnt == 0) {
-                cur_level_cnt = que.size();
-                output.emplace_back(move(cur_level));
-            }
+            result.emplace_back(move(level));
         }
-        return output;
+        return result;
     }
 };
-
