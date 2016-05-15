@@ -14,7 +14,6 @@
  * }
  */
  
- 
 class Solution {
     /**
      * @param root: The root of binary tree.
