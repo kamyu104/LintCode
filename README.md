@@ -19,7 +19,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 * [Hash Tables](https://github.com/kamyu104/LintCode#hash-tables)
 * [Data Structure](https://github.com/kamyu104/LintCode#data-structure)
 * [Sort](https://github.com/kamyu104/LintCode#sort)
-* [Divide and Conquer](https://github.com/kamyu104/LintCode#divide-and-conquer)
+* [Recursion](https://github.com/kamyu104/LintCode#recursion)
 * [Binary Search](https://github.com/kamyu104/LintCode#binary-search)
 * [Breadth-First Search](https://github.com/kamyu104/LintCode#breadth-first-search)
 * [Depth-First Search](https://github.com/kamyu104/LintCode#depth-first-search)
@@ -238,7 +238,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |507|[Wiggle Sort II](http://lintcode.com/en/problem/wiggle-sort-ii/)| [C++](./C++/wiggle-sort-ii.cpp)|  _O(n)_ on average | _O(1)_ | Medium | LeetCode | Tri Partition |
 |508|[Wiggle Sort](http://lintcode.com/en/problem/wiggle-sort/)| [C++](./C++/wiggle-sort.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 
-## Divide and Conquer
+## Recursion
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |72|[Construct Binary Tree from Inorder and Postorder Traversal](http://lintcode.com/en/problem/construct-binary-tree-from-inorder-and-postorder-traversal/)| [C++](./C++/construct-binary-tree-from-inorder-and-postorder-traversal.cpp)| _O(n)_ | _O(h)_ | Medium | LeetCode, EPI | |
