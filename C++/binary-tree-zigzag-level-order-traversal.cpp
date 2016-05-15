@@ -15,6 +15,22 @@
  */
 
 
+// Time:  O(n)
+// Space: O(n)
+
+/**
+ * Definition of TreeNode:
+ * class TreeNode {
+ * public:
+ *     int val;
+ *     TreeNode *left, *right;
+ *     TreeNode(int val) {
+ *         this->val = val;
+ *         this->left = this->right = NULL;
+ *     }
+ * }
+ */
+
 class Solution {
     /**
      * @param root: The root of binary tree.
@@ -23,44 +39,35 @@ class Solution {
      */
 public:
     vector<vector<int>> zigzagLevelOrder(TreeNode *root) {
-        bool isLeftToRight = true;
-        vector<vector<int>> output;
-        queue<TreeNode *> q;
-        vector<int> cur_level;
+        vector<vector<int>> result;
+        queue<TreeNode *> que;
 
-        if (root == nullptr) {
-            return output;
+        if (root != nullptr) {
+            que.emplace(root);
         }
 
-        q.emplace(root);
-        int cur_level_size = 1;
-        while (!q.empty()) {
-            // Get the front node in current level.
-            TreeNode *n = q.front();
-            q.pop();
-            --cur_level_size;
-
-            // Append to the current level.
-            cur_level.emplace_back(n->val);
-
-            if (n->left) {
-                q.emplace(n->left);
-            }
-            if (n->right) {
-                q.emplace(n->right);
-            }
-
-            // Current level comes to the end.
-            // Goes to the next level.
-            if (cur_level_size == 0) {
-                if (!isLeftToRight) {
-                    reverse(cur_level.begin(), cur_level.end());
+        bool normal_order = true;
+        while (!que.empty()) {
+            vector<int> level;
+            int size = que.size();
+            for (int i = 0; i < size; i++) {
+                auto *front = que.front();
+                que.pop();
+                level.emplace_back(front->val);
+                if (front->left != nullptr) {
+                    que.emplace(front->left);
                 }
-                isLeftToRight = !isLeftToRight;
-                cur_level_size = q.size();
-                output.emplace_back(move(cur_level));
+                if (front->right != nullptr) {
+                    que.emplace(front->right);
+                }
             }
+            if (!normal_order) {
+                reverse(level.begin(), level.end());
+            }
+            result.emplace_back(move(level));
+            normal_order = !normal_order;
         }
-        return output;
+
+        return result;
     }
 };
