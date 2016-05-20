@@ -2,7 +2,7 @@
 // Space: O(1)
 
 class Solution {
-public:
+public:    
     /**
      * @param source: A string
      * @param target: A string
@@ -21,24 +21,24 @@ public:
 
         int cnt = 0;
         int start = 0;
-        int min_width = INT_MAX;
+        int min_width = numeric_limits<int>::max();
         int min_start = 0;
 
-        for (const auto& c : T) {
+        for (const auto& c : target) {
             ++expCnt[c];
         }
 
         for (int i = 0; i < source.length(); ++i) {
-            if (expCnt[S[i]] > 0) {
-                ++curCnt[S[i]];
-                if (curCnt[S[i]] <= expCnt[S[i]]) {  // Counting expected elements.
+            if (expCnt[source[i]] > 0) {
+                ++curCnt[source[i]];
+                if (curCnt[source[i]] <= expCnt[source[i]]) {  // Counting expected elements.
                     ++cnt;
                 }
             }
             if (cnt == target.size()) {  // If window meets the requirement.
-                while (expCnt[S[start]] == 0 ||  // Adjust left bound of window.
-                       curCnt[S[start]] > expCnt[S[start]]) {
-                    --curCnt[S[start]];
+                while (expCnt[source[start]] == 0 ||  // Adjust left bound of window.
+                       curCnt[source[start]] > expCnt[source[start]]) {
+                    --curCnt[source[start]];
                     ++start;
                 }
 
@@ -49,11 +49,10 @@ public:
             }
         }
 
-        if (min_width == INT_MAX) {
+        if (min_width == numeric_limits<int>::max()) {
             return "";
         }
 
         return source.substr(min_start, min_width);
     }
 };
-
