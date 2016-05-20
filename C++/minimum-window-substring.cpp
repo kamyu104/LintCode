@@ -16,29 +16,29 @@ public:
 
         const int ASCII_MAX = 256;
 
-        vector<int> expCnt(ASCII_MAX, 0);
-        vector<int> curCnt(ASCII_MAX, 0);
+        vector<int> exp_cnt(ASCII_MAX, 0);
+        vector<int> cur_cnt(ASCII_MAX, 0);
 
         int cnt = 0;
         int start = 0;
-        int min_width = numeric_limits<int>::max();
         int min_start = 0;
+        int min_width = numeric_limits<int>::max();
 
         for (const auto& c : target) {
-            ++expCnt[c];
+            ++exp_cnt[c];
         }
 
         for (int i = 0; i < source.length(); ++i) {
-            if (expCnt[source[i]] > 0) {
-                ++curCnt[source[i]];
-                if (curCnt[source[i]] <= expCnt[source[i]]) {  // Counting expected elements.
+            if (exp_cnt[source[i]] > 0) {
+                ++cur_cnt[source[i]];
+                if (cur_cnt[source[i]] <= exp_cnt[source[i]]) {  // Counting expected elements.
                     ++cnt;
                 }
             }
             if (cnt == target.size()) {  // If window meets the requirement.
-                while (expCnt[source[start]] == 0 ||  // Adjust left bound of window.
-                       curCnt[source[start]] > expCnt[source[start]]) {
-                    --curCnt[source[start]];
+                while (exp_cnt[source[start]] == 0 ||  // Adjust left bound of window.
+                       cur_cnt[source[start]] > exp_cnt[source[start]]) {
+                    --cur_cnt[source[start]];
                     ++start;
                 }
 
