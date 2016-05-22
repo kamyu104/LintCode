@@ -15,16 +15,20 @@ public:
     }
 
     void sift_down(vector<int>& A, int index) {
-            int smallest = k;
-            if (k * 2 + 1 < A.size() && A[k * 2 + 1] < A[smallest]) {
-                smallest = k * 2 + 1;
-            } else if (k * 2 + 2 < A.size() && A[k * 2 + 2] < A[smallest]) {
-                smallest = k * 2 + 2;
+        while (index < A.size()) {
+            int smallest = index;
+            if (index * 2 + 1 < A.size() && A[index * 2 + 1] < A[smallest]) {
+                smallest = index * 2 + 1;
             }
-            if (smallest != k) {
-                swap(A[smallest], A[k]);
-                k = smallest;
+            if (index * 2 + 2 < A.size() && A[index * 2 + 2] < A[smallest]) {
+                smallest = index * 2 + 2;
             }
+            if (smallest == index) {
+                break;
+            }
+            swap(A[smallest], A[index]);
+            index = smallest;
+        }
     }
 };
 
