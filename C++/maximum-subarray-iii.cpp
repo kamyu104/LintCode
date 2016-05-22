@@ -36,9 +36,9 @@ public:
     }
 };
 
+
 // Time:  O(k * n^2)
 // Space: O(k * n^2)
-
 class Solution2 {
 public:
     /**
