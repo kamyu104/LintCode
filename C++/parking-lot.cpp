@@ -48,7 +48,7 @@ protected:
 
 class Vehicle {
 public:
-    Vehicle() : pImpl_(new VehicleImpl()) {}
+    Vehicle() : pImpl_(make_shared<VehicleImpl>()) {}
 
     vector<weak_ptr<ParkingSpot>> parking_spots() const noexcept {
         return pImpl_->parking_spots();
