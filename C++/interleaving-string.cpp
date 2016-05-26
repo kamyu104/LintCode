@@ -37,7 +37,7 @@ public:
 
             for (size_t j = 0; j < s2.size(); ++j) {
                 T[(i + 1) % 2][j + 1] = (T[i % 2][j + 1] && s1[i] == s3[i + j + 1]) ||
-                (T[(i + 1) % 2][j] && s2[j] == s3[i + j + 1]);
+                                        (T[(i + 1) % 2][j] && s2[j] == s3[i + j + 1]);
             }
         }
 
@@ -83,7 +83,7 @@ public:
         for (size_t i = 0; i < s1.size(); ++i) {
             for (size_t j = 0; j < s2.size(); ++j) {
                 T[i + 1][j + 1] = (T[i][j + 1] && s1[i] == s3[i + j + 1]) ||
-                (T[i + 1][j] && s2[j] == s3[i + j + 1]);
+                                  (T[i + 1][j] && s2[j] == s3[i + j + 1]);
             }
         }
 
