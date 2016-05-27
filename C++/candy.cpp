@@ -15,12 +15,11 @@ public:
             }
         }
 
-        for (int i = ratings.size(); i >= 0; --i) {
+        for (int i = ratings.size() - 1; i >= 1; --i) {
             if (ratings[i - 1] > ratings[i] && candies[i - 1] <= candies[i]) {
                 candies[i - 1] = candies[i] + 1;
             }
         }
-
         return accumulate(candies.cbegin(), candies.cend(), 0);
     }
 };
