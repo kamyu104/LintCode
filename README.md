@@ -1,8 +1,8 @@
-# [LintCode](http://www.lintcode.com/en/problem/) ![Language](https://img.shields.io/badge/language-C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-278%20%2F%20278-ff69b4.svg)
+# [LintCode](http://www.lintcode.com/en/problem/) ![Language](https://img.shields.io/badge/language-C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-279%20%2F%20279-ff69b4.svg)
 
-Up to date (2016-04-27), there are `278` problems on [LintCode Online Judge](http://lintcode.com/).
+Up to date (2016-05-28), there are `279` problems on [LintCode Online Judge](http://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `278` problems.
+Here is the classification of all `279` problems.
 For more problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -87,6 +87,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |404|[Subarray Sum II](http://lintcode.com/en/problem/subarray-sum-ii/)| [C++](./C++/subarray-sum-ii.cpp)| _O(nlogn)_ | _O(n)_ | Hard | | Two Pointers, Binary Search |
 |405|[Submatrix Sum](http://lintcode.com/en/problem/submatrix-sum/)| [C++](./C++/submatrix-sum.cpp)| _O(m * n^2)_ | _O(m)_ | Hard | | Hash |
 |406|[Minimum Size Subarray Sum](http://lintcode.com/en/problem/minimum-size-subarray-sum/)| [C++](./C++/minimum-size-subarray-sum.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | Two Pointers, Binary Search |
+|539|[Move Zeroes](http://lintcode.com/en/problem/move-zeroes/)| [C++](./C++/move-zeroes.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | Two Pointers |
 
 ## String
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
