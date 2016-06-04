@@ -29,10 +29,44 @@ public:
 };
 
 
+// Time:  O(min(m, n) * log(max(m, n)))
+// Space: O(1)
+// Binary search solution.
+class Solution2 {
+public:
+    /**
+     * @param nums1 an integer array
+     * @param nums2 an integer array
+     * @return an integer array
+     */
+    vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
+        if (nums1.size() > nums2.size()) {
+            return intersection(nums2, nums1);
+        }
+
+        // Make sure it is sorted, doesn't count in time.
+        sort(nums1.begin(), nums1.end());
+        sort(nums2.begin(), nums2.end());
+
+        vector<int> result;
+        auto it = nums2.cbegin();
+        for (const auto& i : nums1) {
+            it = lower_bound(it, nums2.cend(), i);
+            if (it != nums2.end() && *it == i) {
+                result.emplace_back(*it);
+                it = upper_bound(it, nums2.cend(), i);
+            }
+        }
+        
+        return result;
+    }
+};
+
+
 // Time:  O(max(m, n) * log(max(m, n)))
 // Space: O(1)
 // Two pointers solution.
-class Solution2 {
+class Solution3 {
 public:
     /**
      * @param nums1 an integer array
