@@ -21,28 +21,19 @@ public:
      * @return: ListNode head of linked list
      */
     ListNode *mergeTwoLists(ListNode *l1, ListNode *l2) {
-        // Creates a dummy head.
-        ListNode * dummy_head = new ListNode(INT_MIN);
-        auto tail = dummy_head;
-
+        ListNode dummy = ListNode(0);
+        auto *curr = &dummy;
         while (l1 && l2) {
-            AppendNode(l1->val < l2->val ? &l1 : &l2, &tail);
+            if (l1->val <= l2->val) {
+                curr->next = l1;
+                l1 = l1->next;
+            } else {
+                curr->next = l2;
+                l2 = l2->next;
+            }
+            curr = curr->next;
         }
-
-        if (l1) {
-            // Appends the remaining nodes of l1.
-            AppendNode(&l1, &tail);
-        } else if (l2) {
-            // Appends the remaining nodes of l2.
-            AppendNode(&l2, &tail);
-        }
-        return dummy_head->next;
-    }
-
-    void AppendNode(ListNode ** node,
-                    ListNode ** tail) {
-        (*tail)->next = *node;
-        *tail = *node;  // Resets tail to the last node.
-        *node = (*node)->next;
+        curr->next = l1 ? l1 : l2;
+        return dummy.next;
     }
 };
