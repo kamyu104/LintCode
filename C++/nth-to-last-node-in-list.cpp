@@ -1,4 +1,4 @@
-// Time:  O(n), n is lengh of the linked list.
+// Time:  O(n), n is the lengh of the linked list.
 // Space: O(1)
 
 /**
@@ -21,8 +21,7 @@ public:
      * @return: Nth to last node of a singly linked list.
      */
     ListNode *nthToLast(ListNode *head, int n) {
-        ListNode *slow = head;
-        ListNode *fast = head;
+        auto slow = head, fast = head;
 
         // fast is n-step ahead.
         while (n > 0) {
@@ -39,6 +38,3 @@ public:
         return slow;
     }
 };
-
-
-
