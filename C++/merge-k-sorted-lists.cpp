@@ -60,7 +60,7 @@ private:
 
 // Time:  O(n * logk)
 // Space: O(logk)
-// Divide and conqer solution.
+// Divide and Conquer solution.
 class Solution2 {
 public:
     /**
