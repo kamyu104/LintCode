@@ -26,22 +26,19 @@ public:
         ListNode dummy{0};
         dummy.next = head;
 
-        auto *prev = &dummy;
-
+        auto prev = &dummy;
         for (int i = 0; i < m - 1; ++i) {
             prev = prev->next;
         }
 
-        auto *head2 = prev;
-
+        auto head2 = prev;
         prev = prev->next;
-        auto *cur = prev->next;
-
+        auto curr = prev->next;
         for (int i = m; i < n; ++i) {
-            prev->next = cur->next;  // Remove cur from the list.
-            cur->next = head2->next; // Add cur to the head.
-            head2->next = cur;       // Add cur to the head.
-            cur = prev->next;        // Get next cur.
+            prev->next = curr->next;  // Remove curr from the list.
+            curr->next = head2->next; // Add curr to the head.
+            head2->next = curr;       // Add curr to the head.
+            curr = prev->next;        // Get next curr.
         }
 
         return dummy.next;
