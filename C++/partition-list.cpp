@@ -21,10 +21,10 @@ public:
      * @return: a ListNode
      */
     ListNode *partition(ListNode *head, int x) {
-        ListNode *dummy_smaller = new ListNode(INT_MIN);
-        ListNode *dummy_larger = new ListNode(INT_MIN);
-        ListNode *smaller = dummy_smaller;
-        ListNode *larger = dummy_larger;
+        ListNode dummy_smaller{0};
+        ListNode dummy_larger{0};
+        auto smaller = &dummy_smaller;
+        auto larger = &dummy_larger;
 
         while (head) {
             if (head->val < x) {
@@ -36,12 +36,9 @@ public:
             }
             head = head->next;
         }
-        smaller->next = dummy_larger->next;
+        smaller->next = dummy_larger.next;
         larger->next = nullptr;
 
-        return dummy_smaller->next;
+        return dummy_smaller.next;
     }
 };
-
-
-
