@@ -16,27 +16,27 @@ public:
      * @return: A new head of a deep copy of the list.
      */
     RandomListNode *copyRandomList(RandomListNode *head) {
-        // insert the copied node after the original one
-        for (RandomListNode *cur = head; cur; cur = cur->next->next) {
-            RandomListNode *node = new RandomListNode(cur->label);
-            node->next = cur->next;
-            cur->next = node;
+        // Insert the copied node after the original one.
+        for (RandomListNode *curr = head; curr; curr = curr->next->next) {
+            RandomListNode *node = new RandomListNode(curr->label);
+            node->next = curr->next;
+            curr->next = node;
         }
 
-        // update random node
-        for (RandomListNode *cur = head; cur; cur = cur->next->next) {
-            if (cur->random) {
-                cur->next->random = cur->random->next;
+        // Update random node.
+        for (RandomListNode *curr = head; curr; curr = curr->next->next) {
+            if (curr->random) {
+                curr->next->random = curr->random->next;
             }
         }
 
-        // seperate the copied nodes from original ones
-        RandomListNode dummy(INT_MIN);
-        for (RandomListNode *cur = head, *copy_cur = &dummy;
-             cur;
-             copy_cur = copy_cur->next, cur = cur->next) {
-            copy_cur->next = cur->next;
-            cur->next = cur->next->next;
+        // Seperate the copied nodes from original ones.
+        RandomListNode dummy(0);
+        for (RandomListNode *curr = head, *copy_curr = &dummy;
+             curr;
+             copy_curr = copy_curr->next, curr = curr->next) {
+            copy_curr->next = curr->next;
+            curr->next = curr->next->next;
         }
 
         return dummy.next;
