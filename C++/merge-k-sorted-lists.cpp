@@ -139,6 +139,7 @@ public:
         return dummy.next;
     }
 
+private:
     struct Compare {
         bool operator() (const ListNode *a, const ListNode *b) {
             return a->val > b->val;
