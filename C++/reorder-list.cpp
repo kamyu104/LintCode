@@ -31,7 +31,7 @@ public:
             fast = fast->next->next;
         }
 
-        // split into two lists
+        // Split into two lists.
         auto tmp = slow->next;
         slow->next = nullptr;
         slow = tmp;
