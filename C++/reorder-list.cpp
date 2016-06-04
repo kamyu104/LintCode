@@ -24,8 +24,7 @@ public:
             return;
         }
 
-        ListNode *slow = head;
-        ListNode *fast = head;
+        auto slow = head, fast = head;
 
         while (fast->next && fast->next->next) {
             slow = slow->next;
@@ -33,7 +32,7 @@ public:
         }
 
         // split into two lists
-        ListNode *tmp = slow->next;
+        auto tmp = slow->next;
         slow->next = nullptr;
         slow = tmp;
 
@@ -42,10 +41,10 @@ public:
 
 private:
     ListNode *reverse(ListNode *head) {
-        ListNode dummy(INT_MIN);
+        ListNode dummy{0};
 
         while (head) {
-            ListNode *tmp = head->next;
+            auto tmp = head->next;
             head->next = dummy.next;
             dummy.next = head;
             head = tmp;
@@ -55,15 +54,15 @@ private:
     }
 
     ListNode *merge(ListNode *list1, ListNode *list2) {
-        ListNode dummy(INT_MIN);
-        ListNode *ptr = &dummy;
+        ListNode dummy{0};
+        auto ptr = &dummy;
 
         while (list1 && list2) {
-            ListNode *tmp = list1->next; // backup list1 next
+            auto tmp = list1->next;
 
             ptr->next = list1;
             ptr = ptr->next;
-            ptr->next = list2; // list1 next is overwritten
+            ptr->next = list2;
             ptr = ptr->next;
 
             list1 = tmp;
@@ -71,12 +70,9 @@ private:
         }
 
         if (list1) {
-            ptr->next = list1; // append remaining list1
+            ptr->next = list1;
         }
 
         return dummy.next;
     }
 };
-
-
-
