@@ -119,6 +119,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |99|[Reorder List](http://lintcode.com/en/problem/reorder-list/)|[C++](./C++/reorder-list.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 |102|[Linked List Cycle](http://lintcode.com/en/problem/linked-list-cycle/)|[C++](./C++/linked-list-cycle.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 |103|[Linked List Cycle II](http://lintcode.com/en/problem/linked-list-cycle-ii/)|[C++](./C++/linked-list-cycle-ii.cpp)| _O(n)_ | _O(1)_ | Hard | LeetCode | |
+|104|[Merge k Sorted Lists](http://lintcode.com/en/problem/merge-k-sorted-lists/)| [C++](./C++/merge-k-sorted-lists.cpp)| _O(n * logk)_ | _O(1)_ | Medium | LeetCode | Heap, Divide and Conquer |
 |105|[Copy List with Random Pointer](http://lintcode.com/en/problem/copy-list-with-random-pointer/)|[C++](./C++/copy-list-with-random-pointer.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 |106|[Convert Sorted List to Binary Search Tree](http://lintcode.com/en/problem/convert-sorted-list-to-binary-search-tree/)|[C++](./C++/convert-sorted-list-to-binary-search-tree.cpp)| _O(n)_ | _O(logn)_ | Medium | LeetCode, EPI | |
 |112|[Remove Duplicates from Sorted List](http://lintcode.com/en/problem/remove-duplicates-from-sorted-list/)|[C++](./C++/remove-duplicates-from-sorted-list.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode, EPI | |
@@ -176,7 +177,6 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
 |4|[Ugly Number II](http://lintcode.com/en/problem/ugly-number-ii/)| [C++](./C++/ugly-number-ii.cpp)| _O(n)_ | _O(1)_ | Medium | CTCI | BST, Heap |
 |81|[Data Stream Median](http://lintcode.com/en/problem/data-stream-median/)| [C++](./C++/data-stream-median.cpp)| _O(nlogn)_ | _O(n)_ | Hard | EPI | BST, Heap |
-|104|[Merge k Sorted Lists](http://lintcode.com/en/problem/merge-k-sorted-lists/)| [C++](./C++/merge-k-sorted-lists.cpp)| _O(n * logk)_ | _O(k)_ | Medium | LeetCode | |
 |130|[Heapify](http://lintcode.com/en/problem/heapify/)| [C++](./C++/heapify.cpp)| _O(n)_ | _O(1)_ | Medium | | |
 |364|[Trapping Rain Water II](http://lintcode.com/en/problem/trapping-rain-water-ii/)| [C++](./C++/trapping-rain-water-ii.cpp)| _O(m * n * (logm + logn))_ | _O(m * n)_ | Hard | | BFS, Heap, Tricky |
 |518|[Super Ugly Number](http://lintcode.com/en/problem/super-ugly-number/)| [C++](./C++/super-ugly-number.cpp)| _O(n * k)_ | _O(n + k)_ | Medium | LeetCode | BST, Heap |
