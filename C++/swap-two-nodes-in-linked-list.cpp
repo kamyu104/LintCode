@@ -20,37 +20,37 @@ public:
     ListNode* swapNodes(ListNode* head, int v1, int v2) {
         ListNode dummy{0};
         dummy.next = head;
-        ListNode *cur = &dummy;
-        ListNode *pre_node1{nullptr}, *pre_node2{nullptr};
-        while (cur && cur->next) {
-            if (cur->next->val == v1) {
-                pre_node1 = cur;
+        auto curr = &dummy;
+        ListNode *prev_node1{nullptr}, *prev_node2{nullptr};
+        while (curr && curr->next) {
+            if (curr->next->val == v1) {
+                prev_node1 = curr;
             }
-            if (cur->next->val == v2) {
-                pre_node2 = cur;
+            if (curr->next->val == v2) {
+                prev_node2 = curr;
             }
-            if (pre_node1 && pre_node2) {
-                auto *node1 = pre_node1->next;
-                auto *node2 = pre_node2->next;
-                auto *node1_next = node1->next;
-                auto *node2_next = node2->next;
+            if (prev_node1 && prev_node2) {
+                auto node1 = prev_node1->next;
+                auto node2 = prev_node2->next;
+                auto node1_next = node1->next;
+                auto node2_next = node2->next;
                 if (node1->next == node2) {
-                    pre_node1->next = node2;
+                    prev_node1->next = node2;
                     node2->next = node1;
                     node1->next = node2_next;
                 } else if (node2->next == node1) {
-                    pre_node2->next = node1;
+                    prev_node2->next = node1;
                     node1->next = node2;
                     node2->next = node1_next;
                 } else {
-                    pre_node1->next = node2;
+                    prev_node1->next = node2;
                     node2->next = node1_next;
-                    pre_node2->next = node1;
+                    prev_node2->next = node1;
                     node1->next = node2_next;
                 }
                 break;
             }
-            cur = cur->next;
+            curr = curr->next;
         }
         return dummy.next;
     }
