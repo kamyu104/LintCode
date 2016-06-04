@@ -114,8 +114,14 @@ public:
      * @return: The head of one sorted list.
      */
     ListNode *mergeKLists(vector<ListNode *> &lists) {
-        ListNode dummy(INT_MIN);
-        ListNode *cur = &dummy;
+        ListNode dummy(0);
+        auto *cur = &dummy;
+
+        struct Compare {
+            bool operator() (const ListNode *a, const ListNode *b) {
+                return a->val > b->val;
+            }
+        };
 
         // Use min heap to keep the smallest node of each list
         priority_queue<ListNode *, vector<ListNode *>, Compare> min_heap;
@@ -138,11 +144,4 @@ public:
 
         return dummy.next;
     }
-
-private:
-    struct Compare {
-        bool operator() (const ListNode *a, const ListNode *b) {
-            return a->val > b->val;
-        }
-    };
 };
