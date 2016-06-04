@@ -17,18 +17,18 @@ public:
      * @return a ListNode
      */
     ListNode *removeElements(ListNode *head, int val) {
-        ListNode dummy = ListNode(numeric_limits<int>::min());
+        ListNode dummy{0};
         dummy.next = head;
-        ListNode *prev = &dummy, *cur = dummy.next;
+        auto prev = &dummy, curr = dummy.next;
         
-        while (cur) {
-            if (cur->val == val) {
-                prev->next = cur->next;
-                delete cur;
+        while (curr) {
+            if (curr->val == val) {
+                prev->next = curr->next;
+                delete curr;
             } else {
-                prev = cur;
+                prev = curr;
             }
-            cur = cur->next;
+            curr = curr->next;
         }
         return dummy.next;
     }
