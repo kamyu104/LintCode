@@ -14,7 +14,7 @@ public:
             return intersection(nums2, nums1);
         }
 
-        unordered_set<int> lookup(nums1.begin(), nums1.end());
+        unordered_set<int> lookup{nums1.cbegin(), nums1.cend()};
 
         vector<int> result;
         for (const auto& i : nums2) {
