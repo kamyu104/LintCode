@@ -17,28 +17,28 @@ public:
      * @return: a ListNode
      */
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
-        ListNode *curA = headA, *curB = headB;
+        auto currA = headA, currB = headB;
         ListNode *begin = nullptr, *tailA = nullptr, *tailB = nullptr;
-        while (curA && curB) {
-            if (curA == curB) {
-                begin = curA;
+        while (currA && currB) {
+            if (currA == currB) {
+                begin = currA;
                 break;
             }
    
-            if (curA->next) {
-                curA = curA->next;
+            if (currA->next) {
+                currA = currA->next;
             } else if (!tailA) {
-                tailA = curA;
-                curA = headB;
+                tailA = currA;
+                currA = headB;
             } else {
                 break;
             }
 
-            if (curB->next) {
-                curB = curB->next;
+            if (currB->next) {
+                currB = currB->next;
             } else if (!tailB) {
-                tailB = curB;
-                curB = headA;
+                tailB = currB;
+                currB = headA;
             } else {
                 break;
             }
