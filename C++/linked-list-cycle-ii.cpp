@@ -18,7 +18,7 @@ public:
      *           if there is no cycle, return null
      */
     ListNode *detectCycle(ListNode *head) {
-        ListNode *slow = head, *fast = head;
+        auto slow = head, fast = head;
 
         while (fast && fast->next) {
             slow = slow->next, fast = fast->next->next;
@@ -29,6 +29,7 @@ public:
                     slow = slow->next, fast = fast->next;
                 }
                 return slow;  // slow is the begin of cycle.
+            }
         }
         return nullptr;  // No cycle.
     }
@@ -37,7 +38,7 @@ public:
 class Solution2 {
 public:
     ListNode *detectCycle(ListNode *head) {
-        ListNode *slow = head, *fast = head;
+        auto slow = head, fast = head;
 
         // Slow and fast pointer only meet when there is a cycle.
         while (fast && fast->next) {
@@ -70,4 +71,3 @@ public:
         return nullptr;
     }
 };
-
