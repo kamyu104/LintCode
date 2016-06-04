@@ -22,16 +22,16 @@ public:
      * @return: The new head of reversed linked list.
      */
     ListNode *reverse(ListNode *head) {
-        ListNode *dummy_head = new ListNode(INT_MIN);
+        ListNode dummy{0};
 
         while (head != nullptr) {
-            ListNode *tmp = head->next;
-            head->next = dummy_head->next;
-            dummy_head->next = head;
+            auto tmp = head->next;
+            head->next = dummy.next;
+            dummy.next = head;
             head = tmp;
         }
 
-        return dummy_head->next;
+        return dummy.next;
     }
 };
 
