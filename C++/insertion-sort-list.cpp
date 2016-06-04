@@ -23,7 +23,6 @@ public:
         ListNode dummy{numeric_limits<int>::min()};
 
         auto curr = head;
-        ListNode *prevv = nullptr;
         ListNode *position = nullptr;
 
         while (curr) {
