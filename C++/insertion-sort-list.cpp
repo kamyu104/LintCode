@@ -20,27 +20,27 @@ public:
      * @return: The head of linked list.
      */
     ListNode *insertionSortList(ListNode *head) {
-        ListNode dummy(INT_MIN);
+        ListNode dummy{numeric_limits<int>::min()};
 
-        ListNode *cur = head;
-        ListNode *prev = nullptr;
-        ListNode *pos = nullptr;
+        auto curr = head;
+        ListNode *prevv = nullptr;
+        ListNode *position = nullptr;
 
-        while (cur) {
-            pos = findInsertPos(&dummy, cur->val);
-            ListNode *tmp = cur->next;
-            cur->next = pos->next;
-            pos->next = cur;
-            cur = tmp;
+        while (curr) {
+            position = findInsertPosition(&dummy, curr->val);
+            ListNode *tmp = curr->next;
+            curr->next = position->next;
+            position->next = curr;
+            curr = tmp;
         }
 
         return dummy.next;
     }
 
-    ListNode* findInsertPos(ListNode *head, int x) {
-        ListNode *pre = nullptr;
-        for (ListNode *cur = head; cur && cur->val <= x;
-             pre = cur, cur = cur->next);
-        return pre;
+    ListNode* findInsertPosition(ListNode *head, int x) {
+        ListNode *prev = nullptr;
+        for (auto curr = head; curr && curr->val <= x;
+             prev = curr, curr = curr->next);
+        return prev;
     }
 };
