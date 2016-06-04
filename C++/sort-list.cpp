@@ -25,47 +25,37 @@ public:
             return head;
         }
 
-        ListNode *slow = head;
-        ListNode *fast = head;
-
+        auto slow = head, fast = head;
         while (fast->next && fast->next->next) {
             slow = slow->next;
             fast = fast->next->next;
         }
 
-        // split linked list
+        // Split linked list.
         fast = slow;
         slow = slow->next;
         fast->next = nullptr;
 
-        return mergeList(sortList(head), sortList(slow)); // merge sorted list
+        return mergeTwoLists(sortList(head), sortList(slow));
     }
 
 private:
-    ListNode *mergeList(ListNode *list1, ListNode *list2) {
-        ListNode dummy(INT_MIN);
-        dummy.next = nullptr;
-        ListNode *head = &dummy;
+    ListNode *mergeTwoLists(ListNode *l1, ListNode *l2) {
+        ListNode dummy = ListNode(0);
+        auto *curr = &dummy;
 
-        for (;list1 && list2; head = head->next) {
-            if (list1->val <= list2->val) {
-                head->next = list1;
-                list1 = list1->next;
+        while (l1 && l2) {
+            if (l1->val <= l2->val) {
+                curr->next = l1;
+                l1 = l1->next;
             } else {
-                head->next = list2;
-                list2 = list2->next;
+                curr->next = l2;
+                l2 = l2->next;
             }
+            curr = curr->next;
         }
-
-        if (list1) {
-            head->next = list1;
-        } else if (list2) {
-            head->next = list2;
-        }
+        curr->next = l1 ? l1 : l2;
 
         return dummy.next;
     }
 };
-
-
-
