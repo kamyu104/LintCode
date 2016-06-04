@@ -20,21 +20,21 @@ public:
      * @return: head node
      */
     ListNode * deleteDuplicates(ListNode *head) {
-        ListNode *dummy_head = new ListNode(INT_MIN);
-        ListNode *pre = dummy_head;
+        ListNode dummy{0};
+        auto prev = &dummy;
         while (head) {
             if (head->next && head->next->val == head->val) {
                 auto val = head->val;
                 while (head && head->val == val) {
                     head = head->next;
                 }
-                pre->next = head;
+                prev->next = head;
             } else {
-                pre->next = head;
-                pre = head;
+                prev->next = head;
+                prev = head;
                 head = head->next;
             }
         }
-        return dummy_head->next;
+        return dummy.next;
     }
 };
