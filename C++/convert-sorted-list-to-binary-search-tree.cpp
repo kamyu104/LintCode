@@ -30,7 +30,7 @@ public:
      * @return: a tree node
      */
     TreeNode *sortedListToBST(ListNode *L) {
-        ListNode *curr = L;
+        auto curr = L;
         int n = 0;
         while (curr) {
             curr = curr->next;
