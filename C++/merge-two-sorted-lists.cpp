@@ -21,8 +21,8 @@ public:
      * @return: ListNode head of linked list
      */
     ListNode *mergeTwoLists(ListNode *l1, ListNode *l2) {
-        ListNode dummy = ListNode{0};
-        auto *curr = &dummy;
+        ListNode dummy{0};
+        auto curr = &dummy;
 
         while (l1 && l2) {
             if (l1->val <= l2->val) {
