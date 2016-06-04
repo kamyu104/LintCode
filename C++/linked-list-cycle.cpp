@@ -20,7 +20,7 @@ public:
      * @return: True if it has a cycle, or false
      */
     bool hasCycle(ListNode *head) {
-        ListNode *slow = head, *fast = head;
+        auto slow = head, fast = head;
 
         while (fast && fast->next) {
             slow = slow->next, fast = fast->next->next;
@@ -31,6 +31,3 @@ public:
         return false;  // No cycle.
     }
 };
-
-
-
