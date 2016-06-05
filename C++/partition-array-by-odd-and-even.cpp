@@ -8,17 +8,12 @@ public:
      * @return: nothing
      */
     void partitionArray(vector<int> &nums) {
-        int left = 0;
-        int right = nums.size() - 1;
-
-        while (left < right) {
-            while (left <= right && nums[left] % 2 == 1) {
+        for (int left = 0, right = nums.size() - 1; left <= right;) {
+            if (nums[left] % 2 == 1) {
                 ++left;
-            } 
-            while (left <= right && nums[right] % 2 == 0) {
+            } else if  (nums[right] % 2 == 0) {
                 --right;
-            }
-            if (left < right) {
+            } else {
                swap(nums[left++], nums[right--]);
             }
         }
