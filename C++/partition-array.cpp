@@ -3,25 +3,23 @@
 
 class Solution {
 public:
-    int partitionArray(vector<int> &nums, int k) {
-        int left = 0;
-        int right = nums.size() - 1;
-
-        while (left <= right) {
-            while (left <= right && nums[left] < k) {
+    /**
+     * @param nums: a vector of integers
+     * @return: nothing
+     */
+    void partitionArray(vector<int> &nums) {
+        for (int left = 0, right = nums.size() - 1; left < right;) {
+            if (nums[left] % 2 == 1) {
                 ++left;
-            } 
-            while (left <= right && nums[right] >= k) {
+            } else if  (nums[right] % 2 == 0) {
                 --right;
-            }
-            if (left <= right) {
+            } else {
                swap(nums[left++], nums[right--]);
             }
         }
-
-        return left;
     }
 };
+
 
 class Solution2 {
 public:
