@@ -1,4 +1,4 @@
-// Time:  O(m * n * log(m + n) ~ O(m * n * (log(m * n)))
+// Time:  O(m * n * log(m + n)) ~ O(m * n * log(m * n))
 // Space: O(m * n)
 
 // BFS with priority queue (min heap), refactored version.
