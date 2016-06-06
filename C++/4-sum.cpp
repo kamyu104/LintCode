@@ -76,14 +76,17 @@ public:
         for (size_t i = 2; i < nums.size(); ++i) {
             for (size_t j = i + 1; j < nums.size(); ++j) {
                 auto it = two_sum.find(target - nums[i] - nums[j]);
-                if (it != two_sum.end()) {
-                    for (const auto& vec : it->second) {
-                        if (i > vec.back()) {  // {vec.front() < vec.back() < i < j}
-                            vector<int> candidate = {nums[vec.front()], nums[vec.back()], nums[i], nums[j]};
-                            if (answers.emplace(join_vector(candidate)).second) {  // Not duplicated.
-                                res.emplace_back(move(candidate)); // Add to answers.
-                            }
-                        }
+                if (it == two_sum.end()) {
+                    continue;
+                }
+                for (const auto& vec : it->second) {
+                    if (vec.back() >= i) {
+                        continue;
+                    }
+                    // {vec.front() < vec.back() < i < j}
+                    vector<int> candidate = {nums[vec.front()], nums[vec.back()], nums[i], nums[j]};
+                    if (answers.emplace(join_vector(candidate)).second) {  // Not duplicated.
+                        res.emplace_back(move(candidate)); // Add to answers.
                     }
                 }
             }
