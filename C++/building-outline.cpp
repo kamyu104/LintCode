@@ -121,8 +121,8 @@ public:
                 if ((*b)[end] != (*a)[end]) {   // |abb|b
                     (*b)[start] = (*a)[end];
                     merged->emplace_back(move(*a)), ++(*a_idx);
-                } else {        // aaa
-                    ++(*b_idx);    // abb
+                } else {         // aaa
+                    ++(*b_idx);  // abb
                 }
             } else if ((*a)[height] == (*b)[height]) {  // abb
                 (*b)[start] = (*a)[start], ++(*a_idx);  // abb
