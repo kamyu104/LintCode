@@ -32,10 +32,9 @@ public:
             Cell c = heap_.top();
             heap_.pop();
             is_visited_[c.i][c.j] = true;
-
-	        for (const auto& d : directions) {
-                trap += fill(heights, c.i + d.first, c.j + d.second, c.height);
-	        }
+            for (const auto& d : directions) {
+            	trap += fill(heights, c.i + d.first, c.j + d.second, c.height);
+            }
         }
 
         return trap;
