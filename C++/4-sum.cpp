@@ -97,7 +97,7 @@ public:
     // Hash vector to string.
     string join_vector(const vector<int>& nums) {
         string ret;
-        for (int n : nums) {
+        for (const auto& n : nums) {
             ret += to_string(n);
             ret += ' ';
         }
