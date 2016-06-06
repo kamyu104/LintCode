@@ -11,8 +11,7 @@ public:
      */
     static string leftPad(string& originalStr, int size, char padChar=' ') {
 
-        return string(max(0,
-                          size - static_cast<int>(originalStr.length())),
+        return string(max(0, size - static_cast<int>(originalStr.length())),
                       padChar).append(originalStr);
     }
 };
