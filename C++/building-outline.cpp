@@ -18,8 +18,8 @@ public:
     vector<vector<int>> buildingOutline(vector<vector<int>> &buildings) {
         map<int, vector<Endpoint>> point_to_height;  // Ordered, no duplicates.
         for (const auto& building : buildings) {
-            point_to_height[building[start]].emplace_back(Endpoint{building[height], true});
-            point_to_height[building[end]].emplace_back(Endpoint{building[height], false});
+            point_to_height[building[start]].push_back({building[height], true});
+            point_to_height[building[end]].push_back({building[height], false});
         }
 
         vector<vector<int>> res;
