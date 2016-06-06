@@ -125,16 +125,16 @@ public:
                     ++(*b_idx);    // abb
                 }
             } else if ((*a)[height] == (*b)[height]) {  // abb
-                (*b)[start] = (*a)[start], ++(*a_idx);    // abb
+                (*b)[start] = (*a)[start], ++(*a_idx);  // abb
             } else {  // (*a)[height] < (*b)[height].
-                if ((*a)[start] != (*b)[start]) {                                                 //    bb
+                if ((*a)[start] != (*b)[start]) {                                 //    bb
                     merged->push_back({(*a)[start], (*b)[start], (*a)[height]});  // |a|bb
                 }
                 ++(*a_idx);
             }
         } else {  // (*a)[end] > (*b)[end].
             if ((*a)[height] >= (*b)[height]) {  // aaaa
-                ++(*b_idx);                   // abba
+                ++(*b_idx);                      // abba
             } else {
                 //    |bb|
                 // |a||bb|a
