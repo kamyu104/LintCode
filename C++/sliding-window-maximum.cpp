@@ -16,7 +16,7 @@ public:
                 dq.pop_back();
             } 
             dq.emplace_back(i);
-            if (i - k >= 0  && dq.front() == i - k) {
+            if (i >= k  && dq.front() == i - k) {
                 dq.pop_front();
             }
             if (i >= k - 1) {
