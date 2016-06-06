@@ -45,7 +45,7 @@ public:
             if (height_to_count.empty() ||
                 curr_max != height_to_count.crbegin()->first) {
                 if (curr_max > 0) {
-                    res.emplace_back(move(vector<int>{curr_start, point, curr_max}));
+                    res.push_back({curr_start, point, curr_max});
                 }
                 curr_start = point;
                 curr_max = height_to_count.empty() ?
