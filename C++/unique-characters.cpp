@@ -1,6 +1,8 @@
 // Time:  O(n)
 // Space: O(1)
 
+#include <bitset>
+
 class Solution {
 public:
     /**
@@ -8,17 +10,12 @@ public:
      * @return: a boolean
      */
     bool isUnique(string &str) {
-        if (str.length() > 256) {
-            return false;
-        }
-
-        // At most 256 entires, const space.
-        unordered_map<char, int> cnt;
+        bitset<256> lookup;
         for (const auto& c : str) {
-            ++cnt[c];
-            if (cnt[c] > 1) {
+            if (lookup[c]) {
                 return false;
             }
+            lookup.flip(c);
         }
 
         return true;
