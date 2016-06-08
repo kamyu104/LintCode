@@ -8,18 +8,20 @@ public:
      * return: A list of strings.
      */
     vector<string> fizzBuzz(int n) {
-        vector<string> results;
+        vector<string> result;
+
         for (int i = 1; i <= n; ++i) {
             if (i % 15 == 0) {
-                results.emplace_back("fizz buzz");
+                result.emplace_back("fizz buzz");
             } else if (i % 5 == 0) {
-                results.emplace_back("buzz");
+                result.emplace_back("buzz");
             } else if (i % 3 == 0) {
-                results.emplace_back("fizz");
+                result.emplace_back("fizz");
             } else {
-                results.emplace_back(to_string(i));
+                result.emplace_back(to_string(i));
             }
         }
-        return results;
+
+        return result;
     }
 };
