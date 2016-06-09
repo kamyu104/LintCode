@@ -1,7 +1,6 @@
 // Time:  O(n^2)
 // Space: O(n)
 
-#include <cfloat>
 /**
  * Definition for a point.
  * struct Point {
@@ -29,7 +28,7 @@ public:
                 if (start.x == end.x && start.y == end.y) {
                     ++same;
                 } else {
-                    double slope = DBL_MAX;
+                    auto slope = numeric_limits<double>::max();
                     if (start.x - end.x != 0) {
                         slope = (start.y - end.y) * 1.0 / (start.x - end.x);
                     }
