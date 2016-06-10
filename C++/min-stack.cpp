@@ -55,22 +55,18 @@ public:
     }
 
     int pop() {
-        if (!elements_.empty()) {
-            if (!cached_min_with_count_.empty() && cached_min_with_count_.top().first == elements_.top()) {
-                if (--cached_min_with_count_.top().second == 0) {
-                    cached_min_with_count_.pop();
-                }
+        if (cached_min_with_count_.top().first == elements_.top()) {
+            if (--cached_min_with_count_.top().second == 0) {
+                cached_min_with_count_.pop();
             }
-            int number = elements_.top();
-            elements_.pop();
-            return number;
         }
+        auto number = elements_.top();
+        elements_.pop();
+        return number;
     }
 
     int min() {
-        if (!cached_min_with_count_.empty()) {
-            return cached_min_with_count_.top().first;
-        }
+        return cached_min_with_count_.top().first;
     }
 private:
     stack<int> elements_;
@@ -94,20 +90,16 @@ public:
     }
 
     int pop() {
-        if (!elements_.empty()) {
-            if (!cached_min_.empty() && cached_min_.top() == elements_.top()) {
-                cached_min_.pop();
-            }
-            int number = elements_.top();
-            elements_.pop();
-            return number;
+        if (cached_min_.top() == elements_.top()) {
+            cached_min_.pop();
         }
+        auto number = elements_.top();
+        elements_.pop();
+        return number;
     }
 
     int min() {
-        if (!cached_min_.empty()) {
-            return cached_min_.top();
-        }
+        return cached_min_.top();
     }
 private:
     stack<int> elements_;
