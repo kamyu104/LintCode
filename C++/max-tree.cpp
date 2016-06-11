@@ -20,48 +20,18 @@ class Solution {
      * @return: The root of max tree.
      */
     TreeNode* maxTree(vector<int> A) {
-        if (A.empty()) {
-            return nullptr;
-        }
-
-        stack<TreeNode *> nodeStack;
-        nodeStack.emplace(new TreeNode(A[0]));
-        for (int i = 1; i < A.size(); ++i) {
-            // The stack stores nodes in descending order.
-            if (A[i] <= nodeStack.top()->val) {
-                TreeNode *node = new TreeNode(A[i]);
-                nodeStack.emplace(node);
-            } else {
-                // Pop every node which value is less than A[i],
-                // and let them as right children of
-                // the last node less than A[i]
-                TreeNode *smaller_node = nodeStack.top();
-                nodeStack.pop();
-                while (!nodeStack.empty() && nodeStack.top()->val < A[i]) {
-                    nodeStack.top()->right = smaller_node;
-                    smaller_node = nodeStack.top();
-                    nodeStack.pop();
-                }
-
-                // Pop the last node which value is less
-                // than A[i], and let it as right child,
-                // and push A[i] to the stack.
-                TreeNode *node = new TreeNode(A[i]);
-                node->left = smaller_node;
-                nodeStack.emplace(node);
+        vector<TreeNode *> nodeStack;
+        for (int i = 0; i < A.size(); ++i) {
+            auto tmp = new TreeNode(A[i]);
+            while (!nodeStack.empty() && A[i] > nodeStack.back()->val) {
+                tmp->left = nodeStack.back();
+                nodeStack.pop_back();
             }
+            if (!nodeStack.empty()) {
+                nodeStack.back()->right = tmp;
+            }
+            nodeStack.emplace_back(tmp);
         }
-
-        // Pop every node in the stack,
-        // and let them as right children of the root
-        TreeNode *root = nodeStack.top();
-        nodeStack.pop();
-        while (!nodeStack.empty()) {
-            nodeStack.top()->right = root;
-            root = nodeStack.top();
-            nodeStack.pop();
-        }
-
-        return root;
+        return nodeStack.front();
     }
 };
