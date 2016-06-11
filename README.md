@@ -415,4 +415,4 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 ## System Design
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
-|501|[Mini Twitter](http://www.lintcode.com/en/problem/mini-twitter/)| [C++](./C++/mini-twitter.cpp)| _O(nlogf)_ | _O(u + t + r)_ | Medium | | |
+|501|[Mini Twitter](http://www.lintcode.com/en/problem/mini-twitter/)| [C++](./C++/mini-twitter.cpp)| _O(klogu)_ | _O(t + f)_ | Medium | | |
