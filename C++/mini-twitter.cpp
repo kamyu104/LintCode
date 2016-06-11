@@ -87,7 +87,8 @@ public:
     // @param to_user_id an integer
     // from user_id follows to_user_id
     void follow(int from_user_id, int to_user_id) {
-        if (!followings_[from_user_id].count(to_user_id)) {
+        if (from_user_id != to_user_id &&
+            !followings_[from_user_id].count(to_user_id)) {
             followings_[from_user_id].emplace(to_user_id);
         }
     }
