@@ -19,8 +19,6 @@
  */
 class MiniTwitter {
 public:
-    const size_t number_of_most_recent_tweets = 10;
-
     MiniTwitter() : time_(0) {
     }
 
@@ -53,7 +51,7 @@ public:
             }
         }
         vector<Tweet> res;
-        while (!heap.empty() && res.size() < number_of_most_recent_tweets) {
+        while (!heap.empty() && res.size() < number_of_most_recent_tweets_) {
             const auto& top = heap.top();
             size_t t;
             RIT begin, end;
@@ -77,7 +75,7 @@ public:
         vector<Tweet> res;
         for (auto it = messages_[user_id].rbegin();
              it != messages_[user_id].rend() &&
-             res.size() < number_of_most_recent_tweets; ++it) {
+             res.size() < number_of_most_recent_tweets_; ++it) {
             res.emplace_back(it->second);
         }
         return res;
@@ -103,6 +101,7 @@ public:
     }
 
 private:
+    const size_t number_of_most_recent_tweets_ = 10;
     unordered_map<int, unordered_set<int>> followings_;
     unordered_map<int, deque<pair<size_t, Tweet>>> messages_;
     size_t time_;
