@@ -237,7 +237,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |184|[Largest Number](http://lintcode.com/en/problem/largest-number/)| [C++](./C++/largest-number.cpp)| _O(nlogn)_ | _O(1)_ | Medium | LeetCode | |
 |366|[Fibonacci](http://lintcode.com/en/problem/fibonacci/)| [C++](./C++/fibonacci.cpp)| _O(n)_ | _O(1)_ | Easy | | |
 |387|[The Smallest Difference](http://lintcode.com/en/problem/the-smallest-difference/)| [C++](./C++/the-smallest-difference.cpp)| _O(nlogn)_ | _O(1)_ | Medium | | Two Pointers |
-|399|[Nuts & Bolts Problem](http://lintcode.com/en/problem/nuts-bolts-problem/)| [C++](./C++/nuts-bolts-problem.cpp)| _O(nlogn)_ | _O(1)_ | Medium | | Quick Sort |
+|399|[Nuts & Bolts Problem](http://lintcode.com/en/problem/nuts-bolts-problem/)| [C++](./C++/nuts-bolts-problem.cpp)| _O(nlogn)_ | _O(logn)_ | Medium | | Quick Sort |
 |400|[Maximum Gap](http://lintcode.com/en/problem/maximum-gap/)| [C++](./C++/maximum-gap.cpp) [Python](./Python/maximum-gap.py)| _O(n)_ | _O(n)_ | Hard | LeetCode | Bucket Sort |
 |507|[Wiggle Sort II](http://lintcode.com/en/problem/wiggle-sort-ii/)| [C++](./C++/wiggle-sort-ii.cpp)|  _O(n)_ on average | _O(1)_ | Medium | LeetCode | Tri Partition |
 |508|[Wiggle Sort](http://lintcode.com/en/problem/wiggle-sort/)| [C++](./C++/wiggle-sort.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
