@@ -13,7 +13,6 @@ public:
         }
         sort(A.begin(), A.end());
 
-
         int min_diff = numeric_limits<int>::max();
         for (const auto& b : B) {
             auto it = lower_bound(A.cbegin(), A.cend(), b);
