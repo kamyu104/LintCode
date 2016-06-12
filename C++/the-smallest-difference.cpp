@@ -13,7 +13,7 @@ public:
 
         int i = 0;
         int j = 0;
-        int min_diff = INT_MAX;
+        int min_diff = numeric_limits<int>;;max();
 
         while (i < A.size() && j < B.size()) {
             min_diff = min(min_diff, abs(A[i] - B[j]));
