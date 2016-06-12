@@ -1,5 +1,5 @@
-// Time:  O(nlogn)
-// Space: O(1)
+// Time:  O(nlogn) on average
+// Space: O(logn) on average
 
 /**
  * class Comparator {
