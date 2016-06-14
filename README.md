@@ -1,8 +1,8 @@
-# [LintCode](http://www.lintcode.com/en/problem/) ![Language](https://img.shields.io/badge/language-C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-281%20%2F%20281-ff69b4.svg)
+# [LintCode](http://www.lintcode.com/en/problem/) ![Language](https://img.shields.io/badge/language-C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-282%20%2F%20282-ff69b4.svg)
 
-Up to date (2016-06-03), there are `281` problems on [LintCode Online Judge](http://lintcode.com/).
+Up to date (2016-06-14), there are `282` problems on [LintCode Online Judge](http://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `281` problems.
+Here is the classification of all `282` problems.
 For more problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -402,6 +402,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |192|[Wildcard Matching](http://lintcode.com/en/problem/wildcard-matching/)| [C++](./C++/wildcard-matching.cpp)| _O(m + n)_ | _O(1)_ | Hard | LeetCode | Greedy, DP, Recursion |
 |402|[Continuous Subarray Sum](http://lintcode.com/en/problem/continuous-subarray-sum/)| [C++](./C++/continuous-subarray-sum.cpp)| _O(n)_ | _O(1)_ | Medium | EPI | |
 |412|[Candy](http://lintcode.com/en/problem/candy/)| [C++](./C++/candy.cpp)| _O(n)_ | _O(n)_ | Hard | LeetCode | Greedy |
+|552| [Create Maximum Number](http://lintcode.com/en/problem/create-maximum-number/)| [C++](./C++/create-maximum-number.cpp) | _O(k * (m + n + k))_ ~ _O(k * (m + n + k^2))_| _O(m + n + k^2)_ | Hard | variant of [Delete Digits](http://www.lintcode.com/en/problem/delete-digits/) | Greedy, DP|
 
 ## OO Design
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
