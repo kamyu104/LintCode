@@ -402,7 +402,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |192|[Wildcard Matching](http://lintcode.com/en/problem/wildcard-matching/)| [C++](./C++/wildcard-matching.cpp)| _O(m + n)_ | _O(1)_ | Hard | LeetCode | Greedy, DP, Recursion |
 |402|[Continuous Subarray Sum](http://lintcode.com/en/problem/continuous-subarray-sum/)| [C++](./C++/continuous-subarray-sum.cpp)| _O(n)_ | _O(1)_ | Medium | EPI | |
 |412|[Candy](http://lintcode.com/en/problem/candy/)| [C++](./C++/candy.cpp)| _O(n)_ | _O(n)_ | Hard | LeetCode | Greedy |
-|552| [Create Maximum Number](http://lintcode.com/en/problem/create-maximum-number/)| [C++](./C++/create-maximum-number.cpp) | _O(k * (m + n + k))_ ~ _O(k * (m + n + k^2))_| _O(m + n + k^2)_ | Hard | variant of [Delete Digits](http://www.lintcode.com/en/problem/delete-digits/) | Greedy, DP|
+|552| [Create Maximum Number](http://lintcode.com/en/problem/create-maximum-number/)| [C++](./C++/create-maximum-number.cpp) | _O(k * (m + n + k))_ ~ _O(k * (m + n + k^2))_| _O(m + n + k^2)_ | Hard | LeetCode | Greedy, DP|
 
 ## OO Design
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
