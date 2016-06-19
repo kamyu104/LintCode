@@ -9,7 +9,7 @@ public:
      * @return void
      */
     void sortIntegers(vector<int>& A) {
-        for (int n = 1; n < A.size(); ++n) {
+        for (int n = 0; n < A.size(); ++n) {
             for (int i = n - 1; i >= 0 && A[i] > A[i + 1]; --i) {
                 swap(A[i], A[i + 1]);
             }
@@ -27,8 +27,8 @@ public:
      * @return void
      */
     void sortIntegers(vector<int>& A) {
-        for (int n = 0; n + 1 < A.size(); ++n) {
-            for (int i = 0; i + 1 + n < A.size(); ++i) {
+        for (int n = 0; n < A.size(); ++n) {
+            for (int i = 0; i + 1 < static_cast<int>(A.size()) - n; ++i) {
                 if (A[i] > A[i + 1]) {
                     swap(A[i], A[i + 1]);
                 }
