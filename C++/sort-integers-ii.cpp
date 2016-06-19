@@ -1,7 +1,7 @@
 // Time:  O(nlogn)
 // Space: O(n)
 
-// Merge sort.
+// Merge sort. (stable)
 class Solution {
 public:
     /**
@@ -40,7 +40,7 @@ private:
 
 // Time:  O(nlogn) ~ O(n^2)
 // Space: O(logn) ~ O(n)
-// Quick sort.
+// Quick sort. (unstable)
 class Solution {
 public:
     /**
