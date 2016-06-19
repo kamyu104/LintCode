@@ -1,7 +1,7 @@
 // Time:  O(n) ~ O(n^2)
 // Space: O(1)
 
-// In-place inertion sort.
+// In-place inertion sort. (stable)
 class Solution {
 public:
     /**
@@ -19,7 +19,27 @@ public:
 
 // Time:  O(n^2)
 // Space: O(1)
-// Selection sort.
+// Bubble sort. (stable)
+class Solution {
+public:
+    /**
+     * @param A an integer array
+     * @return void
+     */
+    void sortIntegers(vector<int>& A) {
+        for (int n = 0; n + 1 < A.size(); ++n) {
+            for (int i = 0; i + 1 + n < A.size(); ++i) {
+                if (A[i] > A[i + 1]) {
+                    swap(A[i], A[i + 1]);
+                }
+            }
+        }
+    }
+};
+
+// Time:  O(n^2)
+// Space: O(1)
+// Selection sort. (unstable)
 class Solution {
 public:
     /**
@@ -35,26 +55,6 @@ public:
                 }
             }
             swap(A[n], A[min_idx]);
-        }
-    }
-};
-
-// Time:  O(n^2)
-// Space: O(1)
-// Bubble sort.
-class Solution {
-public:
-    /**
-     * @param A an integer array
-     * @return void
-     */
-    void sortIntegers(vector<int>& A) {
-        for (int n = 0; n + 1 < A.size(); ++n) {
-            for (int i = 0; i + 1 + n < A.size(); ++i) {
-                if (A[i] > A[i + 1]) {
-                    swap(A[i], A[i + 1]);
-                }
-            }
         }
     }
 };
