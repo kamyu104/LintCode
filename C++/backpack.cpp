@@ -10,7 +10,7 @@ public:
      */
     int backPack(int m, vector<int> A) {
         // table[i][j] denotes whether using the first elements
-        // could fullfill size j.
+        // could fulfill size j.
         vector<vector<bool>> table(2, vector<bool>(m + 1, false));
         int max_size = 0;
         table[0][0] = true;
@@ -28,7 +28,7 @@ public:
                     || table[(i - 1) % 2][j - A[i - 1]];
                 }
 
-                // If it fullfills size j, update max size.
+                // If it fulfills size j, update max size.
                 if (table[i % 2][j]) {
                     max_size = max(max_size, j);
                 }
