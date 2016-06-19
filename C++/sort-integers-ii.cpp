@@ -1,6 +1,7 @@
 // Time:  O(nlogn) ~ O(n^2)
 // Space: O(logn) ~ O(n)
 
+// Quick sort.
 class Solution {
 public:
     /**
@@ -11,15 +12,16 @@ public:
         quickSort(&A, 0, A.size() - 1);
     }
 
+private:
     void quickSort(vector<int> *A, int left, int right) {
-        if (left < right) {
-            default_random_engine gen((random_device())());
-            uniform_int_distribution<int> dis(left, right);
-            int pivot_idx = PartitionAroundPivot(left, right, dis(gen), A);
-            quickSort(A, left, pivot_idx - 1);
-            quickSort(A, pivot_idx + 1, right);
+        if (left <= right) {
+            return;
         }
-
+        default_random_engine gen((random_device())());
+        uniform_int_distribution<int> dis(left, right);
+        int pivot_idx = PartitionAroundPivot(left, right, dis(gen), A);
+        quickSort(A, left, pivot_idx - 1);
+        quickSort(A, pivot_idx + 1, right);
     }
 
     int PartitionAroundPivot(int left, int right,
