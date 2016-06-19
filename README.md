@@ -240,7 +240,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |399|[Nuts & Bolts Problem](http://lintcode.com/en/problem/nuts-bolts-problem/)| [C++](./C++/nuts-bolts-problem.cpp)| _O(nlogn)_ | _O(logn)_ | Medium | | Quick Sort |
 |400|[Maximum Gap](http://lintcode.com/en/problem/maximum-gap/)| [C++](./C++/maximum-gap.cpp) [Python](./Python/maximum-gap.py)| _O(n)_ | _O(n)_ | Hard | LeetCode | Bucket Sort |
 |463|[Sort Integers](http://lintcode.com/en/problem/sort-integers/)| [C++](./C++/sort-integers.cpp)| _O(n^2)_ | _O(1)_ | Easy | | Insertion Sort, Selection Sort, Bubble Sort |
-|464|[Sort Integers II](http://lintcode.com/en/problem/sort-integers-ii/)| [C++](./C++/sort-integers-ii.cpp)| _O(nlogn)_ | _O(n)_ | Easy | | Merge Sort, Quick Sort |
+|464|[Sort Integers II](http://lintcode.com/en/problem/sort-integers-ii/)| [C++](./C++/sort-integers-ii.cpp)| _O(nlogn)_ | _O(n)_ | Easy | | Merge Sort, Heap Sort, Quick Sort |
 |507|[Wiggle Sort II](http://lintcode.com/en/problem/wiggle-sort-ii/)| [C++](./C++/wiggle-sort-ii.cpp)|  _O(n)_ on average | _O(1)_ | Medium | LeetCode | Tri Partition |
 |508|[Wiggle Sort](http://lintcode.com/en/problem/wiggle-sort/)| [C++](./C++/wiggle-sort.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 
