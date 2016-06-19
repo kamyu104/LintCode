@@ -38,6 +38,48 @@ private:
     }
 };
 
+// Time:  O(nlogn)
+// Space: O(1)
+// Heap sort. (unstable)
+class Solution {
+public:
+    /**
+     * @param A an integer array
+     * @return void
+     */
+    void sortIntegers2(vector<int>& A) {
+        heapify(&A);
+        for (int i = static_cast<int>(A.size()) - 1; i >= 0; --i) {
+            swap(A[0], A[i]);
+            sift_down(&A, 0, i);
+        }
+    }
+
+private:
+    void heapify(vector<int> *A) {
+        for (int i = A->size() / 2; i >= 0; --i) {
+            sift_down(A, i, A->size());
+        }
+    }
+
+    void sift_down(vector<int> *A, int index, int size) {
+        while (index < size) {
+            int largest = index;
+            if (index * 2 + 1 < size && (*A)[index * 2 + 1] > (*A)[largest]) {
+                largest = index * 2 + 1;
+            }
+            if (index * 2 + 2 < size && (*A)[index * 2 + 2] > (*A)[largest]) {
+                largest = index * 2 + 2;
+            }
+            if (largest == index) {
+                break;
+            }
+            swap((*A)[largest], (*A)[index]);
+            index = largest;
+        }
+    }
+};
+
 // Time:  O(nlogn) ~ O(n^2)
 // Space: O(logn) ~ O(n)
 // Quick sort. (unstable)
