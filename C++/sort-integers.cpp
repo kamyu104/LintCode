@@ -1,7 +1,7 @@
 // Time:  O(n) ~ O(n^2)
 // Space: O(1)
 
-// In-place inertion sort. (stable)
+// In-place insertion sort. (stable)
 class Solution {
 public:
     /**
