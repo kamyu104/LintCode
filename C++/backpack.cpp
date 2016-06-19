@@ -28,7 +28,7 @@ public:
                     || table[(i - 1) % 2][j - A[i - 1]];
                 }
 
-                // If it fulfulls size j, update max size.
+                // If it fullfills size j, update max size.
                 if (table[i % 2][j]) {
                     max_size = max(max_size, j);
                 }
