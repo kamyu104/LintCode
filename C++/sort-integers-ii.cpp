@@ -1,6 +1,45 @@
+// Time:  O(nlogn)
+// Space: O(n)
+
+// Merge sort.
+class Solution {
+public:
+    /**
+     * @param A an integer array
+     * @return void
+     */
+    void sortIntegers2(vector<int>& A) {
+        mergeSort(&A, 0, A.size() - 1);
+    }
+
+private:
+    void mergeSort(vector<int> *A, int start, int end) {
+        if (end - start <= 0) {
+            return;
+        }
+        int mid = start + (end - start) / 2;
+        mergeSort(A, start, mid);
+        mergeSort(A, mid + 1, end);
+
+        int l = start;
+        vector<int> tmp;
+        for (int i = mid + 1; i <= end; ++i) {
+            // Merge the two sorted arrays into tmp.
+            while (l <= mid && (*A)[l] <= (*A)[i]) {
+                tmp.emplace_back((*A)[l++]);
+            }
+            tmp.emplace_back((*A)[i]);
+        }
+        while (l <= mid) {
+            tmp.emplace_back((*A)[l++]);
+        }
+        // Copy tmp back to A.
+        copy(tmp.begin(), tmp.end(), A->begin() + start);
+    }
+};
+
 // Time:  O(nlogn) ~ O(n^2)
 // Space: O(logn) ~ O(n)
-
 // Quick sort.
 class Solution {
 public:
