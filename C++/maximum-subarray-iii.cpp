@@ -78,7 +78,7 @@ public:
 };
 
 // Time:  O(k * n^2)
-// Space: O(k * n^2)
+// Space: O(k * n)
 class Solution3 {
 public:
     /**
