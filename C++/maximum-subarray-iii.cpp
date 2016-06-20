@@ -13,11 +13,16 @@ public:
         // local_max[x][y] means the max sum in range [0, x - 1] include nums[x-1]
         // with y non-overlapping subarrays.
         vector<vector<int>> local_max(n + 1,
-                                vector<int>(k + 1, numeric_limits<int>::min()));
+                            vector<int>(k + 1, numeric_limits<int>::min()));
         // global_max[x][y] means the max sum in range [0, x - 1]
         // with y non-overlapping subarrays.
-        vector<vector<int>> global_max(n + 1, vector<int>(k + 1, 0));
-        
+        vector<vector<int>> global_max(n + 1,
+                            vector<int>(k + 1, numeric_limits<int>::min()));
+
+        for (int i = 0; i <= n; ++i) {
+            global_max[i][0] = 0;
+        }
+
         for (int i = 1; i <= n; ++i) {
             for (int j = 1; j <= min(i, k); ++j) {
                 local_max[i][j] = max(local_max[i - 1][j],
@@ -29,7 +34,8 @@ public:
                                            local_max[i][j]);
                 }
             }
-         }
+        }
+
         return global_max[n][k];
     }
 };
