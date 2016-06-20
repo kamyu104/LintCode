@@ -351,7 +351,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 ## Dynamic Programming
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
-|29|[Interleaving String](http://lintcode.com/en/problem/interleaving-string/)| [C++](./C++/interleaving-string.cpp)| _O(m * b)_ | _O(min(m, n))_ | Medium | EPI | |
+|29|[Interleaving String](http://lintcode.com/en/problem/interleaving-string/)| [C++](./C++/interleaving-string.cpp)| _O(m * n)_ | _O(min(m, n))_ | Medium | EPI | |
 |43|[Maximum Subarray III](http://lintcode.com/en/problem/maximum-subarray-iii/)| [C++](./C++/maximum-subarray-iii.cpp)| _O(k * n)_ | _O(k * n)_ | Hard | | |
 |77|[Longest Common Subsequence](http://lintcode.com/en/problem/longest-common-subsequence/)| [C++](./C++/longest-common-subsequence.cpp)| _O(m * n)_ | _O(min(m, n))_ | Medium | | |
 |79|[Longest Common Substring](http://lintcode.com/en/problem/longest-common-substring/)| [C++](./C++/longest-common-substring.cpp)| _O(m * n)_ | _O(min(m, n))_ | Medium | | |
