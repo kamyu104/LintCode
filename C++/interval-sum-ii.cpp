@@ -126,7 +126,7 @@ public:
     }
 };
 
-// Time:  ctor:   O(nlogn),
+// Time:  ctor:   O(n),
 //        query:  O(logn),
 //        modify: O(logn)
 // Space: O(n)
@@ -141,8 +141,12 @@ public:
      */
     Solution(vector<int> A) : nums_(A) {
         bit_ = vector<int>(nums_.size() + 1);
-        for (int i = 0; i < nums_.size(); ++i) {
-            add(i, nums_[i]);
+        for (int i = 1; i < bit_.size(); ++i) {
+            bit_[i] = A[i - 1] + bit_[i - 1];
+        }
+        for (int i = bit_.size() - 1; i >= 1; --i) {
+            int last_i = i - (i & -i);
+            bit_[i] -= bit_[last_i];
         }
     }
     
