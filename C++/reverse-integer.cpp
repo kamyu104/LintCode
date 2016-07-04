@@ -8,15 +8,17 @@ public:
      * @return the reversed integer
      */
     int reverseInteger(int n) {
-        long long result = 0;
-        unsigned int temp = abs(n);
-        while (temp > 0) {
+        int result = 0;
+        while (n) {
+            auto prev = result;
             result *= 10;
-            result += temp % 10;
-            temp /= 10;
+            result += n % 10;
+            if (result / 10 != prev) {
+                result = 0;
+                break;
+            }
+            n /= 10;
         }
-        result = (n >= 0) ? result : -result;
-        result = (result > INT_MAX || result < INT_MIN) ? 0 : result;
         return result;
     }
 };
