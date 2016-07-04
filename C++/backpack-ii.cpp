@@ -9,7 +9,7 @@ public:
      * @return: The maximum value
      */
     int backPackII(int m, vector<int> A, vector<int> V) {
-        // table[i][j] denotes max_value of using the first elements
+        // table[i][j] denotes max_value of using the first i elements
         // to fulfill size j.
         vector<vector<int>> table(2, vector<int>(m + 1, INT_MIN));
         int max_value = 0;
