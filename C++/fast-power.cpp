@@ -1,7 +1,31 @@
-// Time:  O(logn)
-// Space: O(logn)
+// Time:  O(logn * logb * logb) = O(1)
+// Space: O(logb) = O(1)
 
+// Iterative solution.
 class Solution {
+public:
+    /*
+     * @param a, b, n: 32bit integers
+     * @return: An integer
+     */
+    int fastPower(int a, int b, int n) {
+        long long result = 1;
+        long long x = a % b;
+        while (n > 0) {
+            if (n & 1) {
+                result = result * x % b;
+            }
+            n >>= 1;
+            x = x * x % b;
+        }
+        return result % b;
+    }
+};
+
+// Time:  O(logn * logb * logb) = O(1)
+// Space: O(logb) = O(1)
+// Recursive solution.
+class Solution2 {
 public:
     /*
      * @param a, b, n: 32bit integers
