@@ -34,7 +34,7 @@ public:
      * @return the resultult
      */
     double myPow(double x, int n) {
-        if (n < 0) {
+        if (n < 0 && n != -n) {
             return 1.0 / myPow(x, -n);
         }
         if (n == 0) {
