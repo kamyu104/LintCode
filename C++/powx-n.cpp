@@ -11,7 +11,7 @@ public:
      */
     double myPow(double x, int n) {
         double result = 1;
-        long abs_n = abs(static_cast<long>(n));
+        long long abs_n = abs(static_cast<long long>(n));
         while (abs_n > 0) {
             if (abs_n & 1) {
                 result *= x;
