@@ -19,12 +19,12 @@ public:
             abs_n >>= 1;
             x *= x;
         }
-        return n < 0 ?  1 / result : result;
+        return n < 0 ? 1 / result : result;
     }
 };
 
 // Time:  O(logn * nlogx * logx) = O(1)
-// Space: O(logn + nlogx) = O(1)
+// Space: O(nlogx) = O(1)
 // Recursive solution.
 class Solution2 {
 public:
