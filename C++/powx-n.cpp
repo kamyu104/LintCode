@@ -1,6 +1,7 @@
-// Time:  O(logn)
-// Space: O(1)
+// Time:  O(logn * nlogx * logx) = O(1)
+// Space: O(nlogx) = O(1)
 
+// Iterative solution.
 class Solution {
 public:
     /**
@@ -9,15 +10,41 @@ public:
      * @return the result
      */
     double myPow(double x, int n) {
-        double res = 1;
+        double result = 1;
         long abs_n = abs(static_cast<long>(n));
         while (abs_n > 0) {
             if (abs_n & 1) {
-                res *= x;
+                result *= x;
             }
             abs_n >>= 1;
             x *= x;
         }
-        return n < 0 ?  1 / res : res;
+        return n < 0 ?  1 / result : result;
+    }
+};
+
+// Time:  O(logn * nlogx * logx) = O(1)
+// Space: O(logn + nlogx) = O(1)
+// Recursive solution.
+class Solution2 {
+public:
+    /**
+     * @param x the base number
+     * @param n the power number
+     * @return the resultult
+     */
+    double myPow(double x, int n) {
+        if (n < 0) {
+            return 1.0 / myPow(x, -n);
+        }
+        if (n == 0) {
+            return 1;
+        }
+        double v = myPow(x, n / 2);
+        if (n % 2 == 0) {
+            return v * v;
+        } else {
+            return v * v * x;
+        }
     }
 };
