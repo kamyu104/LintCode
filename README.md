@@ -221,7 +221,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |414|[Divide Two Integer](http://lintcode.com/en/problem/divide-two-integers/)| [C++](./C++/divide-two-integers.cpp)| _O(logn)_ | _O(1)_ | Medium | LeetCode | |
 |418|[Integer to Roman](http://lintcode.com/en/problem/integer-to-roman/)| [C++](./C++/integer-to-roman.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 |419|[Roman to Integer](http://lintcode.com/en/problem/roman-to-integer/)| [C++](./C++/roman-to-integer.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
-|428| [Pow(x, n)](http://lintcode.com/en/problem/powx-n/)     | [C++](./C++/powx-n.cpp)     | _O(1)_       | _O(1)_       | Medium         | LeetCode ||
+|428| [Pow(x, n)](http://lintcode.com/en/problem/powx-n/)     | [C++](./C++/powx-n.cpp)     | _O(logn)_       | _O(1)_       | Medium         | LeetCode ||
 |445|[Cosine Similarity](http://lintcode.com/en/problem/cosine-similarity/)| [C++](./C++/cosine-similarity.cpp) [Python](./Python/cosine-similarity.py) | _O(n)_ | _O(1)_ | Easy | | |
 |517|[Ugly Number](http://lintcode.com/en/problem/ugly-number/)| [C++](./C++/ugly-number.cpp)| _O(logn)_ | _O(1)_ | Easy | CTCI, LeetCode |  |
 
@@ -254,7 +254,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |95|[Validate Binary Search Tree](http://lintcode.com/en/problem/validate-binary-search-tree/)| [C++](./C++/validate-binary-search-tree.cpp)| _O(n)_ | _O(h)_ | Medium | LeetCode | |
 |97|[Maximum Depth of Binary Tree](http://lintcode.com/en/problem/maximum-depth-of-binary-tree/)| [C++](./C++/maximum-depth-of-binary-tree.cpp)| _O(n)_ | _O(h)_ | Easy | LeetCode | |
 |131|[Building Outline](http://lintcode.com/en/problem/building-outline/)| [C++](./C++/building-outline.cpp) [Python](./Python/building-outline.py)| _O(nlogn)_ | _O(n)_ | Hard | EPI | Sort, BST |
-|140|[Fast Power](http://lintcode.com/en/problem/fast-power/)| [C++](./C++/fast-power.cpp)| _O(1)_ | _O(1)_ | Medium | | |
+|140|[Fast Power](http://lintcode.com/en/problem/fast-power/)| [C++](./C++/fast-power.cpp)| _O(logn)_ | _O(1)_ | Medium | | |
 |155|[Minimum Depth of Binary Tree](http://lintcode.com/en/problem/minimum-depth-of-binary-tree/)| [C++](./C++/minimum-depth-of-binary-tree.cpp)| _O(n)_ | _O(h)_ | Easy | LeetCode | |
 |164|[Unique Binary Search Trees II](http://lintcode.com/en/problem/unique-binary-search-trees-ii/)| [C++](./C++/unique-binary-search-trees-ii.cpp)| _O(n * 4^n / n^(3/2))_ | _O(n)_ | Medium | LeetCode | |
 |177|[Convert Sorted Array to Binary Search Tree With Minimal Height](http://lintcode.com/en/problem/convert-sorted-array-to-binary-search-tree-with-minimal-height/)| [C++](./C++/convert-sorted-array-to-binary-search-tree-with-minimal-height.cpp)| _O(n)_ | _O(logn)_ | Easy | LeetCode | |
