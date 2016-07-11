@@ -218,7 +218,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |394|[Coins in a Line](http://lintcode.com/en/problem/coins-in-a-line/)| [C++](./C++/coins-in-a-line.cpp)| _O(1)_ | _O(1)_ | Easy | | |
 |411|[Gray Code](http://lintcode.com/en/problem/gray-code/)| [C++](./C++/gray-code.cpp)| _O(2^n)_ | _O(1)_ | Medium | LeetCode | |
 |413|[Reverse Integer](http://lintcode.com/en/problem/reverse-integer/)| [C++](./C++/reverse-integer.cpp)| _O(logn)_ | _O(1)_ | Medium | LeetCode | |
-|414|[Divide Two Integer](http://lintcode.com/en/problem/divide-two-integers/)| [C++](./C++/divide-two-integers.cpp)| _O(1)_ | _O(1)_ | Medium | LeetCode | |
+|414|[Divide Two Integer](http://lintcode.com/en/problem/divide-two-integers/)| [C++](./C++/divide-two-integers.cpp)| _O(logn)_ | _O(1)_ | Medium | LeetCode | |
 |418|[Integer to Roman](http://lintcode.com/en/problem/integer-to-roman/)| [C++](./C++/integer-to-roman.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 |419|[Roman to Integer](http://lintcode.com/en/problem/roman-to-integer/)| [C++](./C++/roman-to-integer.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 |428| [Pow(x, n)](http://lintcode.com/en/problem/powx-n/)     | [C++](./C++/powx-n.cpp)     | _O(logn)_       | _O(1)_       | Medium         | LeetCode ||
