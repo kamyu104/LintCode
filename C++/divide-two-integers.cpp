@@ -13,15 +13,13 @@ public:
         // Handle corner case.
         if (dividend == numeric_limits<int>::min() && divisor == -1) {
             return numeric_limits<int>::max();
-        } else if (divisor == 1) {
-            return dividend;
         }
 
         int a = dividend > 0 ? -dividend : dividend;
         int b = divisor > 0 ? -divisor : divisor;
 
         int shift = 0;
-        while (b << shift < 0 && shift < 31) {
+        while (b << shift < 0 && shift < 32) {
             ++shift;
         }
         shift -= 1;
