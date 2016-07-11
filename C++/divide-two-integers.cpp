@@ -98,14 +98,9 @@ public:
             return numeric_limits<int>::max();
         }
 
-        long long res = exp(log(fabs(dividend)) - log(fabs(divisor)));
+        long long result = exp(log(fabs(dividend)) - log(fabs(divisor)));
 
-        if ((dividend < 0) ^ (divisor < 0)) {
-            res = -res;
-        }
-        if (res > numeric_limits<int>::max()) {
-            res = numeric_limits<int>::max();
-        }
-        return res;
+        result = ((dividend ^ divisor) >> 31) ? -result : result;
+        return min(result, static_cast<long long>(numeric_limits<int>::max()));
     }
 };
