@@ -1,4 +1,4 @@
-// Time:  O(logn)
+// Time:  O(logn) = O(1)
 // Space: O(1)
 
 // Only using integer type.
@@ -14,7 +14,7 @@ public:
         if (divisor == INT_MIN) {
             return dividend == divisor ? 1 : 0;
         } else if (!divisor || divisor == -1 && dividend == INT_MIN) {
-            return INT_MAX;
+            return numeric_limits<int>::max();
         } else if (divisor == 1) {
             return dividend;
         }
@@ -51,7 +51,7 @@ public:
     }
 };
 
-// Time:  O(logn)
+// Time:  O(logn) = O(1)
 // Space: O(1)
 // Using long long type.
 class Solution2 {
@@ -62,36 +62,25 @@ public:
      * @return the result
      */
     int divide(int dividend, int divisor) {
-        long long result = 0, dvd = llabs(dividend), dvs = llabs(divisor);
+        long long result = 0;
+        long long a = llabs(dividend);
+        long long b = llabs(divisor);
 
-        long long inc = dvs;
-        long long multiplier = 1;
-        int i = 0;
-        while (dvd >= inc) {
-                inc <<= 1;
-                multiplier <<= 1;
-                ++i;
+        int shift = 31;
+        while (shift >= 0) {
+            if (a >= b << shift) {
+                a -= b << shift;
+                result += 1LL << shift;
+            }
+            --shift;
         }
 
-        while (inc && i >= 0) {
-                while (dvd >= inc) {
-                    dvd -= inc;
-                    result += multiplier;
-                }
-                inc >>= 1;
-                multiplier >>= 1;
-                --i;
-        }
-
-        if ((dividend > 0 && divisor < 0) || (dividend < 0 && divisor > 0)) {
-            return -result;
-        } else {
-            return min(result, static_cast<long long>(INT_MAX));
-        }
+        result = ((dividend ^ divisor) >> 31) ? -result : result;
+        return min(result, static_cast<long long>(numeric_limits<int>::max()));
     }
 };
 
-// Time:  O(1)
+// Time:  O(logn) = O(1)
 // Space: O(1)
 // a / b = exp^(ln(a) - ln(b))
 class Solution3 {
@@ -106,7 +95,7 @@ public:
             return 0;
         }
         if (divisor == 0) {
-            return INT_MAX;
+            return numeric_limits<int>::max();
         }
 
         long long res = exp(log(fabs(dividend)) - log(fabs(divisor)));
@@ -114,8 +103,8 @@ public:
         if ((dividend < 0) ^ (divisor < 0)) {
             res = -res;
         }
-        if (res > INT_MAX) {
-            res = INT_MAX;
+        if (res > numeric_limits<int>::max()) {
+            res = numeric_limits<int>::max();
         }
         return res;
     }
