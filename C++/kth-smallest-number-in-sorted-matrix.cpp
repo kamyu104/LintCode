@@ -1,8 +1,47 @@
 // Time:  O(klog(min(m, n, k))
 // Space: O(min(m, n, k))
 
-// BST solution.
 class Solution {
+public:
+    /**
+     * @param matrix: a matrix of integers
+     * @param k: an integer
+     * @return: the kth smallest number in the matrix
+     */
+    int kthSmallest(vector<vector<int>> &matrix, int k) {
+        int kth_smallest = 0;
+
+        using P = pair<int, pair<int, int>>;
+        priority_queue<P, vector<P>, greater<P>> q;
+        auto push = [&matrix, &q](int i, int j) {
+            if (matrix.size() > matrix[0].size()) {
+                if (i < matrix[0].size() && j < matrix.size()) {
+                    q.emplace(matrix[j][i], make_pair(i, j));
+                }
+            } else {
+                if (i < matrix.size() && j < matrix[0].size()) {
+                    q.emplace(matrix[i][j], make_pair(i, j));
+                }
+            }
+        };
+
+        push(0, 0);
+        while (!q.empty() && k--) {
+            auto tmp = q.top(); q.pop();
+            kth_smallest = tmp.first;
+            int i, j;
+            tie(i, j) = tmp.second;
+            push(i, j + 1);
+            if (j == 0) {
+                push(i + 1, 0);
+            }
+        }
+        return kth_smallest;
+    }
+};
+
+// BST solution.
+class Solution2 {
 public:
     /**
      * @param matrix: a matrix of integers
@@ -77,7 +116,7 @@ public:
 // Time:  O(klog(min(m, n, k))
 // Space: O(min(m, n, k))
 // Heap solution.
-class Solution2 {
+class Solution3 {
 public:
     struct Compare {
         bool operator()(const pair<int, pair<int, int>>& a, const pair<int, pair<int, int>>& b) {
