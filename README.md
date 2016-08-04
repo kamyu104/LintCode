@@ -1,8 +1,8 @@
-# [LintCode](http://www.lintcode.com/en/problem/) ![Language](https://img.shields.io/badge/language-C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-284%20%2F%20284-ff69b4.svg)
+# [LintCode](http://www.lintcode.com/en/problem/) ![Language](https://img.shields.io/badge/language-C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-285%20%2F%20285-ff69b4.svg)
 
-Up to date (2016-06-19), there are `284` problems on [LintCode Online Judge](http://lintcode.com/).
+Up to date (2016-08-04), there are `285` problems on [LintCode Online Judge](http://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `284` problems.
+Here is the classification of all `285` problems.
 For more problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -389,6 +389,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |515|[Paint House](http://lintcode.com/en/problem/paint-house/)| [C++](./C++/paint-house.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
 |516|[Paint House II](http://lintcode.com/en/problem/paint-house-ii/)| [C++](./C++/paint-house-ii.cpp)| _O(n * k)_ | _O(k)_ | Hard | LeetCode | |
 |534|[House Robber II](http://lintcode.com/en/problem/house-robber-ii/)| [C++](./C++/house-robber-ii.cpp)| _O(n)_ | _O(1)_ | Medium | LeetCode | |
+|564|[Backpack VI](http://lintcode.com/en/problem/backpack-vi/)| [C++](./C++/backpack-vi.cpp)| _O(n * t)_ | _O(t)_ | Medium | | |
 
 ## Greedy
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
