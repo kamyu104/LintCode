@@ -1,8 +1,8 @@
-# [LintCode](http://www.lintcode.com/en/problem/) ![Language](https://img.shields.io/badge/language-C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-285%20%2F%20285-ff69b4.svg)
+# [LintCode](http://www.lintcode.com/en/problem/) ![Language](https://img.shields.io/badge/language-C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-289%20%2F%20289-ff69b4.svg)
 
-Up to date (2016-08-04), there are `285` problems on [LintCode Online Judge](http://lintcode.com/).
+Up to date (2016-08-22), there are `289` problems on [LintCode Online Judge](http://lintcode.com/).
 The number of problems is increasing recently.
-Here is the classification of all `285` problems.
+Here is the classification of all `289` problems.
 For more problems and solutions, you can see my [LeetCode](https://github.com/kamyu104/LeetCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
@@ -236,6 +236,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |156|[Merge Intervals](http://lintcode.com/en/problem/merge-intervals/)| [C++](./C++/merge-intervals.cpp)| _O(nlogn)_ | _O(1)_ | Easy | LeetCode, EPI | |
 |184|[Largest Number](http://lintcode.com/en/problem/largest-number/)| [C++](./C++/largest-number.cpp)| _O(nlogn)_ | _O(1)_ | Medium | LeetCode | |
 |366|[Fibonacci](http://lintcode.com/en/problem/fibonacci/)| [C++](./C++/fibonacci.cpp)| _O(n)_ | _O(1)_ | Easy | | |
+|379|[Reorder array to construct the minimum number](http://lintcode.com/en/problem/reorder-array-to-construct-the-minimum-number/)| [C++](./C++/reorder-array-to-construct-the-minimum-number.cpp)| _O(nlogn)_ | _O(n)_ | Medium | LeetCode | |
 |387|[The Smallest Difference](http://lintcode.com/en/problem/the-smallest-difference/)| [C++](./C++/the-smallest-difference.cpp)| _O(max(m, n) * log(min(m, n)))_ | _O(1)_ | Medium | | Two Pointers, Binary Search |
 |399|[Nuts & Bolts Problem](http://lintcode.com/en/problem/nuts-bolts-problem/)| [C++](./C++/nuts-bolts-problem.cpp)| _O(nlogn)_ | _O(logn)_ | Medium | | Quick Sort |
 |400|[Maximum Gap](http://lintcode.com/en/problem/maximum-gap/)| [C++](./C++/maximum-gap.cpp) [Python](./Python/maximum-gap.py)| _O(n)_ | _O(n)_ | Hard | LeetCode | Bucket Sort |
@@ -247,6 +248,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 ## Recursion
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|22|[Flatten List](http://lintcode.com/en/problem/flatten-list/)| [C++](./C++/flatten-list.cpp)| _O(n)_ | _O(h)_ | Easy || |
 |72|[Construct Binary Tree from Inorder and Postorder Traversal](http://lintcode.com/en/problem/construct-binary-tree-from-inorder-and-postorder-traversal/)| [C++](./C++/construct-binary-tree-from-inorder-and-postorder-traversal.cpp)| _O(n)_ | _O(h)_ | Medium | LeetCode, EPI | |
 |73|[Construct Binary Tree from Preorder and Inorder Traversal](http://lintcode.com/en/problem/construct-binary-tree-from-preorder-and-inorder-traversal/)| [C++](./C++/construct-binary-tree-from-preorder-and-inorder-traversal.cpp)| _O(n)_ | _O(h)_ | Medium | LeetCode, EPI | |
 |93|[Balanced Binary Tree](http://lintcode.com/en/problem/balanced-binary-tree/)| [C++](./C++/balanced-binary-tree.cpp)| _O(n)_ | _O(h)_ | Easy | LeetCode | |
@@ -268,6 +270,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |247|[Segment Tree Query II](http://lintcode.com/en/problem/segment-tree-query-ii/)| [C++](./C++/segment-tree-query-ii.cpp)| _O(h)_ | _O(h)_ | Hard | | Segment Tree, BST |
 |248|[Count of Smaller Number](http://lintcode.com/en/problem/count-of-smaller-number/)| [C++](./C++/count-of-smaller-number.cpp)| build tree: _O(n)_, query: _O(logn)_ | _O(h)_ | Medium | | Segment Tree, BST |
 |371|[Print Numbers by Recursion](http://lintcode.com/en/problem/print-numbers-by-recursion/)| [C++](./C++/print-numbers-by-recursion.cpp)| _O(n)_ | _O(n)_ | Medium | | |
+|375|[Clone Binary Tree](http://lintcode.com/en/problem/clone-binary-tree/)| [C++](./C++/clone-binary-tree.cpp)| _O(n)_ | _O(h)_ | Easy | | |
 |378|[Convert Binary Search Tree to Doubly Linked List](http://lintcode.com/en/problem/convert-binary-search-tree-to-doubly-linked-list/)| [C++](./C++/convert-binary-search-tree-to-doubly-linked-list.cpp)| _O(n)_ | _O(h)_ | Medium | | |
 |439|[Segment Tree Build II](http://lintcode.com/en/problem/segmemt-tree-build-ii/)| [C++](./C++/segment-tree-build-ii.cpp)| _O(n)_ | _O(h)_ | Medium | | Segment Tree, BST |
 |453|[Flatten Binary Tree to Linked List](http://lintcode.com/en/problem/flatten-binary-tree-to-linked-list/)|[C++](./C++/flatten-binary-tree-to-linked-list.cpp)| _O(n)_ | _O(h)_ | Easy | LeetCode | |
@@ -351,6 +354,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 ## Dynamic Programming
 | # | Title | Solution | Time | Space | Difficulty | Tag | Note |
 |---| ----- | -------- | ---- | ----- | ---------- | --- | ---- |
+|20|[Dices Sum](http://lintcode.com/en/problem/dices-sum/)| [C++](./C++/dices-sum.cpp)| _O(n^2)_ | _O(n)_ | Hard | | |
 |29|[Interleaving String](http://lintcode.com/en/problem/interleaving-string/)| [C++](./C++/interleaving-string.cpp)| _O(m * n)_ | _O(min(m, n))_ | Medium | EPI | |
 |43|[Maximum Subarray III](http://lintcode.com/en/problem/maximum-subarray-iii/)| [C++](./C++/maximum-subarray-iii.cpp)| _O(k * n)_ | _O(k * n)_ | Hard | | |
 |77|[Longest Common Subsequence](http://lintcode.com/en/problem/longest-common-subsequence/)| [C++](./C++/longest-common-subsequence.cpp)| _O(m * n)_ | _O(min(m, n))_ | Medium | | |
