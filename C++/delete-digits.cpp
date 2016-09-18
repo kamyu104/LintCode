@@ -36,7 +36,7 @@ public:
         s.resize(s.length() - k);
 
         // Strip all leading '0'
-        return s.empty() ? "0" : s.substr(s.find_first_not_of('0'));
+        return s.empty() || s == "0" ? "0" : s.substr(s.find_first_not_of('0'));
     }
 };
 
@@ -66,7 +66,7 @@ public:
         A.resize(A.length() - k);
 
         // Strip all leading '0'
-        return A.empty() ? "0" : A.substr(A.find_first_not_of('0'));
+        return A.empty() || A == "0" ? "0" : A.substr(A.find_first_not_of('0'));
     }
 };
 
