@@ -3,7 +3,7 @@
 Up to date (2016-08-22), there are `289` problems on [LintCode Online Judge](http://lintcode.com/).
 The number of problems is increasing recently.
 Here is the classification of all `289` problems.
-For more problems and solutions, you can see my [LeetCode-Solution](https://github.com/kamyu104/LeetCode-Solution) repository.
+For more problems and solutions, you can see my [LeetCode-Solutions](https://github.com/kamyu104/LeetCode-Solutions) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 
 ## Algorithms
