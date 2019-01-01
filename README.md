@@ -366,7 +366,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 |108|[Palindrome Partitioning II](http://lintcode.com/en/problem/palindrome-partitioning-ii/)| [C++](./C++/palindrome-partitioning-ii.cpp)| _O(n^2)_ | _O(n)_ | Medium | LeetCode, EPI | |
 |109|[Triangle](http://lintcode.com/en/problem/triangle/)| [C++](./C++/triangle.cpp)| _O(n)_ | _O(n)_ | Easy | LeetCode, EPI | |
 |110|[Minimum Path Sum](http://lintcode.com/en/problem/minimum-path-sum/)| [C++](./C++/minimum-path-sum.cpp)| _O(m * n)_ | _O(min(m, n))_ | Easy | LeetCode, EPI | |
-|111|[Climbing Stairs](http://lintcode.com/en/problem/climbing-stairs/)| [C++](./C++/climbing-stairs.cpp)| _O(n)_ | _O(1)_ | Easy | LeetCode | |
+|111|[Climbing Stairs](http://lintcode.com/en/problem/climbing-stairs/)| [C++](./C++/climbing-stairs.cpp)| _O(logn)_ | _O(1)_ | Easy | LeetCode | |
 |115|[Unique Paths II](http://lintcode.com/en/problem/unique-paths-ii/)| [C++](./C++/unique-paths-ii.cpp)| _O(m * n)_ | _O(min(m, n))_ | Easy | LeetCode, CTCI | DP, Math |
 |118|[Distinct Subsequences](http://lintcode.com/en/problem/distinct-subsequences/)| [C++](./C++/distinct-subsequences.cpp)| _O(m * n)_ | _O(m)_ | Medium | LeetCode | DP |
 |119|[Edit Distance](http://lintcode.com/en/problem/edit-distance/)| [C++](./C++/edit-distance.cpp)| _O(m * n)_ | _O(min(m, n))_ | Medium | LeetCode, CTCI | DP |
